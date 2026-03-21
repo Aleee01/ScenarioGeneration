@@ -1,0 +1,23 @@
+{ "constraints":[
+  {"template":"Precedence","parameters":[["preanesthesia"],["start_surgery"]]},     
+  {"template":"Precedence","parameters":[["fasting"],["start_surgery"]]},           
+  {"template":"Precedence","parameters":[["bowel_preparation"],["start_surgery"]]}, 
+  {"template":"Response","parameters":[["start_surgery"],["abdominal_drainage"]]},  
+  {"template":"Response","parameters":[["start_surgery"],["normothermia"]]},        
+  {"template":"Response","parameters":[["end_surgery"],["gut_stimulation"]]},       
+  {"template":"Response","parameters":[["end_surgery"],["audit"]]},                 
+  {"template":"Init","parameters":[["program_admission"]]},                      
+  {"template":"Response","parameters":[["program_admission"],["counseling"]]},      
+  {"template":"Precedence","parameters":[["counseling"],["start_surgery"]]},        
+  {"template":"Precedence","parameters":[["carbohydrate_loading"],["start_surgery"]]}, 
+  {"template":"Precedence","parameters":[["thromboprophylaxis"],["start_surgery"]]}, 
+  {"template":"Precedence","parameters":[["antibiotic_prophylaxis"],["start_surgery"]]}, 
+  {"template":"Response","parameters":[["start_surgery"],["normovolemia"]]},        
+  {"template":"Response","parameters":[["start_surgery"],["ponv"]]},                
+  {"template":"Response","parameters":[["start_surgery"],["laparoscopy"]]},         
+  {"template":"Response","parameters":[["laparoscopy"],["end_surgery"]]},           
+  {"template":"Response","parameters":[["end_surgery"],["multimodal_analgesia"]]},  
+  {"template":"Response","parameters":[["end_surgery"],["nasogastric_tube_removal"]]}, 
+  {"template":"Response","parameters":[["end_surgery"],["early_mobilization"]]},    
+  {"template":"Response","parameters":[["end_surgery"],["early_catheter_removal"]]}
+]}
