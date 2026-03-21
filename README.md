@@ -31,7 +31,7 @@ Integration with the **ForbidIterative** framework to compute multiple execution
 - Extracts SAS plans  
 - Converts them into standard **XES event logs** for Process Mining analysis  
 
-## 🛠 Requirements and Installation
+## Requirements and Installation
 
 The project is fully containerized using **Docker**, which handles all dependencies (e.g., Fast Downward and ForbidIterative).
 
