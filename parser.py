@@ -2,10 +2,14 @@ import csv
 import json
 import re
 
+import re
+
 def parse_declare_decl(path):
     pattern = re.compile(r'(?P<template>[A-Za-z ]+)\[(?P<acts>[^\]]+)\]')
 
     constraints = []
+
+    preferences_templates = {"patterngap", "pattern", "prefix", "suffix"}
 
     with open(path, "r", encoding="utf-8") as f:
         for line in f:
@@ -18,23 +22,28 @@ def parse_declare_decl(path):
             if not match:
                 continue
 
-            template = match.group("template").strip().lower().replace(" ", "")
+            constraint_type = match.group("template").strip().lower().replace(" ", "")
 
             acts = [
                 normalize_name(a.strip())
                 for a in match.group("acts").split(",")
             ]
 
-            if len(acts) > 2:
+            if constraint_type in preferences_templates:
                 constraints.append({
-                    "type": template,
+                    "type": constraint_type,
                     "activities": acts
                 })
             else:
+                act1 = acts[0] if len(acts) > 0 else None
+                act2 = acts[1] if len(acts) > 1 else None
+                act3 = acts[2] if len(acts) > 2 else None
+
                 constraints.append({
-                    "type": template,
-                    "act1": acts[0] if len(acts) > 0 else None,
-                    "act2": acts[1] if len(acts) > 1 else None
+                    "type": constraint_type,
+                    "act1": act1,
+                    "act2": act2,
+                    "act3": act3
                 })
 
     return constraints
