@@ -116,5 +116,5 @@ docker run -v $(pwd)/outputs:/app/outputs scenario-gen my_model.json diverse -n 
 
 ## Credits and Dependencies
 
-- **ForbidIterative** → Used for Top-K and diverse planning  
+- **ForbidIterative** → Used for Top-K, Top-Quality and Diverse planning  
 - **Fast Downward** → Planning engine  
