@@ -31,6 +31,8 @@ Integration with the **ForbidIterative** framework to compute multiple execution
 - Extracts SAS plans  
 - Converts them into standard **XES event logs** for Process Mining analysis  
 
+---
+
 ## Requirements and Installation
 
 The project is fully containerized using **Docker**, which handles all dependencies (e.g., Fast Downward and ForbidIterative).
@@ -95,7 +97,7 @@ docker run -v $(pwd)/outputs:/app/outputs scenario-gen my_model.json topq -n 5 -
 ### 3. Generate Diverse Plans
 
 ```bash
-docker run -v $(pwd)/outputs:/app/outputs scenario-gen my_model.decl diverse -n 20
+docker run -v $(pwd)/outputs:/app/outputs scenario-gen my_model.json diverse -n 20
 ```
 
 ---
