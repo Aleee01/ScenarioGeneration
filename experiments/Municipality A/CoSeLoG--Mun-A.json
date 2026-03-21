@@ -1,0 +1,12 @@
+{ "constraints":[
+  {"template":"Init","parameters":[["Fill in e-form"]]},
+  {"template":"br_RespondedExistence","parameters":[["Fill in e-form"],["Stop", "Fill in payment information"]]},
+  {"template":"NotCoExistence","parameters":[["Stop"],["Fill in payment information"]]},          
+  {"template":"Precedence","parameters":[["Send payment request"],["Stop"]]}, 
+  {"template":"Precedence","parameters":[["Send payment request"],["Fill in payment information"]]}, 
+  {"template":"Precedence","parameters":[["Determine administrative expenses"],["Send payment request"]]}, 
+  {"template":"Succession","parameters":[["Fill in payment information"],["Process payment"]]}, 
+  {"template":"Succession","parameters":[["Process payment"],["Produce excerpt and sign it"]]}, 
+  {"template":"Succession","parameters":[["Produce excerpt and sign it"],["Send excerpt"]]}, 
+  {"template":"Response","parameters":[["Produce excerpt and sign it"],["Archive"]]}
+]}

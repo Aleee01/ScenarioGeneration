@@ -1,0 +1,10 @@
+{ "name": "Admission to university process",
+  "constraints": [
+				 {"template": "init", "parameters":[["Examine patient"]]},
+				 {"template": "alternateprecedence", "parameters": [["Check X ray risk"],["Perform X ray"]]},
+				 {"template": "precedence", "parameters": [["Perform X ray"],["Perform reposition"]]},
+				 {"template": "precedence", "parameters": [["Perform X ray"],["Apply cast"]]},
+				 {"template": "succession", "parameters": [["Apply cast"],["Remove cast"]]},
+				 {"template": "precedence", "parameters": [["Perform X ray"],["Perform surgery"]]},
+				 {"template": "response", "parameters": [["Perform surgery"], ["Prescribe rehabilitation"]]}
+] }
