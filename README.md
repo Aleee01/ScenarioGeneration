@@ -1,4 +1,4 @@
-# ScenarioGeneration-Declare
+# Scenario Generation for Declarative Process Models
 
 This repository provides an **integrated tool** for:
 
