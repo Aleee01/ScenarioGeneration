@@ -78,6 +78,17 @@ docker run --rm -v "${PWD}/outputs:/app/outputs" scenario-gen <model_path> <plan
 - `-n, --num-plans` → Number of plans to generate (default: 10)  
 - `-b, --bound` → Quality bound (**required for topq**, must be > 1.0)  
 
+  The quality bound is defined as a multiplicative factor over the optimal plan cost.  
+  Given an optimal cost `C*`, the planner will accept solutions with cost:
+
+  ```
+  C ≤ bound × C*
+  ```
+
+  For example:
+  - `bound = 1.0` → Only optimal plans  
+  - `bound = 1.2` → Plans up to 20% worse than the optimal cost  
+
 ---
 
 ## Examples
