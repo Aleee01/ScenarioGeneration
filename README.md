@@ -1,1 +1,107 @@
-# ScenarioGeneration
+# ScenarioGeneration-Declare
+
+This repository provides an **integrated tool** for:
+
+- Generating **PDDL domains and problems** from Declare models  
+- Solving them using **diverse planning techniques** (Top-K, Top-Quality, Diverse)  
+- Converting resulting plans into **Event Logs (XES)**  
+
+---
+
+## Main Features
+
+### Model Parsing
+Supports declarative process models in:
+- `.json`
+- `.decl`
+
+### PDDL Generation
+Automatically converts Declare constraints into:
+- PDDL actions  
+- Automata-based state transitions  
+
+### Diverse Planning
+Integration with the **ForbidIterative** framework to compute multiple execution paths:
+
+- **Top-K** → Finds the *k* best plans  
+- **Top-Quality (Top-Q)** → Finds plans within a given quality bound  
+- **Diverse** → Finds plans that are significantly different from each other  
+
+### Post-Processing
+- Extracts SAS plans  
+- Converts them into standard **XES event logs** for Process Mining analysis  
+
+## 🛠 Requirements and Installation
+
+The project is fully containerized using **Docker**, which handles all dependencies (e.g., Fast Downward and ForbidIterative).
+
+### 1. Clone the Repository
+
+```bash
+git clone <repo-url>
+cd <repository-folder>
+```
+
+### 2. Build the Docker Image
+
+```bash
+docker build -t scenario-gen-tool .
+```
+
+---
+
+## Execution Guide
+
+The tool is executed via CLI using Docker.  
+You should mount a local volume to:
+- provide input models  
+- retrieve generated outputs  
+
+### Usage
+
+```bash
+docker run -v $(pwd)/outputs:/app/outputs scenario-gen <model_path> <planner_type> [options]
+```
+
+### Arguments
+
+- `<model_path>` → Path to the Declare model (`.json` or `.decl`)  
+- `<planner_type>` → Planner type:
+  - `topk`
+  - `topq`
+  - `diverse`
+
+### Options
+
+- `-n, --num-plans` → Number of plans to generate (default: 10)  
+- `-b, --bound` → Quality bound (**required for topq**, must be > 1.0)  
+
+---
+
+## Examples
+
+### 1. Generate 10 Top-K Plans
+
+```bash
+docker run -v $(pwd)/outputs:/app/outputs scenario-gen my_model.json topk -n 10
+```
+
+### 2. Generate Plans with a Quality Bound
+
+```bash
+docker run -v $(pwd)/outputs:/app/outputs scenario-gen my_model.json topq -n 5 --bound 1.2
+```
+
+### 3. Generate Diverse Plans
+
+```bash
+docker run -v $(pwd)/outputs:/app/outputs scenario-gen my_model.decl diverse -n 20
+```
+
+---
+
+
+## Credits and Dependencies
+
+- **ForbidIterative** → Used for Top-K and diverse planning  
+- **Fast Downward** → Planning engine  
