@@ -45,7 +45,7 @@ cd <repository-folder>
 ### 2. Build the Docker Image
 
 ```bash
-docker build -t scenario-gen-tool .
+docker build -t scenario-gen .
 ```
 
 ---
