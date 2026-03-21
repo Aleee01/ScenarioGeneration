@@ -62,7 +62,7 @@ You should mount a local volume to:
 ### Usage
 
 ```bash
-docker run -v $(pwd)/outputs:/app/outputs scenario-gen <model_path> <planner_type> [options]
+docker run --rm -v "${PWD}/outputs:/app/outputs" scenario-gen <model_path> <planner_type> [options]
 ```
 
 ### Arguments
