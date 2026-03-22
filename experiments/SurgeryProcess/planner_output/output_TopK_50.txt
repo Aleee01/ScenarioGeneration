@@ -1,0 +1,1397 @@
+
+Parsing...
+Parsing: [0.060s CPU, 0.084s wall-clock]
+Normalizing task... [0.010s CPU, 0.005s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.003s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.011s wall-clock]
+Preparing model... [0.010s CPU, 0.009s wall-clock]
+Generated 1892 rules.
+Computing model... [0.000s CPU, 0.004s wall-clock]
+476 relevant atoms
+0 auxiliary atoms
+476 final queue length
+2027 total queue pushes
+Completing instantiation... [0.010s CPU, 0.010s wall-clock]
+Instantiating: [0.030s CPU, 0.038s wall-clock]
+Computing fact groups...
+Finding invariants...
+3 initial candidates
+Finding invariants: [0.000s CPU, 0.002s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+50 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.010s CPU, 0.002s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
+Computing negative axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.001s wall-clock]
+Translating task: [0.010s CPU, 0.016s wall-clock]
+1452 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+0 propositions removed
+Detecting unreachable propositions: [0.010s CPU, 0.007s wall-clock]
+Reordering and filtering variables...
+50 of 50 variables necessary.
+0 of 0 mutex groups necessary.
+311 of 311 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.010s CPU, 0.008s wall-clock]
+Translator variables: 50
+Translator derived variables: 0
+Translator facts: 100
+Translator goal facts: 21
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 311
+Translator axioms: 0
+Translator task size: 7860
+Translator peak memory: 36036 KB
+Writing output... [0.000s CPU, 0.003s wall-clock]
+Done! [0.140s CPU, 0.164s wall-clock]
+translate exit code: 0
+
+Building causal graph...
+The causal graph is not acyclic.
+50 variables of 50 necessary
+0 of 0 mutex groups necessary.
+311 of 311 operators necessary.
+0 of 0 axiom rules necessary.
+Initializing mutex computation...
+Mutex computation initialized with 100 fluents.
+iteration for mutex detection and operator pruning
+Initialize m_index fw
+Initialized mvalues forward: reached=2500, notReached=7400, spurious=100
+Initialize m_ops fw
+Computing mutexes...
+Mutex computation finished with reached=8746, notReached=1154, spurious=100
+1 operators are spurious because were not triggered
+H^2 mutexes added fw: 1154, unreachable: 0
+0 of 310 operators detected as spurious
+iteration for mutex detection and operator pruning
+Initialize m_index bw
+Init values regression
+Initialized mvalues backward: reached=2500, notReached=6246, spurious=1254
+Initialize m_ops bw
+Computing mutexes...
+Mutex computation finished with reached=8746, notReached=0, spurious=1254
+0 operators are spurious because were not triggered
+H^2 mutexes added bw: 0, unreachable: 0
+0 of 310 operators detected as spurious
+Total mutex and disambiguation time: 0.009664 iterations: 2
+577 of 577 mutex groups necessary.
+310 of 311 operators necessary.
+0 of 0 axiom rules necessary.
+Change id of operators: 310
+Change id of mutexes
+Change id of goals
+Change id of initial state
+Remove unreachable facts from variables: 50
+577 of 577 mutex groups necessary.
+310 of 310 operators necessary.
+0 of 0 axiom rules necessary.
+Updating causal graph and pruning unnecessary facts
+50 variables of 50 of 50 necessary
+The causal graph is not acyclic.
+50 variables of 50 necessary
+577 of 577 mutex groups necessary.
+310 of 310 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor variables: 50
+Preprocessor facts: 100
+Preprocessor derived variables: 0
+Preprocessor operators: 310
+Preprocessor mutex groups: 577
+Preprocessor task size: 9008
+Writing output...
+done
+transform_task exit code: 0
+
+[t=2.5335e-05s, 11352 KB] reading input...
+[t=0.00253108s, 11608 KB] done reading input!
+[t=0.00344065s, 12136 KB] Initializing landmark cut heuristic...
+[t=0.00355161s, 12136 KB] Building successor generator...done!
+[t=0.00386099s, 12268 KB] peak memory difference for successor generator creation: 132 KB
+[t=0.00386818s, 12268 KB] time for successor generation creation: 0.000263585s
+[t=0.00388472s, 12268 KB] Variables: 50
+[t=0.00389221s, 12268 KB] FactPairs: 100
+[t=0.00389803s, 12268 KB] Bytes per state: 8
+[t=0.00390633s, 12268 KB] Initializing symmetries (eager search)
+[t=0.00391268s, 12268 KB] Initializing symmetries
+[t=0.00409441s, 12400 KB] Using Bliss to find group generators
+[t=0.00606771s, 13100 KB] Done initializing symmetries: 0.0021791s
+[t=0.00610629s, 13100 KB] Size of the grounded symmetry graph: 460
+[t=0.00611682s, 13100 KB] Number of search generators (affecting facts): 19
+[t=0.006123s, 13100 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00612873s, 13100 KB] Total number of generators: 19
+[t=0.00624975s, 13100 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.00635751s, 13100 KB] New best heuristic value for lmcut: 2
+[t=0.00636954s, 13100 KB] g=0, 1 evaluated, 0 expanded
+[t=0.00638739s, 13100 KB] f = 2, 1 evaluated, 0 expanded
+[t=0.0064079s, 13100 KB] Initial heuristic value for lmcut: 2
+[t=0.00653026s, 13100 KB] pruning method: stubborn sets simple
+[t=0.00662596s, 13100 KB] f = 3, 2 evaluated, 1 expanded
+[t=0.00673575s, 13100 KB] New best heuristic value for lmcut: 1
+[t=0.00675476s, 13100 KB] g=2, 3 evaluated, 2 expanded
+[t=0.0069712s, 13100 KB] New best heuristic value for lmcut: 0
+[t=0.00698947s, 13100 KB] g=3, 9 evaluated, 3 expanded
+[t=0.00700717s, 13100 KB] Solution found!
+[t=0.00702996s, 13100 KB] Actual search time: 0.000487088s
+sync_program_admission_144  (1)
+sync_counseling_140  (1)
+finish_34  (1)
+[t=0.00703715s, 13100 KB] Plan length: 3 step(s).
+[t=0.00703715s, 13100 KB] Plan cost: 3
+[t=0.00703715s, 13100 KB] Expanded 4 state(s).
+[t=0.00703715s, 13100 KB] Reopened 0 state(s).
+[t=0.00703715s, 13100 KB] Evaluated 9 state(s).
+[t=0.00703715s, 13100 KB] Evaluations: 9
+[t=0.00703715s, 13100 KB] Generated 18 state(s).
+[t=0.00703715s, 13100 KB] Dead ends: 0 state(s).
+[t=0.00703715s, 13100 KB] Expanded until last jump: 1 state(s).
+[t=0.00703715s, 13100 KB] Reopened until last jump: 0 state(s).
+[t=0.00703715s, 13100 KB] Evaluated until last jump: 2 state(s).
+[t=0.00703715s, 13100 KB] Generated until last jump: 1 state(s).
+[t=0.00703715s, 13100 KB] Number of registered states: 21
+[t=0.00703715s, 13100 KB] Int hash set load factor: 21/32 = 0.65625
+[t=0.00703715s, 13100 KB] Int hash set resizes: 5
+[t=0.00703715s, 13100 KB] total successors before pruning: 20
+[t=0.00703715s, 13100 KB] total successors after pruning: 18
+[t=0.00703715s, 13100 KB] Pruning ratio: 0.1
+[t=0.00703715s, 13100 KB] Time for pruning operators: 0.00314881s
+[t=0.00703715s, 13100 KB] Search time: 0.000788106s
+[t=0.00703715s, 13100 KB] Total time: 0.00703715s
+Solution found.
+Peak memory: 13100 KB
+search exit code: 0
+
+
+
+[t=2.4551e-05s, 11352 KB] reading input...
+[t=0.0026346s, 11608 KB] done reading input!
+[t=0.00344194s, 11872 KB] Building successor generator...done!
+[t=0.00379746s, 12004 KB] peak memory difference for successor generator creation: 132 KB
+[t=0.00380591s, 12004 KB] time for successor generation creation: 0.00027251s
+[t=0.00381462s, 12004 KB] Variables: 50
+[t=0.00382172s, 12004 KB] FactPairs: 100
+[t=0.00383669s, 12004 KB] Bytes per state: 8
+[t=0.00385699s, 12004 KB] Initializing symmetries for extending plans with
+[t=0.00387539s, 12004 KB] Initializing symmetries
+[t=0.00407175s, 12148 KB] Using Bliss to find group generators
+[t=0.00602393s, 12904 KB] Done initializing symmetries: 0.002172s
+[t=0.00606979s, 12904 KB] Size of the grounded symmetry graph: 461
+[t=0.00608108s, 12904 KB] Number of search generators (affecting facts): 19
+[t=0.00608758s, 12904 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00609355s, 12904 KB] Total number of generators: 19
+[t=0.00624516s, 12904 KB] Reading plan from file /tmp/planner_runs/e3c52735-6c71-4b81-8463-0cbb5fc7cf0c/sas_plan.1
+[t=0.00629033s, 12904 KB] Adding the found plan:  Creating partial order plans by naively reducing all orders... 
+[t=0.00631775s, 12904 KB] Adding first plan
+[t=0.00634413s, 12904 KB] Done, dumping before the next step
+sync_program_admission_144  (1)
+sync_counseling_140  (1)
+finish_34  (1)
+[t=0.00647936s, 12904 KB] Plan length: 3 step(s).
+[t=0.0065033s, 12904 KB] Plan cost: 3
+[t=0.00651372s, 12904 KB] Dumped 1 optimal plans for this iteration, found additional 0 plans. [t=0.00651976s]
+[t=0.00652071s, 12904 KB] Done dumping
+[t=0.00652669s, 12904 KB] Starting adding plans in DFS manner, no duplicate detection ... 
+[t=0.00653803s, 12904 KB] Computing the distances!!
+[t=0.00654437s, 12904 KB] Running Dijkstra!
+[t=0.00655321s, 12904 KB] Running Dijkstra for computing distances from init!
+[t=0.00656141s, 12904 KB] Done adding the found plan, dumping the plans so far
+[t=0.00656943s, 12904 KB] Dumped 1 optimal plans for this iteration, found additional 0 plans. [t=0.00657499s]
+[t=0.00657767s, 12904 KB] Done dumping the plans
+[t=0.00658625s, 12904 KB] Extending partial order plans with symmetries... Done extending partial order plans with symmetries
+[t=0.00663383s, 12904 KB] Dumping plans before reformulation 
+[t=0.00664506s, 12904 KB] Dumped 1 optimal plans for this iteration, found additional 0 plans. [t=0.0066519s]
+[t=0.00666185s, 12904 KB] Done dumping plans before reformulation
+Initial state var index: 54
+Solution found.
+Peak memory: 12904 KB
+search exit code: 0
+
+
+
+[t=2.2258e-05s, 11352 KB] reading input...
+[t=0.00328682s, 11740 KB] done reading input!
+[t=0.00429471s, 12400 KB] Initializing landmark cut heuristic...
+[t=0.00440745s, 12400 KB] Building successor generator...done!
+[t=0.00473158s, 12532 KB] peak memory difference for successor generator creation: 132 KB
+[t=0.00474885s, 12532 KB] time for successor generation creation: 0.000272135s
+[t=0.00477076s, 12532 KB] Variables: 55
+[t=0.00479487s, 12532 KB] FactPairs: 110
+[t=0.00481204s, 12532 KB] Bytes per state: 8
+[t=0.00483204s, 12532 KB] Initializing symmetries (eager search)
+[t=0.00484998s, 12532 KB] Initializing symmetries
+[t=0.00514362s, 12532 KB] Using Bliss to find group generators
+[t=0.00711021s, 13352 KB] Done initializing symmetries: 0.00228475s
+[t=0.00715548s, 13352 KB] Size of the grounded symmetry graph: 481
+[t=0.00716716s, 13352 KB] Number of search generators (affecting facts): 19
+[t=0.0071737s, 13352 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00717973s, 13352 KB] Total number of generators: 19
+[t=0.00728025s, 13352 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.00737147s, 13352 KB] New best heuristic value for lmcut: 2
+[t=0.00739166s, 13352 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0074109s, 13352 KB] f = 2, 1 evaluated, 0 expanded
+[t=0.00743167s, 13352 KB] Initial heuristic value for lmcut: 2
+[t=0.0075654s, 13352 KB] pruning method: stubborn sets simple
+[t=0.00765121s, 13352 KB] f = 3, 2 evaluated, 1 expanded
+[t=0.00794999s, 13352 KB] f = 4, 6 evaluated, 2 expanded
+[t=0.00810484s, 13352 KB] New best heuristic value for lmcut: 1
+[t=0.00813576s, 13352 KB] g=3, 9 evaluated, 3 expanded
+[t=0.00832206s, 13352 KB] New best heuristic value for lmcut: 0
+[t=0.0083411s, 13352 KB] g=4, 16 evaluated, 4 expanded
+[t=0.00836052s, 13352 KB] Solution found!
+[t=0.00840523s, 13352 KB] Actual search time: 0.000827874s
+sync_program_admission_144 __###__315__###__3 (1)
+sync_counseling_140 __###__314__###__3 (1)
+sync_antibiotic_prophylaxis_149 __###__129__###__0 (1)
+finish_35 __###__57__###__0 (1)
+[t=0.00842385s, 13352 KB] Plan length: 4 step(s).
+[t=0.00842385s, 13352 KB] Plan cost: 4
+[t=0.00842385s, 13352 KB] Expanded 5 state(s).
+[t=0.00842385s, 13352 KB] Reopened 0 state(s).
+[t=0.00842385s, 13352 KB] Evaluated 16 state(s).
+[t=0.00842385s, 13352 KB] Evaluations: 16
+[t=0.00842385s, 13352 KB] Generated 29 state(s).
+[t=0.00842385s, 13352 KB] Dead ends: 1 state(s).
+[t=0.00842385s, 13352 KB] Expanded until last jump: 2 state(s).
+[t=0.00842385s, 13352 KB] Reopened until last jump: 0 state(s).
+[t=0.00842385s, 13352 KB] Evaluated until last jump: 6 state(s).
+[t=0.00842385s, 13352 KB] Generated until last jump: 10 state(s).
+[t=0.00842385s, 13352 KB] Number of registered states: 34
+[t=0.00842385s, 13352 KB] Int hash set load factor: 34/64 = 0.53125
+[t=0.00842385s, 13352 KB] Int hash set resizes: 6
+[t=0.00842385s, 13352 KB] total successors before pruning: 29
+[t=0.00842385s, 13352 KB] total successors after pruning: 29
+[t=0.00842385s, 13352 KB] Pruning ratio: 0
+[t=0.00842385s, 13352 KB] Time for pruning operators: 0.00339361s
+[t=0.00842385s, 13352 KB] Search time: 0.00114422s
+[t=0.00842385s, 13352 KB] Total time: 0.00842385s
+Solution found.
+Peak memory: 13352 KB
+search exit code: 0
+
+
+
+[t=2.3371e-05s, 11352 KB] reading input...
+[t=0.00317875s, 11740 KB] done reading input!
+[t=0.0039824s, 12136 KB] Building successor generator...done!
+[t=0.00433916s, 12268 KB] peak memory difference for successor generator creation: 132 KB
+[t=0.00435587s, 12268 KB] time for successor generation creation: 0.000272063s
+[t=0.00437703s, 12268 KB] Variables: 55
+[t=0.00439612s, 12268 KB] FactPairs: 110
+[t=0.00441418s, 12268 KB] Bytes per state: 8
+[t=0.00443416s, 12268 KB] Initializing symmetries for extending plans with
+[t=0.00445373s, 12268 KB] Initializing symmetries
+[t=0.00466751s, 12400 KB] Using Bliss to find group generators
+[t=0.00663703s, 13136 KB] Done initializing symmetries: 0.00220461s
+[t=0.00668575s, 13136 KB] Size of the grounded symmetry graph: 482
+[t=0.00669742s, 13136 KB] Number of search generators (affecting facts): 19
+[t=0.00670404s, 13136 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00670995s, 13136 KB] Total number of generators: 19
+[t=0.00687969s, 13136 KB] Reading plan from file /tmp/planner_runs/e3c52735-6c71-4b81-8463-0cbb5fc7cf0c/sas_plan.2
+[t=0.00691926s, 13136 KB] Adding the found plan:  Creating partial order plans by naively reducing all orders... 
+[t=0.00694948s, 13136 KB] Adding first plan
+[t=0.00697563s, 13136 KB] Done, dumping before the next step
+sync_program_admission_144 __###__315__###__3 (1)
+sync_counseling_140 __###__314__###__3 (1)
+sync_antibiotic_prophylaxis_149 __###__129__###__0 (1)
+finish_35 __###__57__###__0 (1)
+[t=0.00710661s, 13136 KB] Plan length: 4 step(s).
+[t=0.00713323s, 13136 KB] Plan cost: 4
+[t=0.00714354s, 13136 KB] Dumped 1 optimal plans for this iteration, found additional 0 plans. [t=0.00714935s]
+[t=0.00715034s, 13136 KB] Done dumping
+[t=0.00715628s, 13136 KB] Starting adding plans in DFS manner, no duplicate detection ... 
+[t=0.00717086s, 13136 KB] Computing the distances!!
+[t=0.00717724s, 13136 KB] Running Dijkstra!
+[t=0.00718703s, 13136 KB] Running Dijkstra for computing distances from init!
+[t=0.0071959s, 13136 KB] Done adding the found plan, dumping the plans so far
+[t=0.00721451s, 13136 KB] Dumped 1 optimal plans for this iteration, found additional 0 plans. [t=0.00722293s]
+[t=0.00722406s, 13136 KB] Done dumping the plans
+[t=0.00723081s, 13136 KB] Extending partial order plans with symmetries... sync_program_admission_144 __###__315__###__3 (1)
+sync_counseling_140 __###__314__###__3 (1)
+sync_bowel_preparation_133 __###__131__###__0 (1)
+finish_50 __###__74__###__0 (1)
+Plan length: 4 step(s).
+[t=0.00730194s, 13136 KB] Plan cost: 4
+[t=0.00730907s, 13136 KB] Dumped 2 optimal plans for this iteration, found additional 0 plans. [t=0.00731462s]
+sync_program_admission_144 __###__315__###__3 (1)
+sync_counseling_140 __###__314__###__3 (1)
+sync_carbohydrate_loading_146 __###__132__###__0 (1)
+finish_38 __###__60__###__0 (1)
+[t=0.00739144s, 13136 KB] Plan length: 4 step(s).
+[t=0.00740907s, 13136 KB] Plan cost: 4
+[t=0.00742829s, 13136 KB] Dumped 3 optimal plans for this iteration, found additional 0 plans. [t=0.00743661s]
+sync_program_admission_144 __###__315__###__3 (1)
+sync_counseling_140 __###__314__###__3 (1)
+sync_fasting_2 __###__265__###__0 (1)
+finish_2 __###__40__###__0 (1)
+[t=0.00754783s, 13136 KB] Plan length: 4 step(s).
+[t=0.00756492s, 13136 KB] Plan cost: 4
+[t=0.00757571s, 13136 KB] Dumped 4 optimal plans for this iteration, found additional 0 plans. [t=0.00758189s]
+sync_program_admission_144 __###__315__###__3 (1)
+sync_counseling_140 __###__314__###__3 (1)
+sync_preanesthesia_134 __###__275__###__0 (1)
+finish_98 __###__126__###__0 (1)
+[t=0.00767473s, 13136 KB] Plan length: 4 step(s).
+[t=0.00769227s, 13136 KB] Plan cost: 4
+[t=0.00771191s, 13136 KB] Dumped 5 optimal plans for this iteration, found additional 0 plans. [t=0.00772028s]
+sync_program_admission_144 __###__315__###__3 (1)
+sync_counseling_140 __###__314__###__3 (1)
+sync_thromboprophylaxis_0 __###__309__###__0 (1)
+finish_32 __###__54__###__0 (1)
+[t=0.00783237s, 13136 KB] Plan length: 4 step(s).
+[t=0.00784986s, 13136 KB] Plan cost: 4
+[t=0.00787142s, 13136 KB] Dumped 6 optimal plans for this iteration, found additional 0 plans. [t=0.00787976s]
+[t=0.00801067s, 13136 KB] Done extending partial order plans with symmetries
+[t=0.00802832s, 13136 KB] Dumping plans before reformulation 
+[t=0.00804081s, 13136 KB] Dumped 6 optimal plans for this iteration, found additional 0 plans. [t=0.00804785s]
+[t=0.00804922s, 13136 KB] Done dumping plans before reformulation
+Initial state var index: 65
+Solution found.
+Peak memory: 13136 KB
+search exit code: 0
+
+
+
+[t=2.5074e-05s, 11352 KB] reading input...
+[t=0.00937321s, 12004 KB] done reading input!
+[t=0.0104134s, 12664 KB] Initializing landmark cut heuristic...
+[t=0.0105298s, 12664 KB] Building successor generator...done!
+[t=0.0109021s, 12796 KB] peak memory difference for successor generator creation: 132 KB
+[t=0.0109108s, 12796 KB] time for successor generation creation: 0.000316414s
+[t=0.0109196s, 12796 KB] Variables: 66
+[t=0.0109278s, 12796 KB] FactPairs: 132
+[t=0.0109336s, 12796 KB] Bytes per state: 12
+[t=0.0109424s, 12796 KB] Initializing symmetries (eager search)
+[t=0.0109489s, 12796 KB] Initializing symmetries
+[t=0.0112274s, 13060 KB] Using Bliss to find group generators
+[t=0.0131622s, 13772 KB] Done initializing symmetries: 0.00223537s
+[t=0.0132006s, 13772 KB] Size of the grounded symmetry graph: 542
+[t=0.0132111s, 13772 KB] Number of search generators (affecting facts): 19
+[t=0.0132181s, 13772 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0132239s, 13772 KB] Total number of generators: 19
+[t=0.0133277s, 13772 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.0134456s, 13772 KB] New best heuristic value for lmcut: 2
+[t=0.0134663s, 13772 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0134802s, 13772 KB] f = 2, 1 evaluated, 0 expanded
+[t=0.0134889s, 13772 KB] Initial heuristic value for lmcut: 2
+[t=0.0136344s, 13772 KB] pruning method: stubborn sets simple
+[t=0.0137257s, 13772 KB] f = 3, 2 evaluated, 1 expanded
+[t=0.0140527s, 13772 KB] f = 4, 6 evaluated, 2 expanded
+[t=0.0144546s, 13772 KB] New best heuristic value for lmcut: 1
+[t=0.0144755s, 13772 KB] g=3, 13 evaluated, 4 expanded
+[t=0.0146709s, 13772 KB] New best heuristic value for lmcut: 0
+[t=0.014687s, 13772 KB] g=4, 19 evaluated, 5 expanded
+[t=0.0146967s, 13772 KB] Solution found!
+[t=0.0147439s, 13772 KB] Actual search time: 0.00109975s
+sync_program_admission_144 __###__315__###__3__###__343__###__3 (1)
+sync_antibiotic_prophylaxis_149 __###__129__###__0__###__321__###__2 (1)
+sync_counseling_140 __###__135__###__1__###__135__###__0 (1)
+finish_35 __###__57__###__0__###__57__###__1 (1)
+[t=0.0147518s, 13772 KB] Plan length: 4 step(s).
+[t=0.0147518s, 13772 KB] Plan cost: 4
+[t=0.0147518s, 13772 KB] Expanded 6 state(s).
+[t=0.0147518s, 13772 KB] Reopened 0 state(s).
+[t=0.0147518s, 13772 KB] Evaluated 19 state(s).
+[t=0.0147518s, 13772 KB] Evaluations: 19
+[t=0.0147518s, 13772 KB] Generated 35 state(s).
+[t=0.0147518s, 13772 KB] Dead ends: 1 state(s).
+[t=0.0147518s, 13772 KB] Expanded until last jump: 2 state(s).
+[t=0.0147518s, 13772 KB] Reopened until last jump: 0 state(s).
+[t=0.0147518s, 13772 KB] Evaluated until last jump: 6 state(s).
+[t=0.0147518s, 13772 KB] Generated until last jump: 10 state(s).
+[t=0.0147518s, 13772 KB] Number of registered states: 40
+[t=0.0147518s, 13772 KB] Int hash set load factor: 40/64 = 0.625
+[t=0.0147518s, 13772 KB] Int hash set resizes: 6
+[t=0.0147518s, 13772 KB] total successors before pruning: 37
+[t=0.0147518s, 13772 KB] total successors after pruning: 35
+[t=0.0147518s, 13772 KB] Pruning ratio: 0.0540541
+[t=0.0147518s, 13772 KB] Time for pruning operators: 0.00353642s
+[t=0.0147518s, 13772 KB] Search time: 0.00142466s
+[t=0.0147518s, 13772 KB] Total time: 0.0147518s
+Solution found.
+Peak memory: 13772 KB
+search exit code: 0
+
+
+
+[t=2.3715e-05s, 11352 KB] reading input...
+[t=0.00975852s, 12004 KB] done reading input!
+[t=0.0105986s, 12400 KB] Building successor generator...done!
+[t=0.0109899s, 12532 KB] peak memory difference for successor generator creation: 132 KB
+[t=0.0109978s, 12532 KB] time for successor generation creation: 0.000284475s
+[t=0.0110147s, 12532 KB] Variables: 66
+[t=0.0110223s, 12532 KB] FactPairs: 132
+[t=0.0110281s, 12532 KB] Bytes per state: 12
+[t=0.0110364s, 12532 KB] Initializing symmetries for extending plans with
+[t=0.0110445s, 12532 KB] Initializing symmetries
+[t=0.0113252s, 12796 KB] Using Bliss to find group generators
+[t=0.0133647s, 13540 KB] Done initializing symmetries: 0.00234217s
+[t=0.0134024s, 13540 KB] Size of the grounded symmetry graph: 543
+[t=0.0134126s, 13540 KB] Number of search generators (affecting facts): 19
+[t=0.0134205s, 13540 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0134319s, 13540 KB] Total number of generators: 19
+[t=0.0135982s, 13540 KB] Reading plan from file /tmp/planner_runs/e3c52735-6c71-4b81-8463-0cbb5fc7cf0c/sas_plan.8
+[t=0.0136755s, 13540 KB] Adding the found plan:  Creating partial order plans by naively reducing all orders... 
+[t=0.013699s, 13540 KB] Adding first plan
+[t=0.0137172s, 13540 KB] Done, dumping before the next step
+sync_program_admission_144 __###__315__###__3__###__343__###__3 (1)
+sync_antibiotic_prophylaxis_149 __###__129__###__0__###__321__###__2 (1)
+sync_counseling_140 __###__135__###__1__###__135__###__0 (1)
+finish_35 __###__57__###__0__###__57__###__1 (1)
+[t=0.0138364s, 13540 KB] Plan length: 4 step(s).
+[t=0.0138598s, 13540 KB] Plan cost: 4
+[t=0.013881s, 13540 KB] Dumped 1 optimal plans for this iteration, found additional 0 plans. [t=0.0138879s]
+[t=0.0138888s, 13540 KB] Done dumping
+[t=0.0138948s, 13540 KB] Starting adding plans in DFS manner, no duplicate detection ... 
+[t=0.0139064s, 13540 KB] Computing the distances!!
+[t=0.0139126s, 13540 KB] Running Dijkstra!
+[t=0.0139216s, 13540 KB] Running Dijkstra for computing distances from init!
+[t=0.0139299s, 13540 KB] Done adding the found plan, dumping the plans so far
+[t=0.0139469s, 13540 KB] Dumped 1 optimal plans for this iteration, found additional 0 plans. [t=0.0139558s]
+[t=0.0139655s, 13540 KB] Done dumping the plans
+[t=0.013975s, 13540 KB] Extending partial order plans with symmetries... sync_program_admission_144 __###__315__###__3__###__343__###__3 (1)
+sync_bowel_preparation_133 __###__131__###__0__###__327__###__2 (1)
+sync_counseling_140 __###__135__###__1__###__135__###__0 (1)
+finish_50 __###__74__###__0__###__74__###__1 (1)
+Plan length: 4 step(s).
+[t=0.01411s, 13540 KB] Plan cost: 4
+[t=0.0141228s, 13540 KB] Dumped 2 optimal plans for this iteration, found additional 0 plans. [t=0.0141317s]
+sync_program_admission_144 __###__315__###__3__###__343__###__3 (1)
+sync_carbohydrate_loading_146 __###__132__###__0__###__324__###__2 (1)
+sync_counseling_140 __###__135__###__1__###__135__###__0 (1)
+finish_38 __###__60__###__0__###__60__###__1 (1)
+[t=0.0142244s, 13540 KB] Plan length: 4 step(s).
+[t=0.0142336s, 13540 KB] Plan cost: 4
+[t=0.0142423s, 13540 KB] Dumped 3 optimal plans for this iteration, found additional 0 plans. [t=0.0142487s]
+sync_program_admission_144 __###__315__###__3__###__343__###__3 (1)
+sync_fasting_2 __###__265__###__0__###__323__###__2 (1)
+sync_counseling_140 __###__135__###__1__###__135__###__0 (1)
+finish_2 __###__40__###__0__###__40__###__1 (1)
+[t=0.0143499s, 13540 KB] Plan length: 4 step(s).
+[t=0.0143589s, 13540 KB] Plan cost: 4
+[t=0.0143681s, 13540 KB] Dumped 4 optimal plans for this iteration, found additional 0 plans. [t=0.0143748s]
+sync_program_admission_144 __###__315__###__3__###__343__###__3 (1)
+sync_preanesthesia_134 __###__275__###__0__###__318__###__2 (1)
+sync_counseling_140 __###__135__###__1__###__135__###__0 (1)
+finish_98 __###__126__###__0__###__126__###__1 (1)
+[t=0.0144972s, 13540 KB] Plan length: 4 step(s).
+[t=0.0145062s, 13540 KB] Plan cost: 4
+[t=0.0145157s, 13540 KB] Dumped 5 optimal plans for this iteration, found additional 0 plans. [t=0.014522s]
+[t=0.0146317s, 13540 KB] Dumped 5 optimal plans for this iteration, found additional 0 plans. [t=0.0146375s]
+sync_program_admission_144 __###__315__###__3__###__343__###__3 (1)
+sync_thromboprophylaxis_0 __###__309__###__0__###__316__###__2 (1)
+sync_counseling_140 __###__135__###__1__###__135__###__0 (1)
+finish_32 __###__54__###__0__###__54__###__1 (1)
+[t=0.0148041s, 13540 KB] Plan length: 4 step(s).
+[t=0.0148128s, 13540 KB] Plan cost: 4
+[t=0.0148225s, 13540 KB] Dumped 6 optimal plans for this iteration, found additional 0 plans. [t=0.0148285s]
+[t=0.0150287s, 13540 KB] Done extending partial order plans with symmetries
+[t=0.0150435s, 13540 KB] Dumping plans before reformulation 
+[t=0.0150568s, 13540 KB] Dumped 6 optimal plans for this iteration, found additional 0 plans. [t=0.0150632s]
+[t=0.0150641s, 13540 KB] Done dumping plans before reformulation
+Initial state var index: 81
+Solution found.
+Peak memory: 13540 KB
+search exit code: 0
+
+
+
+[t=2.4801e-05s, 11352 KB] reading input...
+[t=0.0239003s, 12152 KB] done reading input!
+[t=0.0249053s, 12676 KB] Initializing landmark cut heuristic...
+[t=0.0250238s, 12676 KB] Building successor generator...done!
+[t=0.025504s, 12940 KB] peak memory difference for successor generator creation: 264 KB
+[t=0.0255149s, 12940 KB] time for successor generation creation: 0.000402086s
+[t=0.0255263s, 12940 KB] Variables: 82
+[t=0.0255342s, 12940 KB] FactPairs: 164
+[t=0.0255402s, 12940 KB] Bytes per state: 12
+[t=0.0255492s, 12940 KB] Initializing symmetries (eager search)
+[t=0.0255555s, 12940 KB] Initializing symmetries
+[t=0.0258935s, 13092 KB] Using Bliss to find group generators
+[t=0.0280852s, 13908 KB] Done initializing symmetries: 0.00254848s
+[t=0.0281196s, 13908 KB] Size of the grounded symmetry graph: 623
+[t=0.0281296s, 13908 KB] Number of search generators (affecting facts): 19
+[t=0.0281354s, 13908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0281499s, 13908 KB] Total number of generators: 19
+[t=0.0282516s, 13908 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.0283795s, 13908 KB] New best heuristic value for lmcut: 2
+[t=0.0284009s, 13908 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0284109s, 13908 KB] f = 2, 1 evaluated, 0 expanded
+[t=0.028419s, 13908 KB] Initial heuristic value for lmcut: 2
+[t=0.0285879s, 13908 KB] pruning method: stubborn sets simple
+[t=0.0286923s, 13908 KB] f = 3, 2 evaluated, 1 expanded
+[t=0.0290678s, 13908 KB] f = 4, 6 evaluated, 2 expanded
+[t=0.0296469s, 13908 KB] f = 5, 16 evaluated, 4 expanded
+[t=0.0300307s, 13908 KB] New best heuristic value for lmcut: 1
+[t=0.0300542s, 13908 KB] g=4, 21 evaluated, 6 expanded
+[t=0.0302498s, 13908 KB] New best heuristic value for lmcut: 0
+[t=0.0302676s, 13908 KB] g=5, 28 evaluated, 7 expanded
+[t=0.0302785s, 13908 KB] Solution found!
+[t=0.0303331s, 13908 KB] Actual search time: 0.00173498s
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_antibiotic_prophylaxis_149 __###__129__###__0__###__339__###__3__###__339__###__0 (1)
+sync_bowel_preparation_133 __###__131__###__0__###__327__###__2__###__327__###__1 (1)
+finish_51 __###__75__###__0__###__75__###__0__###__75__###__0 (1)
+[t=0.0303414s, 13908 KB] Plan length: 5 step(s).
+[t=0.0303414s, 13908 KB] Plan cost: 5
+[t=0.0303414s, 13908 KB] Expanded 8 state(s).
+[t=0.0303414s, 13908 KB] Reopened 0 state(s).
+[t=0.0303414s, 13908 KB] Evaluated 28 state(s).
+[t=0.0303414s, 13908 KB] Evaluations: 28
+[t=0.0303414s, 13908 KB] Generated 53 state(s).
+[t=0.0303414s, 13908 KB] Dead ends: 2 state(s).
+[t=0.0303414s, 13908 KB] Expanded until last jump: 4 state(s).
+[t=0.0303414s, 13908 KB] Reopened until last jump: 0 state(s).
+[t=0.0303414s, 13908 KB] Evaluated until last jump: 16 state(s).
+[t=0.0303414s, 13908 KB] Generated until last jump: 28 state(s).
+[t=0.0303414s, 13908 KB] Number of registered states: 48
+[t=0.0303414s, 13908 KB] Int hash set load factor: 48/64 = 0.75
+[t=0.0303414s, 13908 KB] Int hash set resizes: 6
+[t=0.0303414s, 13908 KB] total successors before pruning: 53
+[t=0.0303414s, 13908 KB] total successors after pruning: 53
+[t=0.0303414s, 13908 KB] Pruning ratio: 0
+[t=0.0303414s, 13908 KB] Time for pruning operators: 0.00421161s
+[t=0.0303414s, 13908 KB] Search time: 0.00209026s
+[t=0.0303414s, 13908 KB] Total time: 0.0303414s
+Solution found.
+Peak memory: 13908 KB
+search exit code: 0
+
+
+
+[t=2.3504e-05s, 11352 KB] reading input...
+[t=0.023005s, 12152 KB] done reading input!
+[t=0.0238097s, 12408 KB] Building successor generator...done!
+[t=0.0242016s, 12672 KB] peak memory difference for successor generator creation: 264 KB
+[t=0.0242091s, 12672 KB] time for successor generation creation: 0.000324307s
+[t=0.0242274s, 12672 KB] Variables: 82
+[t=0.0242345s, 12672 KB] FactPairs: 164
+[t=0.0242403s, 12672 KB] Bytes per state: 12
+[t=0.0242481s, 12672 KB] Initializing symmetries for extending plans with
+[t=0.024256s, 12672 KB] Initializing symmetries
+[t=0.0245456s, 12836 KB] Using Bliss to find group generators
+[t=0.0268047s, 13664 KB] Done initializing symmetries: 0.00257082s
+[t=0.0268408s, 13664 KB] Size of the grounded symmetry graph: 624
+[t=0.0268507s, 13664 KB] Number of search generators (affecting facts): 19
+[t=0.026857s, 13664 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.026863s, 13664 KB] Total number of generators: 19
+[t=0.0270359s, 13664 KB] Reading plan from file /tmp/planner_runs/e3c52735-6c71-4b81-8463-0cbb5fc7cf0c/sas_plan.14
+[t=0.0270729s, 13664 KB] Adding the found plan:  Creating partial order plans by naively reducing all orders... 
+[t=0.0271052s, 13664 KB] Adding first plan
+[t=0.0271219s, 13664 KB] Done, dumping before the next step
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_antibiotic_prophylaxis_149 __###__129__###__0__###__339__###__3__###__339__###__0 (1)
+sync_bowel_preparation_133 __###__131__###__0__###__327__###__2__###__327__###__1 (1)
+finish_51 __###__75__###__0__###__75__###__0__###__75__###__0 (1)
+[t=0.0272668s, 13664 KB] Plan length: 5 step(s).
+[t=0.0272777s, 13664 KB] Plan cost: 5
+[t=0.0272852s, 13664 KB] Dumped 1 optimal plans for this iteration, found additional 0 plans. [t=0.0272917s]
+[t=0.0272926s, 13664 KB] Done dumping
+[t=0.0272988s, 13664 KB] Starting adding plans in DFS manner, no duplicate detection ... 
+[t=0.0273109s, 13664 KB] Computing the distances!!
+[t=0.0273169s, 13664 KB] Running Dijkstra!
+[t=0.0273265s, 13664 KB] Running Dijkstra for computing distances from init!
+[t=0.027335s, 13664 KB] Done adding the found plan, dumping the plans so far
+[t=0.0273427s, 13664 KB] Dumped 1 optimal plans for this iteration, found additional 0 plans. [t=0.0273482s]
+[t=0.027349s, 13664 KB] Done dumping the plans
+[t=0.0273546s, 13664 KB] Extending partial order plans with symmetries... sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_antibiotic_prophylaxis_149 __###__129__###__0__###__339__###__3__###__339__###__0 (1)
+sync_carbohydrate_loading_146 __###__132__###__0__###__324__###__2__###__324__###__1 (1)
+finish_39 __###__61__###__0__###__61__###__0__###__61__###__0 (1)
+Plan length: 5 step(s).
+[t=0.0275111s, 13664 KB] Plan cost: 5
+[t=0.0275363s, 13664 KB] Dumped 2 optimal plans for this iteration, found additional 0 plans. [t=0.0275443s]
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_bowel_preparation_133 __###__131__###__0__###__338__###__3__###__338__###__0 (1)
+sync_antibiotic_prophylaxis_149 __###__129__###__0__###__321__###__2__###__321__###__1 (1)
+finish_51 __###__75__###__0__###__75__###__0__###__75__###__0 (1)
+[t=0.0275797s, 13664 KB] Plan length: 5 step(s).
+[t=0.0275874s, 13664 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_bowel_preparation_133 __###__131__###__0__###__338__###__3__###__338__###__0 (1)
+sync_carbohydrate_loading_146 __###__132__###__0__###__324__###__2__###__324__###__1 (1)
+finish_54 __###__78__###__0__###__78__###__0__###__78__###__0 (1)
+[t=0.0276099s, 13664 KB] Plan length: 5 step(s).
+[t=0.0276158s, 13664 KB] Plan cost: 5
+[t=0.0276249s, 13664 KB] Dumped 4 optimal plans for this iteration, found additional 0 plans. [t=0.0276313s]
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_bowel_preparation_133 __###__131__###__0__###__338__###__3__###__338__###__0 (1)
+sync_fasting_2 __###__265__###__0__###__323__###__2__###__323__###__1 (1)
+finish_18 __###__38__###__0__###__38__###__0__###__38__###__0 (1)
+[t=0.0278234s, 13664 KB] Plan length: 5 step(s).
+[t=0.0278506s, 13664 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_antibiotic_prophylaxis_149 __###__129__###__0__###__339__###__3__###__339__###__0 (1)
+sync_fasting_2 __###__265__###__0__###__323__###__2__###__323__###__1 (1)
+finish_3 __###__51__###__0__###__51__###__0__###__51__###__0 (1)
+[t=0.0278827s, 13664 KB] Plan length: 5 step(s).
+[t=0.0279024s, 13664 KB] Plan cost: 5
+[t=0.0279227s, 13664 KB] Dumped 6 optimal plans for this iteration, found additional 0 plans. [t=0.0279315s]
+[t=0.0279466s, 13664 KB] Dumped 6 optimal plans for this iteration, found additional 0 plans. [t=0.0279526s]
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_bowel_preparation_133 __###__131__###__0__###__338__###__3__###__338__###__0 (1)
+sync_preanesthesia_134 __###__275__###__0__###__318__###__2__###__318__###__1 (1)
+finish_114 __###__18__###__0__###__18__###__0__###__18__###__0 (1)
+[t=0.0281715s, 13664 KB] Plan length: 5 step(s).
+[t=0.0281806s, 13664 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_antibiotic_prophylaxis_149 __###__129__###__0__###__339__###__3__###__339__###__0 (1)
+sync_preanesthesia_134 __###__275__###__0__###__318__###__2__###__318__###__1 (1)
+finish_99 __###__127__###__0__###__127__###__0__###__127__###__0 (1)
+[t=0.0282052s, 13664 KB] Plan length: 5 step(s).
+[t=0.028213s, 13664 KB] Plan cost: 5
+[t=0.0282238s, 13664 KB] Dumped 8 optimal plans for this iteration, found additional 0 plans. [t=0.0282309s]
+[t=0.0282559s, 13664 KB] Dumped 8 optimal plans for this iteration, found additional 0 plans. [t=0.0282612s]
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_carbohydrate_loading_146 __###__132__###__0__###__337__###__3__###__337__###__0 (1)
+sync_preanesthesia_134 __###__275__###__0__###__318__###__2__###__318__###__1 (1)
+finish_102 __###__5__###__0__###__5__###__0__###__5__###__0 (1)
+[t=0.0283203s, 13664 KB] Plan length: 5 step(s).
+[t=0.0283287s, 13664 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_carbohydrate_loading_146 __###__132__###__0__###__337__###__3__###__337__###__0 (1)
+sync_bowel_preparation_133 __###__131__###__0__###__327__###__2__###__327__###__1 (1)
+finish_54 __###__78__###__0__###__78__###__0__###__78__###__0 (1)
+[t=0.0283808s, 13664 KB] Plan length: 5 step(s).
+[t=0.0283984s, 13664 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_carbohydrate_loading_146 __###__132__###__0__###__337__###__3__###__337__###__0 (1)
+sync_antibiotic_prophylaxis_149 __###__129__###__0__###__321__###__2__###__321__###__1 (1)
+finish_39 __###__61__###__0__###__61__###__0__###__61__###__0 (1)
+[t=0.0284453s, 13664 KB] Plan length: 5 step(s).
+[t=0.0284624s, 13664 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_carbohydrate_loading_146 __###__132__###__0__###__337__###__3__###__337__###__0 (1)
+sync_fasting_2 __###__265__###__0__###__323__###__2__###__323__###__1 (1)
+finish_6 __###__84__###__0__###__84__###__0__###__84__###__0 (1)
+[t=0.028509s, 13664 KB] Plan length: 5 step(s).
+[t=0.0285264s, 13664 KB] Plan cost: 5
+[t=0.0285492s, 13664 KB] Dumped 12 optimal plans for this iteration, found additional 0 plans. [t=0.0285578s]
+[t=0.0285935s, 13664 KB] Dumped 12 optimal plans for this iteration, found additional 0 plans. [t=0.0286019s]
+[t=0.0288595s, 13664 KB] Dumped 12 optimal plans for this iteration, found additional 0 plans. [t=0.0288677s]
+[t=0.0289131s, 13664 KB] Dumped 12 optimal plans for this iteration, found additional 0 plans. [t=0.0289214s]
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_fasting_2 __###__265__###__0__###__335__###__3__###__335__###__0 (1)
+sync_thromboprophylaxis_0 __###__309__###__0__###__316__###__2__###__316__###__1 (1)
+finish_0 __###__0__###__0__###__0__###__0__###__0__###__0 (1)
+[t=0.0289859s, 13664 KB] Plan length: 5 step(s).
+[t=0.0290032s, 13664 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_fasting_2 __###__265__###__0__###__335__###__3__###__335__###__0 (1)
+sync_carbohydrate_loading_146 __###__132__###__0__###__324__###__2__###__324__###__1 (1)
+finish_6 __###__84__###__0__###__84__###__0__###__84__###__0 (1)
+[t=0.0290429s, 13664 KB] Plan length: 5 step(s).
+[t=0.02906s, 13664 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_fasting_2 __###__265__###__0__###__335__###__3__###__335__###__0 (1)
+sync_antibiotic_prophylaxis_149 __###__129__###__0__###__321__###__2__###__321__###__1 (1)
+finish_3 __###__51__###__0__###__51__###__0__###__51__###__0 (1)
+[t=0.0291073s, 13664 KB] Plan length: 5 step(s).
+[t=0.0291247s, 13664 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_fasting_2 __###__265__###__0__###__335__###__3__###__335__###__0 (1)
+sync_bowel_preparation_133 __###__131__###__0__###__327__###__2__###__327__###__1 (1)
+finish_18 __###__38__###__0__###__38__###__0__###__38__###__0 (1)
+[t=0.0291735s, 13664 KB] Plan length: 5 step(s).
+[t=0.029191s, 13664 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_fasting_2 __###__265__###__0__###__335__###__3__###__335__###__0 (1)
+sync_preanesthesia_134 __###__275__###__0__###__318__###__2__###__318__###__1 (1)
+finish_66 __###__91__###__0__###__91__###__0__###__91__###__0 (1)
+[t=0.0292364s, 13664 KB] Plan length: 5 step(s).
+[t=0.029245s, 13664 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_carbohydrate_loading_146 __###__132__###__0__###__337__###__3__###__337__###__0 (1)
+sync_thromboprophylaxis_0 __###__309__###__0__###__316__###__2__###__316__###__1 (1)
+finish_36 __###__58__###__0__###__58__###__0__###__58__###__0 (1)
+[t=0.0292692s, 13664 KB] Plan length: 5 step(s).
+[t=0.0292844s, 13664 KB] Plan cost: 5
+[t=0.0293088s, 13664 KB] Dumped 18 optimal plans for this iteration, found additional 0 plans. [t=0.0293173s]
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_bowel_preparation_133 __###__131__###__0__###__338__###__3__###__338__###__0 (1)
+sync_thromboprophylaxis_0 __###__309__###__0__###__316__###__2__###__316__###__1 (1)
+finish_48 __###__71__###__0__###__71__###__0__###__71__###__0 (1)
+[t=0.0293885s, 13664 KB] Plan length: 5 step(s).
+[t=0.0294061s, 13664 KB] Plan cost: 5
+[t=0.0294297s, 13664 KB] Dumped 19 optimal plans for this iteration, found additional 0 plans. [t=0.0294382s]
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_antibiotic_prophylaxis_149 __###__129__###__0__###__339__###__3__###__339__###__0 (1)
+sync_thromboprophylaxis_0 __###__309__###__0__###__316__###__2__###__316__###__1 (1)
+finish_33 __###__55__###__0__###__55__###__0__###__55__###__0 (1)
+[t=0.0295196s, 13664 KB] Plan length: 5 step(s).
+[t=0.029537s, 13664 KB] Plan cost: 5
+[t=0.0295572s, 13664 KB] Dumped 20 optimal plans for this iteration, found additional 0 plans. [t=0.0295656s]
+[t=0.0299274s, 13664 KB] Dumped 20 optimal plans for this iteration, found additional 0 plans. [t=0.029936s]
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_preanesthesia_134 __###__275__###__0__###__336__###__3__###__336__###__0 (1)
+sync_fasting_2 __###__265__###__0__###__323__###__2__###__323__###__1 (1)
+finish_66 __###__91__###__0__###__91__###__0__###__91__###__0 (1)
+[t=0.0300045s, 13664 KB] Plan length: 5 step(s).
+[t=0.0300214s, 13664 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_preanesthesia_134 __###__275__###__0__###__336__###__3__###__336__###__0 (1)
+sync_bowel_preparation_133 __###__131__###__0__###__327__###__2__###__327__###__1 (1)
+finish_114 __###__18__###__0__###__18__###__0__###__18__###__0 (1)
+[t=0.0300671s, 13664 KB] Plan length: 5 step(s).
+[t=0.0300842s, 13664 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_preanesthesia_134 __###__275__###__0__###__336__###__3__###__336__###__0 (1)
+sync_antibiotic_prophylaxis_149 __###__129__###__0__###__321__###__2__###__321__###__1 (1)
+finish_99 __###__127__###__0__###__127__###__0__###__127__###__0 (1)
+[t=0.030131s, 13664 KB] Plan length: 5 step(s).
+[t=0.0301478s, 13664 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_preanesthesia_134 __###__275__###__0__###__336__###__3__###__336__###__0 (1)
+sync_carbohydrate_loading_146 __###__132__###__0__###__324__###__2__###__324__###__1 (1)
+finish_102 __###__5__###__0__###__5__###__0__###__5__###__0 (1)
+[t=0.030195s, 13664 KB] Plan length: 5 step(s).
+[t=0.0302119s, 13664 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_preanesthesia_134 __###__275__###__0__###__336__###__3__###__336__###__0 (1)
+sync_thromboprophylaxis_0 __###__309__###__0__###__316__###__2__###__316__###__1 (1)
+finish_96 __###__124__###__0__###__124__###__0__###__124__###__0 (1)
+[t=0.030258s, 13664 KB] Plan length: 5 step(s).
+[t=0.0302753s, 13664 KB] Plan cost: 5
+[t=0.0303017s, 13664 KB] Dumped 25 optimal plans for this iteration, found additional 0 plans. [t=0.0303101s]
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_thromboprophylaxis_0 __###__309__###__0__###__334__###__3__###__334__###__0 (1)
+sync_preanesthesia_134 __###__275__###__0__###__318__###__2__###__318__###__1 (1)
+finish_96 __###__124__###__0__###__124__###__0__###__124__###__0 (1)
+[t=0.0308323s, 13664 KB] Plan length: 5 step(s).
+[t=0.0308434s, 13664 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_thromboprophylaxis_0 __###__309__###__0__###__334__###__3__###__334__###__0 (1)
+sync_carbohydrate_loading_146 __###__132__###__0__###__324__###__2__###__324__###__1 (1)
+finish_36 __###__58__###__0__###__58__###__0__###__58__###__0 (1)
+[t=0.0308873s, 13664 KB] Plan length: 5 step(s).
+[t=0.0309046s, 13664 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_thromboprophylaxis_0 __###__309__###__0__###__334__###__3__###__334__###__0 (1)
+sync_antibiotic_prophylaxis_149 __###__129__###__0__###__321__###__2__###__321__###__1 (1)
+finish_33 __###__55__###__0__###__55__###__0__###__55__###__0 (1)
+[t=0.0309532s, 13664 KB] Plan length: 5 step(s).
+[t=0.0309706s, 13664 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_thromboprophylaxis_0 __###__309__###__0__###__334__###__3__###__334__###__0 (1)
+sync_bowel_preparation_133 __###__131__###__0__###__327__###__2__###__327__###__1 (1)
+finish_48 __###__71__###__0__###__71__###__0__###__71__###__0 (1)
+[t=0.0310168s, 13664 KB] Plan length: 5 step(s).
+[t=0.0310341s, 13664 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0 (1)
+sync_thromboprophylaxis_0 __###__309__###__0__###__334__###__3__###__334__###__0 (1)
+sync_fasting_2 __###__265__###__0__###__323__###__2__###__323__###__1 (1)
+finish_0 __###__0__###__0__###__0__###__0__###__0__###__0 (1)
+[t=0.0310821s, 13664 KB] Plan length: 5 step(s).
+[t=0.0310995s, 13664 KB] Plan cost: 5
+[t=0.0311272s, 13664 KB] Dumped 30 optimal plans for this iteration, found additional 0 plans. [t=0.0311356s]
+[t=0.031918s, 13664 KB] Done extending partial order plans with symmetries
+[t=0.0319354s, 13664 KB] Dumping plans before reformulation 
+[t=0.0319569s, 13664 KB] Dumped 30 optimal plans for this iteration, found additional 0 plans. [t=0.0319632s]
+[t=0.0319729s, 13664 KB] Done dumping plans before reformulation
+Initial state var index: 100
+Solution found.
+Peak memory: 13664 KB
+search exit code: 0
+
+
+
+[t=2.2036e-05s, 11352 KB] reading input...
+[t=0.0245715s, 12176 KB] done reading input!
+[t=0.0264313s, 12848 KB] Initializing landmark cut heuristic...
+[t=0.0266377s, 12980 KB] Building successor generator...done!
+[t=0.0270516s, 13104 KB] peak memory difference for successor generator creation: 124 KB
+[t=0.0270593s, 13104 KB] time for successor generation creation: 0.000334465s
+[t=0.027078s, 13104 KB] Variables: 128
+[t=0.0270865s, 13104 KB] FactPairs: 256
+[t=0.0270923s, 13104 KB] Bytes per state: 16
+[t=0.0271004s, 13104 KB] Initializing symmetries (eager search)
+[t=0.0271067s, 13104 KB] Initializing symmetries
+[t=0.0274586s, 13264 KB] Using Bliss to find group generators
+[t=0.0311573s, 14296 KB] Done initializing symmetries: 0.00412171s
+[t=0.0312773s, 14296 KB] Size of the grounded symmetry graph: 858
+[t=0.0312906s, 14296 KB] Number of search generators (affecting facts): 19
+[t=0.031297s, 14296 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0313042s, 14296 KB] Total number of generators: 19
+[t=0.031487s, 14296 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.0316582s, 14296 KB] New best heuristic value for lmcut: 2
+[t=0.03168s, 14296 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0316892s, 14296 KB] f = 2, 1 evaluated, 0 expanded
+[t=0.0317097s, 14296 KB] Initial heuristic value for lmcut: 2
+[t=0.0319541s, 14296 KB] pruning method: stubborn sets simple
+[t=0.03212s, 14296 KB] f = 3, 2 evaluated, 1 expanded
+[t=0.0326181s, 14296 KB] f = 4, 6 evaluated, 2 expanded
+[t=0.033397s, 14296 KB] f = 5, 16 evaluated, 4 expanded
+[t=0.0343296s, 14296 KB] New best heuristic value for lmcut: 1
+[t=0.0343553s, 14296 KB] g=4, 32 evaluated, 8 expanded
+[t=0.0345097s, 14296 KB] New best heuristic value for lmcut: 0
+[t=0.0345266s, 14296 KB] g=5, 35 evaluated, 9 expanded
+[t=0.034537s, 14296 KB] Solution found!
+[t=0.034586s, 14296 KB] Actual search time: 0.00261529s
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3__###__421__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0__###__451__###__3 (1)
+sync_program_admission_143 __###__276__###__0__###__276__###__0__###__276__###__0__###__276__###__0 (1)
+sync_counseling_138 __###__133__###__0__###__133__###__0__###__133__###__0__###__133__###__0 (1)
+finish_34 __###__56__###__1__###__56__###__0__###__56__###__0__###__56__###__0 (1)
+[t=0.0346033s, 14296 KB] Plan length: 5 step(s).
+[t=0.0346033s, 14296 KB] Plan cost: 5
+[t=0.0346033s, 14296 KB] Expanded 10 state(s).
+[t=0.0346033s, 14296 KB] Reopened 0 state(s).
+[t=0.0346033s, 14296 KB] Evaluated 35 state(s).
+[t=0.0346033s, 14296 KB] Evaluations: 35
+[t=0.0346033s, 14296 KB] Generated 71 state(s).
+[t=0.0346033s, 14296 KB] Dead ends: 3 state(s).
+[t=0.0346033s, 14296 KB] Expanded until last jump: 4 state(s).
+[t=0.0346033s, 14296 KB] Reopened until last jump: 0 state(s).
+[t=0.0346033s, 14296 KB] Evaluated until last jump: 16 state(s).
+[t=0.0346033s, 14296 KB] Generated until last jump: 28 state(s).
+[t=0.0346033s, 14296 KB] Number of registered states: 55
+[t=0.0346033s, 14296 KB] Int hash set load factor: 55/64 = 0.859375
+[t=0.0346033s, 14296 KB] Int hash set resizes: 6
+[t=0.0346033s, 14296 KB] total successors before pruning: 73
+[t=0.0346033s, 14296 KB] total successors after pruning: 71
+[t=0.0346033s, 14296 KB] Pruning ratio: 0.0273973
+[t=0.0346033s, 14296 KB] Time for pruning operators: 0.00637036s
+[t=0.0346033s, 14296 KB] Search time: 0.00311732s
+[t=0.0346033s, 14296 KB] Total time: 0.0346033s
+Solution found.
+Peak memory: 14296 KB
+search exit code: 0
+
+
+
+[t=2.757e-05s, 11352 KB] reading input...
+[t=0.0243479s, 12176 KB] done reading input!
+[t=0.0252217s, 12572 KB] Building successor generator...done!
+[t=0.0256573s, 12708 KB] peak memory difference for successor generator creation: 136 KB
+[t=0.0256774s, 12708 KB] time for successor generation creation: 0.000357575s
+[t=0.0256867s, 12708 KB] Variables: 128
+[t=0.0256941s, 12708 KB] FactPairs: 256
+[t=0.0256999s, 12708 KB] Bytes per state: 16
+[t=0.025708s, 12708 KB] Initializing symmetries for extending plans with
+[t=0.0257156s, 12708 KB] Initializing symmetries
+[t=0.0260734s, 12980 KB] Using Bliss to find group generators
+[t=0.0291156s, 14104 KB] Done initializing symmetries: 0.00342807s
+[t=0.0291571s, 14104 KB] Size of the grounded symmetry graph: 859
+[t=0.0291671s, 14104 KB] Number of search generators (affecting facts): 19
+[t=0.029173s, 14104 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.029181s, 14104 KB] Total number of generators: 19
+[t=0.0294267s, 14104 KB] Reading plan from file /tmp/planner_runs/e3c52735-6c71-4b81-8463-0cbb5fc7cf0c/sas_plan.44
+[t=0.0294861s, 14104 KB] Adding the found plan:  Creating partial order plans by naively reducing all orders... 
+[t=0.0295236s, 14104 KB] Adding first plan
+[t=0.0295387s, 14104 KB] Done, dumping before the next step
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3__###__421__###__3 (1)
+sync_counseling_140 __###__314__###__3__###__341__###__3__###__341__###__0__###__451__###__3 (1)
+sync_program_admission_143 __###__276__###__0__###__276__###__0__###__276__###__0__###__276__###__0 (1)
+sync_counseling_138 __###__133__###__0__###__133__###__0__###__133__###__0__###__133__###__0 (1)
+finish_34 __###__56__###__1__###__56__###__0__###__56__###__0__###__56__###__0 (1)
+[t=0.0296567s, 14104 KB] Plan length: 5 step(s).
+[t=0.0296677s, 14104 KB] Plan cost: 5
+[t=0.0296753s, 14104 KB] Dumped 1 optimal plans for this iteration, found additional 0 plans. [t=0.0296815s]
+[t=0.0296924s, 14104 KB] Done dumping
+[t=0.0297018s, 14104 KB] Starting adding plans in DFS manner, no duplicate detection ... 
+[t=0.0297244s, 14104 KB] Computing the distances!!
+[t=0.0297421s, 14104 KB] Running Dijkstra!
+[t=0.0297547s, 14104 KB] Running Dijkstra for computing distances from init!
+[t=0.0297733s, 14104 KB] Done adding the found plan, dumping the plans so far
+[t=0.0297844s, 14104 KB] Dumped 1 optimal plans for this iteration, found additional 0 plans. [t=0.0297907s]
+[t=0.0298009s, 14104 KB] Done dumping the plans
+[t=0.0298098s, 14104 KB] Extending partial order plans with symmetries... Done extending partial order plans with symmetries
+[t=0.0300967s, 14104 KB] Dumping plans before reformulation 
+[t=0.0301137s, 14104 KB] Dumped 1 optimal plans for this iteration, found additional 0 plans. [t=0.0301202s]
+[t=0.0301212s, 14104 KB] Done dumping plans before reformulation
+Initial state var index: 134
+Solution found.
+Peak memory: 14104 KB
+search exit code: 0
+
+
+
+[t=2.3062e-05s, 11352 KB] reading input...
+[t=0.0239972s, 12264 KB] done reading input!
+[t=0.0251299s, 12928 KB] Initializing landmark cut heuristic...
+[t=0.0252327s, 12928 KB] Building successor generator...done!
+[t=0.025643s, 13192 KB] peak memory difference for successor generator creation: 264 KB
+[t=0.0256594s, 13192 KB] time for successor generation creation: 0.000352955s
+[t=0.0256689s, 13192 KB] Variables: 135
+[t=0.0256764s, 13192 KB] FactPairs: 270
+[t=0.0256822s, 13192 KB] Bytes per state: 20
+[t=0.0256907s, 13192 KB] Initializing symmetries (eager search)
+[t=0.0256973s, 13192 KB] Initializing symmetries
+[t=0.0260318s, 13324 KB] Using Bliss to find group generators
+[t=0.0291549s, 14644 KB] Done initializing symmetries: 0.0034792s
+[t=0.0291913s, 14644 KB] Size of the grounded symmetry graph: 889
+[t=0.0292015s, 14644 KB] Number of search generators (affecting facts): 19
+[t=0.0292073s, 14644 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0292131s, 14644 KB] Total number of generators: 19
+[t=0.0293226s, 14644 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.0294778s, 14644 KB] New best heuristic value for lmcut: 2
+[t=0.0295016s, 14644 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0295106s, 14644 KB] f = 2, 1 evaluated, 0 expanded
+[t=0.0295317s, 14644 KB] Initial heuristic value for lmcut: 2
+[t=0.0297292s, 14644 KB] pruning method: stubborn sets simple
+[t=0.0298744s, 14644 KB] f = 3, 2 evaluated, 1 expanded
+[t=0.0303376s, 14644 KB] f = 4, 6 evaluated, 2 expanded
+[t=0.0310812s, 14644 KB] f = 5, 16 evaluated, 4 expanded
+[t=0.0322869s, 14644 KB] New best heuristic value for lmcut: 1
+[t=0.0323082s, 14644 KB] g=4, 38 evaluated, 9 expanded
+[t=0.0325384s, 14644 KB] New best heuristic value for lmcut: 0
+[t=0.0325536s, 14644 KB] g=5, 45 evaluated, 10 expanded
+[t=0.0325632s, 14644 KB] Solution found!
+[t=0.0326454s, 14644 KB] Actual search time: 0.00290587s
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3__###__421__###__3__###__483__###__3 (1)
+sync_antibiotic_prophylaxis_149 __###__129__###__0__###__321__###__2__###__366__###__3__###__366__###__0__###__366__###__0 (1)
+sync_counseling_140 __###__135__###__1__###__135__###__0__###__368__###__3__###__368__###__0__###__368__###__0 (1)
+sync_bowel_preparation_133 __###__131__###__0__###__131__###__1__###__131__###__0__###__131__###__0__###__131__###__0 (1)
+finish_51 __###__75__###__0__###__75__###__0__###__75__###__0__###__75__###__1__###__75__###__0 (1)
+[t=0.0326617s, 14644 KB] Plan length: 5 step(s).
+[t=0.0326617s, 14644 KB] Plan cost: 5
+[t=0.0326617s, 14644 KB] Expanded 11 state(s).
+[t=0.0326617s, 14644 KB] Reopened 0 state(s).
+[t=0.0326617s, 14644 KB] Evaluated 45 state(s).
+[t=0.0326617s, 14644 KB] Evaluations: 45
+[t=0.0326617s, 14644 KB] Generated 80 state(s).
+[t=0.0326617s, 14644 KB] Dead ends: 4 state(s).
+[t=0.0326617s, 14644 KB] Expanded until last jump: 4 state(s).
+[t=0.0326617s, 14644 KB] Reopened until last jump: 0 state(s).
+[t=0.0326617s, 14644 KB] Evaluated until last jump: 16 state(s).
+[t=0.0326617s, 14644 KB] Generated until last jump: 28 state(s).
+[t=0.0326617s, 14644 KB] Number of registered states: 75
+[t=0.0326617s, 14644 KB] Int hash set load factor: 75/128 = 0.585938
+[t=0.0326617s, 14644 KB] Int hash set resizes: 7
+[t=0.0326617s, 14644 KB] total successors before pruning: 80
+[t=0.0326617s, 14644 KB] total successors after pruning: 80
+[t=0.0326617s, 14644 KB] Pruning ratio: 0
+[t=0.0326617s, 14644 KB] Time for pruning operators: 0.00557639s
+[t=0.0326617s, 14644 KB] Search time: 0.00333978s
+[t=0.0326617s, 14644 KB] Total time: 0.0326617s
+Solution found.
+Peak memory: 14644 KB
+search exit code: 0
+
+
+
+[t=2.6004e-05s, 11352 KB] reading input...
+[t=0.0240993s, 12264 KB] done reading input!
+[t=0.0248927s, 12664 KB] Building successor generator...done!
+[t=0.0253306s, 12788 KB] peak memory difference for successor generator creation: 124 KB
+[t=0.0253383s, 12788 KB] time for successor generation creation: 0.000351989s
+[t=0.0253554s, 12788 KB] Variables: 135
+[t=0.0253628s, 12788 KB] FactPairs: 270
+[t=0.0253685s, 12788 KB] Bytes per state: 20
+[t=0.0253761s, 12788 KB] Initializing symmetries for extending plans with
+[t=0.0253834s, 12788 KB] Initializing symmetries
+[t=0.0257246s, 12944 KB] Using Bliss to find group generators
+[t=0.0289139s, 14436 KB] Done initializing symmetries: 0.00355422s
+[t=0.0289544s, 14436 KB] Size of the grounded symmetry graph: 890
+[t=0.0289654s, 14436 KB] Number of search generators (affecting facts): 19
+[t=0.028972s, 14436 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0289796s, 14436 KB] Total number of generators: 19
+[t=0.0291591s, 14436 KB] Reading plan from file /tmp/planner_runs/e3c52735-6c71-4b81-8463-0cbb5fc7cf0c/sas_plan.45
+[t=0.0292162s, 14436 KB] Adding the found plan:  Creating partial order plans by naively reducing all orders... 
+[t=0.0292399s, 14436 KB] Adding first plan
+[t=0.0292747s, 14436 KB] Done, dumping before the next step
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3__###__421__###__3__###__483__###__3 (1)
+sync_antibiotic_prophylaxis_149 __###__129__###__0__###__321__###__2__###__366__###__3__###__366__###__0__###__366__###__0 (1)
+sync_counseling_140 __###__135__###__1__###__135__###__0__###__368__###__3__###__368__###__0__###__368__###__0 (1)
+sync_bowel_preparation_133 __###__131__###__0__###__131__###__1__###__131__###__0__###__131__###__0__###__131__###__0 (1)
+finish_51 __###__75__###__0__###__75__###__0__###__75__###__0__###__75__###__1__###__75__###__0 (1)
+[t=0.0293982s, 14436 KB] Plan length: 5 step(s).
+[t=0.0294188s, 14436 KB] Plan cost: 5
+[t=0.0294288s, 14436 KB] Dumped 1 optimal plans for this iteration, found additional 0 plans. [t=0.0294348s]
+[t=0.0294358s, 14436 KB] Done dumping
+[t=0.0294417s, 14436 KB] Starting adding plans in DFS manner, no duplicate detection ... 
+[t=0.029457s, 14436 KB] Computing the distances!!
+[t=0.0294755s, 14436 KB] Running Dijkstra!
+[t=0.029486s, 14436 KB] Running Dijkstra for computing distances from init!
+[t=0.0294944s, 14436 KB] Done adding the found plan, dumping the plans so far
+[t=0.0295022s, 14436 KB] Dumped 1 optimal plans for this iteration, found additional 0 plans. [t=0.0295076s]
+[t=0.02951s, 14436 KB] Done dumping the plans
+[t=0.029526s, 14436 KB] Extending partial order plans with symmetries... sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3__###__421__###__3__###__483__###__3 (1)
+sync_antibiotic_prophylaxis_149 __###__129__###__0__###__321__###__2__###__366__###__3__###__366__###__0__###__366__###__0 (1)
+sync_counseling_140 __###__135__###__1__###__135__###__0__###__368__###__3__###__368__###__0__###__368__###__0 (1)
+sync_carbohydrate_loading_146 __###__132__###__0__###__132__###__1__###__132__###__0__###__132__###__0__###__132__###__0 (1)
+finish_39 __###__61__###__0__###__61__###__0__###__61__###__0__###__61__###__1__###__61__###__0 (1)
+Plan length: 5 step(s).
+[t=0.0296453s, 14436 KB] Plan cost: 5
+[t=0.0296579s, 14436 KB] Dumped 2 optimal plans for this iteration, found additional 0 plans. [t=0.0296652s]
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3__###__421__###__3__###__483__###__3 (1)
+sync_bowel_preparation_133 __###__131__###__0__###__327__###__2__###__365__###__3__###__365__###__0__###__365__###__0 (1)
+sync_counseling_140 __###__135__###__1__###__135__###__0__###__367__###__3__###__367__###__0__###__367__###__0 (1)
+sync_antibiotic_prophylaxis_149 __###__129__###__0__###__129__###__1__###__129__###__0__###__129__###__0__###__129__###__0 (1)
+finish_51 __###__75__###__0__###__75__###__0__###__75__###__0__###__75__###__1__###__75__###__0 (1)
+[t=0.0296988s, 14436 KB] Plan length: 5 step(s).
+[t=0.0297055s, 14436 KB] Plan cost: 5
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3__###__421__###__3__###__483__###__3 (1)
+sync_bowel_preparation_133 __###__131__###__0__###__327__###__2__###__365__###__3__###__365__###__0__###__365__###__0 (1)
+sync_counseling_140 __###__135__###__1__###__135__###__0__###__367__###__3__###__367__###__0__###__367__###__0 (1)
+sync_carbohydrate_loading_146 __###__132__###__0__###__132__###__1__###__132__###__0__###__132__###__0__###__132__###__0 (1)
+finish_54 __###__78__###__0__###__78__###__0__###__78__###__0__###__78__###__1__###__78__###__0 (1)
+[t=0.029747s, 14436 KB] Plan length: 5 step(s).
+[t=0.0297647s, 14436 KB] Plan cost: 5
+[t=0.0297848s, 14436 KB] Dumped 4 optimal plans for this iteration, found additional 0 plans. [t=0.0297937s]
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3__###__421__###__3__###__483__###__3 (1)
+sync_bowel_preparation_133 __###__131__###__0__###__327__###__2__###__365__###__3__###__365__###__0__###__365__###__0 (1)
+sync_counseling_140 __###__135__###__1__###__135__###__0__###__367__###__3__###__367__###__0__###__367__###__0 (1)
+sync_fasting_2 __###__265__###__0__###__265__###__1__###__265__###__0__###__265__###__0__###__265__###__0 (1)
+finish_18 __###__38__###__0__###__38__###__0__###__38__###__0__###__38__###__1__###__38__###__0 (1)
+[t=0.030012s, 14436 KB] Plan length: 5 step(s).
+[t=0.0300225s, 14436 KB] Plan cost: 5
+[t=0.0300324s, 14436 KB] Dumped 5 optimal plans for this iteration, found additional 0 plans. [t=0.0300387s]
+sync_program_admission_144 __###__315__###__3__###__343__###__3__###__373__###__3__###__421__###__3__###__483__###__3 (1)
+sync_carbohydrate_loading_146 __###__132__###__0__###__324__###__2__###__364__###__3__###__364__###__0__###__364__###__0 (1)
+sync_counseling_140 __###__135__###__1__###__135__###__0__###__370__###__3__###__370__###__0__###__370__###__0 (1)
+sync_bowel_preparation_133 __###__131__###__0__###__131__###__1__###__131__###__0__###__131__###__0__###__131__###__0 (1)
+finish_54 __###__78__###__0__###__78__###__0__###__78__###__0__###__78__###__1__###__78__###__0 (1)
+[t=0.0300779s, 14436 KB] Plan length: 5 step(s).
+[t=0.0300841s, 14436 KB] Plan cost: 5
+[t=0.0300904s, 14436 KB] Dumped 6 optimal plans for this iteration, found additional 0 plans. [t=0.0300959s]
+[t=0.0300968s, 14436 KB] Done extending partial order plans with symmetries
+[t=0.0301031s, 14436 KB] Dumping plans before reformulation 
+[t=0.0301089s, 14436 KB] Dumped 6 optimal plans for this iteration, found additional 0 plans. [t=0.0301143s]
+[t=0.0301151s, 14436 KB] Done dumping plans before reformulation
+Solution found.
+Peak memory: 14436 KB
+search exit code: 0
+
+
+---BEGIN_PLANS---
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(finish_34 )
+; cost = 3 (unit cost)
+(sync_program_admission_144 )
+(sync_carbohydrate_loading_146 )
+(sync_counseling_140 )
+(finish_38 )
+; cost = 4 (unit cost)
+(sync_program_admission_144 )
+(sync_fasting_2 )
+(sync_counseling_140 )
+(finish_2 )
+; cost = 4 (unit cost)
+(sync_program_admission_144 )
+(sync_preanesthesia_134 )
+(sync_counseling_140 )
+(finish_98 )
+; cost = 4 (unit cost)
+(sync_program_admission_144 )
+(sync_thromboprophylaxis_0 )
+(sync_counseling_140 )
+(finish_32 )
+; cost = 4 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_antibiotic_prophylaxis_149 )
+(sync_bowel_preparation_133 )
+(finish_51 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_antibiotic_prophylaxis_149 )
+(sync_carbohydrate_loading_146 )
+(finish_39 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_bowel_preparation_133 )
+(sync_antibiotic_prophylaxis_149 )
+(finish_51 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_bowel_preparation_133 )
+(sync_carbohydrate_loading_146 )
+(finish_54 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_bowel_preparation_133 )
+(sync_fasting_2 )
+(finish_18 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_antibiotic_prophylaxis_149 )
+(sync_fasting_2 )
+(finish_3 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_antibiotic_prophylaxis_149 )
+(finish_35 )
+; cost = 4 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_bowel_preparation_133 )
+(sync_preanesthesia_134 )
+(finish_114 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_antibiotic_prophylaxis_149 )
+(sync_preanesthesia_134 )
+(finish_99 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_carbohydrate_loading_146 )
+(sync_preanesthesia_134 )
+(finish_102 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_carbohydrate_loading_146 )
+(sync_bowel_preparation_133 )
+(finish_54 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_carbohydrate_loading_146 )
+(sync_antibiotic_prophylaxis_149 )
+(finish_39 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_carbohydrate_loading_146 )
+(sync_fasting_2 )
+(finish_6 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_fasting_2 )
+(sync_thromboprophylaxis_0 )
+(finish_0 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_fasting_2 )
+(sync_carbohydrate_loading_146 )
+(finish_6 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_fasting_2 )
+(sync_antibiotic_prophylaxis_149 )
+(finish_3 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_fasting_2 )
+(sync_bowel_preparation_133 )
+(finish_18 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_bowel_preparation_133 )
+(finish_50 )
+; cost = 4 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_fasting_2 )
+(sync_preanesthesia_134 )
+(finish_66 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_carbohydrate_loading_146 )
+(sync_thromboprophylaxis_0 )
+(finish_36 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_bowel_preparation_133 )
+(sync_thromboprophylaxis_0 )
+(finish_48 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_antibiotic_prophylaxis_149 )
+(sync_thromboprophylaxis_0 )
+(finish_33 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_preanesthesia_134 )
+(sync_fasting_2 )
+(finish_66 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_preanesthesia_134 )
+(sync_bowel_preparation_133 )
+(finish_114 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_preanesthesia_134 )
+(sync_antibiotic_prophylaxis_149 )
+(finish_99 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_preanesthesia_134 )
+(sync_carbohydrate_loading_146 )
+(finish_102 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_preanesthesia_134 )
+(sync_thromboprophylaxis_0 )
+(finish_96 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_thromboprophylaxis_0 )
+(sync_preanesthesia_134 )
+(finish_96 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_carbohydrate_loading_146 )
+(finish_38 )
+; cost = 4 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_thromboprophylaxis_0 )
+(sync_carbohydrate_loading_146 )
+(finish_36 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_thromboprophylaxis_0 )
+(sync_antibiotic_prophylaxis_149 )
+(finish_33 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_thromboprophylaxis_0 )
+(sync_bowel_preparation_133 )
+(finish_48 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_thromboprophylaxis_0 )
+(sync_fasting_2 )
+(finish_0 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_program_admission_143 )
+(sync_counseling_138 )
+(finish_34 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_antibiotic_prophylaxis_149 )
+(sync_counseling_140 )
+(sync_bowel_preparation_133 )
+(finish_51 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_antibiotic_prophylaxis_149 )
+(sync_counseling_140 )
+(sync_carbohydrate_loading_146 )
+(finish_39 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_bowel_preparation_133 )
+(sync_counseling_140 )
+(sync_antibiotic_prophylaxis_149 )
+(finish_51 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_bowel_preparation_133 )
+(sync_counseling_140 )
+(sync_carbohydrate_loading_146 )
+(finish_54 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_bowel_preparation_133 )
+(sync_counseling_140 )
+(sync_fasting_2 )
+(finish_18 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_fasting_2 )
+(finish_2 )
+; cost = 4 (unit cost)
+(sync_program_admission_144 )
+(sync_carbohydrate_loading_146 )
+(sync_counseling_140 )
+(sync_bowel_preparation_133 )
+(finish_54 )
+; cost = 5 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_preanesthesia_134 )
+(finish_98 )
+; cost = 4 (unit cost)
+(sync_program_admission_144 )
+(sync_counseling_140 )
+(sync_thromboprophylaxis_0 )
+(finish_32 )
+; cost = 4 (unit cost)
+(sync_program_admission_144 )
+(sync_antibiotic_prophylaxis_149 )
+(sync_counseling_140 )
+(finish_35 )
+; cost = 4 (unit cost)
+(sync_program_admission_144 )
+(sync_bowel_preparation_133 )
+(sync_counseling_140 )
+(finish_50 )
+; cost = 4 (unit cost)
+
+
+=== STDERR ===
