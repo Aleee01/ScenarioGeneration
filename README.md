@@ -110,9 +110,14 @@ docker run -v $(pwd)/outputs:/app/outputs scenario-gen my_model.json topq -n 5 -
 ```bash
 docker run -v $(pwd)/outputs:/app/outputs scenario-gen my_model.json diverse -n 20
 ```
+### Using Models from `experiments`
 
+If you want to use input models located in the `experiments` folder (e.g., `experiments/UniversityAdmission/University.json`), you must mount **both the `experiments` folder and the `outputs` folder**. 
+
+```bash
+docker run --rm -v "${PWD}/outputs:/app/outputs" -v "${PWD}/experiments:/app/experiments" scenario-gen experiments/UniversityAdmission/University.json topk
+```
 ---
-
 
 ## Credits and Dependencies
 

@@ -102,7 +102,6 @@ def generate_pddl(model_path, output_dir="pddl_output"):
 
     constraints = filter_absence_constraints(constraints)
     alphabet = extract_alphabet(constraints, data)
-    print(alphabet)
 
     all_automata = []
     all_transitions = []
