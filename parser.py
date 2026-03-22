@@ -79,7 +79,7 @@ def parse_declare_json(path):
                 "act3":act3
             })
 
-    return constraints
+    return constraints, data
 
 def normalize_name(name):
     if name is None:
@@ -89,8 +89,11 @@ def normalize_name(name):
     name = re.sub(r'[^a-z0-9_]', '', name)
     return name
 
-def extract_alphabet(constraints):
+def extract_alphabet(constraints, data):
     alphabet = set()
+    
+    if "tasks" in data and data["tasks"]:
+        return [normalize_name(t) for t in data["tasks"]]
 
     for c in constraints:
         if c.get("type") == "minlen":

@@ -94,14 +94,15 @@ def validate_args(args):
 def generate_pddl(model_path, output_dir="pddl_output"):
 
     if model_path.endswith(".json"):
-        constraints = parse_declare_json(model_path)
+        constraints, data = parse_declare_json(model_path)
     elif model_path.endswith(".decl"):
         constraints = parse_declare_decl(model_path)
     else:
         raise ValueError("Invalid format (.json or .decl)")
 
     constraints = filter_absence_constraints(constraints)
-    alphabet = extract_alphabet(constraints)
+    alphabet = extract_alphabet(constraints, data)
+    print(alphabet)
 
     all_automata = []
     all_transitions = []
