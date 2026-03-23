@@ -96,19 +96,19 @@ docker run --rm -v "${PWD}/outputs:/app/outputs" scenario-gen <model_path> <plan
 ### 1. Generate 10 Top-K Plans
 
 ```bash
-docker run -v $(pwd)/outputs:/app/outputs scenario-gen my_model.json topk -n 10
+docker run -v "$(pwd)/outputs:/app/outputs" scenario-gen my_model.json topk -n 10
 ```
 
 ### 2. Generate Plans with a Quality Bound
 
 ```bash
-docker run -v $(pwd)/outputs:/app/outputs scenario-gen my_model.json topq -n 5 --bound 1.2
+docker run -v "$(pwd)/outputs:/app/outputs" scenario-gen my_model.json topq -n 5 --bound 1.2
 ```
 
 ### 3. Generate Diverse Plans
 
 ```bash
-docker run -v $(pwd)/outputs:/app/outputs scenario-gen my_model.json diverse -n 20
+docker run -v "$(pwd)/outputs:/app/outputs" scenario-gen my_model.json diverse -n 20
 ```
 ### Using Models from `experiments`
 
