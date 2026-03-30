@@ -15,6 +15,13 @@ Supports declarative process models in:
 - `.json`
 - `.decl`
 
+The model can also include some **preference constraints**, such as:
+- `prefix`  
+- `suffix`  
+- `pattern`  
+- `patterngap`  
+- `minlen`  
+
 ### PDDL Generation
 Automatically converts Declare constraints into:
 - PDDL actions  
