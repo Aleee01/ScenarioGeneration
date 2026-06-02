@@ -1,0 +1,4798 @@
+
+Parsing...
+Parsing: [0.240s CPU, 0.291s wall-clock]
+Normalizing task... [0.050s CPU, 0.053s wall-clock]
+Instantiating...
+Generating Datalog program... [0.020s CPU, 0.018s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.060s CPU, 0.063s wall-clock]
+Preparing model... [0.060s CPU, 0.063s wall-clock]
+Generated 10042 rules.
+Computing model... [0.020s CPU, 0.017s wall-clock]
+2450 relevant atoms
+0 auxiliary atoms
+2450 final queue length
+10158 total queue pushes
+Completing instantiation... [0.120s CPU, 0.116s wall-clock]
+Instantiating: [0.280s CPU, 0.283s wall-clock]
+Computing fact groups...
+Finding invariants...
+3 initial candidates
+Finding invariants: [0.010s CPU, 0.004s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+46 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.010s CPU, 0.004s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
+Computing negative axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.006s wall-clock]
+Translating task: [0.100s CPU, 0.102s wall-clock]
+7692 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+0 propositions removed
+Detecting unreachable propositions: [0.080s CPU, 0.077s wall-clock]
+Reordering and filtering variables...
+46 of 46 variables necessary.
+0 of 0 mutex groups necessary.
+2301 of 2301 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.020s CPU, 0.023s wall-clock]
+Translator variables: 46
+Translator derived variables: 0
+Translator facts: 92
+Translator goal facts: 14
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 2301
+Translator axioms: 0
+Translator task size: 35985
+Translator peak memory: 65356 KB
+Writing output... [0.020s CPU, 0.013s wall-clock]
+Done! [0.800s CPU, 0.852s wall-clock]
+translate exit code: 0
+
+Building causal graph...
+The causal graph is not acyclic.
+46 variables of 46 necessary
+0 of 0 mutex groups necessary.
+2301 of 2301 operators necessary.
+0 of 0 axiom rules necessary.
+Initializing mutex computation...
+Mutex computation initialized with 92 fluents.
+iteration for mutex detection and operator pruning
+Initialize m_index fw
+Initialized mvalues forward: reached=2116, notReached=6256, spurious=92
+Initialize m_ops fw
+Computing mutexes...
+Mutex computation finished with reached=7498, notReached=874, spurious=92
+1217 operators are spurious because were not triggered
+H^2 mutexes added fw: 874, unreachable: 0
+0 of 1084 operators detected as spurious
+iteration for mutex detection and operator pruning
+Initialize m_index bw
+Init values regression
+Initialized mvalues backward: reached=2116, notReached=5382, spurious=966
+Initialize m_ops bw
+Computing mutexes...
+Mutex computation finished with reached=7337, notReached=161, spurious=966
+97 operators are spurious because were not triggered
+Unreachable proposition: Atom cur_state(notcoex_d_e_s2_2)
+H^2 mutexes added bw: 8, unreachable: 1
+0 of 987 operators detected as spurious
+iteration for mutex detection and operator pruning
+Initialize m_index fw
+Initialized mvalues forward: reached=2116, notReached=5221, spurious=1127
+Initialize m_ops fw
+Computing mutexes...
+Mutex computation finished with reached=7333, notReached=4, spurious=1127
+32 operators are spurious because were not triggered
+H^2 mutexes added fw: 4, unreachable: 0
+0 of 955 operators detected as spurious
+iteration for mutex detection and operator pruning
+Initialize m_index bw
+Init values regression
+Initialized mvalues backward: reached=2116, notReached=5217, spurious=1131
+Initialize m_ops bw
+Computing mutexes...
+Mutex computation finished with reached=7333, notReached=0, spurious=1131
+0 operators are spurious because were not triggered
+H^2 mutexes added bw: 0, unreachable: 0
+0 of 955 operators detected as spurious
+Total mutex and disambiguation time: 0.059374 iterations: 4
+429 of 443 mutex groups necessary.
+955 of 2301 operators necessary.
+0 of 0 axiom rules necessary.
+Change id of operators: 955
+Change id of mutexes
+Change id of goals
+Change id of initial state
+Remove unreachable facts from variables: 46
+429 of 429 mutex groups necessary.
+955 of 955 operators necessary.
+0 of 0 axiom rules necessary.
+Updating causal graph and pruning unnecessary facts
+45 variables of 46 of 46 necessary
+The causal graph is not acyclic.
+45 variables of 45 necessary
+429 of 429 mutex groups necessary.
+955 of 955 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor variables: 45
+Preprocessor facts: 90
+Preprocessor derived variables: 0
+Preprocessor operators: 955
+Preprocessor mutex groups: 429
+Preprocessor task size: 14216
+Writing output...
+done
+transform_task exit code: 0
+
+[t=2.5513e-05s, 11352 KB] reading input...
+[t=0.00372576s, 11760 KB] done reading input!
+[t=0.00476201s, 12460 KB] Initializing landmark cut heuristic...
+[t=0.00487125s, 12460 KB] Building successor generator...done!
+[t=0.00525624s, 12592 KB] peak memory difference for successor generator creation: 132 KB
+[t=0.00526513s, 12592 KB] time for successor generation creation: 0.00032024s
+[t=0.00527561s, 12592 KB] Variables: 45
+[t=0.00528286s, 12592 KB] FactPairs: 90
+[t=0.00528968s, 12592 KB] Bytes per state: 8
+[t=0.00529767s, 12592 KB] Initializing symmetries (eager search)
+[t=0.00530386s, 12592 KB] Initializing symmetries
+[t=0.00574016s, 12928 KB] Using Bliss to find group generators
+[t=0.00607015s, 13108 KB] Done initializing symmetries: 0.000779284s
+[t=0.00609602s, 13108 KB] Size of the grounded symmetry graph: 1090
+[t=0.00610569s, 13108 KB] Number of search generators (affecting facts): 4
+[t=0.00611158s, 13108 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00611759s, 13108 KB] Total number of generators: 4
+[t=0.00622545s, 13108 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.00642547s, 13108 KB] New best heuristic value for lmcut: 9
+[t=0.00644935s, 13108 KB] g=0, 1 evaluated, 0 expanded
+[t=0.00645834s, 13108 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.00646595s, 13108 KB] Initial heuristic value for lmcut: 9
+[t=0.00667813s, 13108 KB] pruning method: stubborn sets simple
+[t=0.00729008s, 13108 KB] New best heuristic value for lmcut: 8
+[t=0.00731339s, 13108 KB] g=1, 2 evaluated, 1 expanded
+[t=0.00874799s, 13108 KB] New best heuristic value for lmcut: 7
+[t=0.00877117s, 13108 KB] g=2, 11 evaluated, 2 expanded
+[t=0.0100696s, 13108 KB] New best heuristic value for lmcut: 6
+[t=0.0100914s, 13108 KB] g=3, 21 evaluated, 3 expanded
+[t=0.011815s, 13108 KB] New best heuristic value for lmcut: 5
+[t=0.0119278s, 13108 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0131589s, 13108 KB] New best heuristic value for lmcut: 4
+[t=0.0131946s, 13108 KB] g=5, 40 evaluated, 5 expanded
+[t=0.0142623s, 13108 KB] New best heuristic value for lmcut: 3
+[t=0.0142852s, 13108 KB] g=6, 54 evaluated, 6 expanded
+[t=0.015068s, 13108 KB] New best heuristic value for lmcut: 2
+[t=0.0150986s, 13108 KB] g=7, 59 evaluated, 7 expanded
+[t=0.0274872s, 13108 KB] New best heuristic value for lmcut: 1
+[t=0.0275435s, 13108 KB] g=8, 226 evaluated, 43 expanded
+[t=0.027997s, 13108 KB] New best heuristic value for lmcut: 0
+[t=0.0280188s, 13108 KB] g=9, 235 evaluated, 44 expanded
+[t=0.0280293s, 13108 KB] Solution found!
+[t=0.0280892s, 13108 KB] Actual search time: 0.0213973s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.0281066s, 13108 KB] Plan length: 9 step(s).
+[t=0.0281066s, 13108 KB] Plan cost: 9
+[t=0.0281066s, 13108 KB] Expanded 45 state(s).
+[t=0.0281066s, 13108 KB] Reopened 0 state(s).
+[t=0.0281066s, 13108 KB] Evaluated 235 state(s).
+[t=0.0281066s, 13108 KB] Evaluations: 235
+[t=0.0281066s, 13108 KB] Generated 499 state(s).
+[t=0.0281066s, 13108 KB] Dead ends: 0 state(s).
+[t=0.0281066s, 13108 KB] Expanded until last jump: 0 state(s).
+[t=0.0281066s, 13108 KB] Reopened until last jump: 0 state(s).
+[t=0.0281066s, 13108 KB] Evaluated until last jump: 1 state(s).
+[t=0.0281066s, 13108 KB] Generated until last jump: 0 state(s).
+[t=0.0281066s, 13108 KB] Number of registered states: 235
+[t=0.0281066s, 13108 KB] Int hash set load factor: 235/256 = 0.917969
+[t=0.0281066s, 13108 KB] Int hash set resizes: 8
+[t=0.0281066s, 13108 KB] total successors before pruning: 499
+[t=0.0281066s, 13108 KB] total successors after pruning: 499
+[t=0.0281066s, 13108 KB] Pruning ratio: 0
+[t=0.0281066s, 13108 KB] Time for pruning operators: 0.0131612s
+[t=0.0281066s, 13108 KB] Search time: 0.0218817s
+[t=0.0281066s, 13108 KB] Total time: 0.0281066s
+Solution found.
+Peak memory: 13108 KB
+search exit code: 0
+
+
+
+[t=2.5542e-05s, 11352 KB] reading input...
+[t=0.00409524s, 11760 KB] done reading input!
+[t=0.00496059s, 12024 KB] Building successor generator...done!
+[t=0.00541731s, 12304 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.00543568s, 12304 KB] time for successor generation creation: 0.000375237s
+[t=0.00545848s, 12304 KB] Variables: 45
+[t=0.00547758s, 12304 KB] FactPairs: 90
+[t=0.00549512s, 12304 KB] Bytes per state: 8
+[t=0.00551499s, 12304 KB] Initializing symmetries for extending plans with
+[t=0.00553434s, 12304 KB] Initializing symmetries
+[t=0.00600652s, 12596 KB] Using Bliss to find group generators
+[t=0.00637486s, 12908 KB] Done initializing symmetries: 0.00085773s
+[t=0.00641213s, 12908 KB] Size of the grounded symmetry graph: 1091
+[t=0.00642294s, 12908 KB] Number of search generators (affecting facts): 4
+[t=0.00642929s, 12908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00643547s, 12908 KB] Total number of generators: 4
+[t=0.00659716s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.1
+[t=0.00663227s, 12908 KB] Adding plans... 
+[t=0.00666696s, 12908 KB] Finding symmetric plans... 
+[t=0.00669063s, 12908 KB] done! [t=0.00669925s]
+[t=0.00670931s, 12908 KB] Dumping 1 plans before reformulation 
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.0068139s, 12908 KB] Plan length: 9 step(s).
+[t=0.00683391s, 12908 KB] Plan cost: 9
+[t=0.00684306s, 12908 KB] Done dumping plans before reformulation
+[t=0.00685071s, 12908 KB] Forbidding 1 plans
+[t=0.00687198s, 12908 KB] Number of operators in the multisets is: 9
+[t=0.00688135s, 12908 KB] Reformulated task is created, dumping
+[t=0.0139891s, 12908 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12908 KB
+search exit code: 0
+
+
+
+[t=2.2975e-05s, 11352 KB] reading input...
+[t=0.00466019s, 11936 KB] done reading input!
+[t=0.0058481s, 12668 KB] Initializing landmark cut heuristic...
+[t=0.00596002s, 12668 KB] Building successor generator...done!
+[t=0.00638458s, 12808 KB] peak memory difference for successor generator creation: 140 KB
+[t=0.00639284s, 12808 KB] time for successor generation creation: 0.000352912s
+[t=0.0064042s, 12808 KB] Variables: 55
+[t=0.00642151s, 12808 KB] FactPairs: 110
+[t=0.00643932s, 12808 KB] Bytes per state: 8
+[t=0.00645898s, 12808 KB] Initializing symmetries (eager search)
+[t=0.00647699s, 12808 KB] Initializing symmetries
+[t=0.00700622s, 13160 KB] Using Bliss to find group generators
+[t=0.00736099s, 13348 KB] Done initializing symmetries: 0.000897661s
+[t=0.00739458s, 13348 KB] Size of the grounded symmetry graph: 1129
+[t=0.00740467s, 13348 KB] Number of search generators (affecting facts): 4
+[t=0.00741093s, 13348 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00741678s, 13348 KB] Total number of generators: 4
+[t=0.00751884s, 13348 KB] Conducting best first search with reopening closed nodes, (real) bound = 17
+[t=0.00772946s, 13348 KB] New best heuristic value for lmcut: 9
+[t=0.007751s, 13348 KB] g=0, 1 evaluated, 0 expanded
+[t=0.00776992s, 13348 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.00778963s, 13348 KB] Initial heuristic value for lmcut: 9
+[t=0.00802089s, 13348 KB] pruning method: stubborn sets simple
+[t=0.00875642s, 13348 KB] New best heuristic value for lmcut: 8
+[t=0.00878945s, 13348 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0103966s, 13348 KB] New best heuristic value for lmcut: 7
+[t=0.010426s, 13348 KB] g=2, 11 evaluated, 2 expanded
+[t=0.0120028s, 13348 KB] New best heuristic value for lmcut: 6
+[t=0.0120357s, 13348 KB] g=3, 21 evaluated, 3 expanded
+[t=0.0133519s, 13348 KB] New best heuristic value for lmcut: 5
+[t=0.0133846s, 13348 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0145042s, 13348 KB] New best heuristic value for lmcut: 4
+[t=0.0145263s, 13348 KB] g=5, 40 evaluated, 5 expanded
+[t=0.0156836s, 13348 KB] New best heuristic value for lmcut: 3
+[t=0.0157068s, 13348 KB] g=6, 54 evaluated, 6 expanded
+[t=0.0163635s, 13348 KB] New best heuristic value for lmcut: 2
+[t=0.0163855s, 13348 KB] g=7, 59 evaluated, 7 expanded
+[t=0.0353021s, 13356 KB] New best heuristic value for lmcut: 1
+[t=0.0353579s, 13356 KB] g=8, 348 evaluated, 60 expanded
+[t=0.035856s, 13356 KB] New best heuristic value for lmcut: 0
+[t=0.0358871s, 13356 KB] g=9, 357 evaluated, 61 expanded
+[t=0.035899s, 13356 KB] Solution found!
+[t=0.0359503s, 13356 KB] Actual search time: 0.0279121s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.0359679s, 13356 KB] Plan length: 9 step(s).
+[t=0.0359679s, 13356 KB] Plan cost: 9
+[t=0.0359679s, 13356 KB] Expanded 62 state(s).
+[t=0.0359679s, 13356 KB] Reopened 0 state(s).
+[t=0.0359679s, 13356 KB] Evaluated 357 state(s).
+[t=0.0359679s, 13356 KB] Evaluations: 357
+[t=0.0359679s, 13356 KB] Generated 694 state(s).
+[t=0.0359679s, 13356 KB] Dead ends: 0 state(s).
+[t=0.0359679s, 13356 KB] Expanded until last jump: 0 state(s).
+[t=0.0359679s, 13356 KB] Reopened until last jump: 0 state(s).
+[t=0.0359679s, 13356 KB] Evaluated until last jump: 1 state(s).
+[t=0.0359679s, 13356 KB] Generated until last jump: 0 state(s).
+[t=0.0359679s, 13356 KB] Number of registered states: 357
+[t=0.0359679s, 13356 KB] Int hash set load factor: 357/512 = 0.697266
+[t=0.0359679s, 13356 KB] Int hash set resizes: 9
+[t=0.0359679s, 13356 KB] total successors before pruning: 694
+[t=0.0359679s, 13356 KB] total successors after pruning: 694
+[t=0.0359679s, 13356 KB] Pruning ratio: 0
+[t=0.0359679s, 13356 KB] Time for pruning operators: 0.0159122s
+[t=0.0359679s, 13356 KB] Search time: 0.0284497s
+[t=0.0359679s, 13356 KB] Total time: 0.0359679s
+Solution found.
+Peak memory: 13356 KB
+search exit code: 0
+
+
+
+[t=2.3012e-05s, 11352 KB] reading input...
+[t=0.00395195s, 11760 KB] done reading input!
+[t=0.00476307s, 12024 KB] Building successor generator...done!
+[t=0.00520843s, 12304 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.0052266s, 12304 KB] time for successor generation creation: 0.000346425s
+[t=0.00524964s, 12304 KB] Variables: 45
+[t=0.00526868s, 12304 KB] FactPairs: 90
+[t=0.00528643s, 12304 KB] Bytes per state: 8
+[t=0.00530661s, 12304 KB] Initializing symmetries for extending plans with
+[t=0.00532605s, 12304 KB] Initializing symmetries
+[t=0.0057674s, 12596 KB] Using Bliss to find group generators
+[t=0.00613933s, 12908 KB] Done initializing symmetries: 0.000829744s
+[t=0.00616986s, 12908 KB] Size of the grounded symmetry graph: 1091
+[t=0.00618956s, 12908 KB] Number of search generators (affecting facts): 4
+[t=0.0062077s, 12908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00622566s, 12908 KB] Total number of generators: 4
+[t=0.00641308s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.1
+[t=0.00644592s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.2
+[t=0.00647536s, 12908 KB] Adding plans... 
+[t=0.00651065s, 12908 KB] Finding symmetric plans... 
+[t=0.00653984s, 12908 KB] done! [t=0.00654828s]
+[t=0.00655778s, 12908 KB] Dumping 2 plans before reformulation 
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00667698s, 12908 KB] Plan length: 9 step(s).
+[t=0.00669774s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00673356s, 12908 KB] Plan length: 9 step(s).
+[t=0.00674108s, 12908 KB] Plan cost: 9
+[t=0.00674712s, 12908 KB] Done dumping plans before reformulation
+[t=0.00675519s, 12908 KB] Forbidding 2 plans
+[t=0.00677008s, 12908 KB] Number of operators in the multisets is: 12
+[t=0.00677754s, 12908 KB] Reformulated task is created, dumping
+[t=0.0142614s, 12908 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12908 KB
+search exit code: 0
+
+
+
+[t=2.4681e-05s, 11352 KB] reading input...
+[t=0.00499427s, 11940 KB] done reading input!
+[t=0.00607896s, 12744 KB] Initializing landmark cut heuristic...
+[t=0.00618729s, 12744 KB] Building successor generator...done!
+[t=0.00659543s, 12876 KB] peak memory difference for successor generator creation: 132 KB
+[t=0.00661322s, 12876 KB] time for successor generation creation: 0.000344496s
+[t=0.00662565s, 12876 KB] Variables: 59
+[t=0.00663371s, 12876 KB] FactPairs: 118
+[t=0.00663972s, 12876 KB] Bytes per state: 8
+[t=0.00664806s, 12876 KB] Initializing symmetries (eager search)
+[t=0.00665623s, 12876 KB] Initializing symmetries
+[t=0.00713475s, 13220 KB] Using Bliss to find group generators
+[t=0.00749899s, 13412 KB] Done initializing symmetries: 0.000857398s
+[t=0.00752732s, 13412 KB] Size of the grounded symmetry graph: 1144
+[t=0.007537s, 13412 KB] Number of search generators (affecting facts): 4
+[t=0.007543s, 13412 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00754978s, 13412 KB] Total number of generators: 4
+[t=0.0076554s, 13412 KB] Conducting best first search with reopening closed nodes, (real) bound = 17
+[t=0.0078811s, 13412 KB] New best heuristic value for lmcut: 9
+[t=0.00790076s, 13412 KB] g=0, 1 evaluated, 0 expanded
+[t=0.00791009s, 13412 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.00791721s, 13412 KB] Initial heuristic value for lmcut: 9
+[t=0.00813364s, 13412 KB] pruning method: stubborn sets simple
+[t=0.00885443s, 13412 KB] New best heuristic value for lmcut: 8
+[t=0.00887855s, 13412 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0107463s, 13412 KB] New best heuristic value for lmcut: 7
+[t=0.0107824s, 13412 KB] g=2, 11 evaluated, 2 expanded
+[t=0.0122859s, 13412 KB] New best heuristic value for lmcut: 6
+[t=0.0123112s, 13412 KB] g=3, 21 evaluated, 3 expanded
+[t=0.0135323s, 13412 KB] New best heuristic value for lmcut: 5
+[t=0.013555s, 13412 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0148488s, 13412 KB] New best heuristic value for lmcut: 4
+[t=0.0148894s, 13412 KB] g=5, 40 evaluated, 5 expanded
+[t=0.0160728s, 13412 KB] New best heuristic value for lmcut: 3
+[t=0.0160961s, 13412 KB] g=6, 54 evaluated, 6 expanded
+[t=0.0167869s, 13412 KB] New best heuristic value for lmcut: 2
+[t=0.0168076s, 13412 KB] g=7, 59 evaluated, 7 expanded
+[t=0.0377327s, 13416 KB] New best heuristic value for lmcut: 1
+[t=0.0377681s, 13416 KB] g=8, 404 evaluated, 66 expanded
+[t=0.0382503s, 13416 KB] New best heuristic value for lmcut: 0
+[t=0.0382698s, 13416 KB] g=9, 413 evaluated, 67 expanded
+[t=0.0383075s, 13416 KB] Solution found!
+[t=0.0383563s, 13416 KB] Actual search time: 0.0302099s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.0383638s, 13416 KB] Plan length: 9 step(s).
+[t=0.0383638s, 13416 KB] Plan cost: 9
+[t=0.0383638s, 13416 KB] Expanded 68 state(s).
+[t=0.0383638s, 13416 KB] Reopened 0 state(s).
+[t=0.0383638s, 13416 KB] Evaluated 413 state(s).
+[t=0.0383638s, 13416 KB] Evaluations: 413
+[t=0.0383638s, 13416 KB] Generated 763 state(s).
+[t=0.0383638s, 13416 KB] Dead ends: 0 state(s).
+[t=0.0383638s, 13416 KB] Expanded until last jump: 0 state(s).
+[t=0.0383638s, 13416 KB] Reopened until last jump: 0 state(s).
+[t=0.0383638s, 13416 KB] Evaluated until last jump: 1 state(s).
+[t=0.0383638s, 13416 KB] Generated until last jump: 0 state(s).
+[t=0.0383638s, 13416 KB] Number of registered states: 413
+[t=0.0383638s, 13416 KB] Int hash set load factor: 413/512 = 0.806641
+[t=0.0383638s, 13416 KB] Int hash set resizes: 9
+[t=0.0383638s, 13416 KB] total successors before pruning: 763
+[t=0.0383638s, 13416 KB] total successors after pruning: 763
+[t=0.0383638s, 13416 KB] Pruning ratio: 0
+[t=0.0383638s, 13416 KB] Time for pruning operators: 0.0164069s
+[t=0.0383638s, 13416 KB] Search time: 0.030709s
+[t=0.0383638s, 13416 KB] Total time: 0.0383638s
+Solution found.
+Peak memory: 13416 KB
+search exit code: 0
+
+
+
+[t=2.4177e-05s, 11352 KB] reading input...
+[t=0.00395416s, 11760 KB] done reading input!
+[t=0.00474581s, 12024 KB] Building successor generator...done!
+[t=0.00518043s, 12304 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.00518907s, 12304 KB] time for successor generation creation: 0.000341932s
+[t=0.00520096s, 12304 KB] Variables: 45
+[t=0.0052182s, 12304 KB] FactPairs: 90
+[t=0.005236s, 12304 KB] Bytes per state: 8
+[t=0.0052565s, 12304 KB] Initializing symmetries for extending plans with
+[t=0.00527576s, 12304 KB] Initializing symmetries
+[t=0.00575547s, 12596 KB] Using Bliss to find group generators
+[t=0.0061103s, 12908 KB] Done initializing symmetries: 0.000850203s
+[t=0.00614686s, 12908 KB] Size of the grounded symmetry graph: 1091
+[t=0.00615746s, 12908 KB] Number of search generators (affecting facts): 4
+[t=0.00616433s, 12908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00617038s, 12908 KB] Total number of generators: 4
+[t=0.00633374s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.1
+[t=0.00636966s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.2
+[t=0.00639475s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.3
+[t=0.00643034s, 12908 KB] Adding plans... 
+[t=0.00646844s, 12908 KB] Finding symmetric plans... 
+[t=0.00650385s, 12908 KB] done! [t=0.00651251s]
+[t=0.00652209s, 12908 KB] Dumping 3 plans before reformulation 
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00664549s, 12908 KB] Plan length: 9 step(s).
+[t=0.00666584s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00670485s, 12908 KB] Plan length: 9 step(s).
+[t=0.00671207s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00673887s, 12908 KB] Plan length: 9 step(s).
+[t=0.00674511s, 12908 KB] Plan cost: 9
+[t=0.00675092s, 12908 KB] Done dumping plans before reformulation
+[t=0.0067589s, 12908 KB] Forbidding 3 plans
+[t=0.00678076s, 12908 KB] Number of operators in the multisets is: 15
+[t=0.00678814s, 12908 KB] Reformulated task is created, dumping
+[t=0.0146876s, 12908 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12908 KB
+search exit code: 0
+
+
+
+[t=2.5849e-05s, 11352 KB] reading input...
+[t=0.00534122s, 11940 KB] done reading input!
+[t=0.00653722s, 12748 KB] Initializing landmark cut heuristic...
+[t=0.00664964s, 12748 KB] Building successor generator...done!
+[t=0.00711497s, 12880 KB] peak memory difference for successor generator creation: 132 KB
+[t=0.00712337s, 12880 KB] time for successor generation creation: 0.000392188s
+[t=0.007135s, 12880 KB] Variables: 63
+[t=0.00715251s, 12880 KB] FactPairs: 126
+[t=0.00717029s, 12880 KB] Bytes per state: 8
+[t=0.00718998s, 12880 KB] Initializing symmetries (eager search)
+[t=0.00720795s, 12880 KB] Initializing symmetries
+[t=0.00776368s, 13272 KB] Using Bliss to find group generators
+[t=0.00816447s, 13472 KB] Done initializing symmetries: 0.000970183s
+[t=0.00819747s, 13472 KB] Size of the grounded symmetry graph: 1159
+[t=0.00820799s, 13472 KB] Number of search generators (affecting facts): 4
+[t=0.0082145s, 13472 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00822063s, 13472 KB] Total number of generators: 4
+[t=0.00832537s, 13472 KB] Conducting best first search with reopening closed nodes, (real) bound = 17
+[t=0.00858869s, 13472 KB] New best heuristic value for lmcut: 9
+[t=0.00861281s, 13472 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0086319s, 13472 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.00865233s, 13472 KB] Initial heuristic value for lmcut: 9
+[t=0.0089019s, 13472 KB] pruning method: stubborn sets simple
+[t=0.00967807s, 13472 KB] New best heuristic value for lmcut: 8
+[t=0.00970773s, 13472 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0114955s, 13472 KB] New best heuristic value for lmcut: 7
+[t=0.0115286s, 13472 KB] g=2, 11 evaluated, 2 expanded
+[t=0.0132135s, 13472 KB] New best heuristic value for lmcut: 6
+[t=0.013256s, 13472 KB] g=3, 21 evaluated, 3 expanded
+[t=0.0145936s, 13472 KB] New best heuristic value for lmcut: 5
+[t=0.0146192s, 13472 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0158623s, 13472 KB] New best heuristic value for lmcut: 4
+[t=0.0158857s, 13472 KB] g=5, 40 evaluated, 5 expanded
+[t=0.0171674s, 13472 KB] New best heuristic value for lmcut: 3
+[t=0.0172323s, 13472 KB] g=6, 54 evaluated, 6 expanded
+[t=0.0179348s, 13472 KB] New best heuristic value for lmcut: 2
+[t=0.0179557s, 13472 KB] g=7, 59 evaluated, 7 expanded
+[t=0.0737186s, 13600 KB] New best heuristic value for lmcut: 1
+[t=0.073767s, 13600 KB] g=8, 972 evaluated, 184 expanded
+[t=0.0742649s, 13600 KB] New best heuristic value for lmcut: 0
+[t=0.07428s, 13600 KB] g=9, 981 evaluated, 185 expanded
+[t=0.0742889s, 13600 KB] Solution found!
+[t=0.0743408s, 13600 KB] Actual search time: 0.0654217s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.0743486s, 13600 KB] Plan length: 9 step(s).
+[t=0.0743486s, 13600 KB] Plan cost: 9
+[t=0.0743486s, 13600 KB] Expanded 186 state(s).
+[t=0.0743486s, 13600 KB] Reopened 0 state(s).
+[t=0.0743486s, 13600 KB] Evaluated 981 state(s).
+[t=0.0743486s, 13600 KB] Evaluations: 981
+[t=0.0743486s, 13600 KB] Generated 2095 state(s).
+[t=0.0743486s, 13600 KB] Dead ends: 0 state(s).
+[t=0.0743486s, 13600 KB] Expanded until last jump: 0 state(s).
+[t=0.0743486s, 13600 KB] Reopened until last jump: 0 state(s).
+[t=0.0743486s, 13600 KB] Evaluated until last jump: 1 state(s).
+[t=0.0743486s, 13600 KB] Generated until last jump: 0 state(s).
+[t=0.0743486s, 13600 KB] Number of registered states: 981
+[t=0.0743486s, 13600 KB] Int hash set load factor: 981/1024 = 0.958008
+[t=0.0743486s, 13600 KB] Int hash set resizes: 10
+[t=0.0743486s, 13600 KB] total successors before pruning: 2095
+[t=0.0743486s, 13600 KB] total successors after pruning: 2095
+[t=0.0743486s, 13600 KB] Pruning ratio: 0
+[t=0.0743486s, 13600 KB] Time for pruning operators: 0.0328843s
+[t=0.0743486s, 13600 KB] Search time: 0.0660238s
+[t=0.0743486s, 13600 KB] Total time: 0.0743486s
+Solution found.
+Peak memory: 13600 KB
+search exit code: 0
+
+
+
+[t=2.5046e-05s, 11352 KB] reading input...
+[t=0.00400749s, 11760 KB] done reading input!
+[t=0.00481699s, 12024 KB] Building successor generator...done!
+[t=0.00525415s, 12304 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.00526273s, 12304 KB] time for successor generation creation: 0.000345086s
+[t=0.00527395s, 12304 KB] Variables: 45
+[t=0.00529151s, 12304 KB] FactPairs: 90
+[t=0.00530924s, 12304 KB] Bytes per state: 8
+[t=0.00532944s, 12304 KB] Initializing symmetries for extending plans with
+[t=0.00534863s, 12304 KB] Initializing symmetries
+[t=0.00585003s, 12596 KB] Using Bliss to find group generators
+[t=0.00621467s, 12908 KB] Done initializing symmetries: 0.000879968s
+[t=0.00624701s, 12908 KB] Size of the grounded symmetry graph: 1091
+[t=0.00625731s, 12908 KB] Number of search generators (affecting facts): 4
+[t=0.00626433s, 12908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00627021s, 12908 KB] Total number of generators: 4
+[t=0.00643224s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.1
+[t=0.00646254s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.2
+[t=0.00648538s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.3
+[t=0.00650758s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.4
+[t=0.00654441s, 12908 KB] Adding plans... 
+[t=0.00658399s, 12908 KB] Finding symmetric plans... 
+[t=0.00662576s, 12908 KB] done! [t=0.00663418s]
+[t=0.00664426s, 12908 KB] Dumping 4 plans before reformulation 
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00677045s, 12908 KB] Plan length: 9 step(s).
+[t=0.00679199s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00683283s, 12908 KB] Plan length: 9 step(s).
+[t=0.00683997s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00696806s, 12908 KB] Plan length: 9 step(s).
+[t=0.00700552s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00704782s, 12908 KB] Plan length: 9 step(s).
+[t=0.007065s, 12908 KB] Plan cost: 9
+[t=0.00707498s, 12908 KB] Done dumping plans before reformulation
+[t=0.0070863s, 12908 KB] Forbidding 4 plans
+[t=0.00710772s, 12908 KB] Number of operators in the multisets is: 17
+[t=0.0071265s, 12908 KB] Reformulated task is created, dumping
+[t=0.0157295s, 12908 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12908 KB
+search exit code: 0
+
+
+
+[t=2.3556e-05s, 11352 KB] reading input...
+[t=0.00550347s, 12076 KB] done reading input!
+[t=0.00661548s, 12792 KB] Initializing landmark cut heuristic...
+[t=0.00672699s, 12792 KB] Building successor generator...done!
+[t=0.00711703s, 13056 KB] peak memory difference for successor generator creation: 264 KB
+[t=0.00712537s, 13056 KB] time for successor generation creation: 0.000324162s
+[t=0.00713644s, 13056 KB] Variables: 66
+[t=0.0071443s, 13056 KB] FactPairs: 132
+[t=0.00715026s, 13056 KB] Bytes per state: 12
+[t=0.00715832s, 13056 KB] Initializing symmetries (eager search)
+[t=0.00716464s, 13056 KB] Initializing symmetries
+[t=0.00774332s, 13472 KB] Using Bliss to find group generators
+[t=0.00813555s, 13608 KB] Done initializing symmetries: 0.000985576s
+[t=0.00816414s, 13608 KB] Size of the grounded symmetry graph: 1170
+[t=0.0081739s, 13608 KB] Number of search generators (affecting facts): 4
+[t=0.00817984s, 13608 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00818645s, 13608 KB] Total number of generators: 4
+[t=0.00829694s, 13608 KB] Conducting best first search with reopening closed nodes, (real) bound = 17
+[t=0.00856626s, 13608 KB] New best heuristic value for lmcut: 9
+[t=0.00858678s, 13608 KB] g=0, 1 evaluated, 0 expanded
+[t=0.00859642s, 13608 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.00862186s, 13608 KB] Initial heuristic value for lmcut: 9
+[t=0.00884749s, 13608 KB] pruning method: stubborn sets simple
+[t=0.00957649s, 13608 KB] New best heuristic value for lmcut: 8
+[t=0.00960063s, 13608 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0114047s, 13608 KB] New best heuristic value for lmcut: 7
+[t=0.0114334s, 13608 KB] g=2, 11 evaluated, 2 expanded
+[t=0.0130281s, 13608 KB] New best heuristic value for lmcut: 6
+[t=0.0130519s, 13608 KB] g=3, 21 evaluated, 3 expanded
+[t=0.0143617s, 13608 KB] New best heuristic value for lmcut: 5
+[t=0.014383s, 13608 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0156905s, 13608 KB] New best heuristic value for lmcut: 4
+[t=0.015712s, 13608 KB] g=5, 40 evaluated, 5 expanded
+[t=0.0169227s, 13608 KB] New best heuristic value for lmcut: 3
+[t=0.0169448s, 13608 KB] g=6, 54 evaluated, 6 expanded
+[t=0.0176511s, 13608 KB] New best heuristic value for lmcut: 2
+[t=0.0176714s, 13608 KB] g=7, 59 evaluated, 7 expanded
+[t=0.0751996s, 13652 KB] New best heuristic value for lmcut: 1
+[t=0.0752795s, 13652 KB] g=8, 1039 evaluated, 189 expanded
+[t=0.0758514s, 13652 KB] New best heuristic value for lmcut: 0
+[t=0.0758818s, 13652 KB] g=9, 1049 evaluated, 190 expanded
+[t=0.0758929s, 13652 KB] Solution found!
+[t=0.0759616s, 13652 KB] Actual search time: 0.067103s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.0759698s, 13652 KB] Plan length: 9 step(s).
+[t=0.0759698s, 13652 KB] Plan cost: 9
+[t=0.0759698s, 13652 KB] Expanded 191 state(s).
+[t=0.0759698s, 13652 KB] Reopened 0 state(s).
+[t=0.0759698s, 13652 KB] Evaluated 1049 state(s).
+[t=0.0759698s, 13652 KB] Evaluations: 1049
+[t=0.0759698s, 13652 KB] Generated 2151 state(s).
+[t=0.0759698s, 13652 KB] Dead ends: 0 state(s).
+[t=0.0759698s, 13652 KB] Expanded until last jump: 0 state(s).
+[t=0.0759698s, 13652 KB] Reopened until last jump: 0 state(s).
+[t=0.0759698s, 13652 KB] Evaluated until last jump: 1 state(s).
+[t=0.0759698s, 13652 KB] Generated until last jump: 0 state(s).
+[t=0.0759698s, 13652 KB] Number of registered states: 1049
+[t=0.0759698s, 13652 KB] Int hash set load factor: 1049/2048 = 0.512207
+[t=0.0759698s, 13652 KB] Int hash set resizes: 11
+[t=0.0759698s, 13652 KB] total successors before pruning: 2151
+[t=0.0759698s, 13652 KB] total successors after pruning: 2151
+[t=0.0759698s, 13652 KB] Pruning ratio: 0
+[t=0.0759698s, 13652 KB] Time for pruning operators: 0.0325273s
+[t=0.0759698s, 13652 KB] Search time: 0.0676735s
+[t=0.0759698s, 13652 KB] Total time: 0.0759698s
+Solution found.
+Peak memory: 13652 KB
+search exit code: 0
+
+
+
+[t=2.4516e-05s, 11352 KB] reading input...
+[t=0.00397731s, 11760 KB] done reading input!
+[t=0.00477679s, 12024 KB] Building successor generator...done!
+[t=0.00523143s, 12304 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.00524062s, 12304 KB] time for successor generation creation: 0.000361681s
+[t=0.00525171s, 12304 KB] Variables: 45
+[t=0.00526875s, 12304 KB] FactPairs: 90
+[t=0.00528661s, 12304 KB] Bytes per state: 8
+[t=0.00530711s, 12304 KB] Initializing symmetries for extending plans with
+[t=0.00532649s, 12304 KB] Initializing symmetries
+[t=0.00580642s, 12596 KB] Using Bliss to find group generators
+[t=0.00617098s, 12908 KB] Done initializing symmetries: 0.000860195s
+[t=0.00620771s, 12908 KB] Size of the grounded symmetry graph: 1091
+[t=0.00621821s, 12908 KB] Number of search generators (affecting facts): 4
+[t=0.00622511s, 12908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0062313s, 12908 KB] Total number of generators: 4
+[t=0.00639636s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.1
+[t=0.00642496s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.2
+[t=0.00644801s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.3
+[t=0.00647019s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.4
+[t=0.00649152s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.5
+[t=0.00652033s, 12908 KB] Adding plans... 
+[t=0.00656093s, 12908 KB] Finding symmetric plans... 
+[t=0.00660651s, 12908 KB] done! [t=0.00661471s]
+[t=0.00662512s, 12908 KB] Dumping 5 plans before reformulation 
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00675039s, 12908 KB] Plan length: 9 step(s).
+[t=0.00677205s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00681423s, 12908 KB] Plan length: 9 step(s).
+[t=0.00682287s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00685207s, 12908 KB] Plan length: 9 step(s).
+[t=0.00685828s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.0068898s, 12908 KB] Plan length: 9 step(s).
+[t=0.00689766s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00692494s, 12908 KB] Plan length: 9 step(s).
+[t=0.00694103s, 12908 KB] Plan cost: 9
+[t=0.00694995s, 12908 KB] Done dumping plans before reformulation
+[t=0.00696135s, 12908 KB] Forbidding 5 plans
+[t=0.00698704s, 12908 KB] Number of operators in the multisets is: 19
+[t=0.00700472s, 12908 KB] Reformulated task is created, dumping
+[t=0.0157754s, 12908 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12908 KB
+search exit code: 0
+
+
+
+[t=2.3574e-05s, 11352 KB] reading input...
+[t=0.00602543s, 12076 KB] done reading input!
+[t=0.00728078s, 12868 KB] Initializing landmark cut heuristic...
+[t=0.0073841s, 12868 KB] Building successor generator...done!
+[t=0.0078133s, 13004 KB] peak memory difference for successor generator creation: 136 KB
+[t=0.00783433s, 13004 KB] time for successor generation creation: 0.000353577s
+[t=0.00785807s, 13004 KB] Variables: 69
+[t=0.00787771s, 13004 KB] FactPairs: 138
+[t=0.00789571s, 13004 KB] Bytes per state: 12
+[t=0.007916s, 13004 KB] Initializing symmetries (eager search)
+[t=0.00793385s, 13004 KB] Initializing symmetries
+[t=0.00852107s, 13396 KB] Using Bliss to find group generators
+[t=0.00912186s, 13668 KB] Done initializing symmetries: 0.00120635s
+[t=0.00915498s, 13668 KB] Size of the grounded symmetry graph: 1181
+[t=0.00916559s, 13668 KB] Number of search generators (affecting facts): 4
+[t=0.00917198s, 13668 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0091781s, 13668 KB] Total number of generators: 4
+[t=0.00928946s, 13668 KB] Conducting best first search with reopening closed nodes, (real) bound = 17
+[t=0.00955067s, 13668 KB] New best heuristic value for lmcut: 9
+[t=0.00957322s, 13668 KB] g=0, 1 evaluated, 0 expanded
+[t=0.00959297s, 13668 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.00961315s, 13668 KB] Initial heuristic value for lmcut: 9
+[t=0.00988039s, 13668 KB] pruning method: stubborn sets simple
+[t=0.010682s, 13668 KB] New best heuristic value for lmcut: 8
+[t=0.010714s, 13668 KB] g=1, 2 evaluated, 1 expanded
+[t=0.012715s, 13668 KB] New best heuristic value for lmcut: 7
+[t=0.0127572s, 13668 KB] g=2, 11 evaluated, 2 expanded
+[t=0.0145843s, 13668 KB] New best heuristic value for lmcut: 6
+[t=0.0146182s, 13668 KB] g=3, 21 evaluated, 3 expanded
+[t=0.0161385s, 13668 KB] New best heuristic value for lmcut: 5
+[t=0.0161706s, 13668 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0175421s, 13668 KB] New best heuristic value for lmcut: 4
+[t=0.0175735s, 13668 KB] g=5, 40 evaluated, 5 expanded
+[t=0.0189356s, 13668 KB] New best heuristic value for lmcut: 3
+[t=0.0189656s, 13668 KB] g=6, 54 evaluated, 6 expanded
+[t=0.0197376s, 13668 KB] New best heuristic value for lmcut: 2
+[t=0.0197664s, 13668 KB] g=7, 59 evaluated, 7 expanded
+[t=0.0852165s, 13708 KB] New best heuristic value for lmcut: 1
+[t=0.0852901s, 13708 KB] g=8, 1156 evaluated, 205 expanded
+[t=0.0857883s, 13708 KB] New best heuristic value for lmcut: 0
+[t=0.0858106s, 13708 KB] g=9, 1165 evaluated, 206 expanded
+[t=0.0858215s, 13708 KB] Solution found!
+[t=0.085887s, 13708 KB] Actual search time: 0.0759899s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.0858956s, 13708 KB] Plan length: 9 step(s).
+[t=0.0858956s, 13708 KB] Plan cost: 9
+[t=0.0858956s, 13708 KB] Expanded 207 state(s).
+[t=0.0858956s, 13708 KB] Reopened 0 state(s).
+[t=0.0858956s, 13708 KB] Evaluated 1165 state(s).
+[t=0.0858956s, 13708 KB] Evaluations: 1165
+[t=0.0858956s, 13708 KB] Generated 2326 state(s).
+[t=0.0858956s, 13708 KB] Dead ends: 0 state(s).
+[t=0.0858956s, 13708 KB] Expanded until last jump: 0 state(s).
+[t=0.0858956s, 13708 KB] Reopened until last jump: 0 state(s).
+[t=0.0858956s, 13708 KB] Evaluated until last jump: 1 state(s).
+[t=0.0858956s, 13708 KB] Generated until last jump: 0 state(s).
+[t=0.0858956s, 13708 KB] Number of registered states: 1165
+[t=0.0858956s, 13708 KB] Int hash set load factor: 1165/2048 = 0.568848
+[t=0.0858956s, 13708 KB] Int hash set resizes: 11
+[t=0.0858956s, 13708 KB] total successors before pruning: 2326
+[t=0.0858956s, 13708 KB] total successors after pruning: 2326
+[t=0.0858956s, 13708 KB] Pruning ratio: 0
+[t=0.0858956s, 13708 KB] Time for pruning operators: 0.0363909s
+[t=0.0858956s, 13708 KB] Search time: 0.0766068s
+[t=0.0858956s, 13708 KB] Total time: 0.0858956s
+Solution found.
+Peak memory: 13708 KB
+search exit code: 0
+
+
+
+[t=2.3271e-05s, 11352 KB] reading input...
+[t=0.00397445s, 11760 KB] done reading input!
+[t=0.00476773s, 12024 KB] Building successor generator...done!
+[t=0.00521369s, 12304 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.00522266s, 12304 KB] time for successor generation creation: 0.000343869s
+[t=0.00523461s, 12304 KB] Variables: 45
+[t=0.00525139s, 12304 KB] FactPairs: 90
+[t=0.00526924s, 12304 KB] Bytes per state: 8
+[t=0.00528902s, 12304 KB] Initializing symmetries for extending plans with
+[t=0.00530826s, 12304 KB] Initializing symmetries
+[t=0.00577863s, 12596 KB] Using Bliss to find group generators
+[t=0.00615426s, 12908 KB] Done initializing symmetries: 0.000862138s
+[t=0.00618939s, 12908 KB] Size of the grounded symmetry graph: 1091
+[t=0.00619973s, 12908 KB] Number of search generators (affecting facts): 4
+[t=0.00620626s, 12908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00621213s, 12908 KB] Total number of generators: 4
+[t=0.00637557s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.1
+[t=0.0064033s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.2
+[t=0.00642758s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.3
+[t=0.00644954s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.4
+[t=0.00647115s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.5
+[t=0.0064926s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.6
+[t=0.00652131s, 12908 KB] Adding plans... 
+[t=0.00656251s, 12908 KB] Finding symmetric plans... 
+[t=0.00661453s, 12908 KB] done! [t=0.00662345s]
+[t=0.0066339s, 12908 KB] Dumping 6 plans before reformulation 
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00675677s, 12908 KB] Plan length: 9 step(s).
+[t=0.00677854s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.0068194s, 12908 KB] Plan length: 9 step(s).
+[t=0.00682654s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00685811s, 12908 KB] Plan length: 9 step(s).
+[t=0.00687559s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00691111s, 12908 KB] Plan length: 9 step(s).
+[t=0.00691851s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00694695s, 12908 KB] Plan length: 9 step(s).
+[t=0.00695313s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.006979s, 12908 KB] Plan length: 9 step(s).
+[t=0.00698514s, 12908 KB] Plan cost: 9
+[t=0.00699096s, 12908 KB] Done dumping plans before reformulation
+[t=0.00699991s, 12908 KB] Forbidding 6 plans
+[t=0.00702058s, 12908 KB] Number of operators in the multisets is: 20
+[t=0.00702772s, 12908 KB] Reformulated task is created, dumping
+[t=0.0172915s, 12908 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12908 KB
+search exit code: 0
+
+
+
+[t=2.2786e-05s, 11352 KB] reading input...
+[t=0.00639564s, 12076 KB] done reading input!
+[t=0.00816971s, 12888 KB] Initializing landmark cut heuristic...
+[t=0.00829387s, 12888 KB] Building successor generator...done!
+[t=0.00878782s, 13152 KB] peak memory difference for successor generator creation: 264 KB
+[t=0.00879725s, 13152 KB] time for successor generation creation: 0.00041171s
+[t=0.0088189s, 13152 KB] Variables: 71
+[t=0.00883893s, 13152 KB] FactPairs: 142
+[t=0.00885683s, 13152 KB] Bytes per state: 12
+[t=0.00887702s, 13152 KB] Initializing symmetries (eager search)
+[t=0.00889526s, 13152 KB] Initializing symmetries
+[t=0.00951201s, 13584 KB] Using Bliss to find group generators
+[t=0.0100106s, 13716 KB] Done initializing symmetries: 0.00113338s
+[t=0.0100495s, 13716 KB] Size of the grounded symmetry graph: 1188
+[t=0.0100606s, 13716 KB] Number of search generators (affecting facts): 4
+[t=0.0100674s, 13716 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0100735s, 13716 KB] Total number of generators: 4
+[t=0.0101863s, 13716 KB] Conducting best first search with reopening closed nodes, (real) bound = 17
+[t=0.0104466s, 13716 KB] New best heuristic value for lmcut: 9
+[t=0.01047s, 13716 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0104899s, 13716 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.0105101s, 13716 KB] Initial heuristic value for lmcut: 9
+[t=0.010781s, 13716 KB] pruning method: stubborn sets simple
+[t=0.0116611s, 13716 KB] New best heuristic value for lmcut: 8
+[t=0.0116937s, 13716 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0136799s, 13716 KB] New best heuristic value for lmcut: 7
+[t=0.0137156s, 13716 KB] g=2, 11 evaluated, 2 expanded
+[t=0.0155428s, 13716 KB] New best heuristic value for lmcut: 6
+[t=0.0155796s, 13716 KB] g=3, 21 evaluated, 3 expanded
+[t=0.0170034s, 13716 KB] New best heuristic value for lmcut: 5
+[t=0.0170314s, 13716 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0183324s, 13716 KB] New best heuristic value for lmcut: 4
+[t=0.0183563s, 13716 KB] g=5, 40 evaluated, 5 expanded
+[t=0.0196951s, 13716 KB] New best heuristic value for lmcut: 3
+[t=0.019718s, 13716 KB] g=6, 54 evaluated, 6 expanded
+[t=0.020416s, 13716 KB] New best heuristic value for lmcut: 2
+[t=0.0204367s, 13716 KB] g=7, 59 evaluated, 7 expanded
+[t=0.091264s, 13764 KB] New best heuristic value for lmcut: 1
+[t=0.0913457s, 13764 KB] g=8, 1264 evaluated, 217 expanded
+[t=0.0918358s, 13888 KB] New best heuristic value for lmcut: 0
+[t=0.0918649s, 13888 KB] g=9, 1270 evaluated, 218 expanded
+[t=0.091876s, 13888 KB] Solution found!
+[t=0.091943s, 13888 KB] Actual search time: 0.0811449s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.0919512s, 13888 KB] Plan length: 9 step(s).
+[t=0.0919512s, 13888 KB] Plan cost: 9
+[t=0.0919512s, 13888 KB] Expanded 219 state(s).
+[t=0.0919512s, 13888 KB] Reopened 0 state(s).
+[t=0.0919512s, 13888 KB] Evaluated 1270 state(s).
+[t=0.0919512s, 13888 KB] Evaluations: 1270
+[t=0.0919512s, 13888 KB] Generated 2466 state(s).
+[t=0.0919512s, 13888 KB] Dead ends: 0 state(s).
+[t=0.0919512s, 13888 KB] Expanded until last jump: 0 state(s).
+[t=0.0919512s, 13888 KB] Reopened until last jump: 0 state(s).
+[t=0.0919512s, 13888 KB] Evaluated until last jump: 1 state(s).
+[t=0.0919512s, 13888 KB] Generated until last jump: 0 state(s).
+[t=0.0919512s, 13888 KB] Number of registered states: 1270
+[t=0.0919512s, 13888 KB] Int hash set load factor: 1270/2048 = 0.620117
+[t=0.0919512s, 13888 KB] Int hash set resizes: 11
+[t=0.0919512s, 13888 KB] total successors before pruning: 2466
+[t=0.0919512s, 13888 KB] total successors after pruning: 2466
+[t=0.0919512s, 13888 KB] Pruning ratio: 0
+[t=0.0919512s, 13888 KB] Time for pruning operators: 0.0377072s
+[t=0.0919512s, 13888 KB] Search time: 0.0817657s
+[t=0.0919512s, 13888 KB] Total time: 0.0919512s
+Solution found.
+Peak memory: 13888 KB
+search exit code: 0
+
+
+
+[t=2.5271e-05s, 11352 KB] reading input...
+[t=0.00396626s, 11760 KB] done reading input!
+[t=0.00475016s, 12024 KB] Building successor generator...done!
+[t=0.00519268s, 12304 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.00520137s, 12304 KB] time for successor generation creation: 0.000338315s
+[t=0.00522269s, 12304 KB] Variables: 45
+[t=0.00524156s, 12304 KB] FactPairs: 90
+[t=0.00525886s, 12304 KB] Bytes per state: 8
+[t=0.0052791s, 12304 KB] Initializing symmetries for extending plans with
+[t=0.00529811s, 12304 KB] Initializing symmetries
+[t=0.00577805s, 12596 KB] Using Bliss to find group generators
+[t=0.00612946s, 12908 KB] Done initializing symmetries: 0.000847378s
+[t=0.00616906s, 12908 KB] Size of the grounded symmetry graph: 1091
+[t=0.0061795s, 12908 KB] Number of search generators (affecting facts): 4
+[t=0.00618594s, 12908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00619194s, 12908 KB] Total number of generators: 4
+[t=0.00635241s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.1
+[t=0.00637946s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.2
+[t=0.00640248s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.3
+[t=0.00642399s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.4
+[t=0.00644478s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.5
+[t=0.00646588s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.6
+[t=0.0064875s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.7
+[t=0.00651658s, 12908 KB] Adding plans... 
+[t=0.00655892s, 12908 KB] Finding symmetric plans... 
+[t=0.00661411s, 12908 KB] done! [t=0.00662314s]
+[t=0.00663315s, 12908 KB] Dumping 7 plans before reformulation 
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00676883s, 12908 KB] Plan length: 9 step(s).
+[t=0.00679192s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00683097s, 12908 KB] Plan length: 9 step(s).
+[t=0.00683794s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00693299s, 12908 KB] Plan length: 9 step(s).
+[t=0.00698002s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00702931s, 12908 KB] Plan length: 9 step(s).
+[t=0.00703743s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00706934s, 12908 KB] Plan length: 9 step(s).
+[t=0.00708137s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00711556s, 12908 KB] Plan length: 9 step(s).
+[t=0.00713411s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00716779s, 12908 KB] Plan length: 9 step(s).
+[t=0.00717571s, 12908 KB] Plan cost: 9
+[t=0.00718225s, 12908 KB] Done dumping plans before reformulation
+[t=0.00719296s, 12908 KB] Forbidding 7 plans
+[t=0.0072208s, 12908 KB] Number of operators in the multisets is: 20
+[t=0.00723964s, 12908 KB] Reformulated task is created, dumping
+[t=0.0168683s, 12908 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12908 KB
+search exit code: 0
+
+
+
+[t=2.2281e-05s, 11352 KB] reading input...
+[t=0.00680344s, 12080 KB] done reading input!
+[t=0.00801867s, 12892 KB] Initializing landmark cut heuristic...
+[t=0.00813151s, 12892 KB] Building successor generator...done!
+[t=0.00858888s, 13156 KB] peak memory difference for successor generator creation: 264 KB
+[t=0.00860673s, 13156 KB] time for successor generation creation: 0.000390463s
+[t=0.0086312s, 13156 KB] Variables: 72
+[t=0.00865105s, 13156 KB] FactPairs: 144
+[t=0.00866897s, 13156 KB] Bytes per state: 12
+[t=0.0086889s, 13156 KB] Initializing symmetries (eager search)
+[t=0.00870721s, 13156 KB] Initializing symmetries
+[t=0.00959715s, 13632 KB] Using Bliss to find group generators
+[t=0.0102571s, 13788 KB] Done initializing symmetries: 0.00157924s
+[t=0.0103077s, 13788 KB] Size of the grounded symmetry graph: 1191
+[t=0.0103189s, 13788 KB] Number of search generators (affecting facts): 4
+[t=0.0103255s, 13788 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0103314s, 13788 KB] Total number of generators: 4
+[t=0.0104414s, 13788 KB] Conducting best first search with reopening closed nodes, (real) bound = 17
+[t=0.010707s, 13788 KB] New best heuristic value for lmcut: 9
+[t=0.0107294s, 13788 KB] g=0, 1 evaluated, 0 expanded
+[t=0.010748s, 13788 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.0107687s, 13788 KB] Initial heuristic value for lmcut: 9
+[t=0.0110407s, 13788 KB] pruning method: stubborn sets simple
+[t=0.0118549s, 13788 KB] New best heuristic value for lmcut: 8
+[t=0.011888s, 13788 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0139224s, 13788 KB] New best heuristic value for lmcut: 7
+[t=0.0139621s, 13788 KB] g=2, 11 evaluated, 2 expanded
+[t=0.0157844s, 13788 KB] New best heuristic value for lmcut: 6
+[t=0.0158174s, 13788 KB] g=3, 21 evaluated, 3 expanded
+[t=0.0173389s, 13788 KB] New best heuristic value for lmcut: 5
+[t=0.0173639s, 13788 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0186893s, 13788 KB] New best heuristic value for lmcut: 4
+[t=0.0187117s, 13788 KB] g=5, 40 evaluated, 5 expanded
+[t=0.020003s, 13788 KB] New best heuristic value for lmcut: 3
+[t=0.0200253s, 13788 KB] g=6, 54 evaluated, 6 expanded
+[t=0.0207969s, 13788 KB] New best heuristic value for lmcut: 2
+[t=0.0208188s, 13788 KB] g=7, 59 evaluated, 7 expanded
+[t=0.104723s, 13828 KB] New best heuristic value for lmcut: 1
+[t=0.104811s, 13828 KB] g=8, 1472 evaluated, 256 expanded
+[t=0.105353s, 13828 KB] New best heuristic value for lmcut: 0
+[t=0.105376s, 13828 KB] g=9, 1483 evaluated, 257 expanded
+[t=0.105387s, 13828 KB] Solution found!
+[t=0.105462s, 13828 KB] Actual search time: 0.0943999s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.10547s, 13828 KB] Plan length: 9 step(s).
+[t=0.10547s, 13828 KB] Plan cost: 9
+[t=0.10547s, 13828 KB] Expanded 258 state(s).
+[t=0.10547s, 13828 KB] Reopened 0 state(s).
+[t=0.10547s, 13828 KB] Evaluated 1483 state(s).
+[t=0.10547s, 13828 KB] Evaluations: 1483
+[t=0.10547s, 13828 KB] Generated 2899 state(s).
+[t=0.10547s, 13828 KB] Dead ends: 0 state(s).
+[t=0.10547s, 13828 KB] Expanded until last jump: 0 state(s).
+[t=0.10547s, 13828 KB] Reopened until last jump: 0 state(s).
+[t=0.10547s, 13828 KB] Evaluated until last jump: 1 state(s).
+[t=0.10547s, 13828 KB] Generated until last jump: 0 state(s).
+[t=0.10547s, 13828 KB] Number of registered states: 1483
+[t=0.10547s, 13828 KB] Int hash set load factor: 1483/2048 = 0.724121
+[t=0.10547s, 13828 KB] Int hash set resizes: 11
+[t=0.10547s, 13828 KB] total successors before pruning: 2899
+[t=0.10547s, 13828 KB] total successors after pruning: 2899
+[t=0.10547s, 13828 KB] Pruning ratio: 0
+[t=0.10547s, 13828 KB] Time for pruning operators: 0.0442052s
+[t=0.10547s, 13828 KB] Search time: 0.0950289s
+[t=0.10547s, 13828 KB] Total time: 0.10547s
+Solution found.
+Peak memory: 13828 KB
+search exit code: 0
+
+
+
+[t=2.4541e-05s, 11352 KB] reading input...
+[t=0.00398566s, 11760 KB] done reading input!
+[t=0.00480616s, 12024 KB] Building successor generator...done!
+[t=0.0052387s, 12304 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.00524845s, 12304 KB] time for successor generation creation: 0.000340212s
+[t=0.0052604s, 12304 KB] Variables: 45
+[t=0.00526813s, 12304 KB] FactPairs: 90
+[t=0.005274s, 12304 KB] Bytes per state: 8
+[t=0.00528206s, 12304 KB] Initializing symmetries for extending plans with
+[t=0.0052899s, 12304 KB] Initializing symmetries
+[t=0.00576461s, 12596 KB] Using Bliss to find group generators
+[t=0.00611504s, 12908 KB] Done initializing symmetries: 0.000853963s
+[t=0.00616966s, 12908 KB] Size of the grounded symmetry graph: 1091
+[t=0.00617979s, 12908 KB] Number of search generators (affecting facts): 4
+[t=0.00618603s, 12908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00619191s, 12908 KB] Total number of generators: 4
+[t=0.00635366s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.1
+[t=0.00638101s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.2
+[t=0.00640561s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.3
+[t=0.00641489s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.4
+[t=0.00642356s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.5
+[t=0.00643246s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.6
+[t=0.00645206s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.7
+[t=0.00647257s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.8
+[t=0.00649195s, 12908 KB] Adding plans... 
+[t=0.00653871s, 12908 KB] Finding symmetric plans... 
+[t=0.00658807s, 12908 KB] done! [t=0.00659415s]
+[t=0.00660399s, 12908 KB] Dumping 8 plans before reformulation 
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00672075s, 12908 KB] Plan length: 9 step(s).
+[t=0.00674108s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00679549s, 12908 KB] Plan length: 9 step(s).
+[t=0.00680266s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00683094s, 12908 KB] Plan length: 9 step(s).
+[t=0.00684737s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00688263s, 12908 KB] Plan length: 9 step(s).
+[t=0.00688959s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00691867s, 12908 KB] Plan length: 9 step(s).
+[t=0.00692474s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00696895s, 12908 KB] Plan length: 9 step(s).
+[t=0.00698679s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00714318s, 12908 KB] Plan length: 9 step(s).
+[t=0.00718407s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00736153s, 12908 KB] Plan length: 9 step(s).
+[t=0.00739793s, 12908 KB] Plan cost: 9
+[t=0.00741135s, 12908 KB] Done dumping plans before reformulation
+[t=0.00743444s, 12908 KB] Forbidding 8 plans
+[t=0.00746429s, 12908 KB] Number of operators in the multisets is: 21
+[t=0.00748175s, 12908 KB] Reformulated task is created, dumping
+[t=0.0169855s, 12908 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12908 KB
+search exit code: 0
+
+
+
+[t=3.5975e-05s, 11352 KB] reading input...
+[t=0.00720996s, 12216 KB] done reading input!
+[t=0.00855911s, 12932 KB] Initializing landmark cut heuristic...
+[t=0.00871448s, 12932 KB] Building successor generator...done!
+[t=0.00915368s, 13208 KB] peak memory difference for successor generator creation: 276 KB
+[t=0.00916449s, 13208 KB] time for successor generation creation: 0.000364931s
+[t=0.00917985s, 13208 KB] Variables: 74
+[t=0.00919037s, 13208 KB] FactPairs: 148
+[t=0.00919636s, 13208 KB] Bytes per state: 12
+[t=0.00920707s, 13208 KB] Initializing symmetries (eager search)
+[t=0.00922447s, 13208 KB] Initializing symmetries
+[t=0.00983042s, 13688 KB] Using Bliss to find group generators
+[t=0.0102668s, 13820 KB] Done initializing symmetries: 0.00106096s
+[t=0.010306s, 13820 KB] Size of the grounded symmetry graph: 1198
+[t=0.0103169s, 13820 KB] Number of search generators (affecting facts): 4
+[t=0.0103239s, 13820 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0103302s, 13820 KB] Total number of generators: 4
+[t=0.0104688s, 13820 KB] Conducting best first search with reopening closed nodes, (real) bound = 17
+[t=0.0107617s, 13820 KB] New best heuristic value for lmcut: 9
+[t=0.0107854s, 13820 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0107952s, 13820 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.0108039s, 13820 KB] Initial heuristic value for lmcut: 9
+[t=0.0111141s, 13820 KB] pruning method: stubborn sets simple
+[t=0.0119629s, 13820 KB] New best heuristic value for lmcut: 8
+[t=0.0119921s, 13820 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0140477s, 13820 KB] New best heuristic value for lmcut: 7
+[t=0.0140752s, 13820 KB] g=2, 11 evaluated, 2 expanded
+[t=0.0169085s, 13820 KB] New best heuristic value for lmcut: 6
+[t=0.0170205s, 13820 KB] g=3, 21 evaluated, 3 expanded
+[t=0.0187317s, 13820 KB] New best heuristic value for lmcut: 5
+[t=0.0187953s, 13820 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0203395s, 13820 KB] New best heuristic value for lmcut: 4
+[t=0.0203981s, 13820 KB] g=5, 40 evaluated, 5 expanded
+[t=0.0218692s, 13820 KB] New best heuristic value for lmcut: 3
+[t=0.0219102s, 13820 KB] g=6, 54 evaluated, 6 expanded
+[t=0.0227372s, 13820 KB] New best heuristic value for lmcut: 2
+[t=0.0227734s, 13820 KB] g=7, 59 evaluated, 7 expanded
+[t=0.116321s, 13880 KB] New best heuristic value for lmcut: 1
+[t=0.1164s, 13880 KB] g=8, 1492 evaluated, 258 expanded
+[t=0.116898s, 14004 KB] New best heuristic value for lmcut: 0
+[t=0.116927s, 14004 KB] g=9, 1498 evaluated, 259 expanded
+[t=0.116939s, 14004 KB] Solution found!
+[t=0.117004s, 14004 KB] Actual search time: 0.105868s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_a_1483  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.117012s, 14004 KB] Plan length: 9 step(s).
+[t=0.117012s, 14004 KB] Plan cost: 9
+[t=0.117012s, 14004 KB] Expanded 260 state(s).
+[t=0.117012s, 14004 KB] Reopened 0 state(s).
+[t=0.117012s, 14004 KB] Evaluated 1498 state(s).
+[t=0.117012s, 14004 KB] Evaluations: 1498
+[t=0.117012s, 14004 KB] Generated 2924 state(s).
+[t=0.117012s, 14004 KB] Dead ends: 0 state(s).
+[t=0.117012s, 14004 KB] Expanded until last jump: 0 state(s).
+[t=0.117012s, 14004 KB] Reopened until last jump: 0 state(s).
+[t=0.117012s, 14004 KB] Evaluated until last jump: 1 state(s).
+[t=0.117012s, 14004 KB] Generated until last jump: 0 state(s).
+[t=0.117012s, 14004 KB] Number of registered states: 1498
+[t=0.117012s, 14004 KB] Int hash set load factor: 1498/2048 = 0.731445
+[t=0.117012s, 14004 KB] Int hash set resizes: 11
+[t=0.117012s, 14004 KB] total successors before pruning: 2924
+[t=0.117012s, 14004 KB] total successors after pruning: 2924
+[t=0.117012s, 14004 KB] Pruning ratio: 0
+[t=0.117012s, 14004 KB] Time for pruning operators: 0.0461615s
+[t=0.117012s, 14004 KB] Search time: 0.106545s
+[t=0.117012s, 14004 KB] Total time: 0.117012s
+Solution found.
+Peak memory: 14004 KB
+search exit code: 0
+
+
+
+[t=2.0989e-05s, 11352 KB] reading input...
+[t=0.00389648s, 11760 KB] done reading input!
+[t=0.00473824s, 12024 KB] Building successor generator...done!
+[t=0.00514615s, 12304 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.00515585s, 12304 KB] time for successor generation creation: 0.000331624s
+[t=0.00517346s, 12304 KB] Variables: 45
+[t=0.00518082s, 12304 KB] FactPairs: 90
+[t=0.00518673s, 12304 KB] Bytes per state: 8
+[t=0.00519496s, 12304 KB] Initializing symmetries for extending plans with
+[t=0.00521271s, 12304 KB] Initializing symmetries
+[t=0.00564727s, 12596 KB] Using Bliss to find group generators
+[t=0.00599417s, 12908 KB] Done initializing symmetries: 0.000794224s
+[t=0.00601877s, 12908 KB] Size of the grounded symmetry graph: 1091
+[t=0.00602858s, 12908 KB] Number of search generators (affecting facts): 4
+[t=0.00603438s, 12908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00603977s, 12908 KB] Total number of generators: 4
+[t=0.00620686s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.1
+[t=0.00623331s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.2
+[t=0.00625668s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.3
+[t=0.0062667s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.4
+[t=0.00627508s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.5
+[t=0.00628364s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.6
+[t=0.00629271s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.7
+[t=0.00631238s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.8
+[t=0.00633446s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.9
+[t=0.00635372s, 12908 KB] Adding plans... 
+[t=0.00640043s, 12908 KB] Finding symmetric plans... 
+[t=0.00646737s, 12908 KB] done! [t=0.00647581s]
+[t=0.00648619s, 12908 KB] Dumping 9 plans before reformulation 
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00659487s, 12908 KB] Plan length: 9 step(s).
+[t=0.00661586s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00668836s, 12908 KB] Plan length: 9 step(s).
+[t=0.00669538s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00672661s, 12908 KB] Plan length: 9 step(s).
+[t=0.00674263s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00678004s, 12908 KB] Plan length: 9 step(s).
+[t=0.00678676s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00682642s, 12908 KB] Plan length: 9 step(s).
+[t=0.00683278s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00687969s, 12908 KB] Plan length: 9 step(s).
+[t=0.00689757s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00693513s, 12908 KB] Plan length: 9 step(s).
+[t=0.00694444s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00698897s, 12908 KB] Plan length: 9 step(s).
+[t=0.0069952s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_a_1483  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00702255s, 12908 KB] Plan length: 9 step(s).
+[t=0.00702858s, 12908 KB] Plan cost: 9
+[t=0.0070344s, 12908 KB] Done dumping plans before reformulation
+[t=0.0070442s, 12908 KB] Forbidding 9 plans
+[t=0.0070716s, 12908 KB] Number of operators in the multisets is: 22
+[t=0.00708057s, 12908 KB] Reformulated task is created, dumping
+[t=0.0172275s, 12908 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12908 KB
+search exit code: 0
+
+
+
+[t=2.3864e-05s, 11352 KB] reading input...
+[t=0.00736621s, 12212 KB] done reading input!
+[t=0.00867682s, 13004 KB] Initializing landmark cut heuristic...
+[t=0.00878226s, 13004 KB] Building successor generator...done!
+[t=0.00934766s, 13268 KB] peak memory difference for successor generator creation: 264 KB
+[t=0.00935689s, 13268 KB] time for successor generation creation: 0.000502621s
+[t=0.00936898s, 13268 KB] Variables: 76
+[t=0.00937996s, 13268 KB] FactPairs: 152
+[t=0.00939604s, 13268 KB] Bytes per state: 12
+[t=0.00940717s, 13268 KB] Initializing symmetries (eager search)
+[t=0.0094142s, 13268 KB] Initializing symmetries
+[t=0.0100385s, 13744 KB] Using Bliss to find group generators
+[t=0.0104852s, 13876 KB] Done initializing symmetries: 0.00108716s
+[t=0.0105174s, 13876 KB] Size of the grounded symmetry graph: 1205
+[t=0.0105281s, 13876 KB] Number of search generators (affecting facts): 4
+[t=0.0105348s, 13876 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0105408s, 13876 KB] Total number of generators: 4
+[t=0.0106468s, 13876 KB] Conducting best first search with reopening closed nodes, (real) bound = 17
+[t=0.0109295s, 13876 KB] New best heuristic value for lmcut: 9
+[t=0.0109522s, 13876 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0109621s, 13876 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.0109701s, 13876 KB] Initial heuristic value for lmcut: 9
+[t=0.0112393s, 13876 KB] pruning method: stubborn sets simple
+[t=0.012141s, 13876 KB] New best heuristic value for lmcut: 8
+[t=0.0121716s, 13876 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0142856s, 13876 KB] New best heuristic value for lmcut: 7
+[t=0.014316s, 13876 KB] g=2, 11 evaluated, 2 expanded
+[t=0.0162834s, 13876 KB] New best heuristic value for lmcut: 6
+[t=0.0163094s, 13876 KB] g=3, 21 evaluated, 3 expanded
+[t=0.0177642s, 13876 KB] New best heuristic value for lmcut: 5
+[t=0.017791s, 13876 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0191369s, 13876 KB] New best heuristic value for lmcut: 4
+[t=0.0191575s, 13876 KB] g=5, 40 evaluated, 5 expanded
+[t=0.0204956s, 13876 KB] New best heuristic value for lmcut: 3
+[t=0.0205397s, 13876 KB] g=6, 54 evaluated, 6 expanded
+[t=0.0212928s, 13876 KB] New best heuristic value for lmcut: 2
+[t=0.0213135s, 13876 KB] g=7, 59 evaluated, 7 expanded
+[t=0.118026s, 14076 KB] New best heuristic value for lmcut: 1
+[t=0.118132s, 14076 KB] g=8, 1732 evaluated, 303 expanded
+[t=0.118683s, 14076 KB] New best heuristic value for lmcut: 0
+[t=0.118711s, 14076 KB] g=9, 1741 evaluated, 304 expanded
+[t=0.118735s, 14076 KB] Solution found!
+[t=0.118803s, 14076 KB] Actual search time: 0.10755s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_a_1509  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.118813s, 14076 KB] Plan length: 9 step(s).
+[t=0.118813s, 14076 KB] Plan cost: 9
+[t=0.118813s, 14076 KB] Expanded 305 state(s).
+[t=0.118813s, 14076 KB] Reopened 0 state(s).
+[t=0.118813s, 14076 KB] Evaluated 1741 state(s).
+[t=0.118813s, 14076 KB] Evaluations: 1741
+[t=0.118813s, 14076 KB] Generated 3440 state(s).
+[t=0.118813s, 14076 KB] Dead ends: 0 state(s).
+[t=0.118813s, 14076 KB] Expanded until last jump: 0 state(s).
+[t=0.118813s, 14076 KB] Reopened until last jump: 0 state(s).
+[t=0.118813s, 14076 KB] Evaluated until last jump: 1 state(s).
+[t=0.118813s, 14076 KB] Generated until last jump: 0 state(s).
+[t=0.118813s, 14076 KB] Number of registered states: 1741
+[t=0.118813s, 14076 KB] Int hash set load factor: 1741/2048 = 0.850098
+[t=0.118813s, 14076 KB] Int hash set resizes: 11
+[t=0.118813s, 14076 KB] total successors before pruning: 3440
+[t=0.118813s, 14076 KB] total successors after pruning: 3440
+[t=0.118813s, 14076 KB] Pruning ratio: 0
+[t=0.118813s, 14076 KB] Time for pruning operators: 0.0486955s
+[t=0.118813s, 14076 KB] Search time: 0.108167s
+[t=0.118813s, 14076 KB] Total time: 0.118813s
+Solution found.
+Peak memory: 14076 KB
+search exit code: 0
+
+
+
+[t=2.2639e-05s, 11352 KB] reading input...
+[t=0.00382183s, 11760 KB] done reading input!
+[t=0.00464151s, 12024 KB] Building successor generator...done!
+[t=0.00508843s, 12304 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.00509821s, 12304 KB] time for successor generation creation: 0.00034697s
+[t=0.00510937s, 12304 KB] Variables: 45
+[t=0.00511747s, 12304 KB] FactPairs: 90
+[t=0.00512357s, 12304 KB] Bytes per state: 8
+[t=0.00513181s, 12304 KB] Initializing symmetries for extending plans with
+[t=0.00513927s, 12304 KB] Initializing symmetries
+[t=0.00561676s, 12596 KB] Using Bliss to find group generators
+[t=0.00596548s, 12908 KB] Done initializing symmetries: 0.000841058s
+[t=0.00599452s, 12908 KB] Size of the grounded symmetry graph: 1091
+[t=0.00600422s, 12908 KB] Number of search generators (affecting facts): 4
+[t=0.00601091s, 12908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00602255s, 12908 KB] Total number of generators: 4
+[t=0.00618115s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.1
+[t=0.00620802s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.2
+[t=0.00630008s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.3
+[t=0.00633034s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.4
+[t=0.00634291s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.5
+[t=0.00635429s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.6
+[t=0.00636254s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.7
+[t=0.00638384s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.8
+[t=0.00639277s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.9
+[t=0.00640248s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.10
+[t=0.0064241s, 12908 KB] Adding plans... 
+[t=0.00647164s, 12908 KB] Finding symmetric plans... 
+[t=0.00654151s, 12908 KB] done! [t=0.00654871s]
+[t=0.00655979s, 12908 KB] Dumping 10 plans before reformulation 
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00667342s, 12908 KB] Plan length: 9 step(s).
+[t=0.00669747s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00674591s, 12908 KB] Plan length: 9 step(s).
+[t=0.00675338s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00678214s, 12908 KB] Plan length: 9 step(s).
+[t=0.00679795s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00684449s, 12908 KB] Plan length: 9 step(s).
+[t=0.0069754s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00713505s, 12908 KB] Plan length: 9 step(s).
+[t=0.00716024s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00721008s, 12908 KB] Plan length: 9 step(s).
+[t=0.00721753s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00724628s, 12908 KB] Plan length: 9 step(s).
+[t=0.00726227s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00731008s, 12908 KB] Plan length: 9 step(s).
+[t=0.0073273s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_a_1483  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.0073814s, 12908 KB] Plan length: 9 step(s).
+[t=0.00751049s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_a_1509  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00768701s, 12908 KB] Plan length: 9 step(s).
+[t=0.00772187s, 12908 KB] Plan cost: 9
+[t=0.00773022s, 12908 KB] Done dumping plans before reformulation
+[t=0.00774225s, 12908 KB] Forbidding 10 plans
+[t=0.00780804s, 12908 KB] Number of operators in the multisets is: 25
+[t=0.00786245s, 12908 KB] Reformulated task is created, dumping
+[t=0.0181601s, 12908 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12908 KB
+search exit code: 0
+
+
+
+[t=2.3665e-05s, 11352 KB] reading input...
+[t=0.00720439s, 12216 KB] done reading input!
+[t=0.00847563s, 13024 KB] Initializing landmark cut heuristic...
+[t=0.00858471s, 13156 KB] Building successor generator...done!
+[t=0.00898904s, 13280 KB] peak memory difference for successor generator creation: 124 KB
+[t=0.00899792s, 13280 KB] time for successor generation creation: 0.00032735s
+[t=0.00900884s, 13280 KB] Variables: 80
+[t=0.0090165s, 13280 KB] FactPairs: 160
+[t=0.00902262s, 13280 KB] Bytes per state: 12
+[t=0.00903074s, 13280 KB] Initializing symmetries (eager search)
+[t=0.00903707s, 13280 KB] Initializing symmetries
+[t=0.0097996s, 13792 KB] Using Bliss to find group generators
+[t=0.0103229s, 13924 KB] Done initializing symmetries: 0.00130158s
+[t=0.0103507s, 13924 KB] Size of the grounded symmetry graph: 1220
+[t=0.0103604s, 13924 KB] Number of search generators (affecting facts): 4
+[t=0.010367s, 13924 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.010373s, 13924 KB] Total number of generators: 4
+[t=0.0104881s, 13924 KB] Conducting best first search with reopening closed nodes, (real) bound = 17
+[t=0.0107829s, 13924 KB] New best heuristic value for lmcut: 9
+[t=0.0108019s, 13924 KB] g=0, 1 evaluated, 0 expanded
+[t=0.010811s, 13924 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.0108188s, 13924 KB] Initial heuristic value for lmcut: 9
+[t=0.0111218s, 13924 KB] pruning method: stubborn sets simple
+[t=0.0119542s, 13924 KB] New best heuristic value for lmcut: 8
+[t=0.0119791s, 13924 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0140452s, 13924 KB] New best heuristic value for lmcut: 7
+[t=0.01407s, 13924 KB] g=2, 11 evaluated, 2 expanded
+[t=0.015927s, 13924 KB] New best heuristic value for lmcut: 6
+[t=0.0159498s, 13924 KB] g=3, 21 evaluated, 3 expanded
+[t=0.0174914s, 13924 KB] New best heuristic value for lmcut: 5
+[t=0.017513s, 13924 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0189862s, 13924 KB] New best heuristic value for lmcut: 4
+[t=0.0190096s, 13924 KB] g=5, 40 evaluated, 5 expanded
+[t=0.0203862s, 13924 KB] New best heuristic value for lmcut: 3
+[t=0.0204077s, 13924 KB] g=6, 54 evaluated, 6 expanded
+[t=0.0211953s, 13924 KB] New best heuristic value for lmcut: 2
+[t=0.0212161s, 13924 KB] g=7, 59 evaluated, 7 expanded
+[t=0.143814s, 14120 KB] New best heuristic value for lmcut: 1
+[t=0.143868s, 14120 KB] g=8, 2055 evaluated, 381 expanded
+[t=0.144403s, 14252 KB] New best heuristic value for lmcut: 0
+[t=0.144425s, 14252 KB] g=9, 2064 evaluated, 382 expanded
+[t=0.144436s, 14252 KB] Solution found!
+[t=0.144507s, 14252 KB] Actual search time: 0.133373s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_e_1898  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.144515s, 14252 KB] Plan length: 9 step(s).
+[t=0.144515s, 14252 KB] Plan cost: 9
+[t=0.144515s, 14252 KB] Expanded 383 state(s).
+[t=0.144515s, 14252 KB] Reopened 0 state(s).
+[t=0.144515s, 14252 KB] Evaluated 2064 state(s).
+[t=0.144515s, 14252 KB] Evaluations: 2064
+[t=0.144515s, 14252 KB] Generated 4306 state(s).
+[t=0.144515s, 14252 KB] Dead ends: 0 state(s).
+[t=0.144515s, 14252 KB] Expanded until last jump: 0 state(s).
+[t=0.144515s, 14252 KB] Reopened until last jump: 0 state(s).
+[t=0.144515s, 14252 KB] Evaluated until last jump: 1 state(s).
+[t=0.144515s, 14252 KB] Generated until last jump: 0 state(s).
+[t=0.144515s, 14252 KB] Number of registered states: 2064
+[t=0.144515s, 14252 KB] Int hash set load factor: 2064/4096 = 0.503906
+[t=0.144515s, 14252 KB] Int hash set resizes: 12
+[t=0.144515s, 14252 KB] total successors before pruning: 4306
+[t=0.144515s, 14252 KB] total successors after pruning: 4306
+[t=0.144515s, 14252 KB] Pruning ratio: 0
+[t=0.144515s, 14252 KB] Time for pruning operators: 0.0601148s
+[t=0.144515s, 14252 KB] Search time: 0.134028s
+[t=0.144515s, 14252 KB] Total time: 0.144515s
+Solution found.
+Peak memory: 14252 KB
+search exit code: 0
+
+
+
+[t=2.5058e-05s, 11352 KB] reading input...
+[t=0.00400802s, 11760 KB] done reading input!
+[t=0.00482852s, 12024 KB] Building successor generator...done!
+[t=0.00527022s, 12304 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.00527931s, 12304 KB] time for successor generation creation: 0.000346774s
+[t=0.00529077s, 12304 KB] Variables: 45
+[t=0.00530794s, 12304 KB] FactPairs: 90
+[t=0.00532557s, 12304 KB] Bytes per state: 8
+[t=0.0053457s, 12304 KB] Initializing symmetries for extending plans with
+[t=0.00536535s, 12304 KB] Initializing symmetries
+[t=0.00584685s, 12596 KB] Using Bliss to find group generators
+[t=0.00621104s, 12908 KB] Done initializing symmetries: 0.000861546s
+[t=0.00624797s, 12908 KB] Size of the grounded symmetry graph: 1091
+[t=0.00625854s, 12908 KB] Number of search generators (affecting facts): 4
+[t=0.00626512s, 12908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00627127s, 12908 KB] Total number of generators: 4
+[t=0.00643635s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.1
+[t=0.00646561s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.2
+[t=0.00648914s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.3
+[t=0.006511s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.4
+[t=0.00653271s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.5
+[t=0.006554s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.6
+[t=0.00658425s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.7
+[t=0.00660652s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.8
+[t=0.0066288s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.9
+[t=0.00665164s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.10
+[t=0.00667412s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.11
+[t=0.0067058s, 12908 KB] Adding plans... 
+[t=0.00675549s, 12908 KB] Finding symmetric plans... 
+[t=0.00687274s, 12908 KB] done! [t=0.00690242s]
+[t=0.00691709s, 12908 KB] Dumping 11 plans before reformulation 
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00703905s, 12908 KB] Plan length: 9 step(s).
+[t=0.00715535s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00720265s, 12908 KB] Plan length: 9 step(s).
+[t=0.007215s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00731341s, 12908 KB] Plan length: 9 step(s).
+[t=0.00735297s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00739421s, 12908 KB] Plan length: 9 step(s).
+[t=0.00762694s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00768542s, 12908 KB] Plan length: 9 step(s).
+[t=0.00772923s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00777404s, 12908 KB] Plan length: 9 step(s).
+[t=0.00780849s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00784878s, 12908 KB] Plan length: 9 step(s).
+[t=0.00788675s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00792719s, 12908 KB] Plan length: 9 step(s).
+[t=0.00808565s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_a_1483  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00813605s, 12908 KB] Plan length: 9 step(s).
+[t=0.00817763s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_a_1509  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00822003s, 12908 KB] Plan length: 9 step(s).
+[t=0.00826202s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_e_1898  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00830196s, 12908 KB] Plan length: 9 step(s).
+[t=0.00834165s, 12908 KB] Plan cost: 9
+[t=0.00835018s, 12908 KB] Done dumping plans before reformulation
+[t=0.00836242s, 12908 KB] Forbidding 11 plans
+[t=0.00839662s, 12908 KB] Number of operators in the multisets is: 26
+[t=0.00840465s, 12908 KB] Reformulated task is created, dumping
+[t=0.0210515s, 12908 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12908 KB
+search exit code: 0
+
+
+
+[t=2.3711e-05s, 11352 KB] reading input...
+[t=0.00805001s, 12216 KB] done reading input!
+[t=0.00930356s, 13172 KB] Initializing landmark cut heuristic...
+[t=0.00941558s, 13172 KB] Building successor generator...done!
+[t=0.00981649s, 13304 KB] peak memory difference for successor generator creation: 132 KB
+[t=0.00982465s, 13304 KB] time for successor generation creation: 0.000337975s
+[t=0.00983493s, 13304 KB] Variables: 82
+[t=0.00984228s, 13304 KB] FactPairs: 164
+[t=0.00984812s, 13304 KB] Bytes per state: 12
+[t=0.00985611s, 13304 KB] Initializing symmetries (eager search)
+[t=0.00986249s, 13304 KB] Initializing symmetries
+[t=0.0104574s, 13852 KB] Using Bliss to find group generators
+[t=0.0109298s, 13988 KB] Done initializing symmetries: 0.0010814s
+[t=0.0109561s, 13988 KB] Size of the grounded symmetry graph: 1227
+[t=0.0109654s, 13988 KB] Number of search generators (affecting facts): 4
+[t=0.0109726s, 13988 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0109786s, 13988 KB] Total number of generators: 4
+[t=0.0110915s, 13988 KB] Conducting best first search with reopening closed nodes, (real) bound = 17
+[t=0.0114594s, 13988 KB] New best heuristic value for lmcut: 9
+[t=0.0115028s, 13988 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0115151s, 13988 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.0115237s, 13988 KB] Initial heuristic value for lmcut: 9
+[t=0.0118441s, 13988 KB] pruning method: stubborn sets simple
+[t=0.0127259s, 13988 KB] New best heuristic value for lmcut: 8
+[t=0.0127522s, 13988 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0156058s, 13988 KB] New best heuristic value for lmcut: 7
+[t=0.0158151s, 13988 KB] g=2, 11 evaluated, 2 expanded
+[t=0.0178958s, 13988 KB] New best heuristic value for lmcut: 6
+[t=0.0179351s, 13988 KB] g=3, 21 evaluated, 3 expanded
+[t=0.0195417s, 13988 KB] New best heuristic value for lmcut: 5
+[t=0.0195666s, 13988 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0210455s, 13988 KB] New best heuristic value for lmcut: 4
+[t=0.021068s, 13988 KB] g=5, 40 evaluated, 5 expanded
+[t=0.0225073s, 13988 KB] New best heuristic value for lmcut: 3
+[t=0.0225282s, 13988 KB] g=6, 54 evaluated, 6 expanded
+[t=0.0233593s, 13988 KB] New best heuristic value for lmcut: 2
+[t=0.0233824s, 13988 KB] g=7, 59 evaluated, 7 expanded
+[t=0.152238s, 14200 KB] New best heuristic value for lmcut: 1
+[t=0.152331s, 14200 KB] g=8, 2076 evaluated, 384 expanded
+[t=0.152917s, 14200 KB] New best heuristic value for lmcut: 0
+[t=0.152944s, 14200 KB] g=9, 2087 evaluated, 385 expanded
+[t=0.152965s, 14200 KB] Solution found!
+[t=0.153041s, 14200 KB] Actual search time: 0.141184s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_e_1898  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.153061s, 14200 KB] Plan length: 9 step(s).
+[t=0.153061s, 14200 KB] Plan cost: 9
+[t=0.153061s, 14200 KB] Expanded 386 state(s).
+[t=0.153061s, 14200 KB] Reopened 0 state(s).
+[t=0.153061s, 14200 KB] Evaluated 2087 state(s).
+[t=0.153061s, 14200 KB] Evaluations: 2087
+[t=0.153061s, 14200 KB] Generated 4339 state(s).
+[t=0.153061s, 14200 KB] Dead ends: 0 state(s).
+[t=0.153061s, 14200 KB] Expanded until last jump: 0 state(s).
+[t=0.153061s, 14200 KB] Reopened until last jump: 0 state(s).
+[t=0.153061s, 14200 KB] Evaluated until last jump: 1 state(s).
+[t=0.153061s, 14200 KB] Generated until last jump: 0 state(s).
+[t=0.153061s, 14200 KB] Number of registered states: 2087
+[t=0.153061s, 14200 KB] Int hash set load factor: 2087/4096 = 0.509521
+[t=0.153061s, 14200 KB] Int hash set resizes: 12
+[t=0.153061s, 14200 KB] total successors before pruning: 4339
+[t=0.153061s, 14200 KB] total successors after pruning: 4339
+[t=0.153061s, 14200 KB] Pruning ratio: 0
+[t=0.153061s, 14200 KB] Time for pruning operators: 0.0630422s
+[t=0.153061s, 14200 KB] Search time: 0.14197s
+[t=0.153061s, 14200 KB] Total time: 0.153061s
+Solution found.
+Peak memory: 14200 KB
+search exit code: 0
+
+
+
+[t=2.2428e-05s, 11352 KB] reading input...
+[t=0.00401903s, 11760 KB] done reading input!
+[t=0.00480646s, 12024 KB] Building successor generator...done!
+[t=0.00524342s, 12304 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.00526228s, 12304 KB] time for successor generation creation: 0.000338618s
+[t=0.00528564s, 12304 KB] Variables: 45
+[t=0.00530458s, 12304 KB] FactPairs: 90
+[t=0.00532206s, 12304 KB] Bytes per state: 8
+[t=0.00534985s, 12304 KB] Initializing symmetries for extending plans with
+[t=0.005369s, 12304 KB] Initializing symmetries
+[t=0.00584801s, 12596 KB] Using Bliss to find group generators
+[t=0.00622753s, 12908 KB] Done initializing symmetries: 0.000874527s
+[t=0.00625816s, 12908 KB] Size of the grounded symmetry graph: 1091
+[t=0.0062782s, 12908 KB] Number of search generators (affecting facts): 4
+[t=0.0062961s, 12908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00631354s, 12908 KB] Total number of generators: 4
+[t=0.00648586s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.1
+[t=0.00651486s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.2
+[t=0.00653699s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.3
+[t=0.00655876s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.4
+[t=0.00658004s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.5
+[t=0.0066014s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.6
+[t=0.00662283s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.7
+[t=0.00664408s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.8
+[t=0.00666624s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.9
+[t=0.00668877s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.10
+[t=0.00670999s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.11
+[t=0.00673113s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.12
+[t=0.00676167s, 12908 KB] Adding plans... 
+[t=0.0068131s, 12908 KB] Finding symmetric plans... 
+[t=0.00689659s, 12908 KB] done! [t=0.00690561s]
+[t=0.00691611s, 12908 KB] Dumping 12 plans before reformulation 
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00704938s, 12908 KB] Plan length: 9 step(s).
+[t=0.00707236s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00711115s, 12908 KB] Plan length: 9 step(s).
+[t=0.00711817s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00727808s, 12908 KB] Plan length: 9 step(s).
+[t=0.00731961s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00738713s, 12908 KB] Plan length: 9 step(s).
+[t=0.00740554s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00751123s, 12908 KB] Plan length: 9 step(s).
+[t=0.00753119s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00758247s, 12908 KB] Plan length: 9 step(s).
+[t=0.00760037s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00771529s, 12908 KB] Plan length: 9 step(s).
+[t=0.00774273s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.0078221s, 12908 KB] Plan length: 9 step(s).
+[t=0.00785384s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_a_1483  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00798s, 12908 KB] Plan length: 9 step(s).
+[t=0.0080554s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_a_1509  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00815149s, 12908 KB] Plan length: 9 step(s).
+[t=0.00818076s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_e_1898  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00822632s, 12908 KB] Plan length: 9 step(s).
+[t=0.00824412s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_e_1898  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00837062s, 12908 KB] Plan length: 9 step(s).
+[t=0.00839995s, 12908 KB] Plan cost: 9
+[t=0.00841094s, 12908 KB] Done dumping plans before reformulation
+[t=0.0084228s, 12908 KB] Forbidding 12 plans
+[t=0.00845798s, 12908 KB] Number of operators in the multisets is: 26
+[t=0.00847597s, 12908 KB] Reformulated task is created, dumping
+[t=0.0198178s, 12908 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12908 KB
+search exit code: 0
+
+
+
+[t=2.397e-05s, 11352 KB] reading input...
+[t=0.00845736s, 12216 KB] done reading input!
+[t=0.00978068s, 13208 KB] Initializing landmark cut heuristic...
+[t=0.00989236s, 13208 KB] Building successor generator...done!
+[t=0.0102968s, 13352 KB] peak memory difference for successor generator creation: 144 KB
+[t=0.0103057s, 13352 KB] time for successor generation creation: 0.000335935s
+[t=0.0103165s, 13352 KB] Variables: 83
+[t=0.0103241s, 13352 KB] FactPairs: 166
+[t=0.01033s, 13352 KB] Bytes per state: 12
+[t=0.0103382s, 13352 KB] Initializing symmetries (eager search)
+[t=0.0103446s, 13352 KB] Initializing symmetries
+[t=0.0109656s, 13916 KB] Using Bliss to find group generators
+[t=0.0114361s, 14060 KB] Done initializing symmetries: 0.00110783s
+[t=0.0114663s, 14060 KB] Size of the grounded symmetry graph: 1230
+[t=0.0114764s, 14060 KB] Number of search generators (affecting facts): 4
+[t=0.0114839s, 14060 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0114943s, 14060 KB] Total number of generators: 4
+[t=0.0115976s, 14060 KB] Conducting best first search with reopening closed nodes, (real) bound = 17
+[t=0.0119034s, 14060 KB] New best heuristic value for lmcut: 9
+[t=0.0119236s, 14060 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0119449s, 14060 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.0119529s, 14060 KB] Initial heuristic value for lmcut: 9
+[t=0.0122416s, 14060 KB] pruning method: stubborn sets simple
+[t=0.0130957s, 14060 KB] New best heuristic value for lmcut: 8
+[t=0.0131596s, 14060 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0153488s, 14060 KB] New best heuristic value for lmcut: 7
+[t=0.0153729s, 14060 KB] g=2, 11 evaluated, 2 expanded
+[t=0.0182408s, 14060 KB] New best heuristic value for lmcut: 6
+[t=0.0182794s, 14060 KB] g=3, 21 evaluated, 3 expanded
+[t=0.0199913s, 14060 KB] New best heuristic value for lmcut: 5
+[t=0.02002s, 14060 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0216135s, 14060 KB] New best heuristic value for lmcut: 4
+[t=0.0216403s, 14060 KB] g=5, 40 evaluated, 5 expanded
+[t=0.0231366s, 14060 KB] New best heuristic value for lmcut: 3
+[t=0.0231623s, 14060 KB] g=6, 54 evaluated, 6 expanded
+[t=0.0240323s, 14060 KB] New best heuristic value for lmcut: 2
+[t=0.024057s, 14060 KB] g=7, 59 evaluated, 7 expanded
+[t=0.153905s, 14244 KB] New best heuristic value for lmcut: 1
+[t=0.153992s, 14244 KB] g=8, 2137 evaluated, 396 expanded
+[t=0.154575s, 14376 KB] New best heuristic value for lmcut: 0
+[t=0.154602s, 14376 KB] g=9, 2146 evaluated, 397 expanded
+[t=0.154613s, 14376 KB] Solution found!
+[t=0.15469s, 14376 KB] Actual search time: 0.142439s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_l_2059  (1)
+sync_e_1900  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.154702s, 14376 KB] Plan length: 9 step(s).
+[t=0.154702s, 14376 KB] Plan cost: 9
+[t=0.154702s, 14376 KB] Expanded 398 state(s).
+[t=0.154702s, 14376 KB] Reopened 0 state(s).
+[t=0.154702s, 14376 KB] Evaluated 2146 state(s).
+[t=0.154702s, 14376 KB] Evaluations: 2146
+[t=0.154702s, 14376 KB] Generated 4469 state(s).
+[t=0.154702s, 14376 KB] Dead ends: 0 state(s).
+[t=0.154702s, 14376 KB] Expanded until last jump: 0 state(s).
+[t=0.154702s, 14376 KB] Reopened until last jump: 0 state(s).
+[t=0.154702s, 14376 KB] Evaluated until last jump: 1 state(s).
+[t=0.154702s, 14376 KB] Generated until last jump: 0 state(s).
+[t=0.154702s, 14376 KB] Number of registered states: 2146
+[t=0.154702s, 14376 KB] Int hash set load factor: 2146/4096 = 0.523926
+[t=0.154702s, 14376 KB] Int hash set resizes: 12
+[t=0.154702s, 14376 KB] total successors before pruning: 4469
+[t=0.154702s, 14376 KB] total successors after pruning: 4469
+[t=0.154702s, 14376 KB] Pruning ratio: 0
+[t=0.154702s, 14376 KB] Time for pruning operators: 0.0631382s
+[t=0.154702s, 14376 KB] Search time: 0.143105s
+[t=0.154702s, 14376 KB] Total time: 0.154702s
+Solution found.
+Peak memory: 14376 KB
+search exit code: 0
+
+
+
+[t=2.2604e-05s, 11352 KB] reading input...
+[t=0.00401147s, 11760 KB] done reading input!
+[t=0.00480716s, 12024 KB] Building successor generator...done!
+[t=0.0052476s, 12304 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.00525613s, 12304 KB] time for successor generation creation: 0.00034337s
+[t=0.00526714s, 12304 KB] Variables: 45
+[t=0.00528427s, 12304 KB] FactPairs: 90
+[t=0.00530201s, 12304 KB] Bytes per state: 8
+[t=0.00532181s, 12304 KB] Initializing symmetries for extending plans with
+[t=0.00534104s, 12304 KB] Initializing symmetries
+[t=0.00583083s, 12596 KB] Using Bliss to find group generators
+[t=0.00620399s, 12908 KB] Done initializing symmetries: 0.000877922s
+[t=0.00623956s, 12908 KB] Size of the grounded symmetry graph: 1091
+[t=0.00624984s, 12908 KB] Number of search generators (affecting facts): 4
+[t=0.00625606s, 12908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00626188s, 12908 KB] Total number of generators: 4
+[t=0.0064257s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.1
+[t=0.00645377s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.2
+[t=0.00647671s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.3
+[t=0.00649877s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.4
+[t=0.00652021s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.5
+[t=0.00654158s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.6
+[t=0.00656309s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.7
+[t=0.00658426s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.8
+[t=0.00660569s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.9
+[t=0.00662739s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.10
+[t=0.00664929s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.11
+[t=0.00667006s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.12
+[t=0.00669106s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.13
+[t=0.00672226s, 12908 KB] Adding plans... 
+[t=0.00677486s, 12908 KB] Finding symmetric plans... 
+[t=0.00686319s, 12908 KB] done! [t=0.00687149s]
+[t=0.00688131s, 12908 KB] Dumping 13 plans before reformulation 
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.0070015s, 12908 KB] Plan length: 9 step(s).
+[t=0.00702309s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00706287s, 12908 KB] Plan length: 9 step(s).
+[t=0.00706986s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00710097s, 12908 KB] Plan length: 9 step(s).
+[t=0.00711803s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00715355s, 12908 KB] Plan length: 9 step(s).
+[t=0.00716051s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00718992s, 12908 KB] Plan length: 9 step(s).
+[t=0.00719591s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00722306s, 12908 KB] Plan length: 9 step(s).
+[t=0.00722914s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00725671s, 12908 KB] Plan length: 9 step(s).
+[t=0.00726275s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00729017s, 12908 KB] Plan length: 9 step(s).
+[t=0.00729618s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_a_1483  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00732449s, 12908 KB] Plan length: 9 step(s).
+[t=0.0073305s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_a_1509  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00735831s, 12908 KB] Plan length: 9 step(s).
+[t=0.00736425s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_e_1898  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00739154s, 12908 KB] Plan length: 9 step(s).
+[t=0.00739751s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_e_1898  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00742494s, 12908 KB] Plan length: 9 step(s).
+[t=0.00743102s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_l_2059  (1)
+sync_e_1900  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00745691s, 12908 KB] Plan length: 9 step(s).
+[t=0.00746302s, 12908 KB] Plan cost: 9
+[t=0.0074687s, 12908 KB] Done dumping plans before reformulation
+[t=0.00747911s, 12908 KB] Forbidding 13 plans
+[t=0.00751173s, 12908 KB] Number of operators in the multisets is: 28
+[t=0.00751976s, 12908 KB] Reformulated task is created, dumping
+[t=0.0199367s, 12908 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12908 KB
+search exit code: 0
+
+
+
+[t=2.4666e-05s, 11352 KB] reading input...
+[t=0.00936196s, 12348 KB] done reading input!
+[t=0.0107624s, 13272 KB] Initializing landmark cut heuristic...
+[t=0.0109573s, 13272 KB] Building successor generator...done!
+[t=0.011375s, 13404 KB] peak memory difference for successor generator creation: 132 KB
+[t=0.0113894s, 13404 KB] time for successor generation creation: 0.000342173s
+[t=0.0114006s, 13404 KB] Variables: 86
+[t=0.0114084s, 13404 KB] FactPairs: 172
+[t=0.0114143s, 13404 KB] Bytes per state: 12
+[t=0.0114231s, 13404 KB] Initializing symmetries (eager search)
+[t=0.0114293s, 13404 KB] Initializing symmetries
+[t=0.0120964s, 13976 KB] Using Bliss to find group generators
+[t=0.0126053s, 14112 KB] Done initializing symmetries: 0.00119742s
+[t=0.0126387s, 14112 KB] Size of the grounded symmetry graph: 1241
+[t=0.0126484s, 14112 KB] Number of search generators (affecting facts): 4
+[t=0.0126541s, 14112 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0126597s, 14112 KB] Total number of generators: 4
+[t=0.0127807s, 14112 KB] Conducting best first search with reopening closed nodes, (real) bound = 17
+[t=0.0130859s, 14112 KB] New best heuristic value for lmcut: 9
+[t=0.0131062s, 14112 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0131153s, 14112 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.0131361s, 14112 KB] Initial heuristic value for lmcut: 9
+[t=0.0134716s, 14112 KB] pruning method: stubborn sets simple
+[t=0.0144776s, 14112 KB] New best heuristic value for lmcut: 8
+[t=0.0145178s, 14112 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0169811s, 14112 KB] New best heuristic value for lmcut: 7
+[t=0.0170777s, 14112 KB] g=2, 11 evaluated, 2 expanded
+[t=0.019341s, 14112 KB] New best heuristic value for lmcut: 6
+[t=0.0193786s, 14112 KB] g=3, 21 evaluated, 3 expanded
+[t=0.0210068s, 14112 KB] New best heuristic value for lmcut: 5
+[t=0.0210305s, 14112 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0225808s, 14112 KB] New best heuristic value for lmcut: 4
+[t=0.0226031s, 14112 KB] g=5, 40 evaluated, 5 expanded
+[t=0.0249623s, 14112 KB] New best heuristic value for lmcut: 3
+[t=0.0249882s, 14112 KB] g=6, 54 evaluated, 6 expanded
+[t=0.0258979s, 14112 KB] New best heuristic value for lmcut: 2
+[t=0.0259125s, 14112 KB] g=7, 59 evaluated, 7 expanded
+[t=0.160552s, 14300 KB] New best heuristic value for lmcut: 1
+[t=0.160649s, 14300 KB] g=8, 2152 evaluated, 398 expanded
+[t=0.161237s, 14432 KB] New best heuristic value for lmcut: 0
+[t=0.161264s, 14432 KB] g=9, 2161 evaluated, 399 expanded
+[t=0.161292s, 14432 KB] Solution found!
+[t=0.161355s, 14432 KB] Actual search time: 0.147869s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_a_1473  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.161373s, 14432 KB] Plan length: 9 step(s).
+[t=0.161373s, 14432 KB] Plan cost: 9
+[t=0.161373s, 14432 KB] Expanded 400 state(s).
+[t=0.161373s, 14432 KB] Reopened 0 state(s).
+[t=0.161373s, 14432 KB] Evaluated 2161 state(s).
+[t=0.161373s, 14432 KB] Evaluations: 2161
+[t=0.161373s, 14432 KB] Generated 4491 state(s).
+[t=0.161373s, 14432 KB] Dead ends: 0 state(s).
+[t=0.161373s, 14432 KB] Expanded until last jump: 0 state(s).
+[t=0.161373s, 14432 KB] Reopened until last jump: 0 state(s).
+[t=0.161373s, 14432 KB] Evaluated until last jump: 1 state(s).
+[t=0.161373s, 14432 KB] Generated until last jump: 0 state(s).
+[t=0.161373s, 14432 KB] Number of registered states: 2161
+[t=0.161373s, 14432 KB] Int hash set load factor: 2161/4096 = 0.527588
+[t=0.161373s, 14432 KB] Int hash set resizes: 12
+[t=0.161373s, 14432 KB] total successors before pruning: 4491
+[t=0.161373s, 14432 KB] total successors after pruning: 4491
+[t=0.161373s, 14432 KB] Pruning ratio: 0
+[t=0.161373s, 14432 KB] Time for pruning operators: 0.0662807s
+[t=0.161373s, 14432 KB] Search time: 0.148592s
+[t=0.161373s, 14432 KB] Total time: 0.161373s
+Solution found.
+Peak memory: 14432 KB
+search exit code: 0
+
+
+
+[t=2.4845e-05s, 11352 KB] reading input...
+[t=0.00400961s, 11760 KB] done reading input!
+[t=0.0048165s, 12024 KB] Building successor generator...done!
+[t=0.00525171s, 12304 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.00526051s, 12304 KB] time for successor generation creation: 0.000336144s
+[t=0.00527111s, 12304 KB] Variables: 45
+[t=0.0052885s, 12304 KB] FactPairs: 90
+[t=0.00530636s, 12304 KB] Bytes per state: 8
+[t=0.00532622s, 12304 KB] Initializing symmetries for extending plans with
+[t=0.00534499s, 12304 KB] Initializing symmetries
+[t=0.00584394s, 12596 KB] Using Bliss to find group generators
+[t=0.00619858s, 12908 KB] Done initializing symmetries: 0.000869775s
+[t=0.00623692s, 12908 KB] Size of the grounded symmetry graph: 1091
+[t=0.0062477s, 12908 KB] Number of search generators (affecting facts): 4
+[t=0.00625418s, 12908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00626017s, 12908 KB] Total number of generators: 4
+[t=0.00642152s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.1
+[t=0.0064566s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.2
+[t=0.00648068s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.3
+[t=0.00650256s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.4
+[t=0.00652428s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.5
+[t=0.00654596s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.6
+[t=0.00656767s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.7
+[t=0.00658899s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.8
+[t=0.00661077s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.9
+[t=0.00663257s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.10
+[t=0.00665486s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.11
+[t=0.00667634s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.12
+[t=0.00669801s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.13
+[t=0.00671978s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.14
+[t=0.00675075s, 12908 KB] Adding plans... 
+[t=0.00680531s, 12908 KB] Finding symmetric plans... 
+[t=0.00689904s, 12908 KB] done! [t=0.00690744s]
+[t=0.00691712s, 12908 KB] Dumping 14 plans before reformulation 
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00703529s, 12908 KB] Plan length: 9 step(s).
+[t=0.00705602s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00709595s, 12908 KB] Plan length: 9 step(s).
+[t=0.00710284s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.0071343s, 12908 KB] Plan length: 9 step(s).
+[t=0.00807728s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00814197s, 12908 KB] Plan length: 9 step(s).
+[t=0.0081552s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00823682s, 12908 KB] Plan length: 9 step(s).
+[t=0.00828129s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00832376s, 12908 KB] Plan length: 9 step(s).
+[t=0.00835694s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00839766s, 12908 KB] Plan length: 9 step(s).
+[t=0.00843502s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00847683s, 12908 KB] Plan length: 9 step(s).
+[t=0.00851595s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_a_1483  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00855909s, 12908 KB] Plan length: 9 step(s).
+[t=0.00859508s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_a_1509  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00863548s, 12908 KB] Plan length: 9 step(s).
+[t=0.00866898s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_e_1898  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00876946s, 12908 KB] Plan length: 9 step(s).
+[t=0.00878616s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_e_1898  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00882331s, 12908 KB] Plan length: 9 step(s).
+[t=0.00882986s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_l_2059  (1)
+sync_e_1900  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00885853s, 12908 KB] Plan length: 9 step(s).
+[t=0.00886458s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_a_1473  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00889035s, 12908 KB] Plan length: 9 step(s).
+[t=0.00889651s, 12908 KB] Plan cost: 9
+[t=0.00890235s, 12908 KB] Done dumping plans before reformulation
+[t=0.00891413s, 12908 KB] Forbidding 14 plans
+[t=0.00894547s, 12908 KB] Number of operators in the multisets is: 29
+[t=0.008954s, 12908 KB] Reformulated task is created, dumping
+[t=0.0224126s, 12908 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12908 KB
+search exit code: 0
+
+
+
+[t=2.2615e-05s, 11352 KB] reading input...
+[t=0.00943051s, 12352 KB] done reading input!
+[t=0.0107463s, 13292 KB] Initializing landmark cut heuristic...
+[t=0.0108567s, 13292 KB] Building successor generator...done!
+[t=0.0112569s, 13424 KB] peak memory difference for successor generator creation: 132 KB
+[t=0.0112654s, 13424 KB] time for successor generation creation: 0.000331577s
+[t=0.0112758s, 13424 KB] Variables: 88
+[t=0.0112831s, 13424 KB] FactPairs: 176
+[t=0.0112892s, 13424 KB] Bytes per state: 12
+[t=0.0112972s, 13424 KB] Initializing symmetries (eager search)
+[t=0.0113033s, 13424 KB] Initializing symmetries
+[t=0.0119908s, 14024 KB] Using Bliss to find group generators
+[t=0.0124655s, 14160 KB] Done initializing symmetries: 0.00117668s
+[t=0.0124933s, 14160 KB] Size of the grounded symmetry graph: 1248
+[t=0.0125031s, 14160 KB] Number of search generators (affecting facts): 4
+[t=0.012511s, 14160 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0125248s, 14160 KB] Total number of generators: 4
+[t=0.0126343s, 14160 KB] Conducting best first search with reopening closed nodes, (real) bound = 17
+[t=0.0130103s, 14160 KB] New best heuristic value for lmcut: 9
+[t=0.013064s, 14160 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0130746s, 14160 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.0130957s, 14160 KB] Initial heuristic value for lmcut: 9
+[t=0.0134364s, 14160 KB] pruning method: stubborn sets simple
+[t=0.0143239s, 14160 KB] New best heuristic value for lmcut: 8
+[t=0.0143482s, 14160 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0167459s, 14160 KB] New best heuristic value for lmcut: 7
+[t=0.0167749s, 14160 KB] g=2, 11 evaluated, 2 expanded
+[t=0.0189209s, 14160 KB] New best heuristic value for lmcut: 6
+[t=0.0189467s, 14160 KB] g=3, 21 evaluated, 3 expanded
+[t=0.0206946s, 14160 KB] New best heuristic value for lmcut: 5
+[t=0.0207242s, 14160 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0223153s, 14160 KB] New best heuristic value for lmcut: 4
+[t=0.02234s, 14160 KB] g=5, 40 evaluated, 5 expanded
+[t=0.0241653s, 14160 KB] New best heuristic value for lmcut: 3
+[t=0.0241915s, 14160 KB] g=6, 54 evaluated, 6 expanded
+[t=0.0250937s, 14160 KB] New best heuristic value for lmcut: 2
+[t=0.0251172s, 14160 KB] g=7, 59 evaluated, 7 expanded
+[t=0.159801s, 14396 KB] New best heuristic value for lmcut: 1
+[t=0.159922s, 14396 KB] g=8, 2211 evaluated, 404 expanded
+[t=0.160397s, 14524 KB] New best heuristic value for lmcut: 0
+[t=0.16043s, 14524 KB] g=9, 2219 evaluated, 405 expanded
+[t=0.160443s, 14524 KB] Solution found!
+[t=0.160519s, 14524 KB] Actual search time: 0.147065s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_f_1244  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_24  (1)
+[t=0.160527s, 14524 KB] Plan length: 9 step(s).
+[t=0.160527s, 14524 KB] Plan cost: 9
+[t=0.160527s, 14524 KB] Expanded 406 state(s).
+[t=0.160527s, 14524 KB] Reopened 0 state(s).
+[t=0.160527s, 14524 KB] Evaluated 2219 state(s).
+[t=0.160527s, 14524 KB] Evaluations: 2219
+[t=0.160527s, 14524 KB] Generated 4556 state(s).
+[t=0.160527s, 14524 KB] Dead ends: 0 state(s).
+[t=0.160527s, 14524 KB] Expanded until last jump: 0 state(s).
+[t=0.160527s, 14524 KB] Reopened until last jump: 0 state(s).
+[t=0.160527s, 14524 KB] Evaluated until last jump: 1 state(s).
+[t=0.160527s, 14524 KB] Generated until last jump: 0 state(s).
+[t=0.160527s, 14524 KB] Number of registered states: 2219
+[t=0.160527s, 14524 KB] Int hash set load factor: 2219/4096 = 0.541748
+[t=0.160527s, 14524 KB] Int hash set resizes: 12
+[t=0.160527s, 14524 KB] total successors before pruning: 4556
+[t=0.160527s, 14524 KB] total successors after pruning: 4556
+[t=0.160527s, 14524 KB] Pruning ratio: 0
+[t=0.160527s, 14524 KB] Time for pruning operators: 0.0634882s
+[t=0.160527s, 14524 KB] Search time: 0.147893s
+[t=0.160527s, 14524 KB] Total time: 0.160527s
+Solution found.
+Peak memory: 14524 KB
+search exit code: 0
+
+
+
+[t=2.9217e-05s, 11352 KB] reading input...
+[t=0.00401818s, 11760 KB] done reading input!
+[t=0.00481591s, 12024 KB] Building successor generator...done!
+[t=0.00523983s, 12304 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.00524864s, 12304 KB] time for successor generation creation: 0.000328507s
+[t=0.00525988s, 12304 KB] Variables: 45
+[t=0.00526851s, 12304 KB] FactPairs: 90
+[t=0.00527454s, 12304 KB] Bytes per state: 8
+[t=0.00528265s, 12304 KB] Initializing symmetries for extending plans with
+[t=0.00529052s, 12304 KB] Initializing symmetries
+[t=0.0057933s, 12596 KB] Using Bliss to find group generators
+[t=0.00614077s, 12908 KB] Done initializing symmetries: 0.000866107s
+[t=0.00617055s, 12908 KB] Size of the grounded symmetry graph: 1091
+[t=0.00618059s, 12908 KB] Number of search generators (affecting facts): 4
+[t=0.00618825s, 12908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00620152s, 12908 KB] Total number of generators: 4
+[t=0.00637747s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.1
+[t=0.00640977s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.2
+[t=0.00643314s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.3
+[t=0.00644481s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.4
+[t=0.00646572s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.5
+[t=0.00647836s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.6
+[t=0.00648994s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.7
+[t=0.00649774s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.8
+[t=0.00651869s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.9
+[t=0.00652807s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.10
+[t=0.00653678s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.11
+[t=0.00654607s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.12
+[t=0.00656477s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.13
+[t=0.00658636s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.14
+[t=0.00660811s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.15
+[t=0.00664099s, 12908 KB] Adding plans... 
+[t=0.00669656s, 12908 KB] Finding symmetric plans... 
+[t=0.00679398s, 12908 KB] done! [t=0.00680281s]
+[t=0.0068225s, 12908 KB] Dumping 15 plans before reformulation 
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00695001s, 12908 KB] Plan length: 9 step(s).
+[t=0.00697141s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00701342s, 12908 KB] Plan length: 9 step(s).
+[t=0.00702244s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00705403s, 12908 KB] Plan length: 9 step(s).
+[t=0.00706064s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00709371s, 12908 KB] Plan length: 9 step(s).
+[t=0.00711229s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00714982s, 12908 KB] Plan length: 9 step(s).
+[t=0.00715828s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00719159s, 12908 KB] Plan length: 9 step(s).
+[t=0.00725608s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00736959s, 12908 KB] Plan length: 9 step(s).
+[t=0.00738358s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00743069s, 12908 KB] Plan length: 9 step(s).
+[t=0.00743986s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_a_1483  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00748391s, 12908 KB] Plan length: 9 step(s).
+[t=0.00749357s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_a_1509  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00753832s, 12908 KB] Plan length: 9 step(s).
+[t=0.00755618s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_e_1898  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00759418s, 12908 KB] Plan length: 9 step(s).
+[t=0.00760193s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_e_1898  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00776175s, 12908 KB] Plan length: 9 step(s).
+[t=0.0077988s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_l_2059  (1)
+sync_e_1900  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00787119s, 12908 KB] Plan length: 9 step(s).
+[t=0.00789065s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_a_1473  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00794693s, 12908 KB] Plan length: 9 step(s).
+[t=0.00795625s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_f_1244  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_24  (1)
+[t=0.00801071s, 12908 KB] Plan length: 9 step(s).
+[t=0.00802857s, 12908 KB] Plan cost: 9
+[t=0.00803786s, 12908 KB] Done dumping plans before reformulation
+[t=0.00805145s, 12908 KB] Forbidding 15 plans
+[t=0.00816943s, 12908 KB] Number of operators in the multisets is: 31
+[t=0.00820252s, 12908 KB] Reformulated task is created, dumping
+[t=0.0214088s, 12908 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12908 KB
+search exit code: 0
+
+
+
+[t=3.1771e-05s, 11352 KB] reading input...
+[t=0.00998482s, 12352 KB] done reading input!
+[t=0.0114933s, 13320 KB] Initializing landmark cut heuristic...
+[t=0.0116265s, 13320 KB] Building successor generator...done!
+[t=0.0120736s, 13584 KB] peak memory difference for successor generator creation: 264 KB
+[t=0.0120822s, 13584 KB] time for successor generation creation: 0.000373088s
+[t=0.0120942s, 13584 KB] Variables: 91
+[t=0.0121036s, 13584 KB] FactPairs: 182
+[t=0.0121098s, 13584 KB] Bytes per state: 12
+[t=0.0121197s, 13584 KB] Initializing symmetries (eager search)
+[t=0.0121278s, 13584 KB] Initializing symmetries
+[t=0.012787s, 14072 KB] Using Bliss to find group generators
+[t=0.0133048s, 14336 KB] Done initializing symmetries: 0.00119535s
+[t=0.013339s, 14336 KB] Size of the grounded symmetry graph: 1259
+[t=0.013349s, 14336 KB] Number of search generators (affecting facts): 4
+[t=0.0133552s, 14336 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0133726s, 14336 KB] Total number of generators: 4
+[t=0.0135094s, 14336 KB] Conducting best first search with reopening closed nodes, (real) bound = 17
+[t=0.0138522s, 14336 KB] New best heuristic value for lmcut: 9
+[t=0.0138737s, 14336 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0138831s, 14336 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.0139039s, 14336 KB] Initial heuristic value for lmcut: 9
+[t=0.0142491s, 14336 KB] pruning method: stubborn sets simple
+[t=0.0151454s, 14336 KB] New best heuristic value for lmcut: 8
+[t=0.0151743s, 14336 KB] g=1, 2 evaluated, 1 expanded
+[t=0.017768s, 14336 KB] New best heuristic value for lmcut: 7
+[t=0.017802s, 14336 KB] g=2, 11 evaluated, 2 expanded
+[t=0.0201503s, 14336 KB] New best heuristic value for lmcut: 6
+[t=0.0201822s, 14336 KB] g=3, 21 evaluated, 3 expanded
+[t=0.0220501s, 14336 KB] New best heuristic value for lmcut: 5
+[t=0.022078s, 14336 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0238643s, 14336 KB] New best heuristic value for lmcut: 4
+[t=0.0239124s, 14336 KB] g=5, 40 evaluated, 5 expanded
+[t=0.0255667s, 14336 KB] New best heuristic value for lmcut: 3
+[t=0.0256093s, 14336 KB] g=6, 54 evaluated, 6 expanded
+[t=0.0266533s, 14336 KB] New best heuristic value for lmcut: 2
+[t=0.0267327s, 14336 KB] g=7, 59 evaluated, 7 expanded
+[t=0.178495s, 14552 KB] New best heuristic value for lmcut: 1
+[t=0.17864s, 14552 KB] g=8, 2394 evaluated, 426 expanded
+[t=0.179222s, 14552 KB] New best heuristic value for lmcut: 0
+[t=0.179249s, 14552 KB] g=9, 2403 evaluated, 427 expanded
+[t=0.179262s, 14552 KB] Solution found!
+[t=0.179367s, 14552 KB] Actual search time: 0.165107s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_g_1295  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.179379s, 14552 KB] Plan length: 9 step(s).
+[t=0.179379s, 14552 KB] Plan cost: 9
+[t=0.179379s, 14552 KB] Expanded 428 state(s).
+[t=0.179379s, 14552 KB] Reopened 0 state(s).
+[t=0.179379s, 14552 KB] Evaluated 2403 state(s).
+[t=0.179379s, 14552 KB] Evaluations: 2403
+[t=0.179379s, 14552 KB] Generated 4787 state(s).
+[t=0.179379s, 14552 KB] Dead ends: 0 state(s).
+[t=0.179379s, 14552 KB] Expanded until last jump: 0 state(s).
+[t=0.179379s, 14552 KB] Reopened until last jump: 0 state(s).
+[t=0.179379s, 14552 KB] Evaluated until last jump: 1 state(s).
+[t=0.179379s, 14552 KB] Generated until last jump: 0 state(s).
+[t=0.179379s, 14552 KB] Number of registered states: 2403
+[t=0.179379s, 14552 KB] Int hash set load factor: 2403/4096 = 0.58667
+[t=0.179379s, 14552 KB] Int hash set resizes: 12
+[t=0.179379s, 14552 KB] total successors before pruning: 4787
+[t=0.179379s, 14552 KB] total successors after pruning: 4787
+[t=0.179379s, 14552 KB] Pruning ratio: 0
+[t=0.179379s, 14552 KB] Time for pruning operators: 0.0688654s
+[t=0.179379s, 14552 KB] Search time: 0.165871s
+[t=0.179379s, 14552 KB] Total time: 0.179379s
+Solution found.
+Peak memory: 14552 KB
+search exit code: 0
+
+
+
+[t=2.5417e-05s, 11352 KB] reading input...
+[t=0.00380203s, 11760 KB] done reading input!
+[t=0.00459272s, 12024 KB] Building successor generator...done!
+[t=0.005047s, 12304 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.00506275s, 12304 KB] time for successor generation creation: 0.00036301s
+[t=0.00507445s, 12304 KB] Variables: 45
+[t=0.00508205s, 12304 KB] FactPairs: 90
+[t=0.00508958s, 12304 KB] Bytes per state: 8
+[t=0.00509968s, 12304 KB] Initializing symmetries for extending plans with
+[t=0.00511884s, 12304 KB] Initializing symmetries
+[t=0.00558673s, 12596 KB] Using Bliss to find group generators
+[t=0.00595853s, 12908 KB] Done initializing symmetries: 0.000858546s
+[t=0.00599362s, 12908 KB] Size of the grounded symmetry graph: 1091
+[t=0.00600431s, 12908 KB] Number of search generators (affecting facts): 4
+[t=0.00601256s, 12908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00602939s, 12908 KB] Total number of generators: 4
+[t=0.00625163s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.1
+[t=0.00629409s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.2
+[t=0.00632429s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.3
+[t=0.00635278s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.4
+[t=0.00638094s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.5
+[t=0.0064099s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.6
+[t=0.00643171s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.7
+[t=0.00645261s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.8
+[t=0.00647541s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.9
+[t=0.00648836s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.10
+[t=0.00649761s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.11
+[t=0.00650752s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.12
+[t=0.00651697s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.13
+[t=0.00652629s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.14
+[t=0.00653497s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.15
+[t=0.00654539s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.16
+[t=0.00656989s, 12908 KB] Adding plans... 
+[t=0.00662797s, 12908 KB] Finding symmetric plans... 
+[t=0.00674322s, 12908 KB] done! [t=0.00675189s]
+[t=0.00676187s, 12908 KB] Dumping 16 plans before reformulation 
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00693053s, 12908 KB] Plan length: 9 step(s).
+[t=0.00697379s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00703226s, 12908 KB] Plan length: 9 step(s).
+[t=0.00704041s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00709662s, 12908 KB] Plan length: 9 step(s).
+[t=0.00710592s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00713733s, 12908 KB] Plan length: 9 step(s).
+[t=0.00714382s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00720773s, 12908 KB] Plan length: 9 step(s).
+[t=0.00721904s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00726664s, 12908 KB] Plan length: 9 step(s).
+[t=0.00728481s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00732828s, 12908 KB] Plan length: 9 step(s).
+[t=0.0073353s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00736907s, 12908 KB] Plan length: 9 step(s).
+[t=0.0073864s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_a_1483  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00743307s, 12908 KB] Plan length: 9 step(s).
+[t=0.00745129s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_a_1509  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00749067s, 12908 KB] Plan length: 9 step(s).
+[t=0.00749747s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_e_1898  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00753446s, 12908 KB] Plan length: 9 step(s).
+[t=0.0075409s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_e_1898  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00758235s, 12908 KB] Plan length: 9 step(s).
+[t=0.00760073s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_l_2059  (1)
+sync_e_1900  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00763817s, 12908 KB] Plan length: 9 step(s).
+[t=0.00765828s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_a_1473  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00768708s, 12908 KB] Plan length: 9 step(s).
+[t=0.00770421s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_f_1244  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_24  (1)
+[t=0.00773969s, 12908 KB] Plan length: 9 step(s).
+[t=0.00774669s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_g_1295  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00777376s, 12908 KB] Plan length: 9 step(s).
+[t=0.00777994s, 12908 KB] Plan cost: 9
+[t=0.00778582s, 12908 KB] Done dumping plans before reformulation
+[t=0.00787326s, 12908 KB] Forbidding 16 plans
+[t=0.0080745s, 12908 KB] Number of operators in the multisets is: 32
+[t=0.00812047s, 12908 KB] Reformulated task is created, dumping
+[t=0.0215438s, 12908 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12908 KB
+search exit code: 0
+
+
+
+[t=2.4833e-05s, 11352 KB] reading input...
+[t=0.00983312s, 12352 KB] done reading input!
+[t=0.0112413s, 13408 KB] Initializing landmark cut heuristic...
+[t=0.0113739s, 13408 KB] Building successor generator...done!
+[t=0.0117758s, 13540 KB] peak memory difference for successor generator creation: 132 KB
+[t=0.0117927s, 13540 KB] time for successor generation creation: 0.00034937s
+[t=0.0118036s, 13540 KB] Variables: 93
+[t=0.0118116s, 13540 KB] FactPairs: 186
+[t=0.0118174s, 13540 KB] Bytes per state: 12
+[t=0.0118256s, 13540 KB] Initializing symmetries (eager search)
+[t=0.0118319s, 13540 KB] Initializing symmetries
+[t=0.0125514s, 14128 KB] Using Bliss to find group generators
+[t=0.0130653s, 14396 KB] Done initializing symmetries: 0.00124959s
+[t=0.0130955s, 14396 KB] Size of the grounded symmetry graph: 1266
+[t=0.0131058s, 14396 KB] Number of search generators (affecting facts): 4
+[t=0.0131119s, 14396 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0131179s, 14396 KB] Total number of generators: 4
+[t=0.0132454s, 14396 KB] Conducting best first search with reopening closed nodes, (real) bound = 17
+[t=0.0135997s, 14396 KB] New best heuristic value for lmcut: 9
+[t=0.0136214s, 14396 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0136307s, 14396 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.0136507s, 14396 KB] Initial heuristic value for lmcut: 9
+[t=0.0139889s, 14396 KB] pruning method: stubborn sets simple
+[t=0.0149066s, 14396 KB] New best heuristic value for lmcut: 8
+[t=0.0149325s, 14396 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0174699s, 14396 KB] New best heuristic value for lmcut: 7
+[t=0.0174958s, 14396 KB] g=2, 11 evaluated, 2 expanded
+[t=0.0197021s, 14396 KB] New best heuristic value for lmcut: 6
+[t=0.0197269s, 14396 KB] g=3, 21 evaluated, 3 expanded
+[t=0.0215314s, 14396 KB] New best heuristic value for lmcut: 5
+[t=0.0215559s, 14396 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0231833s, 14396 KB] New best heuristic value for lmcut: 4
+[t=0.0232088s, 14396 KB] g=5, 40 evaluated, 5 expanded
+[t=0.0247281s, 14396 KB] New best heuristic value for lmcut: 3
+[t=0.0247545s, 14396 KB] g=6, 54 evaluated, 6 expanded
+[t=0.0256789s, 14396 KB] New best heuristic value for lmcut: 2
+[t=0.0257054s, 14396 KB] g=7, 59 evaluated, 7 expanded
+[t=0.183298s, 14604 KB] New best heuristic value for lmcut: 1
+[t=0.183394s, 14604 KB] g=8, 2622 evaluated, 454 expanded
+[t=0.183964s, 14604 KB] New best heuristic value for lmcut: 0
+[t=0.183987s, 14604 KB] g=9, 2631 evaluated, 455 expanded
+[t=0.183998s, 14604 KB] Solution found!
+[t=0.184091s, 14604 KB] Actual search time: 0.170087s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_h_523  (1)
+sync_e_1799  (1)
+sync_h_298  (1)
+finish_28  (1)
+[t=0.1841s, 14604 KB] Plan length: 9 step(s).
+[t=0.1841s, 14604 KB] Plan cost: 9
+[t=0.1841s, 14604 KB] Expanded 456 state(s).
+[t=0.1841s, 14604 KB] Reopened 0 state(s).
+[t=0.1841s, 14604 KB] Evaluated 2631 state(s).
+[t=0.1841s, 14604 KB] Evaluations: 2631
+[t=0.1841s, 14604 KB] Generated 5110 state(s).
+[t=0.1841s, 14604 KB] Dead ends: 0 state(s).
+[t=0.1841s, 14604 KB] Expanded until last jump: 0 state(s).
+[t=0.1841s, 14604 KB] Reopened until last jump: 0 state(s).
+[t=0.1841s, 14604 KB] Evaluated until last jump: 1 state(s).
+[t=0.1841s, 14604 KB] Generated until last jump: 0 state(s).
+[t=0.1841s, 14604 KB] Number of registered states: 2631
+[t=0.1841s, 14604 KB] Int hash set load factor: 2631/4096 = 0.642334
+[t=0.1841s, 14604 KB] Int hash set resizes: 12
+[t=0.1841s, 14604 KB] total successors before pruning: 5110
+[t=0.1841s, 14604 KB] total successors after pruning: 5110
+[t=0.1841s, 14604 KB] Pruning ratio: 0
+[t=0.1841s, 14604 KB] Time for pruning operators: 0.0691559s
+[t=0.1841s, 14604 KB] Search time: 0.170856s
+[t=0.1841s, 14604 KB] Total time: 0.1841s
+Solution found.
+Peak memory: 14604 KB
+search exit code: 0
+
+
+
+[t=5.0014e-05s, 11352 KB] reading input...
+[t=0.00395861s, 11760 KB] done reading input!
+[t=0.00478707s, 12024 KB] Building successor generator...done!
+[t=0.00522664s, 12304 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.00523491s, 12304 KB] time for successor generation creation: 0.000343636s
+[t=0.00524633s, 12304 KB] Variables: 45
+[t=0.00526314s, 12304 KB] FactPairs: 90
+[t=0.00528143s, 12304 KB] Bytes per state: 8
+[t=0.00530146s, 12304 KB] Initializing symmetries for extending plans with
+[t=0.00532053s, 12304 KB] Initializing symmetries
+[t=0.00580459s, 12596 KB] Using Bliss to find group generators
+[t=0.00617504s, 12908 KB] Done initializing symmetries: 0.000868682s
+[t=0.00620983s, 12908 KB] Size of the grounded symmetry graph: 1091
+[t=0.00622015s, 12908 KB] Number of search generators (affecting facts): 4
+[t=0.00622642s, 12908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00623231s, 12908 KB] Total number of generators: 4
+[t=0.00639718s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.1
+[t=0.00642563s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.2
+[t=0.00644788s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.3
+[t=0.00647007s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.4
+[t=0.00649284s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.5
+[t=0.00651589s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.6
+[t=0.00653743s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.7
+[t=0.00655856s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.8
+[t=0.00657999s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.9
+[t=0.00660151s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.10
+[t=0.00663173s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.11
+[t=0.0066533s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.12
+[t=0.00667498s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.13
+[t=0.00669677s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.14
+[t=0.00671849s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.15
+[t=0.00673318s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.16
+[t=0.00674229s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.17
+[t=0.00676353s, 12908 KB] Adding plans... 
+[t=0.00682146s, 12908 KB] Finding symmetric plans... 
+[t=0.0069326s, 12908 KB] done! [t=0.00694217s]
+[t=0.00695315s, 12908 KB] Dumping 17 plans before reformulation 
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00710124s, 12908 KB] Plan length: 9 step(s).
+[t=0.00712323s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00717332s, 12908 KB] Plan length: 9 step(s).
+[t=0.00719214s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00725409s, 12908 KB] Plan length: 9 step(s).
+[t=0.00727257s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00733068s, 12908 KB] Plan length: 9 step(s).
+[t=0.0073489s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00740724s, 12908 KB] Plan length: 9 step(s).
+[t=0.00742556s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00749148s, 12908 KB] Plan length: 9 step(s).
+[t=0.00750976s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00757874s, 12908 KB] Plan length: 9 step(s).
+[t=0.00759693s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00766311s, 12908 KB] Plan length: 9 step(s).
+[t=0.00768141s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_a_1483  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00774942s, 12908 KB] Plan length: 9 step(s).
+[t=0.00776721s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_a_1509  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00783563s, 12908 KB] Plan length: 9 step(s).
+[t=0.00785366s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_e_1898  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00792027s, 12908 KB] Plan length: 9 step(s).
+[t=0.00793851s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_e_1898  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00812506s, 12908 KB] Plan length: 9 step(s).
+[t=0.00815382s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_l_2059  (1)
+sync_e_1900  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00820706s, 12908 KB] Plan length: 9 step(s).
+[t=0.00822746s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_a_1473  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00827496s, 12908 KB] Plan length: 9 step(s).
+[t=0.00829353s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_f_1244  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_24  (1)
+[t=0.00834069s, 12908 KB] Plan length: 9 step(s).
+[t=0.00835909s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_g_1295  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00840504s, 12908 KB] Plan length: 9 step(s).
+[t=0.00842331s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_h_523  (1)
+sync_e_1799  (1)
+sync_h_298  (1)
+finish_28  (1)
+[t=0.00846833s, 12908 KB] Plan length: 9 step(s).
+[t=0.00848643s, 12908 KB] Plan cost: 9
+[t=0.00849567s, 12908 KB] Done dumping plans before reformulation
+[t=0.00851115s, 12908 KB] Forbidding 17 plans
+[t=0.00856269s, 12908 KB] Number of operators in the multisets is: 35
+[t=0.00858317s, 12908 KB] Reformulated task is created, dumping
+[t=0.0221065s, 12908 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12908 KB
+search exit code: 0
+
+
+
+[t=2.3828e-05s, 11352 KB] reading input...
+[t=0.00997359s, 12488 KB] done reading input!
+[t=0.0113908s, 13416 KB] Initializing landmark cut heuristic...
+[t=0.0115121s, 13416 KB] Building successor generator...done!
+[t=0.0119312s, 13680 KB] peak memory difference for successor generator creation: 264 KB
+[t=0.0119393s, 13680 KB] time for successor generation creation: 0.000345883s
+[t=0.0119504s, 13680 KB] Variables: 97
+[t=0.0119586s, 13680 KB] FactPairs: 194
+[t=0.0119647s, 13680 KB] Bytes per state: 16
+[t=0.0119734s, 13680 KB] Initializing symmetries (eager search)
+[t=0.0119797s, 13680 KB] Initializing symmetries
+[t=0.0126961s, 14176 KB] Using Bliss to find group generators
+[t=0.0132332s, 14456 KB] Done initializing symmetries: 0.00126879s
+[t=0.0132637s, 14456 KB] Size of the grounded symmetry graph: 1281
+[t=0.0132735s, 14456 KB] Number of search generators (affecting facts): 4
+[t=0.0132794s, 14456 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0132983s, 14456 KB] Total number of generators: 4
+[t=0.0134159s, 14456 KB] Conducting best first search with reopening closed nodes, (real) bound = 17
+[t=0.0137837s, 14456 KB] New best heuristic value for lmcut: 9
+[t=0.0138036s, 14456 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0138125s, 14456 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.0138202s, 14456 KB] Initial heuristic value for lmcut: 9
+[t=0.0141998s, 14456 KB] pruning method: stubborn sets simple
+[t=0.0152131s, 14456 KB] New best heuristic value for lmcut: 8
+[t=0.0152388s, 14456 KB] g=1, 2 evaluated, 1 expanded
+[t=0.017923s, 14456 KB] New best heuristic value for lmcut: 7
+[t=0.017965s, 14456 KB] g=2, 11 evaluated, 2 expanded
+[t=0.0204104s, 14456 KB] New best heuristic value for lmcut: 6
+[t=0.0204366s, 14456 KB] g=3, 21 evaluated, 3 expanded
+[t=0.0222874s, 14456 KB] New best heuristic value for lmcut: 5
+[t=0.0223106s, 14456 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0240461s, 14456 KB] New best heuristic value for lmcut: 4
+[t=0.0240929s, 14456 KB] g=5, 40 evaluated, 5 expanded
+[t=0.0256863s, 14456 KB] New best heuristic value for lmcut: 3
+[t=0.0257089s, 14456 KB] g=6, 54 evaluated, 6 expanded
+[t=0.0271596s, 14456 KB] New best heuristic value for lmcut: 2
+[t=0.0271971s, 14456 KB] g=7, 59 evaluated, 7 expanded
+[t=0.195331s, 14684 KB] New best heuristic value for lmcut: 1
+[t=0.19543s, 14684 KB] g=8, 2656 evaluated, 456 expanded
+[t=0.196035s, 14684 KB] New best heuristic value for lmcut: 0
+[t=0.19606s, 14684 KB] g=9, 2665 evaluated, 457 expanded
+[t=0.196071s, 14684 KB] Solution found!
+[t=0.196167s, 14684 KB] Actual search time: 0.181951s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_q_1401  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.196178s, 14684 KB] Plan length: 9 step(s).
+[t=0.196178s, 14684 KB] Plan cost: 9
+[t=0.196178s, 14684 KB] Expanded 458 state(s).
+[t=0.196178s, 14684 KB] Reopened 0 state(s).
+[t=0.196178s, 14684 KB] Evaluated 2665 state(s).
+[t=0.196178s, 14684 KB] Evaluations: 2665
+[t=0.196178s, 14684 KB] Generated 5132 state(s).
+[t=0.196178s, 14684 KB] Dead ends: 0 state(s).
+[t=0.196178s, 14684 KB] Expanded until last jump: 0 state(s).
+[t=0.196178s, 14684 KB] Reopened until last jump: 0 state(s).
+[t=0.196178s, 14684 KB] Evaluated until last jump: 1 state(s).
+[t=0.196178s, 14684 KB] Generated until last jump: 0 state(s).
+[t=0.196178s, 14684 KB] Number of registered states: 2665
+[t=0.196178s, 14684 KB] Int hash set load factor: 2665/4096 = 0.650635
+[t=0.196178s, 14684 KB] Int hash set resizes: 12
+[t=0.196178s, 14684 KB] total successors before pruning: 5132
+[t=0.196178s, 14684 KB] total successors after pruning: 5132
+[t=0.196178s, 14684 KB] Pruning ratio: 0
+[t=0.196178s, 14684 KB] Time for pruning operators: 0.0716886s
+[t=0.196178s, 14684 KB] Search time: 0.182763s
+[t=0.196178s, 14684 KB] Total time: 0.196178s
+Solution found.
+Peak memory: 14684 KB
+search exit code: 0
+
+
+
+[t=2.3788e-05s, 11352 KB] reading input...
+[t=0.00400019s, 11760 KB] done reading input!
+[t=0.00479944s, 12024 KB] Building successor generator...done!
+[t=0.00523685s, 12304 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.00524556s, 12304 KB] time for successor generation creation: 0.000341332s
+[t=0.00525623s, 12304 KB] Variables: 45
+[t=0.00527335s, 12304 KB] FactPairs: 90
+[t=0.00529093s, 12304 KB] Bytes per state: 8
+[t=0.00531076s, 12304 KB] Initializing symmetries for extending plans with
+[t=0.00533052s, 12304 KB] Initializing symmetries
+[t=0.00582067s, 12596 KB] Using Bliss to find group generators
+[t=0.00618325s, 12908 KB] Done initializing symmetries: 0.000867098s
+[t=0.00621679s, 12908 KB] Size of the grounded symmetry graph: 1091
+[t=0.00622688s, 12908 KB] Number of search generators (affecting facts): 4
+[t=0.00623321s, 12908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0062391s, 12908 KB] Total number of generators: 4
+[t=0.00640571s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.1
+[t=0.00643297s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.2
+[t=0.00645593s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.3
+[t=0.00647828s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.4
+[t=0.00649984s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.5
+[t=0.00652111s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.6
+[t=0.00654281s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.7
+[t=0.00656405s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.8
+[t=0.00658583s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.9
+[t=0.00660884s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.10
+[t=0.00663689s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.11
+[t=0.00665834s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.12
+[t=0.00667945s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.13
+[t=0.00670073s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.14
+[t=0.00672166s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.15
+[t=0.00674444s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.16
+[t=0.00676564s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.17
+[t=0.00678699s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.18
+[t=0.00681872s, 12908 KB] Adding plans... 
+[t=0.00687907s, 12908 KB] Finding symmetric plans... 
+[t=0.00701333s, 12908 KB] done! [t=0.00702255s]
+[t=0.00703328s, 12908 KB] Dumping 18 plans before reformulation 
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00715225s, 12908 KB] Plan length: 9 step(s).
+[t=0.00717312s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00721304s, 12908 KB] Plan length: 9 step(s).
+[t=0.00722044s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00725254s, 12908 KB] Plan length: 9 step(s).
+[t=0.00727544s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00731808s, 12908 KB] Plan length: 9 step(s).
+[t=0.00733508s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00738398s, 12908 KB] Plan length: 9 step(s).
+[t=0.00740684s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00747016s, 12908 KB] Plan length: 9 step(s).
+[t=0.00748282s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00752786s, 12908 KB] Plan length: 9 step(s).
+[t=0.00754929s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00759837s, 12908 KB] Plan length: 9 step(s).
+[t=0.0076171s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_a_1483  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00766085s, 12908 KB] Plan length: 9 step(s).
+[t=0.00766929s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_a_1509  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00771199s, 12908 KB] Plan length: 9 step(s).
+[t=0.00772616s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_e_1898  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00777213s, 12908 KB] Plan length: 9 step(s).
+[t=0.0077854s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_e_1898  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00783317s, 12908 KB] Plan length: 9 step(s).
+[t=0.00785485s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_l_2059  (1)
+sync_e_1900  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00789394s, 12908 KB] Plan length: 9 step(s).
+[t=0.00791498s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_a_1473  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00795522s, 12908 KB] Plan length: 9 step(s).
+[t=0.00797553s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_f_1244  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_24  (1)
+[t=0.00802247s, 12908 KB] Plan length: 9 step(s).
+[t=0.00804382s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_g_1295  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00809082s, 12908 KB] Plan length: 9 step(s).
+[t=0.00811194s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_h_523  (1)
+sync_e_1799  (1)
+sync_h_298  (1)
+finish_28  (1)
+[t=0.0081515s, 12908 KB] Plan length: 9 step(s).
+[t=0.00817177s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_q_1401  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.0082099s, 12908 KB] Plan length: 9 step(s).
+[t=0.00823027s, 12908 KB] Plan cost: 9
+[t=0.00824007s, 12908 KB] Done dumping plans before reformulation
+[t=0.00825302s, 12908 KB] Forbidding 18 plans
+[t=0.0083004s, 12908 KB] Number of operators in the multisets is: 36
+[t=0.00832052s, 12908 KB] Reformulated task is created, dumping
+[t=0.0223937s, 12908 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12908 KB
+search exit code: 0
+
+
+
+[t=2.4721e-05s, 11352 KB] reading input...
+[t=0.0101996s, 12488 KB] done reading input!
+[t=0.011576s, 13436 KB] Initializing landmark cut heuristic...
+[t=0.0116943s, 13436 KB] Building successor generator...done!
+[t=0.0121461s, 13716 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.0121548s, 13716 KB] time for successor generation creation: 0.000368811s
+[t=0.0121654s, 13716 KB] Variables: 99
+[t=0.012173s, 13716 KB] FactPairs: 198
+[t=0.0121789s, 13716 KB] Bytes per state: 16
+[t=0.0121872s, 13716 KB] Initializing symmetries (eager search)
+[t=0.0121938s, 13716 KB] Initializing symmetries
+[t=0.0128596s, 14244 KB] Using Bliss to find group generators
+[t=0.0133665s, 14512 KB] Done initializing symmetries: 0.00118626s
+[t=0.0133924s, 14512 KB] Size of the grounded symmetry graph: 1288
+[t=0.0134023s, 14512 KB] Number of search generators (affecting facts): 4
+[t=0.0134098s, 14512 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0134157s, 14512 KB] Total number of generators: 4
+[t=0.0135321s, 14512 KB] Conducting best first search with reopening closed nodes, (real) bound = 17
+[t=0.0138941s, 14512 KB] New best heuristic value for lmcut: 9
+[t=0.0139161s, 14512 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0139258s, 14512 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.0139333s, 14512 KB] Initial heuristic value for lmcut: 9
+[t=0.0142935s, 14512 KB] pruning method: stubborn sets simple
+[t=0.0152485s, 14512 KB] New best heuristic value for lmcut: 8
+[t=0.0152741s, 14512 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0179032s, 14512 KB] New best heuristic value for lmcut: 7
+[t=0.0179279s, 14512 KB] g=2, 11 evaluated, 2 expanded
+[t=0.0203951s, 14512 KB] New best heuristic value for lmcut: 6
+[t=0.0204209s, 14512 KB] g=3, 21 evaluated, 3 expanded
+[t=0.0223319s, 14512 KB] New best heuristic value for lmcut: 5
+[t=0.0223547s, 14512 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0240877s, 14512 KB] New best heuristic value for lmcut: 4
+[t=0.0241108s, 14512 KB] g=5, 40 evaluated, 5 expanded
+[t=0.025778s, 14512 KB] New best heuristic value for lmcut: 3
+[t=0.0258023s, 14512 KB] g=6, 54 evaluated, 6 expanded
+[t=0.0266761s, 14512 KB] New best heuristic value for lmcut: 2
+[t=0.0266988s, 14512 KB] g=7, 59 evaluated, 7 expanded
+[t=0.206779s, 14752 KB] New best heuristic value for lmcut: 1
+[t=0.206861s, 14752 KB] g=8, 2885 evaluated, 484 expanded
+[t=0.207466s, 14752 KB] New best heuristic value for lmcut: 0
+[t=0.207526s, 14752 KB] g=9, 2894 evaluated, 485 expanded
+[t=0.207539s, 14752 KB] Solution found!
+[t=0.207606s, 14752 KB] Actual search time: 0.193299s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_c_1119  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.207614s, 14752 KB] Plan length: 9 step(s).
+[t=0.207614s, 14752 KB] Plan cost: 9
+[t=0.207614s, 14752 KB] Expanded 486 state(s).
+[t=0.207614s, 14752 KB] Reopened 0 state(s).
+[t=0.207614s, 14752 KB] Evaluated 2894 state(s).
+[t=0.207614s, 14752 KB] Evaluations: 2894
+[t=0.207614s, 14752 KB] Generated 5453 state(s).
+[t=0.207614s, 14752 KB] Dead ends: 0 state(s).
+[t=0.207614s, 14752 KB] Expanded until last jump: 0 state(s).
+[t=0.207614s, 14752 KB] Reopened until last jump: 0 state(s).
+[t=0.207614s, 14752 KB] Evaluated until last jump: 1 state(s).
+[t=0.207614s, 14752 KB] Generated until last jump: 0 state(s).
+[t=0.207614s, 14752 KB] Number of registered states: 2894
+[t=0.207614s, 14752 KB] Int hash set load factor: 2894/4096 = 0.706543
+[t=0.207614s, 14752 KB] Int hash set resizes: 12
+[t=0.207614s, 14752 KB] total successors before pruning: 5453
+[t=0.207614s, 14752 KB] total successors after pruning: 5453
+[t=0.207614s, 14752 KB] Pruning ratio: 0
+[t=0.207614s, 14752 KB] Time for pruning operators: 0.074722s
+[t=0.207614s, 14752 KB] Search time: 0.194083s
+[t=0.207614s, 14752 KB] Total time: 0.207614s
+Solution found.
+Peak memory: 14752 KB
+search exit code: 0
+
+
+
+[t=2.3902e-05s, 11352 KB] reading input...
+[t=0.00406179s, 11760 KB] done reading input!
+[t=0.00488858s, 12024 KB] Building successor generator...done!
+[t=0.00532322s, 12304 KB] peak memory difference for successor generator creation: 280 KB
+[t=0.00533211s, 12304 KB] time for successor generation creation: 0.000347031s
+[t=0.00534758s, 12304 KB] Variables: 45
+[t=0.00535437s, 12304 KB] FactPairs: 90
+[t=0.00537128s, 12304 KB] Bytes per state: 8
+[t=0.00537961s, 12304 KB] Initializing symmetries for extending plans with
+[t=0.00538701s, 12304 KB] Initializing symmetries
+[t=0.00583365s, 12596 KB] Using Bliss to find group generators
+[t=0.00618938s, 12908 KB] Done initializing symmetries: 0.000817714s
+[t=0.00621972s, 12908 KB] Size of the grounded symmetry graph: 1091
+[t=0.00622961s, 12908 KB] Number of search generators (affecting facts): 4
+[t=0.00623546s, 12908 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00625203s, 12908 KB] Total number of generators: 4
+[t=0.00641313s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.1
+[t=0.00643923s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.2
+[t=0.00647162s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.3
+[t=0.00649288s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.4
+[t=0.00650382s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.5
+[t=0.00651301s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.6
+[t=0.00653389s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.7
+[t=0.00654548s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.8
+[t=0.00655554s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.9
+[t=0.00656504s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.10
+[t=0.0065738s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.11
+[t=0.00658218s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.12
+[t=0.00659051s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.13
+[t=0.00660976s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.14
+[t=0.00663332s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.15
+[t=0.00664722s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.16
+[t=0.00666608s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.17
+[t=0.00667854s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.18
+[t=0.00668838s, 12908 KB] Reading plan from file /tmp/planner_runs/276c249c-99bf-44ff-b362-261e2d9b03a5/sas_plan.19
+[t=0.00672502s, 12908 KB] Adding plans... 
+[t=0.00677567s, 12908 KB] Finding symmetric plans... 
+[t=0.00688998s, 12908 KB] done! [t=0.00689867s]
+[t=0.00690783s, 12908 KB] Dumping 19 plans before reformulation 
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00701386s, 12908 KB] Plan length: 9 step(s).
+[t=0.0070334s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00708256s, 12908 KB] Plan length: 9 step(s).
+[t=0.00709195s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_a_1531  (1)
+sync_e_1796  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00712227s, 12908 KB] Plan length: 9 step(s).
+[t=0.00712838s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00717066s, 12908 KB] Plan length: 9 step(s).
+[t=0.00718417s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_l_2115  (1)
+sync_m_1214  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00722393s, 12908 KB] Plan length: 9 step(s).
+[t=0.00723093s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00725924s, 12908 KB] Plan length: 9 step(s).
+[t=0.00726524s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_a_1482  (1)
+sync_h_773  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00729247s, 12908 KB] Plan length: 9 step(s).
+[t=0.00729854s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_l_2116  (1)
+sync_m_1215  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00732616s, 12908 KB] Plan length: 9 step(s).
+[t=0.00733229s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_e_1958  (1)
+sync_h_771  (1)
+sync_a_1483  (1)
+sync_l_2117  (1)
+sync_m_1216  (1)
+finish_28  (1)
+[t=0.00736067s, 12908 KB] Plan length: 9 step(s).
+[t=0.00736668s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_a_1509  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00739442s, 12908 KB] Plan length: 9 step(s).
+[t=0.00740042s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_e_1898  (1)
+sync_a_1484  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00742791s, 12908 KB] Plan length: 9 step(s).
+[t=0.007434s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_l_2058  (1)
+sync_e_1898  (1)
+sync_h_775  (1)
+sync_a_1485  (1)
+finish_28  (1)
+[t=0.00746165s, 12908 KB] Plan length: 9 step(s).
+[t=0.00746775s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_l_2059  (1)
+sync_e_1900  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00750597s, 12908 KB] Plan length: 9 step(s).
+[t=0.00751538s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_a_1473  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00754545s, 12908 KB] Plan length: 9 step(s).
+[t=0.00755196s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_f_1244  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_24  (1)
+[t=0.0075794s, 12908 KB] Plan length: 9 step(s).
+[t=0.00758533s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_g_1295  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00761317s, 12908 KB] Plan length: 9 step(s).
+[t=0.00761928s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_h_523  (1)
+sync_e_1799  (1)
+sync_h_298  (1)
+finish_28  (1)
+[t=0.00764807s, 12908 KB] Plan length: 9 step(s).
+[t=0.00765408s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_q_1401  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.00768268s, 12908 KB] Plan length: 9 step(s).
+[t=0.00768866s, 12908 KB] Plan cost: 9
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_c_1119  (1)
+sync_e_1800  (1)
+sync_h_777  (1)
+finish_28  (1)
+[t=0.0077137s, 12908 KB] Plan length: 9 step(s).
+[t=0.00771969s, 12908 KB] Plan cost: 9
+[t=0.00772543s, 12908 KB] Done dumping plans before reformulation
+[t=0.00773818s, 12908 KB] Forbidding 19 plans
+[t=0.00777939s, 12908 KB] Number of operators in the multisets is: 37
+[t=0.00778782s, 12908 KB] Reformulated task is created, dumping
+[t=0.0224492s, 12908 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12908 KB
+search exit code: 0
+
+
+
+[t=2.7181e-05s, 11352 KB] reading input...
+[t=0.0110838s, 12492 KB] done reading input!
+[t=0.0125767s, 13468 KB] Initializing landmark cut heuristic...
+[t=0.0126927s, 13600 KB] Building successor generator...done!
+[t=0.0131307s, 13724 KB] peak memory difference for successor generator creation: 124 KB
+[t=0.0131489s, 13724 KB] time for successor generation creation: 0.000356226s
+[t=0.0131721s, 13724 KB] Variables: 101
+[t=0.0131917s, 13724 KB] FactPairs: 202
+[t=0.01321s, 13724 KB] Bytes per state: 16
+[t=0.0132298s, 13724 KB] Initializing symmetries (eager search)
+[t=0.013249s, 13724 KB] Initializing symmetries
+[t=0.0139628s, 14284 KB] Using Bliss to find group generators
+[t=0.0145793s, 14556 KB] Done initializing symmetries: 0.00135085s
+[t=0.0146173s, 14556 KB] Size of the grounded symmetry graph: 1295
+[t=0.0146285s, 14556 KB] Number of search generators (affecting facts): 4
+[t=0.0146351s, 14556 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.0146412s, 14556 KB] Total number of generators: 4
+[t=0.0148439s, 14556 KB] Conducting best first search with reopening closed nodes, (real) bound = 17
+[t=0.0152623s, 14556 KB] New best heuristic value for lmcut: 9
+[t=0.0152903s, 14556 KB] g=0, 1 evaluated, 0 expanded
+[t=0.015301s, 14556 KB] f = 9, 1 evaluated, 0 expanded
+[t=0.0153099s, 14556 KB] Initial heuristic value for lmcut: 9
+[t=0.0156974s, 14556 KB] pruning method: stubborn sets simple
+[t=0.0168186s, 14556 KB] New best heuristic value for lmcut: 8
+[t=0.0168523s, 14556 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0200114s, 14556 KB] New best heuristic value for lmcut: 7
+[t=0.0200774s, 14556 KB] g=2, 11 evaluated, 2 expanded
+[t=0.0227038s, 14556 KB] New best heuristic value for lmcut: 6
+[t=0.0227441s, 14556 KB] g=3, 21 evaluated, 3 expanded
+[t=0.0248482s, 14556 KB] New best heuristic value for lmcut: 5
+[t=0.0248767s, 14556 KB] g=4, 30 evaluated, 4 expanded
+[t=0.0267057s, 14556 KB] New best heuristic value for lmcut: 4
+[t=0.0267306s, 14556 KB] g=5, 40 evaluated, 5 expanded
+[t=0.028349s, 14556 KB] New best heuristic value for lmcut: 3
+[t=0.028381s, 14556 KB] g=6, 54 evaluated, 6 expanded
+[t=0.0292614s, 14556 KB] New best heuristic value for lmcut: 2
+[t=0.0292821s, 14556 KB] g=7, 59 evaluated, 7 expanded
+[t=0.223602s, 14788 KB] New best heuristic value for lmcut: 1
+[t=0.223689s, 14788 KB] g=8, 3112 evaluated, 512 expanded
+[t=0.22431s, 14788 KB] New best heuristic value for lmcut: 0
+[t=0.224344s, 14788 KB] g=9, 3121 evaluated, 513 expanded
+[t=0.224356s, 14788 KB] Solution found!
+[t=0.224424s, 14788 KB] Actual search time: 0.208701s
+sync_l_2237  (1)
+sync_l_2084  (1)
+sync_l_2076  (1)
+sync_m_1212  (1)
+sync_a_1482  (1)
+sync_e_1798  (1)
+sync_l_2060  (1)
+sync_h_914  (1)
+finish_28  (1)
+[t=0.224442s, 14788 KB] Plan length: 9 step(s).
+[t=0.224442s, 14788 KB] Plan cost: 9
+[t=0.224442s, 14788 KB] Expanded 514 state(s).
+[t=0.224442s, 14788 KB] Reopened 0 state(s).
+[t=0.224442s, 14788 KB] Evaluated 3121 state(s).
+[t=0.224442s, 14788 KB] Evaluations: 3121
+[t=0.224442s, 14788 KB] Generated 5771 state(s).
+[t=0.224442s, 14788 KB] Dead ends: 0 state(s).
+[t=0.224442s, 14788 KB] Expanded until last jump: 0 state(s).
+[t=0.224442s, 14788 KB] Reopened until last jump: 0 state(s).
+[t=0.224442s, 14788 KB] Evaluated until last jump: 1 state(s).
+[t=0.224442s, 14788 KB] Generated until last jump: 0 state(s).
+[t=0.224442s, 14788 KB] Number of registered states: 3121
+[t=0.224442s, 14788 KB] Int hash set load factor: 3121/4096 = 0.761963
+[t=0.224442s, 14788 KB] Int hash set resizes: 12
+[t=0.224442s, 14788 KB] total successors before pruning: 5771
+[t=0.224442s, 14788 KB] total successors after pruning: 5771
+[t=0.224442s, 14788 KB] Pruning ratio: 0
+[t=0.224442s, 14788 KB] Time for pruning operators: 0.0790369s
+[t=0.224442s, 14788 KB] Search time: 0.209601s
+[t=0.224442s, 14788 KB] Total time: 0.224442s
+Solution found.
+Peak memory: 14788 KB
+search exit code: 0
+
+
+---BEGIN_PLANS---
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_a_1531 )
+(sync_l_2115 )
+(sync_m_1214 )
+(sync_e_1800 )
+(sync_h_777 )
+(finish_28 )
+; cost = 9 (unit cost)
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_m_1212 )
+(sync_l_2058 )
+(sync_a_1509 )
+(sync_e_1800 )
+(sync_h_777 )
+(finish_28 )
+; cost = 9 (unit cost)
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_m_1212 )
+(sync_l_2058 )
+(sync_e_1898 )
+(sync_a_1484 )
+(sync_h_777 )
+(finish_28 )
+; cost = 9 (unit cost)
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_m_1212 )
+(sync_l_2058 )
+(sync_e_1898 )
+(sync_h_775 )
+(sync_a_1485 )
+(finish_28 )
+; cost = 9 (unit cost)
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_m_1212 )
+(sync_a_1482 )
+(sync_l_2059 )
+(sync_e_1900 )
+(sync_h_777 )
+(finish_28 )
+; cost = 9 (unit cost)
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_m_1212 )
+(sync_a_1482 )
+(sync_a_1473 )
+(sync_e_1800 )
+(sync_h_777 )
+(finish_28 )
+; cost = 9 (unit cost)
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_m_1212 )
+(sync_a_1482 )
+(sync_f_1244 )
+(sync_e_1800 )
+(sync_h_777 )
+(finish_24 )
+; cost = 9 (unit cost)
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_m_1212 )
+(sync_a_1482 )
+(sync_g_1295 )
+(sync_e_1800 )
+(sync_h_777 )
+(finish_28 )
+; cost = 9 (unit cost)
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_m_1212 )
+(sync_a_1482 )
+(sync_h_523 )
+(sync_e_1799 )
+(sync_h_298 )
+(finish_28 )
+; cost = 9 (unit cost)
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_m_1212 )
+(sync_a_1482 )
+(sync_q_1401 )
+(sync_e_1800 )
+(sync_h_777 )
+(finish_28 )
+; cost = 9 (unit cost)
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_m_1212 )
+(sync_a_1482 )
+(sync_c_1119 )
+(sync_e_1800 )
+(sync_h_777 )
+(finish_28 )
+; cost = 9 (unit cost)
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_a_1531 )
+(sync_e_1796 )
+(sync_l_2116 )
+(sync_m_1215 )
+(sync_h_777 )
+(finish_28 )
+; cost = 9 (unit cost)
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_m_1212 )
+(sync_a_1482 )
+(sync_e_1798 )
+(sync_l_2060 )
+(sync_h_914 )
+(finish_28 )
+; cost = 9 (unit cost)
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_a_1531 )
+(sync_e_1796 )
+(sync_h_773 )
+(sync_l_2117 )
+(sync_m_1216 )
+(finish_28 )
+; cost = 9 (unit cost)
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_e_1958 )
+(sync_l_2115 )
+(sync_m_1214 )
+(sync_a_1484 )
+(sync_h_777 )
+(finish_28 )
+; cost = 9 (unit cost)
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_e_1958 )
+(sync_l_2115 )
+(sync_m_1214 )
+(sync_h_775 )
+(sync_a_1485 )
+(finish_28 )
+; cost = 9 (unit cost)
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_e_1958 )
+(sync_a_1482 )
+(sync_l_2116 )
+(sync_m_1215 )
+(sync_h_777 )
+(finish_28 )
+; cost = 9 (unit cost)
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_e_1958 )
+(sync_a_1482 )
+(sync_h_773 )
+(sync_l_2117 )
+(sync_m_1216 )
+(finish_28 )
+; cost = 9 (unit cost)
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_e_1958 )
+(sync_h_771 )
+(sync_l_2116 )
+(sync_m_1215 )
+(sync_a_1485 )
+(finish_28 )
+; cost = 9 (unit cost)
+(sync_l_2237 )
+(sync_l_2084 )
+(sync_l_2076 )
+(sync_e_1958 )
+(sync_h_771 )
+(sync_a_1483 )
+(sync_l_2117 )
+(sync_m_1216 )
+(finish_28 )
+; cost = 9 (unit cost)
+
+
+=== STDERR ===

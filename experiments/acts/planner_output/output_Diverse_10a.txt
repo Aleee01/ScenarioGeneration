@@ -1,0 +1,4094 @@
+
+Parsing...
+Parsing: [0.170s CPU, 0.220s wall-clock]
+Normalizing task... [0.020s CPU, 0.020s wall-clock]
+Instantiating...
+Generating Datalog program... [0.010s CPU, 0.012s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.040s CPU, 0.037s wall-clock]
+Preparing model... [0.030s CPU, 0.030s wall-clock]
+Generated 3928 rules.
+Computing model... [0.010s CPU, 0.012s wall-clock]
+1086 relevant atoms
+0 auxiliary atoms
+1086 final queue length
+4036 total queue pushes
+Completing instantiation... [0.040s CPU, 0.040s wall-clock]
+Instantiating: [0.140s CPU, 0.133s wall-clock]
+Computing fact groups...
+Finding invariants...
+3 initial candidates
+Finding invariants: [0.000s CPU, 0.003s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+43 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.000s CPU, 0.003s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
+Computing negative axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.010s CPU, 0.004s wall-clock]
+Translating task: [0.150s CPU, 0.152s wall-clock]
+2931 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+0 propositions removed
+Detecting unreachable propositions: [0.040s CPU, 0.036s wall-clock]
+Reordering and filtering variables...
+43 of 43 variables necessary.
+0 of 0 mutex groups necessary.
+948 of 948 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.030s CPU, 0.040s wall-clock]
+Translator variables: 43
+Translator derived variables: 0
+Translator facts: 86
+Translator goal facts: 14
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 948
+Translator axioms: 0
+Translator task size: 14046
+Translator peak memory: 43356 KB
+Writing output... [0.010s CPU, 0.015s wall-clock]
+Done! [0.570s CPU, 0.625s wall-clock]
+translate exit code: 0
+
+Building causal graph...
+The causal graph is not acyclic.
+43 variables of 43 necessary
+0 of 0 mutex groups necessary.
+948 of 948 operators necessary.
+0 of 0 axiom rules necessary.
+Initializing mutex computation...
+Mutex computation initialized with 86 fluents.
+iteration for mutex detection and operator pruning
+Initialize m_index fw
+Initialized mvalues forward: reached=1849, notReached=5461, spurious=86
+Initialize m_ops fw
+Computing mutexes...
+Mutex computation finished with reached=6458, notReached=852, spurious=86
+585 operators are spurious because were not triggered
+H^2 mutexes added fw: 852, unreachable: 0
+0 of 363 operators detected as spurious
+iteration for mutex detection and operator pruning
+Initialize m_index bw
+Init values regression
+Initialized mvalues backward: reached=1849, notReached=4609, spurious=938
+Initialize m_ops bw
+Computing mutexes...
+Mutex computation finished with reached=6309, notReached=149, spurious=938
+37 operators are spurious because were not triggered
+Unreachable proposition: Atom cur_state(notcoex_d_e_s2_6)
+H^2 mutexes added bw: 8, unreachable: 1
+0 of 326 operators detected as spurious
+iteration for mutex detection and operator pruning
+Initialize m_index fw
+Initialized mvalues forward: reached=1849, notReached=4460, spurious=1087
+Initialize m_ops fw
+Computing mutexes...
+Mutex computation finished with reached=6305, notReached=4, spurious=1087
+12 operators are spurious because were not triggered
+H^2 mutexes added fw: 4, unreachable: 0
+0 of 314 operators detected as spurious
+iteration for mutex detection and operator pruning
+Initialize m_index bw
+Init values regression
+Initialized mvalues backward: reached=1849, notReached=4456, spurious=1091
+Initialize m_ops bw
+Computing mutexes...
+Mutex computation finished with reached=6305, notReached=0, spurious=1091
+0 operators are spurious because were not triggered
+H^2 mutexes added bw: 0, unreachable: 0
+0 of 314 operators detected as spurious
+Total mutex and disambiguation time: 0.044579 iterations: 4
+418 of 432 mutex groups necessary.
+314 of 948 operators necessary.
+0 of 0 axiom rules necessary.
+Change id of operators: 314
+Change id of mutexes
+Change id of goals
+Change id of initial state
+Remove unreachable facts from variables: 43
+418 of 418 mutex groups necessary.
+314 of 314 operators necessary.
+0 of 0 axiom rules necessary.
+Updating causal graph and pruning unnecessary facts
+42 variables of 43 of 43 necessary
+The causal graph is not acyclic.
+42 variables of 42 necessary
+418 of 418 mutex groups necessary.
+314 of 314 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor variables: 42
+Preprocessor facts: 84
+Preprocessor derived variables: 0
+Preprocessor operators: 314
+Preprocessor mutex groups: 418
+Preprocessor task size: 5217
+Writing output...
+done
+transform_task exit code: 0
+
+[t=4.8956e-05s, 11352 KB] reading input...
+[t=0.0036372s, 11476 KB] done reading input!
+[t=0.00503251s, 11872 KB] Initializing landmark count heuristic...
+[t=0.00510602s, 11872 KB] Generating landmark graph...
+[t=0.00519909s, 11872 KB] Building a landmark graph with reasonable orders.
+[t=0.0052767s, 11872 KB] Initializing Exploration...
+[t=0.00575957s, 12328 KB] Generating landmarks using the RPG/SAS+ approach
+Removed 0 reasonable or obedient reasonable orders
+[t=0.0124265s, 12460 KB] Landmarks generation time: 0.00723291s
+[t=0.0124914s, 12460 KB] Discovered 58 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.01253s, 12460 KB] 169 edges
+[t=0.0125643s, 12460 KB] approx. reasonable orders
+[t=0.0125982s, 12460 KB] approx. obedient reasonable orders
+[t=0.0126479s, 12460 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.0126776s, 12460 KB] Landmarks generation time: 0.00754449s
+[t=0.0127121s, 12460 KB] Discovered 58 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0127451s, 12460 KB] 169 edges
+[t=0.0127778s, 12460 KB] Landmark graph generation time: 0.00769071s
+[t=0.0128109s, 12460 KB] Landmark graph contains 58 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0128436s, 12460 KB] Landmark graph contains 169 orderings.
+[t=0.0133065s, 12460 KB] Simplifying 1766 unary operators... done! [1766 unary operators]
+[t=0.0151464s, 12460 KB] time to simplify: 0.00192766s
+[t=0.0153331s, 12460 KB] Initializing additive heuristic...
+[t=0.0153763s, 12460 KB] Initializing FF heuristic...
+[t=0.0154171s, 12460 KB] Initializing extended DTGs
+[t=0.0154804s, 12460 KB] Initializing Red-Black Fact Following heuristic...
+[t=0.0155745s, 12460 KB] Initializing novelty heuristic...
+[t=0.0156102s, 12460 KB] Done initializing novelty heuristic
+[t=0.0157431s, 12460 KB] Building successor generator...done!
+[t=0.0160535s, 12460 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.0160796s, 12460 KB] time for successor generation creation: 0.000212759s
+[t=0.0161172s, 12460 KB] Variables: 42
+[t=0.01615s, 12460 KB] FactPairs: 84
+[t=0.0161826s, 12460 KB] Bytes per state: 8
+[t=0.0162948s, 12460 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.0163651s, 12460 KB] 36 initial landmarks, 14 goal landmarks
+[t=0.0164051s, 12460 KB] Extract plan from the heuristic: yes
+[t=0.0164575s, 12460 KB] Running A* instead of Dijkstra. Using the distances ignoring outside conditions for heuristic estimates.
+[t=0.0164858s, 12460 KB] Initializing Red-Black task...
+[t=0.0165189s, 12460 KB] Initializing Red-Black task core...
+[t=0.0165515s, 12460 KB] Adding 314 operators to extended DTGs
+[t=0.0169971s, 12460 KB] Checking invertibility...
+[t=0.0177406s, 12460 KB] Done checking invertibility
+[t=0.0177767s, 12460 KB] Number of invertible variables is 0
+[t=0.0178121s, 12460 KB] Finished initializing Red-Black task core
+[t=0.0178469s, 12460 KB] Finished initializing Red-Black task
+[t=0.0179064s, 12460 KB] No black variables found -- running FF heuristic.
+[t=0.0180535s, 12460 KB] Finished initializing Red-Black Fact Following heuristic
+[t=0.0182126s, 12460 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 22
+[t=0.0182598s, 12460 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0182972s, 12460 KB] New best heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0183329s, 12460 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0183843s, 12460 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 22
+[t=0.0184144s, 12460 KB] Initial heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0184492s, 12460 KB] Initial heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0185438s, 12460 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 21
+[t=0.0185756s, 12460 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 12
+[t=0.0186111s, 12460 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0187033s, 12460 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 20
+[t=0.0187343s, 12460 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 11
+[t=0.0187697s, 12460 KB] g=2, 3 evaluated, 2 expanded
+[t=0.0188601s, 12460 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 19
+[t=0.0188909s, 12460 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 10
+[t=0.0189254s, 12460 KB] g=3, 4 evaluated, 3 expanded
+[t=0.0190133s, 12460 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 18
+[t=0.0190434s, 12460 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 9
+[t=0.0190777s, 12460 KB] g=4, 5 evaluated, 4 expanded
+[t=0.0191654s, 12460 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 17
+[t=0.0191955s, 12460 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 8
+[t=0.0192303s, 12460 KB] g=5, 6 evaluated, 5 expanded
+[t=0.0193175s, 12460 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 16
+[t=0.0193476s, 12460 KB] g=6, 7 evaluated, 6 expanded
+[t=0.0194338s, 12460 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 13
+[t=0.0194641s, 12460 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 7
+[t=0.0194982s, 12460 KB] g=7, 8 evaluated, 7 expanded
+[t=0.0195849s, 12460 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 11
+[t=0.0196162s, 12460 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 6
+[t=0.019712s, 12460 KB] g=8, 9 evaluated, 8 expanded
+[t=0.0198029s, 12460 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 9
+[t=0.019834s, 12460 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 3
+[t=0.0198683s, 12460 KB] g=9, 10 evaluated, 9 expanded
+[t=0.0199474s, 12460 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 6
+[t=0.0199775s, 12460 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 2
+[t=0.0200114s, 12460 KB] g=10, 11 evaluated, 10 expanded
+[t=0.0208282s, 12460 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 5
+[t=0.0208612s, 12460 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 1
+[t=0.0208969s, 12460 KB] g=10, 36 evaluated, 35 expanded
+[t=0.0209548s, 12460 KB] Solution found!
+[t=0.0209848s, 12460 KB] Actual search time: 0.00460662s
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.0210204s, 12460 KB] Plan length: 11 step(s).
+[t=0.0210204s, 12460 KB] Plan cost: 11
+[t=0.0210204s, 12460 KB] Expanded 36 state(s).
+[t=0.0210204s, 12460 KB] Reopened 0 state(s).
+[t=0.0210204s, 12460 KB] Evaluated 37 state(s).
+[t=0.0210204s, 12460 KB] Evaluations: 74
+[t=0.0210204s, 12460 KB] Generated 176 state(s).
+[t=0.0210204s, 12460 KB] Dead ends: 0 state(s).
+[t=0.0210204s, 12460 KB] Number of registered states: 37
+[t=0.0210204s, 12460 KB] Int hash set load factor: 37/64 = 0.578125
+[t=0.0210204s, 12460 KB] Int hash set resizes: 6
+[t=0.0210204s, 12460 KB] Search time: 0.00472614s
+[t=0.0210204s, 12460 KB] Total time: 0.0210204s
+Solution found.
+Peak memory: 12460 KB
+search exit code: 0
+
+
+
+[t=5.3532e-05s, 11352 KB] reading input...
+[t=0.00281276s, 11476 KB] done reading input!
+[t=0.0040328s, 11872 KB] Building successor generator...done!
+[t=0.00461165s, 11872 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.0046529s, 11872 KB] time for successor generation creation: 0.000348844s
+[t=0.00470058s, 11872 KB] Variables: 42
+[t=0.00474372s, 11872 KB] FactPairs: 84
+[t=0.00478371s, 11872 KB] Bytes per state: 8
+[t=0.00481109s, 11872 KB] Initializing symmetries for extending plans with
+[t=0.00484801s, 11872 KB] Initializing symmetries
+[t=0.0052593s, 12016 KB] Using Bliss to find group generators
+[t=0.00562227s, 12148 KB] Done initializing symmetries: 0.000801515s
+[t=0.0056739s, 12148 KB] Size of the grounded symmetry graph: 441
+[t=0.00569531s, 12148 KB] Number of search generators (affecting facts): 4
+[t=0.00572899s, 12148 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00576474s, 12148 KB] Total number of generators: 4
+[t=0.00596993s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.1
+[t=0.00605167s, 12148 KB] Adding plans... 
+[t=0.00609699s, 12148 KB] Finding symmetric plans... 
+[t=0.00613919s, 12148 KB] done! [t=0.0061589s]
+[t=0.0061749s, 12148 KB] Dumping 1 plans before reformulation 
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00638136s, 12148 KB] Plan length: 11 step(s).
+[t=0.00642733s, 12148 KB] Plan cost: 11
+[t=0.00646587s, 12148 KB] Done dumping plans before reformulation
+[t=0.00655216s, 12148 KB] Number of operators in the multiset is: 11
+[t=0.00662881s, 12148 KB] Reformulated task is created, dumping
+[t=0.0144603s, 12148 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12148 KB
+search exit code: 0
+
+
+
+[t=5.4015e-05s, 11352 KB] reading input...
+[t=0.00551493s, 11608 KB] done reading input!
+[t=0.00759032s, 12004 KB] Initializing landmark count heuristic...
+[t=0.00769005s, 12004 KB] Generating landmark graph...
+[t=0.00778913s, 12004 KB] Building a landmark graph with reasonable orders.
+[t=0.00789266s, 12004 KB] Initializing Exploration...
+[t=0.00893321s, 12664 KB] Generating landmarks using the RPG/SAS+ approach
+Removed 0 reasonable or obedient reasonable orders
+[t=0.0195398s, 12928 KB] Landmarks generation time: 0.0117769s
+[t=0.0196472s, 12928 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0196907s, 12928 KB] 170 edges
+[t=0.0197275s, 12928 KB] approx. reasonable orders
+[t=0.0197633s, 12928 KB] approx. obedient reasonable orders
+[t=0.0198175s, 12928 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.0198493s, 12928 KB] Landmarks generation time: 0.0121503s
+[t=0.0198853s, 12928 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0199197s, 12928 KB] 170 edges
+[t=0.019955s, 12928 KB] Landmark graph generation time: 0.0122852s
+[t=0.01999s, 12928 KB] Landmark graph contains 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0200257s, 12928 KB] Landmark graph contains 170 orderings.
+[t=0.0206066s, 12928 KB] Simplifying 2201 unary operators... done! [2201 unary operators]
+[t=0.0218849s, 12928 KB] time to simplify: 0.00143143s
+[t=0.0222381s, 12928 KB] Initializing additive heuristic...
+[t=0.0222962s, 12928 KB] Initializing FF heuristic...
+[t=0.0223244s, 12928 KB] Initializing extended DTGs
+[t=0.0224041s, 12928 KB] Initializing Red-Black Fact Following heuristic...
+[t=0.022528s, 12928 KB] Initializing novelty heuristic...
+[t=0.0225765s, 12928 KB] Done initializing novelty heuristic
+[t=0.0227433s, 12928 KB] Building successor generator...done!
+[t=0.0231903s, 12928 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.0232271s, 12928 KB] time for successor generation creation: 0.000324885s
+[t=0.0232724s, 12928 KB] Variables: 54
+[t=0.0233113s, 12928 KB] FactPairs: 108
+[t=0.0233524s, 12928 KB] Bytes per state: 8
+[t=0.0235151s, 12928 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.0236054s, 12928 KB] 37 initial landmarks, 15 goal landmarks
+[t=0.0236369s, 12928 KB] Extract plan from the heuristic: yes
+[t=0.0237006s, 12928 KB] Running A* instead of Dijkstra. Using the distances ignoring outside conditions for heuristic estimates.
+[t=0.0237413s, 12928 KB] Initializing Red-Black task...
+[t=0.0237818s, 12928 KB] Initializing Red-Black task core...
+[t=0.0238209s, 12928 KB] Adding 336 operators to extended DTGs
+[t=0.0246356s, 12928 KB] Checking invertibility...
+[t=0.025861s, 12928 KB] Done checking invertibility
+[t=0.0259118s, 12928 KB] Number of invertible variables is 0
+[t=0.0259469s, 12928 KB] Finished initializing Red-Black task core
+[t=0.02602s, 12928 KB] Finished initializing Red-Black task
+[t=0.0260795s, 12928 KB] No black variables found -- running FF heuristic.
+[t=0.0261211s, 12928 KB] Finished initializing Red-Black Fact Following heuristic
+[t=0.0262431s, 12928 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0262768s, 12928 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0263128s, 12928 KB] New best heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0263482s, 12928 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0263985s, 12928 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0264295s, 12928 KB] Initial heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.026464s, 12928 KB] Initial heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0265648s, 12928 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 22
+[t=0.0265971s, 12928 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 12
+[t=0.0266325s, 12928 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0267333s, 12928 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 21
+[t=0.0267655s, 12928 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 11
+[t=0.0268008s, 12928 KB] g=2, 3 evaluated, 2 expanded
+[t=0.0268986s, 12928 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 20
+[t=0.0269297s, 12928 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 10
+[t=0.0269649s, 12928 KB] g=3, 4 evaluated, 3 expanded
+[t=0.0270618s, 12928 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 19
+[t=0.0270931s, 12928 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 9
+[t=0.0271274s, 12928 KB] g=4, 5 evaluated, 4 expanded
+[t=0.0272231s, 12928 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 18
+[t=0.0272535s, 12928 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 8
+[t=0.0272881s, 12928 KB] g=5, 6 evaluated, 5 expanded
+[t=0.0273824s, 12928 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 16
+[t=0.0274133s, 12928 KB] g=6, 7 evaluated, 6 expanded
+[t=0.0275058s, 12928 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 13
+[t=0.0275364s, 12928 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 7
+[t=0.0275706s, 12928 KB] g=7, 8 evaluated, 7 expanded
+[t=0.0277067s, 12928 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 11
+[t=0.0280608s, 12928 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 6
+[t=0.0280967s, 12928 KB] g=8, 9 evaluated, 8 expanded
+[t=0.0281868s, 12928 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 9
+[t=0.0282057s, 12928 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 3
+[t=0.02822s, 12928 KB] g=9, 10 evaluated, 9 expanded
+[t=0.02829s, 12928 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 6
+[t=0.028309s, 12928 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 2
+[t=0.0283234s, 12928 KB] g=10, 11 evaluated, 10 expanded
+[t=0.0306981s, 12928 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 5
+[t=0.0307871s, 12928 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 1
+[t=0.0308338s, 12928 KB] g=10, 43 evaluated, 42 expanded
+[t=0.0309036s, 12928 KB] Solution found!
+[t=0.0309364s, 12928 KB] Actual search time: 0.00732547s
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_l_153  (1)
+sync_a_300  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.0309735s, 12928 KB] Plan length: 11 step(s).
+[t=0.0309735s, 12928 KB] Plan cost: 11
+[t=0.0309735s, 12928 KB] Expanded 43 state(s).
+[t=0.0309735s, 12928 KB] Reopened 0 state(s).
+[t=0.0309735s, 12928 KB] Evaluated 44 state(s).
+[t=0.0309735s, 12928 KB] Evaluations: 88
+[t=0.0309735s, 12928 KB] Generated 210 state(s).
+[t=0.0309735s, 12928 KB] Dead ends: 0 state(s).
+[t=0.0309735s, 12928 KB] Number of registered states: 44
+[t=0.0309735s, 12928 KB] Int hash set load factor: 44/64 = 0.6875
+[t=0.0309735s, 12928 KB] Int hash set resizes: 6
+[t=0.0309735s, 12928 KB] Search time: 0.00745913s
+[t=0.0309735s, 12928 KB] Total time: 0.0309735s
+Solution found.
+Peak memory: 12928 KB
+search exit code: 0
+
+
+
+[t=5.0124e-05s, 11352 KB] reading input...
+[t=0.00418963s, 11476 KB] done reading input!
+[t=0.00605478s, 11872 KB] Building successor generator...done!
+[t=0.00657468s, 11872 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.0066159s, 11872 KB] time for successor generation creation: 0.000346381s
+[t=0.0066639s, 11872 KB] Variables: 42
+[t=0.00673466s, 11872 KB] FactPairs: 84
+[t=0.00677591s, 11872 KB] Bytes per state: 8
+[t=0.00682044s, 11872 KB] Initializing symmetries for extending plans with
+[t=0.00686268s, 11872 KB] Initializing symmetries
+[t=0.00727993s, 12016 KB] Using Bliss to find group generators
+[t=0.0077142s, 12148 KB] Done initializing symmetries: 0.000886801s
+[t=0.00777371s, 12148 KB] Size of the grounded symmetry graph: 441
+[t=0.00781349s, 12148 KB] Number of search generators (affecting facts): 4
+[t=0.00785074s, 12148 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00788608s, 12148 KB] Total number of generators: 4
+[t=0.00813165s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.1
+[t=0.00819767s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.2
+[t=0.00825323s, 12148 KB] Adding plans... 
+[t=0.00830923s, 12148 KB] Finding symmetric plans... 
+[t=0.00835774s, 12148 KB] done! [t=0.00837567s]
+[t=0.00841322s, 12148 KB] Dumping 2 plans before reformulation 
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00865081s, 12148 KB] Plan length: 11 step(s).
+[t=0.00881751s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_l_153  (1)
+sync_a_300  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.0100077s, 12148 KB] Plan length: 11 step(s).
+[t=0.0100576s, 12148 KB] Plan cost: 11
+[t=0.0100963s, 12148 KB] Done dumping plans before reformulation
+[t=0.0101603s, 12148 KB] Number of operators in the multiset is: 14
+[t=0.0101991s, 12148 KB] Reformulated task is created, dumping
+[t=0.0179828s, 12148 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12148 KB
+search exit code: 0
+
+
+
+[t=5.1605e-05s, 11352 KB] reading input...
+[t=0.00483954s, 11608 KB] done reading input!
+[t=0.00674497s, 12004 KB] Initializing landmark count heuristic...
+[t=0.00684348s, 12004 KB] Generating landmark graph...
+[t=0.00693502s, 12004 KB] Building a landmark graph with reasonable orders.
+[t=0.00703542s, 12004 KB] Initializing Exploration...
+[t=0.00814774s, 12660 KB] Generating landmarks using the RPG/SAS+ approach
+Removed 0 reasonable or obedient reasonable orders
+[t=0.0238639s, 12924 KB] Landmarks generation time: 0.0169639s
+[t=0.0239676s, 12924 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.023988s, 12924 KB] 170 edges
+[t=0.0240154s, 12924 KB] approx. reasonable orders
+[t=0.0240444s, 12924 KB] approx. obedient reasonable orders
+[t=0.0240873s, 12924 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.024116s, 12924 KB] Landmarks generation time: 0.0172571s
+[t=0.0241464s, 12924 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0241746s, 12924 KB] 170 edges
+[t=0.0242027s, 12924 KB] Landmark graph generation time: 0.0173734s
+[t=0.0242308s, 12924 KB] Landmark graph contains 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.024259s, 12924 KB] Landmark graph contains 170 orderings.
+[t=0.0248365s, 12924 KB] Simplifying 2244 unary operators... done! [2244 unary operators]
+[t=0.0259703s, 12924 KB] time to simplify: 0.00121621s
+[t=0.0261539s, 12924 KB] Initializing additive heuristic...
+[t=0.0261931s, 12924 KB] Initializing FF heuristic...
+[t=0.0262188s, 12924 KB] Initializing extended DTGs
+[t=0.026272s, 12924 KB] Initializing Red-Black Fact Following heuristic...
+[t=0.0263625s, 12924 KB] Initializing novelty heuristic...
+[t=0.0263967s, 12924 KB] Done initializing novelty heuristic
+[t=0.0265109s, 12924 KB] Building successor generator...done!
+[t=0.0267875s, 12924 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.0268137s, 12924 KB] time for successor generation creation: 0.000202139s
+[t=0.0268463s, 12924 KB] Variables: 57
+[t=0.0268609s, 12924 KB] FactPairs: 114
+[t=0.026885s, 12924 KB] Bytes per state: 8
+[t=0.0270083s, 12924 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.0270758s, 12924 KB] 37 initial landmarks, 15 goal landmarks
+[t=0.027097s, 12924 KB] Extract plan from the heuristic: yes
+[t=0.0271393s, 12924 KB] Running A* instead of Dijkstra. Using the distances ignoring outside conditions for heuristic estimates.
+[t=0.0271679s, 12924 KB] Initializing Red-Black task...
+[t=0.0271826s, 12924 KB] Initializing Red-Black task core...
+[t=0.0272077s, 12924 KB] Adding 342 operators to extended DTGs
+[t=0.0278518s, 12984 KB] Checking invertibility...
+[t=0.0287386s, 12984 KB] Done checking invertibility
+[t=0.0287843s, 12984 KB] Number of invertible variables is 0
+[t=0.0288228s, 12984 KB] Finished initializing Red-Black task core
+[t=0.0288599s, 12984 KB] Finished initializing Red-Black task
+[t=0.0289308s, 12984 KB] No black variables found -- running FF heuristic.
+[t=0.028975s, 12984 KB] Finished initializing Red-Black Fact Following heuristic
+[t=0.0290839s, 12984 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0291173s, 12984 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0291524s, 12984 KB] New best heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0291892s, 12984 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0292411s, 12984 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0292717s, 12984 KB] Initial heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0293058s, 12984 KB] Initial heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0294054s, 12984 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 22
+[t=0.0294368s, 12984 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 12
+[t=0.029482s, 12984 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0295848s, 12984 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 21
+[t=0.0296174s, 12984 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 11
+[t=0.0296528s, 12984 KB] g=2, 3 evaluated, 2 expanded
+[t=0.0297512s, 12984 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 20
+[t=0.0297838s, 12984 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 10
+[t=0.0298193s, 12984 KB] g=3, 4 evaluated, 3 expanded
+[t=0.0299173s, 12984 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 19
+[t=0.0299491s, 12984 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 9
+[t=0.0299845s, 12984 KB] g=4, 5 evaluated, 4 expanded
+[t=0.0300805s, 12984 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 18
+[t=0.0301118s, 12984 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 8
+[t=0.0301473s, 12984 KB] g=5, 6 evaluated, 5 expanded
+[t=0.0302421s, 12984 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 16
+[t=0.0302733s, 12984 KB] g=6, 7 evaluated, 6 expanded
+[t=0.0303667s, 12984 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 13
+[t=0.0303995s, 12984 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 7
+[t=0.0304344s, 12984 KB] g=7, 8 evaluated, 7 expanded
+[t=0.0305361s, 12984 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 11
+[t=0.030569s, 12984 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 6
+[t=0.0306041s, 12984 KB] g=8, 9 evaluated, 8 expanded
+[t=0.0306918s, 12984 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 9
+[t=0.0307237s, 12984 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 3
+[t=0.0307592s, 12984 KB] g=9, 10 evaluated, 9 expanded
+[t=0.030844s, 12984 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 6
+[t=0.0308759s, 12984 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 2
+[t=0.0309106s, 12984 KB] g=10, 11 evaluated, 10 expanded
+[t=0.0334585s, 12984 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 5
+[t=0.0335436s, 12984 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 1
+[t=0.0335831s, 12984 KB] g=11, 45 evaluated, 44 expanded
+[t=0.0336525s, 12984 KB] Solution found!
+[t=0.0336924s, 12984 KB] Actual search time: 0.00661988s
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_c_14  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.0337317s, 12984 KB] Plan length: 12 step(s).
+[t=0.0337317s, 12984 KB] Plan cost: 12
+[t=0.0337317s, 12984 KB] Expanded 45 state(s).
+[t=0.0337317s, 12984 KB] Reopened 0 state(s).
+[t=0.0337317s, 12984 KB] Evaluated 46 state(s).
+[t=0.0337317s, 12984 KB] Evaluations: 92
+[t=0.0337317s, 12984 KB] Generated 221 state(s).
+[t=0.0337317s, 12984 KB] Dead ends: 0 state(s).
+[t=0.0337317s, 12984 KB] Number of registered states: 46
+[t=0.0337317s, 12984 KB] Int hash set load factor: 46/64 = 0.71875
+[t=0.0337317s, 12984 KB] Int hash set resizes: 6
+[t=0.0337317s, 12984 KB] Search time: 0.00672381s
+[t=0.0337317s, 12984 KB] Total time: 0.0337317s
+Solution found.
+Peak memory: 12984 KB
+search exit code: 0
+
+
+
+[t=3.7766e-05s, 11352 KB] reading input...
+[t=0.00352466s, 11476 KB] done reading input!
+[t=0.00473513s, 11872 KB] Building successor generator...done!
+[t=0.00510066s, 11872 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00511449s, 11872 KB] time for successor generation creation: 0.000252796s
+[t=0.00512848s, 11872 KB] Variables: 42
+[t=0.00514238s, 11872 KB] FactPairs: 84
+[t=0.00515207s, 11872 KB] Bytes per state: 8
+[t=0.00518224s, 11872 KB] Initializing symmetries for extending plans with
+[t=0.00519974s, 11872 KB] Initializing symmetries
+[t=0.0054784s, 12016 KB] Using Bliss to find group generators
+[t=0.00577226s, 12148 KB] Done initializing symmetries: 0.000590198s
+[t=0.00579278s, 12148 KB] Size of the grounded symmetry graph: 441
+[t=0.00582035s, 12148 KB] Number of search generators (affecting facts): 4
+[t=0.0058349s, 12148 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00584621s, 12148 KB] Total number of generators: 4
+[t=0.00601682s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.1
+[t=0.00606003s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.2
+[t=0.00607893s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.3
+[t=0.00609874s, 12148 KB] Adding plans... 
+[t=0.00612411s, 12148 KB] Finding symmetric plans... 
+[t=0.00614489s, 12148 KB] done! [t=0.00615377s]
+[t=0.00615508s, 12148 KB] Dumping 3 plans before reformulation 
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00629655s, 12148 KB] Plan length: 11 step(s).
+[t=0.00631829s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_l_153  (1)
+sync_a_300  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00638415s, 12148 KB] Plan length: 11 step(s).
+[t=0.00639539s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_c_14  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00644032s, 12148 KB] Plan length: 12 step(s).
+[t=0.00645002s, 12148 KB] Plan cost: 12
+[t=0.00645989s, 12148 KB] Done dumping plans before reformulation
+[t=0.00649086s, 12148 KB] Number of operators in the multiset is: 15
+[t=0.00652301s, 12148 KB] Reformulated task is created, dumping
+[t=0.0115447s, 12148 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12148 KB
+search exit code: 0
+
+
+
+[t=3.8044e-05s, 11352 KB] reading input...
+[t=0.00443356s, 11608 KB] done reading input!
+[t=0.00642157s, 12004 KB] Initializing landmark count heuristic...
+[t=0.00652223s, 12004 KB] Generating landmark graph...
+[t=0.00662688s, 12004 KB] Building a landmark graph with reasonable orders.
+[t=0.00673565s, 12004 KB] Initializing Exploration...
+[t=0.00746453s, 12664 KB] Generating landmarks using the RPG/SAS+ approach
+Removed 0 reasonable or obedient reasonable orders
+[t=0.0166631s, 12928 KB] Landmarks generation time: 0.0100388s
+[t=0.0167379s, 12928 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0167693s, 12928 KB] 170 edges
+[t=0.0167987s, 12928 KB] approx. reasonable orders
+[t=0.0168273s, 12928 KB] approx. obedient reasonable orders
+[t=0.0168686s, 12928 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.0168969s, 12928 KB] Landmarks generation time: 0.010357s
+[t=0.0169258s, 12928 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0169535s, 12928 KB] 170 edges
+[t=0.0169811s, 12928 KB] Landmark graph generation time: 0.0104739s
+[t=0.0170098s, 12928 KB] Landmark graph contains 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0170376s, 12928 KB] Landmark graph contains 170 orderings.
+[t=0.018393s, 12928 KB] Simplifying 2249 unary operators... done! [2249 unary operators]
+[t=0.0203652s, 12928 KB] time to simplify: 0.00208308s
+[t=0.0206343s, 12928 KB] Initializing additive heuristic...
+[t=0.0206749s, 12928 KB] Initializing FF heuristic...
+[t=0.0207012s, 12928 KB] Initializing extended DTGs
+[t=0.0207612s, 12928 KB] Initializing Red-Black Fact Following heuristic...
+[t=0.0208627s, 12928 KB] Initializing novelty heuristic...
+[t=0.0208964s, 12928 KB] Done initializing novelty heuristic
+[t=0.0210168s, 12928 KB] Building successor generator...done!
+[t=0.0213074s, 12928 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.0213329s, 12928 KB] time for successor generation creation: 0.000219053s
+[t=0.0213664s, 12928 KB] Variables: 58
+[t=0.0213952s, 12928 KB] FactPairs: 116
+[t=0.021424s, 12928 KB] Bytes per state: 8
+[t=0.0215662s, 12928 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.021658s, 12928 KB] 37 initial landmarks, 15 goal landmarks
+[t=0.0216986s, 12928 KB] Extract plan from the heuristic: yes
+[t=0.0217486s, 12928 KB] Running A* instead of Dijkstra. Using the distances ignoring outside conditions for heuristic estimates.
+[t=0.0217782s, 12928 KB] Initializing Red-Black task...
+[t=0.0218081s, 12928 KB] Initializing Red-Black task core...
+[t=0.021838s, 12928 KB] Adding 344 operators to extended DTGs
+[t=0.0223701s, 12988 KB] Checking invertibility...
+[t=0.0232938s, 12988 KB] Done checking invertibility
+[t=0.023341s, 12988 KB] Number of invertible variables is 0
+[t=0.0233588s, 12988 KB] Finished initializing Red-Black task core
+[t=0.0233694s, 12988 KB] Finished initializing Red-Black task
+[t=0.0234132s, 12988 KB] No black variables found -- running FF heuristic.
+[t=0.0234544s, 12988 KB] Finished initializing Red-Black Fact Following heuristic
+[t=0.0235533s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0235829s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0235985s, 12988 KB] New best heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0236275s, 12988 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0236696s, 12988 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0236985s, 12988 KB] Initial heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.023713s, 12988 KB] Initial heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0237974s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 22
+[t=0.0238271s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 12
+[t=0.0238555s, 12988 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0239428s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 21
+[t=0.0239716s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 11
+[t=0.0239998s, 12988 KB] g=2, 3 evaluated, 2 expanded
+[t=0.0240864s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 20
+[t=0.0241152s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 10
+[t=0.0241323s, 12988 KB] g=3, 4 evaluated, 3 expanded
+[t=0.0242146s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 19
+[t=0.0242439s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 9
+[t=0.0242587s, 12988 KB] g=4, 5 evaluated, 4 expanded
+[t=0.0243347s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 18
+[t=0.0243639s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 8
+[t=0.0243941s, 12988 KB] g=5, 6 evaluated, 5 expanded
+[t=0.024474s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 16
+[t=0.0245024s, 12988 KB] g=6, 7 evaluated, 6 expanded
+[t=0.0245797s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 13
+[t=0.0246088s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 7
+[t=0.024647s, 12988 KB] g=7, 8 evaluated, 7 expanded
+[t=0.0247122s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 11
+[t=0.0247384s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 6
+[t=0.0247552s, 12988 KB] g=8, 9 evaluated, 8 expanded
+[t=0.0248278s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 9
+[t=0.0248575s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 3
+[t=0.0248728s, 12988 KB] g=9, 10 evaluated, 9 expanded
+[t=0.024938s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 6
+[t=0.0249669s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 2
+[t=0.0249961s, 12988 KB] g=10, 11 evaluated, 10 expanded
+[t=0.0262909s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 5
+[t=0.026336s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 1
+[t=0.0263542s, 12988 KB] g=11, 45 evaluated, 44 expanded
+[t=0.0263849s, 12988 KB] Solution found!
+[t=0.0264108s, 12988 KB] Actual search time: 0.00473249s
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_a_262  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.0264272s, 12988 KB] Plan length: 12 step(s).
+[t=0.0264272s, 12988 KB] Plan cost: 12
+[t=0.0264272s, 12988 KB] Expanded 45 state(s).
+[t=0.0264272s, 12988 KB] Reopened 0 state(s).
+[t=0.0264272s, 12988 KB] Evaluated 46 state(s).
+[t=0.0264272s, 12988 KB] Evaluations: 92
+[t=0.0264272s, 12988 KB] Generated 221 state(s).
+[t=0.0264272s, 12988 KB] Dead ends: 0 state(s).
+[t=0.0264272s, 12988 KB] Number of registered states: 46
+[t=0.0264272s, 12988 KB] Int hash set load factor: 46/64 = 0.71875
+[t=0.0264272s, 12988 KB] Int hash set resizes: 6
+[t=0.0264272s, 12988 KB] Search time: 0.0048617s
+[t=0.0264272s, 12988 KB] Total time: 0.0264272s
+Solution found.
+Peak memory: 12988 KB
+search exit code: 0
+
+
+
+[t=5.2903e-05s, 11352 KB] reading input...
+[t=0.00412556s, 11476 KB] done reading input!
+[t=0.00600967s, 11872 KB] Building successor generator...done!
+[t=0.00660321s, 11872 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00663028s, 11872 KB] time for successor generation creation: 0.000321276s
+[t=0.00665645s, 11872 KB] Variables: 42
+[t=0.00670688s, 11872 KB] FactPairs: 84
+[t=0.00673038s, 11872 KB] Bytes per state: 8
+[t=0.00677802s, 11872 KB] Initializing symmetries for extending plans with
+[t=0.00680425s, 11872 KB] Initializing symmetries
+[t=0.00724635s, 12016 KB] Using Bliss to find group generators
+[t=0.0075939s, 12148 KB] Done initializing symmetries: 0.000817713s
+[t=0.00764984s, 12148 KB] Size of the grounded symmetry graph: 441
+[t=0.0076674s, 12148 KB] Number of search generators (affecting facts): 4
+[t=0.00767758s, 12148 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00768703s, 12148 KB] Total number of generators: 4
+[t=0.00788808s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.1
+[t=0.00794116s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.2
+[t=0.00796082s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.3
+[t=0.00797586s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.4
+[t=0.00799709s, 12148 KB] Adding plans... 
+[t=0.00803783s, 12148 KB] Finding symmetric plans... 
+[t=0.00806605s, 12148 KB] done! [t=0.00807805s]
+[t=0.00809388s, 12148 KB] Dumping 4 plans before reformulation 
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00826879s, 12148 KB] Plan length: 11 step(s).
+[t=0.00831225s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_l_153  (1)
+sync_a_300  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00839756s, 12148 KB] Plan length: 11 step(s).
+[t=0.00844045s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_c_14  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00856918s, 12148 KB] Plan length: 12 step(s).
+[t=0.00861667s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_a_262  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00870431s, 12148 KB] Plan length: 12 step(s).
+[t=0.00872309s, 12148 KB] Plan cost: 12
+[t=0.00873806s, 12148 KB] Done dumping plans before reformulation
+[t=0.0087885s, 12148 KB] Number of operators in the multiset is: 16
+[t=0.00883567s, 12148 KB] Reformulated task is created, dumping
+[t=0.0166851s, 12148 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12148 KB
+search exit code: 0
+
+
+
+[t=4.9776e-05s, 11352 KB] reading input...
+[t=0.00356114s, 11608 KB] done reading input!
+[t=0.00491653s, 12004 KB] Initializing landmark count heuristic...
+[t=0.0049911s, 12004 KB] Generating landmark graph...
+[t=0.0050622s, 12004 KB] Building a landmark graph with reasonable orders.
+[t=0.00511877s, 12004 KB] Initializing Exploration...
+[t=0.00579791s, 12664 KB] Generating landmarks using the RPG/SAS+ approach
+Removed 0 reasonable or obedient reasonable orders
+[t=0.0155995s, 12928 KB] Landmarks generation time: 0.0105913s
+[t=0.0156713s, 12928 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0157353s, 12928 KB] 170 edges
+[t=0.015759s, 12928 KB] approx. reasonable orders
+[t=0.015796s, 12928 KB] approx. obedient reasonable orders
+[t=0.0158304s, 12928 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.0158582s, 12928 KB] Landmarks generation time: 0.0108615s
+[t=0.0158745s, 12928 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0158851s, 12928 KB] 170 edges
+[t=0.0158948s, 12928 KB] Landmark graph generation time: 0.0109131s
+[t=0.0159046s, 12928 KB] Landmark graph contains 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0159145s, 12928 KB] Landmark graph contains 170 orderings.
+[t=0.0164542s, 12928 KB] Simplifying 2254 unary operators... done! [2254 unary operators]
+[t=0.0175997s, 12928 KB] time to simplify: 0.00122628s
+[t=0.0177692s, 12928 KB] Initializing additive heuristic...
+[t=0.0178008s, 12928 KB] Initializing FF heuristic...
+[t=0.017819s, 12928 KB] Initializing extended DTGs
+[t=0.0178594s, 12928 KB] Initializing Red-Black Fact Following heuristic...
+[t=0.0179287s, 12928 KB] Initializing novelty heuristic...
+[t=0.0179601s, 12928 KB] Done initializing novelty heuristic
+[t=0.0180708s, 12928 KB] Building successor generator...done!
+[t=0.0183492s, 12928 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.0183603s, 12928 KB] time for successor generation creation: 0.000203442s
+[t=0.0183729s, 12928 KB] Variables: 59
+[t=0.0183823s, 12928 KB] FactPairs: 118
+[t=0.0183915s, 12928 KB] Bytes per state: 8
+[t=0.0184904s, 12928 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.0185545s, 12928 KB] 37 initial landmarks, 15 goal landmarks
+[t=0.0185757s, 12928 KB] Extract plan from the heuristic: yes
+[t=0.0186059s, 12928 KB] Running A* instead of Dijkstra. Using the distances ignoring outside conditions for heuristic estimates.
+[t=0.0186163s, 12928 KB] Initializing Red-Black task...
+[t=0.0186287s, 12928 KB] Initializing Red-Black task core...
+[t=0.0186429s, 12928 KB] Adding 346 operators to extended DTGs
+[t=0.0191775s, 12940 KB] Checking invertibility...
+[t=0.0200357s, 12940 KB] Done checking invertibility
+[t=0.0200708s, 12940 KB] Number of invertible variables is 0
+[t=0.0200861s, 12940 KB] Finished initializing Red-Black task core
+[t=0.0200957s, 12940 KB] Finished initializing Red-Black task
+[t=0.02013s, 12940 KB] No black variables found -- running FF heuristic.
+[t=0.0201526s, 12940 KB] Finished initializing Red-Black Fact Following heuristic
+[t=0.0202303s, 12940 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0202573s, 12940 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0202719s, 12940 KB] New best heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0202827s, 12940 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0203047s, 12940 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0203148s, 12940 KB] Initial heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0203241s, 12940 KB] Initial heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0203932s, 12940 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 22
+[t=0.02042s, 12940 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 12
+[t=0.0204355s, 12940 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0205063s, 12940 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 21
+[t=0.0205327s, 12940 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 11
+[t=0.020547s, 12940 KB] g=2, 3 evaluated, 2 expanded
+[t=0.0206142s, 12940 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 20
+[t=0.020627s, 12940 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 10
+[t=0.0206368s, 12940 KB] g=3, 4 evaluated, 3 expanded
+[t=0.0207161s, 12940 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 19
+[t=0.0207451s, 12940 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 9
+[t=0.0207592s, 12940 KB] g=4, 5 evaluated, 4 expanded
+[t=0.0208238s, 12940 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 18
+[t=0.0208489s, 12940 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 8
+[t=0.0208775s, 12940 KB] g=5, 6 evaluated, 5 expanded
+[t=0.020944s, 12940 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 16
+[t=0.020969s, 12940 KB] g=6, 7 evaluated, 6 expanded
+[t=0.0210333s, 12940 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 13
+[t=0.021045s, 12940 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 7
+[t=0.0210687s, 12940 KB] g=7, 8 evaluated, 7 expanded
+[t=0.0211337s, 12940 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 11
+[t=0.0211584s, 12940 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 6
+[t=0.0211725s, 12940 KB] g=8, 9 evaluated, 8 expanded
+[t=0.0212274s, 12940 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 9
+[t=0.0212529s, 12940 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 3
+[t=0.0212914s, 12940 KB] g=9, 10 evaluated, 9 expanded
+[t=0.0213475s, 12940 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 6
+[t=0.0213594s, 12940 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 2
+[t=0.0213686s, 12940 KB] g=10, 11 evaluated, 10 expanded
+[t=0.022659s, 12940 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 5
+[t=0.0226933s, 12940 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 1
+[t=0.0227106s, 12940 KB] g=11, 48 evaluated, 47 expanded
+[t=0.0227407s, 12940 KB] Solution found!
+[t=0.0227517s, 12940 KB] Actual search time: 0.00419065s
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_l_69  (1)
+sync_h_594  (1)
+finish_38  (1)
+[t=0.0227625s, 12940 KB] Plan length: 12 step(s).
+[t=0.0227625s, 12940 KB] Plan cost: 12
+[t=0.0227625s, 12940 KB] Expanded 48 state(s).
+[t=0.0227625s, 12940 KB] Reopened 0 state(s).
+[t=0.0227625s, 12940 KB] Evaluated 49 state(s).
+[t=0.0227625s, 12940 KB] Evaluations: 98
+[t=0.0227625s, 12940 KB] Generated 235 state(s).
+[t=0.0227625s, 12940 KB] Dead ends: 0 state(s).
+[t=0.0227625s, 12940 KB] Number of registered states: 49
+[t=0.0227625s, 12940 KB] Int hash set load factor: 49/64 = 0.765625
+[t=0.0227625s, 12940 KB] Int hash set resizes: 6
+[t=0.0227625s, 12940 KB] Search time: 0.00427279s
+[t=0.0227625s, 12940 KB] Total time: 0.0227625s
+Solution found.
+Peak memory: 12940 KB
+search exit code: 0
+
+
+
+[t=3.7719e-05s, 11352 KB] reading input...
+[t=0.00273547s, 11476 KB] done reading input!
+[t=0.00402745s, 11872 KB] Building successor generator...done!
+[t=0.00444522s, 11872 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00445958s, 11872 KB] time for successor generation creation: 0.000222224s
+[t=0.00447401s, 11872 KB] Variables: 42
+[t=0.00448572s, 11872 KB] FactPairs: 84
+[t=0.00449575s, 11872 KB] Bytes per state: 8
+[t=0.00452389s, 11872 KB] Initializing symmetries for extending plans with
+[t=0.00455429s, 11872 KB] Initializing symmetries
+[t=0.00480601s, 12016 KB] Using Bliss to find group generators
+[t=0.00509986s, 12148 KB] Done initializing symmetries: 0.000564752s
+[t=0.0051354s, 12148 KB] Size of the grounded symmetry graph: 441
+[t=0.00515063s, 12148 KB] Number of search generators (affecting facts): 4
+[t=0.0051602s, 12148 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00516957s, 12148 KB] Total number of generators: 4
+[t=0.0053349s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.1
+[t=0.00537515s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.2
+[t=0.0053948s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.3
+[t=0.00541015s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.4
+[t=0.00542386s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.5
+[t=0.00544786s, 12148 KB] Adding plans... 
+[t=0.00548886s, 12148 KB] Finding symmetric plans... 
+[t=0.00552297s, 12148 KB] done! [t=0.00553361s]
+[t=0.00553493s, 12148 KB] Dumping 5 plans before reformulation 
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00568019s, 12148 KB] Plan length: 11 step(s).
+[t=0.00572193s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_l_153  (1)
+sync_a_300  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00584038s, 12148 KB] Plan length: 11 step(s).
+[t=0.0058825s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_c_14  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00594519s, 12148 KB] Plan length: 12 step(s).
+[t=0.00596336s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_a_262  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00604145s, 12148 KB] Plan length: 12 step(s).
+[t=0.00606031s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_l_69  (1)
+sync_h_594  (1)
+finish_38  (1)
+[t=0.00610935s, 12148 KB] Plan length: 12 step(s).
+[t=0.00612309s, 12148 KB] Plan cost: 12
+[t=0.00613731s, 12148 KB] Done dumping plans before reformulation
+[t=0.00618429s, 12148 KB] Number of operators in the multiset is: 18
+[t=0.00619985s, 12148 KB] Reformulated task is created, dumping
+[t=0.0114707s, 12148 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12148 KB
+search exit code: 0
+
+
+
+[t=5.562e-05s, 11352 KB] reading input...
+[t=0.00546177s, 11608 KB] done reading input!
+[t=0.00749398s, 12004 KB] Initializing landmark count heuristic...
+[t=0.0076142s, 12004 KB] Generating landmark graph...
+[t=0.00772391s, 12004 KB] Building a landmark graph with reasonable orders.
+[t=0.00784275s, 12004 KB] Initializing Exploration...
+[t=0.0092691s, 12660 KB] Generating landmarks using the RPG/SAS+ approach
+Removed 0 reasonable or obedient reasonable orders
+[t=0.0217201s, 12924 KB] Landmarks generation time: 0.0141192s
+[t=0.0219304s, 12924 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0219649s, 12924 KB] 170 edges
+[t=0.0219836s, 12924 KB] approx. reasonable orders
+[t=0.0219997s, 12924 KB] approx. obedient reasonable orders
+[t=0.0220365s, 12924 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.0220528s, 12924 KB] Landmarks generation time: 0.0144135s
+[t=0.0220694s, 12924 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0220834s, 12924 KB] 170 edges
+[t=0.0221001s, 12924 KB] Landmark graph generation time: 0.0145013s
+[t=0.0221165s, 12924 KB] Landmark graph contains 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0221313s, 12924 KB] Landmark graph contains 170 orderings.
+[t=0.0230015s, 12924 KB] Simplifying 2276 unary operators... done! [2276 unary operators]
+[t=0.0246473s, 12924 KB] time to simplify: 0.00181493s
+[t=0.0249906s, 12924 KB] Initializing additive heuristic...
+[t=0.0250531s, 12924 KB] Initializing FF heuristic...
+[t=0.0251075s, 12924 KB] Initializing extended DTGs
+[t=0.0251944s, 12924 KB] Initializing Red-Black Fact Following heuristic...
+[t=0.0253226s, 12924 KB] Initializing novelty heuristic...
+[t=0.0253685s, 12924 KB] Done initializing novelty heuristic
+[t=0.0255484s, 12924 KB] Building successor generator...done!
+[t=0.0259477s, 12924 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.025987s, 12924 KB] time for successor generation creation: 0.000291348s
+[t=0.0260312s, 12924 KB] Variables: 61
+[t=0.0260687s, 12924 KB] FactPairs: 122
+[t=0.0261063s, 12924 KB] Bytes per state: 8
+[t=0.0262738s, 12924 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.0263667s, 12924 KB] 37 initial landmarks, 15 goal landmarks
+[t=0.0264142s, 12924 KB] Extract plan from the heuristic: yes
+[t=0.0264807s, 12924 KB] Running A* instead of Dijkstra. Using the distances ignoring outside conditions for heuristic estimates.
+[t=0.0265177s, 12924 KB] Initializing Red-Black task...
+[t=0.0265554s, 12924 KB] Initializing Red-Black task core...
+[t=0.0266098s, 12924 KB] Adding 350 operators to extended DTGs
+[t=0.0274271s, 12948 KB] Checking invertibility...
+[t=0.038671s, 12948 KB] Done checking invertibility
+[t=0.0387792s, 12948 KB] Number of invertible variables is 0
+[t=0.0387995s, 12948 KB] Finished initializing Red-Black task core
+[t=0.0388113s, 12948 KB] Finished initializing Red-Black task
+[t=0.0388786s, 12948 KB] No black variables found -- running FF heuristic.
+[t=0.0389221s, 12948 KB] Finished initializing Red-Black Fact Following heuristic
+[t=0.039054s, 12948 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0390865s, 12948 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0391016s, 12948 KB] New best heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0391255s, 12948 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0391596s, 12948 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0391855s, 12948 KB] Initial heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0391999s, 12948 KB] Initial heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0392802s, 12948 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 22
+[t=0.0392937s, 12948 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 12
+[t=0.039304s, 12948 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0393769s, 12948 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 21
+[t=0.0394047s, 12948 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 11
+[t=0.0394192s, 12948 KB] g=2, 3 evaluated, 2 expanded
+[t=0.0394926s, 12948 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 20
+[t=0.0395054s, 12948 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 10
+[t=0.0395156s, 12948 KB] g=3, 4 evaluated, 3 expanded
+[t=0.0395779s, 12948 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 19
+[t=0.0395888s, 12948 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 9
+[t=0.0395982s, 12948 KB] g=4, 5 evaluated, 4 expanded
+[t=0.0396586s, 12948 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 18
+[t=0.0396691s, 12948 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 8
+[t=0.0396787s, 12948 KB] g=5, 6 evaluated, 5 expanded
+[t=0.039738s, 12948 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 16
+[t=0.0397489s, 12948 KB] g=6, 7 evaluated, 6 expanded
+[t=0.0398049s, 12948 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 13
+[t=0.0398153s, 12948 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 7
+[t=0.0398248s, 12948 KB] g=7, 8 evaluated, 7 expanded
+[t=0.0398805s, 12948 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 11
+[t=0.0399067s, 12948 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 6
+[t=0.0399212s, 12948 KB] g=8, 9 evaluated, 8 expanded
+[t=0.0399919s, 12948 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 9
+[t=0.0400067s, 12948 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 3
+[t=0.0400164s, 12948 KB] g=9, 10 evaluated, 9 expanded
+[t=0.0400732s, 12948 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 6
+[t=0.0400837s, 12948 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 2
+[t=0.0400931s, 12948 KB] g=10, 11 evaluated, 10 expanded
+[t=0.0417899s, 12948 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 5
+[t=0.0418244s, 12948 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 1
+[t=0.0418387s, 12948 KB] g=11, 55 evaluated, 53 expanded
+[t=0.0418683s, 12948 KB] Solution found!
+[t=0.0418799s, 12948 KB] Actual search time: 0.0154831s
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_h_442  (1)
+sync_e_757  (1)
+sync_h_376  (1)
+finish_38  (1)
+[t=0.0418914s, 12948 KB] Plan length: 12 step(s).
+[t=0.0418914s, 12948 KB] Plan cost: 12
+[t=0.0418914s, 12948 KB] Expanded 54 state(s).
+[t=0.0418914s, 12948 KB] Reopened 0 state(s).
+[t=0.0418914s, 12948 KB] Evaluated 56 state(s).
+[t=0.0418914s, 12948 KB] Evaluations: 111
+[t=0.0418914s, 12948 KB] Generated 253 state(s).
+[t=0.0418914s, 12948 KB] Dead ends: 1 state(s).
+[t=0.0418914s, 12948 KB] Number of registered states: 56
+[t=0.0418914s, 12948 KB] Int hash set load factor: 56/64 = 0.875
+[t=0.0418914s, 12948 KB] Int hash set resizes: 6
+[t=0.0418914s, 12948 KB] Search time: 0.015619s
+[t=0.0418914s, 12948 KB] Total time: 0.0418914s
+Solution found.
+Peak memory: 12948 KB
+search exit code: 0
+
+
+
+[t=3.8089e-05s, 11352 KB] reading input...
+[t=0.00274524s, 11476 KB] done reading input!
+[t=0.00401032s, 11872 KB] Building successor generator...done!
+[t=0.00438825s, 11872 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00442291s, 11872 KB] time for successor generation creation: 0.000229521s
+[t=0.00446474s, 11872 KB] Variables: 42
+[t=0.00450177s, 11872 KB] FactPairs: 84
+[t=0.00453686s, 11872 KB] Bytes per state: 8
+[t=0.00457656s, 11872 KB] Initializing symmetries for extending plans with
+[t=0.004614s, 11872 KB] Initializing symmetries
+[t=0.00488828s, 12016 KB] Using Bliss to find group generators
+[t=0.00520212s, 12148 KB] Done initializing symmetries: 0.000610892s
+[t=0.00524593s, 12148 KB] Size of the grounded symmetry graph: 441
+[t=0.00528434s, 12148 KB] Number of search generators (affecting facts): 4
+[t=0.00531896s, 12148 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00535425s, 12148 KB] Total number of generators: 4
+[t=0.0055704s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.1
+[t=0.00562164s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.2
+[t=0.00566501s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.3
+[t=0.00570725s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.4
+[t=0.00574885s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.5
+[t=0.00579076s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.6
+[t=0.00584376s, 12148 KB] Adding plans... 
+[t=0.0058931s, 12148 KB] Finding symmetric plans... 
+[t=0.00595359s, 12148 KB] done! [t=0.00596767s]
+[t=0.00598294s, 12148 KB] Dumping 6 plans before reformulation 
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00619953s, 12148 KB] Plan length: 11 step(s).
+[t=0.00624298s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_l_153  (1)
+sync_a_300  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00633908s, 12148 KB] Plan length: 11 step(s).
+[t=0.00635779s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_c_14  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00643602s, 12148 KB] Plan length: 12 step(s).
+[t=0.00645179s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_a_262  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00654371s, 12148 KB] Plan length: 12 step(s).
+[t=0.00659573s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_l_69  (1)
+sync_h_594  (1)
+finish_38  (1)
+[t=0.00679262s, 12148 KB] Plan length: 12 step(s).
+[t=0.00682098s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_h_442  (1)
+sync_e_757  (1)
+sync_h_376  (1)
+finish_38  (1)
+[t=0.00694051s, 12148 KB] Plan length: 12 step(s).
+[t=0.00698269s, 12148 KB] Plan cost: 12
+[t=0.00701841s, 12148 KB] Done dumping plans before reformulation
+[t=0.0070821s, 12148 KB] Number of operators in the multiset is: 21
+[t=0.00711867s, 12148 KB] Reformulated task is created, dumping
+[t=0.0203258s, 12148 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12148 KB
+search exit code: 0
+
+
+
+[t=3.9686e-05s, 11352 KB] reading input...
+[t=0.00364531s, 11608 KB] done reading input!
+[t=0.00499499s, 12004 KB] Initializing landmark count heuristic...
+[t=0.00507374s, 12004 KB] Generating landmark graph...
+[t=0.00519017s, 12004 KB] Building a landmark graph with reasonable orders.
+[t=0.00527843s, 12136 KB] Initializing Exploration...
+[t=0.00593237s, 12664 KB] Generating landmarks using the RPG/SAS+ approach
+Removed 0 reasonable or obedient reasonable orders
+[t=0.017778s, 12928 KB] Landmarks generation time: 0.012617s
+[t=0.0178679s, 12928 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.017908s, 12928 KB] 170 edges
+[t=0.0179288s, 12928 KB] approx. reasonable orders
+[t=0.017961s, 12928 KB] approx. obedient reasonable orders
+[t=0.0180139s, 12928 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.0180549s, 12928 KB] Landmarks generation time: 0.0129545s
+[t=0.018091s, 12928 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0181257s, 12928 KB] 170 edges
+[t=0.0181608s, 12928 KB] Landmark graph generation time: 0.0131082s
+[t=0.0181962s, 12928 KB] Landmark graph contains 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0182307s, 12928 KB] Landmark graph contains 170 orderings.
+[t=0.0188718s, 12928 KB] Simplifying 2307 unary operators... done! [2307 unary operators]
+[t=0.0201392s, 12928 KB] time to simplify: 0.00135871s
+[t=0.0203753s, 12928 KB] Initializing additive heuristic...
+[t=0.0204206s, 12928 KB] Initializing FF heuristic...
+[t=0.0204681s, 12928 KB] Initializing extended DTGs
+[t=0.020544s, 12928 KB] Initializing Red-Black Fact Following heuristic...
+[t=0.0206406s, 12928 KB] Initializing novelty heuristic...
+[t=0.0206775s, 12928 KB] Done initializing novelty heuristic
+[t=0.0208153s, 12928 KB] Building successor generator...done!
+[t=0.0211257s, 12928 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.0211531s, 12928 KB] time for successor generation creation: 0.000221247s
+[t=0.0211925s, 12928 KB] Variables: 64
+[t=0.0212268s, 12928 KB] FactPairs: 128
+[t=0.0212608s, 12928 KB] Bytes per state: 8
+[t=0.0213873s, 12928 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.0214571s, 12928 KB] 37 initial landmarks, 15 goal landmarks
+[t=0.0215008s, 12928 KB] Extract plan from the heuristic: yes
+[t=0.0215621s, 12928 KB] Running A* instead of Dijkstra. Using the distances ignoring outside conditions for heuristic estimates.
+[t=0.0215924s, 12928 KB] Initializing Red-Black task...
+[t=0.0216275s, 12928 KB] Initializing Red-Black task core...
+[t=0.021662s, 12928 KB] Adding 356 operators to extended DTGs
+[t=0.0222317s, 12960 KB] Checking invertibility...
+[t=0.0231225s, 12960 KB] Done checking invertibility
+[t=0.0231645s, 12960 KB] Number of invertible variables is 0
+[t=0.0232019s, 12960 KB] Finished initializing Red-Black task core
+[t=0.0232368s, 12960 KB] Finished initializing Red-Black task
+[t=0.0233088s, 12960 KB] No black variables found -- running FF heuristic.
+[t=0.0233547s, 12960 KB] Finished initializing Red-Black Fact Following heuristic
+[t=0.0234673s, 12960 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0235062s, 12960 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0235268s, 12960 KB] New best heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0235419s, 12960 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0235886s, 12960 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0236213s, 12960 KB] Initial heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0236564s, 12960 KB] Initial heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0237625s, 12960 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 22
+[t=0.0237952s, 12960 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 12
+[t=0.0238311s, 12960 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0239395s, 12960 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 21
+[t=0.0239725s, 12960 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 11
+[t=0.0240082s, 12960 KB] g=2, 3 evaluated, 2 expanded
+[t=0.0241154s, 12960 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 20
+[t=0.0241478s, 12960 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 10
+[t=0.0241827s, 12960 KB] g=3, 4 evaluated, 3 expanded
+[t=0.0242828s, 12960 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 19
+[t=0.0243145s, 12960 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 9
+[t=0.0243494s, 12960 KB] g=4, 5 evaluated, 4 expanded
+[t=0.0244496s, 12960 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 18
+[t=0.0244817s, 12960 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 8
+[t=0.0245166s, 12960 KB] g=5, 6 evaluated, 5 expanded
+[t=0.0246131s, 12960 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 16
+[t=0.0246443s, 12960 KB] g=6, 7 evaluated, 6 expanded
+[t=0.0247403s, 12960 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 13
+[t=0.0247717s, 12960 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 7
+[t=0.0248071s, 12960 KB] g=7, 8 evaluated, 7 expanded
+[t=0.0249046s, 12960 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 11
+[t=0.0249368s, 12960 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 6
+[t=0.0249714s, 12960 KB] g=8, 9 evaluated, 8 expanded
+[t=0.0250613s, 12960 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 9
+[t=0.0250924s, 12960 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 3
+[t=0.0251267s, 12960 KB] g=9, 10 evaluated, 9 expanded
+[t=0.0252127s, 12960 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 6
+[t=0.0252448s, 12960 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 2
+[t=0.0252794s, 12960 KB] g=10, 11 evaluated, 10 expanded
+[t=0.028084s, 12960 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 5
+[t=0.0281489s, 12960 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 1
+[t=0.0281753s, 12960 KB] g=11, 84 evaluated, 81 expanded
+[t=0.0282398s, 12960 KB] Solution found!
+[t=0.028273s, 12960 KB] Actual search time: 0.00679884s
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_l_107  (1)
+sync_e_709  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.0283096s, 12960 KB] Plan length: 12 step(s).
+[t=0.0283096s, 12960 KB] Plan cost: 12
+[t=0.0283096s, 12960 KB] Expanded 82 state(s).
+[t=0.0283096s, 12960 KB] Reopened 0 state(s).
+[t=0.0283096s, 12960 KB] Evaluated 85 state(s).
+[t=0.0283096s, 12960 KB] Evaluations: 168
+[t=0.0283096s, 12960 KB] Generated 359 state(s).
+[t=0.0283096s, 12960 KB] Dead ends: 2 state(s).
+[t=0.0283096s, 12960 KB] Number of registered states: 85
+[t=0.0283096s, 12960 KB] Int hash set load factor: 85/128 = 0.664062
+[t=0.0283096s, 12960 KB] Int hash set resizes: 7
+[t=0.0283096s, 12960 KB] Search time: 0.00692296s
+[t=0.0283096s, 12960 KB] Total time: 0.0283096s
+Solution found.
+Peak memory: 12960 KB
+search exit code: 0
+
+
+
+[t=4.2672e-05s, 11352 KB] reading input...
+[t=0.00418014s, 11476 KB] done reading input!
+[t=0.00605435s, 11872 KB] Building successor generator...done!
+[t=0.00655935s, 11872 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00660288s, 11872 KB] time for successor generation creation: 0.000305697s
+[t=0.00663231s, 11872 KB] Variables: 42
+[t=0.00666978s, 11872 KB] FactPairs: 84
+[t=0.00670792s, 11872 KB] Bytes per state: 8
+[t=0.00675086s, 11872 KB] Initializing symmetries for extending plans with
+[t=0.00679283s, 11872 KB] Initializing symmetries
+[t=0.00718508s, 12016 KB] Using Bliss to find group generators
+[t=0.00759911s, 12148 KB] Done initializing symmetries: 0.000840656s
+[t=0.00766191s, 12148 KB] Size of the grounded symmetry graph: 441
+[t=0.00770316s, 12148 KB] Number of search generators (affecting facts): 4
+[t=0.00774179s, 12148 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00778096s, 12148 KB] Total number of generators: 4
+[t=0.00803581s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.1
+[t=0.00811189s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.2
+[t=0.00817923s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.3
+[t=0.00822887s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.4
+[t=0.00827739s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.5
+[t=0.00832503s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.6
+[t=0.00837335s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.7
+[t=0.00843487s, 12148 KB] Adding plans... 
+[t=0.00850042s, 12148 KB] Finding symmetric plans... 
+[t=0.00857902s, 12148 KB] done! [t=0.00859874s]
+[t=0.00861894s, 12148 KB] Dumping 7 plans before reformulation 
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00893881s, 12148 KB] Plan length: 11 step(s).
+[t=0.00898863s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_l_153  (1)
+sync_a_300  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00911874s, 12148 KB] Plan length: 11 step(s).
+[t=0.0108496s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_c_14  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.01372s, 12148 KB] Plan length: 12 step(s).
+[t=0.0138483s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_a_262  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.0139527s, 12148 KB] Plan length: 12 step(s).
+[t=0.0140142s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_l_69  (1)
+sync_h_594  (1)
+finish_38  (1)
+[t=0.0140918s, 12148 KB] Plan length: 12 step(s).
+[t=0.0141549s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_h_442  (1)
+sync_e_757  (1)
+sync_h_376  (1)
+finish_38  (1)
+[t=0.0142242s, 12148 KB] Plan length: 12 step(s).
+[t=0.0142806s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_l_107  (1)
+sync_e_709  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.014348s, 12148 KB] Plan length: 12 step(s).
+[t=0.0150657s, 12148 KB] Plan cost: 12
+[t=0.015273s, 12148 KB] Done dumping plans before reformulation
+[t=0.0153346s, 12148 KB] Number of operators in the multiset is: 22
+[t=0.0153495s, 12148 KB] Reformulated task is created, dumping
+[t=0.0239777s, 12148 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12148 KB
+search exit code: 0
+
+
+
+[t=3.5609e-05s, 11352 KB] reading input...
+[t=0.00388185s, 11608 KB] done reading input!
+[t=0.00561402s, 12004 KB] Initializing landmark count heuristic...
+[t=0.00570166s, 12004 KB] Generating landmark graph...
+[t=0.00579905s, 12004 KB] Building a landmark graph with reasonable orders.
+[t=0.00589619s, 12136 KB] Initializing Exploration...
+[t=0.0065953s, 12664 KB] Generating landmarks using the RPG/SAS+ approach
+Removed 0 reasonable or obedient reasonable orders
+[t=0.016542s, 12928 KB] Landmarks generation time: 0.0107604s
+[t=0.0166257s, 12928 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0166579s, 12928 KB] 170 edges
+[t=0.0166872s, 12928 KB] approx. reasonable orders
+[t=0.016716s, 12928 KB] approx. obedient reasonable orders
+[t=0.0167581s, 12928 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.016786s, 12928 KB] Landmarks generation time: 0.01107s
+[t=0.0168773s, 12928 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.016916s, 12928 KB] 170 edges
+[t=0.016935s, 12928 KB] Landmark graph generation time: 0.0112479s
+[t=0.0169692s, 12928 KB] Landmark graph contains 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.017005s, 12928 KB] Landmark graph contains 170 orderings.
+[t=0.0178735s, 12928 KB] Simplifying 2312 unary operators... done! [2312 unary operators]
+[t=0.0191246s, 12928 KB] time to simplify: 0.00134267s
+[t=0.019364s, 12928 KB] Initializing additive heuristic...
+[t=0.0194054s, 12928 KB] Initializing FF heuristic...
+[t=0.0194465s, 12928 KB] Initializing extended DTGs
+[t=0.0195233s, 12928 KB] Initializing Red-Black Fact Following heuristic...
+[t=0.0196192s, 12928 KB] Initializing novelty heuristic...
+[t=0.0196578s, 12928 KB] Done initializing novelty heuristic
+[t=0.0197992s, 12928 KB] Building successor generator...done!
+[t=0.0201264s, 12928 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.0201566s, 12928 KB] time for successor generation creation: 0.000217832s
+[t=0.0201978s, 12928 KB] Variables: 65
+[t=0.0202331s, 12928 KB] FactPairs: 130
+[t=0.0202687s, 12928 KB] Bytes per state: 12
+[t=0.0203924s, 12928 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.0204641s, 12928 KB] 37 initial landmarks, 15 goal landmarks
+[t=0.0205096s, 12928 KB] Extract plan from the heuristic: yes
+[t=0.0205733s, 12928 KB] Running A* instead of Dijkstra. Using the distances ignoring outside conditions for heuristic estimates.
+[t=0.0206031s, 12928 KB] Initializing Red-Black task...
+[t=0.0206384s, 12928 KB] Initializing Red-Black task core...
+[t=0.0206732s, 12928 KB] Adding 358 operators to extended DTGs
+[t=0.0212932s, 12988 KB] Checking invertibility...
+[t=0.0221304s, 12988 KB] Done checking invertibility
+[t=0.0221732s, 12988 KB] Number of invertible variables is 0
+[t=0.0221886s, 12988 KB] Finished initializing Red-Black task core
+[t=0.0221985s, 12988 KB] Finished initializing Red-Black task
+[t=0.0222363s, 12988 KB] No black variables found -- running FF heuristic.
+[t=0.022276s, 12988 KB] Finished initializing Red-Black Fact Following heuristic
+[t=0.0223738s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0224037s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0224321s, 12988 KB] New best heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0224604s, 12988 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0225015s, 12988 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0225294s, 12988 KB] Initial heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0225575s, 12988 KB] Initial heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0226459s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 22
+[t=0.0226745s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 12
+[t=0.0227026s, 12988 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0227921s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 21
+[t=0.0228908s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 11
+[t=0.0229224s, 12988 KB] g=2, 3 evaluated, 2 expanded
+[t=0.0230174s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 20
+[t=0.023047s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 10
+[t=0.0230751s, 12988 KB] g=3, 4 evaluated, 3 expanded
+[t=0.0231628s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 19
+[t=0.0231914s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 9
+[t=0.0232194s, 12988 KB] g=4, 5 evaluated, 4 expanded
+[t=0.0233034s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 18
+[t=0.0233319s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 8
+[t=0.0233606s, 12988 KB] g=5, 6 evaluated, 5 expanded
+[t=0.0234435s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 16
+[t=0.0234722s, 12988 KB] g=6, 7 evaluated, 6 expanded
+[t=0.0235538s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 13
+[t=0.023582s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 7
+[t=0.0236096s, 12988 KB] g=7, 8 evaluated, 7 expanded
+[t=0.0236882s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 11
+[t=0.0237168s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 6
+[t=0.0237448s, 12988 KB] g=8, 9 evaluated, 8 expanded
+[t=0.0238323s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 9
+[t=0.0238615s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 3
+[t=0.0238897s, 12988 KB] g=9, 10 evaluated, 9 expanded
+[t=0.0239605s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 6
+[t=0.0239894s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 2
+[t=0.0240173s, 12988 KB] g=10, 11 evaluated, 10 expanded
+[t=0.0269791s, 12988 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 5
+[t=0.0270446s, 12988 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 1
+[t=0.0270633s, 12988 KB] g=10, 90 evaluated, 86 expanded
+[t=0.0271123s, 12988 KB] Solution found!
+[t=0.0271434s, 12988 KB] Actual search time: 0.00669986s
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+finish_36  (1)
+[t=0.0272347s, 12988 KB] Plan length: 11 step(s).
+[t=0.0272347s, 12988 KB] Plan cost: 11
+[t=0.0272347s, 12988 KB] Expanded 87 state(s).
+[t=0.0272347s, 12988 KB] Reopened 0 state(s).
+[t=0.0272347s, 12988 KB] Evaluated 91 state(s).
+[t=0.0272347s, 12988 KB] Evaluations: 179
+[t=0.0272347s, 12988 KB] Generated 378 state(s).
+[t=0.0272347s, 12988 KB] Dead ends: 3 state(s).
+[t=0.0272347s, 12988 KB] Number of registered states: 91
+[t=0.0272347s, 12988 KB] Int hash set load factor: 91/128 = 0.710938
+[t=0.0272347s, 12988 KB] Int hash set resizes: 7
+[t=0.0272347s, 12988 KB] Search time: 0.00684265s
+[t=0.0272347s, 12988 KB] Total time: 0.0272347s
+Solution found.
+Peak memory: 12988 KB
+search exit code: 0
+
+
+
+[t=3.9767e-05s, 11352 KB] reading input...
+[t=0.00274472s, 11476 KB] done reading input!
+[t=0.0040366s, 11872 KB] Building successor generator...done!
+[t=0.00439757s, 11872 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00443125s, 11872 KB] time for successor generation creation: 0.000223755s
+[t=0.0044724s, 11872 KB] Variables: 42
+[t=0.00450898s, 11872 KB] FactPairs: 84
+[t=0.00454568s, 11872 KB] Bytes per state: 8
+[t=0.00458739s, 11872 KB] Initializing symmetries for extending plans with
+[t=0.00462562s, 11872 KB] Initializing symmetries
+[t=0.00492007s, 12016 KB] Using Bliss to find group generators
+[t=0.00522185s, 12148 KB] Done initializing symmetries: 0.000616526s
+[t=0.00526053s, 12148 KB] Size of the grounded symmetry graph: 441
+[t=0.0052815s, 12148 KB] Number of search generators (affecting facts): 4
+[t=0.00531441s, 12148 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00534987s, 12148 KB] Total number of generators: 4
+[t=0.00561636s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.1
+[t=0.00567151s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.2
+[t=0.00571891s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.3
+[t=0.00576528s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.4
+[t=0.00580966s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.5
+[t=0.00586866s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.6
+[t=0.00590839s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.7
+[t=0.00595241s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.8
+[t=0.00600601s, 12148 KB] Adding plans... 
+[t=0.00605916s, 12148 KB] Finding symmetric plans... 
+[t=0.006129s, 12148 KB] done! [t=0.00614283s]
+[t=0.00615807s, 12148 KB] Dumping 8 plans before reformulation 
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00637948s, 12148 KB] Plan length: 11 step(s).
+[t=0.00642382s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_l_153  (1)
+sync_a_300  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00655522s, 12148 KB] Plan length: 11 step(s).
+[t=0.00660013s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_c_14  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00672875s, 12148 KB] Plan length: 12 step(s).
+[t=0.00777114s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_a_262  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00787843s, 12148 KB] Plan length: 12 step(s).
+[t=0.0079267s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_l_69  (1)
+sync_h_594  (1)
+finish_38  (1)
+[t=0.00809627s, 12148 KB] Plan length: 12 step(s).
+[t=0.00814118s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_h_442  (1)
+sync_e_757  (1)
+sync_h_376  (1)
+finish_38  (1)
+[t=0.00829743s, 12148 KB] Plan length: 12 step(s).
+[t=0.00834361s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_l_107  (1)
+sync_e_709  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00898744s, 12148 KB] Plan length: 12 step(s).
+[t=0.00906727s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+finish_36  (1)
+[t=0.00924664s, 12148 KB] Plan length: 11 step(s).
+[t=0.00929066s, 12148 KB] Plan cost: 11
+[t=0.00931448s, 12148 KB] Done dumping plans before reformulation
+[t=0.00936959s, 12148 KB] Number of operators in the multiset is: 25
+[t=0.00940175s, 12148 KB] Reformulated task is created, dumping
+[t=0.0148492s, 12148 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12148 KB
+search exit code: 0
+
+
+
+[t=3.3885e-05s, 11352 KB] reading input...
+[t=0.00443317s, 11608 KB] done reading input!
+[t=0.00643164s, 12004 KB] Initializing landmark count heuristic...
+[t=0.00652181s, 12004 KB] Generating landmark graph...
+[t=0.00662637s, 12004 KB] Building a landmark graph with reasonable orders.
+[t=0.00671762s, 12136 KB] Initializing Exploration...
+[t=0.00770979s, 12804 KB] Generating landmarks using the RPG/SAS+ approach
+Removed 0 reasonable or obedient reasonable orders
+[t=0.0203771s, 12936 KB] Landmarks generation time: 0.0138029s
+[t=0.0204778s, 12936 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0205189s, 12936 KB] 170 edges
+[t=0.0205545s, 12936 KB] approx. reasonable orders
+[t=0.0205895s, 12936 KB] approx. obedient reasonable orders
+[t=0.0206404s, 12936 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.02067s, 12936 KB] Landmarks generation time: 0.0141385s
+[t=0.0207045s, 12936 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0207384s, 12936 KB] 170 edges
+[t=0.0207732s, 12936 KB] Landmark graph generation time: 0.0142711s
+[t=0.0208069s, 12936 KB] Landmark graph contains 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0208402s, 12936 KB] Landmark graph contains 170 orderings.
+[t=0.0214596s, 12936 KB] Simplifying 2361 unary operators... done! [2361 unary operators]
+[t=0.0226594s, 12936 KB] time to simplify: 0.00128885s
+[t=0.0228925s, 12936 KB] Initializing additive heuristic...
+[t=0.0229352s, 12936 KB] Initializing FF heuristic...
+[t=0.0229751s, 12936 KB] Initializing extended DTGs
+[t=0.0230483s, 12936 KB] Initializing Red-Black Fact Following heuristic...
+[t=0.0231422s, 12936 KB] Initializing novelty heuristic...
+[t=0.0231801s, 12936 KB] Done initializing novelty heuristic
+[t=0.02332s, 12936 KB] Building successor generator...done!
+[t=0.0236329s, 12936 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.0236596s, 12936 KB] time for successor generation creation: 0.000224361s
+[t=0.0236988s, 12936 KB] Variables: 68
+[t=0.0237323s, 12936 KB] FactPairs: 136
+[t=0.0237657s, 12936 KB] Bytes per state: 12
+[t=0.0238913s, 12936 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.0239611s, 12936 KB] 37 initial landmarks, 15 goal landmarks
+[t=0.0240035s, 12936 KB] Extract plan from the heuristic: yes
+[t=0.0240614s, 12936 KB] Running A* instead of Dijkstra. Using the distances ignoring outside conditions for heuristic estimates.
+[t=0.0240917s, 12936 KB] Initializing Red-Black task...
+[t=0.0241261s, 12936 KB] Initializing Red-Black task core...
+[t=0.0241743s, 12936 KB] Adding 364 operators to extended DTGs
+[t=0.0247432s, 13012 KB] Checking invertibility...
+[t=0.025598s, 13012 KB] Done checking invertibility
+[t=0.0256414s, 13012 KB] Number of invertible variables is 0
+[t=0.0256787s, 13012 KB] Finished initializing Red-Black task core
+[t=0.025713s, 13012 KB] Finished initializing Red-Black task
+[t=0.0257814s, 13012 KB] No black variables found -- running FF heuristic.
+[t=0.0258274s, 13012 KB] Finished initializing Red-Black Fact Following heuristic
+[t=0.0259377s, 13012 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0259701s, 13012 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0260046s, 13012 KB] New best heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0260384s, 13012 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0260876s, 13012 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0261174s, 13012 KB] Initial heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.026151s, 13012 KB] Initial heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.026265s, 13012 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 22
+[t=0.0262962s, 13012 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 12
+[t=0.0263307s, 13012 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0264331s, 13012 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 21
+[t=0.0264645s, 13012 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 11
+[t=0.0264999s, 13012 KB] g=2, 3 evaluated, 2 expanded
+[t=0.0266003s, 13012 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 20
+[t=0.0266307s, 13012 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 10
+[t=0.0266647s, 13012 KB] g=3, 4 evaluated, 3 expanded
+[t=0.0267615s, 13012 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 19
+[t=0.0267917s, 13012 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 9
+[t=0.0268255s, 13012 KB] g=4, 5 evaluated, 4 expanded
+[t=0.0269206s, 13012 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 18
+[t=0.0269511s, 13012 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 8
+[t=0.0269847s, 13012 KB] g=5, 6 evaluated, 5 expanded
+[t=0.0270794s, 13012 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 16
+[t=0.0271104s, 13012 KB] g=6, 7 evaluated, 6 expanded
+[t=0.0272018s, 13012 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 13
+[t=0.0272317s, 13012 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 7
+[t=0.0272666s, 13012 KB] g=7, 8 evaluated, 7 expanded
+[t=0.0273583s, 13012 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 11
+[t=0.0273883s, 13012 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 6
+[t=0.0274222s, 13012 KB] g=8, 9 evaluated, 8 expanded
+[t=0.0275163s, 13012 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 9
+[t=0.0275486s, 13012 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 3
+[t=0.0275834s, 13012 KB] g=9, 10 evaluated, 9 expanded
+[t=0.027668s, 13012 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 6
+[t=0.027698s, 13012 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 2
+[t=0.0277315s, 13012 KB] g=10, 11 evaluated, 10 expanded
+[t=0.0307008s, 13012 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 5
+[t=0.0307559s, 13012 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 1
+[t=0.030796s, 13012 KB] g=11, 95 evaluated, 91 expanded
+[t=0.0308595s, 13012 KB] Solution found!
+[t=0.0308908s, 13012 KB] Actual search time: 0.00691456s
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+sync_h_374  (1)
+finish_38  (1)
+[t=0.0309266s, 13012 KB] Plan length: 12 step(s).
+[t=0.0309266s, 13012 KB] Plan cost: 12
+[t=0.0309266s, 13012 KB] Expanded 92 state(s).
+[t=0.0309266s, 13012 KB] Reopened 0 state(s).
+[t=0.0309266s, 13012 KB] Evaluated 96 state(s).
+[t=0.0309266s, 13012 KB] Evaluations: 189
+[t=0.0309266s, 13012 KB] Generated 394 state(s).
+[t=0.0309266s, 13012 KB] Dead ends: 3 state(s).
+[t=0.0309266s, 13012 KB] Number of registered states: 96
+[t=0.0309266s, 13012 KB] Int hash set load factor: 96/128 = 0.75
+[t=0.0309266s, 13012 KB] Int hash set resizes: 7
+[t=0.0309266s, 13012 KB] Search time: 0.00703608s
+[t=0.0309266s, 13012 KB] Total time: 0.0309266s
+Solution found.
+Peak memory: 13012 KB
+search exit code: 0
+
+
+
+[t=3.6068e-05s, 11352 KB] reading input...
+[t=0.00270868s, 11476 KB] done reading input!
+[t=0.00405681s, 11872 KB] Building successor generator...done!
+[t=0.00443797s, 11872 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00446901s, 11872 KB] time for successor generation creation: 0.000223693s
+[t=0.00450931s, 11872 KB] Variables: 42
+[t=0.00454513s, 11872 KB] FactPairs: 84
+[t=0.00457915s, 11872 KB] Bytes per state: 8
+[t=0.00461839s, 11872 KB] Initializing symmetries for extending plans with
+[t=0.00465401s, 11872 KB] Initializing symmetries
+[t=0.00494409s, 12016 KB] Using Bliss to find group generators
+[t=0.00529667s, 12148 KB] Done initializing symmetries: 0.00068606s
+[t=0.00538066s, 12148 KB] Size of the grounded symmetry graph: 441
+[t=0.0054271s, 12148 KB] Number of search generators (affecting facts): 4
+[t=0.00569945s, 12148 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00575939s, 12148 KB] Total number of generators: 4
+[t=0.00596991s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.1
+[t=0.00602588s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.2
+[t=0.00606801s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.3
+[t=0.00611054s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.4
+[t=0.00615094s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.5
+[t=0.00619208s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.6
+[t=0.00623245s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.7
+[t=0.00627263s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.8
+[t=0.00631251s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.9
+[t=0.00636314s, 12148 KB] Adding plans... 
+[t=0.00641828s, 12148 KB] Finding symmetric plans... 
+[t=0.00648325s, 12148 KB] done! [t=0.00649735s]
+[t=0.00651272s, 12148 KB] Dumping 9 plans before reformulation 
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00673398s, 12148 KB] Plan length: 11 step(s).
+[t=0.00677548s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_l_153  (1)
+sync_a_300  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00688225s, 12148 KB] Plan length: 11 step(s).
+[t=0.00690114s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_c_14  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00814476s, 12148 KB] Plan length: 12 step(s).
+[t=0.0081992s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_a_262  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00833824s, 12148 KB] Plan length: 12 step(s).
+[t=0.00836234s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_l_69  (1)
+sync_h_594  (1)
+finish_38  (1)
+[t=0.0084385s, 12148 KB] Plan length: 12 step(s).
+[t=0.0084539s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_h_442  (1)
+sync_e_757  (1)
+sync_h_376  (1)
+finish_38  (1)
+[t=0.00854037s, 12148 KB] Plan length: 12 step(s).
+[t=0.00855526s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_l_107  (1)
+sync_e_709  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00862417s, 12148 KB] Plan length: 12 step(s).
+[t=0.00863984s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+finish_36  (1)
+[t=0.0087362s, 12148 KB] Plan length: 11 step(s).
+[t=0.00875762s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+sync_h_374  (1)
+finish_38  (1)
+[t=0.00882736s, 12148 KB] Plan length: 12 step(s).
+[t=0.00884285s, 12148 KB] Plan cost: 12
+[t=0.00885729s, 12148 KB] Done dumping plans before reformulation
+[t=0.00965194s, 12148 KB] Number of operators in the multiset is: 26
+[t=0.00967733s, 12148 KB] Reformulated task is created, dumping
+[t=0.0172187s, 12148 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12148 KB
+search exit code: 0
+
+
+
+[t=3.6585e-05s, 11352 KB] reading input...
+[t=0.00373735s, 11608 KB] done reading input!
+[t=0.00511449s, 12004 KB] Initializing landmark count heuristic...
+[t=0.00518955s, 12004 KB] Generating landmark graph...
+[t=0.00528165s, 12004 KB] Building a landmark graph with reasonable orders.
+[t=0.00537832s, 12136 KB] Initializing Exploration...
+[t=0.00607834s, 12804 KB] Generating landmarks using the RPG/SAS+ approach
+Removed 0 reasonable or obedient reasonable orders
+[t=0.0206284s, 12936 KB] Landmarks generation time: 0.0153772s
+[t=0.0207208s, 12936 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0207624s, 12936 KB] 170 edges
+[t=0.020811s, 12936 KB] approx. reasonable orders
+[t=0.0208469s, 12936 KB] approx. obedient reasonable orders
+[t=0.020899s, 12936 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.0209339s, 12936 KB] Landmarks generation time: 0.0157382s
+[t=0.0209707s, 12936 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0210056s, 12936 KB] 170 edges
+[t=0.0210399s, 12936 KB] Landmark graph generation time: 0.0158695s
+[t=0.0210741s, 12936 KB] Landmark graph contains 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0211083s, 12936 KB] Landmark graph contains 170 orderings.
+[t=0.0217278s, 12936 KB] Simplifying 2366 unary operators... done! [2366 unary operators]
+[t=0.0229389s, 12936 KB] time to simplify: 0.00130345s
+[t=0.0231763s, 12936 KB] Initializing additive heuristic...
+[t=0.0232175s, 12936 KB] Initializing FF heuristic...
+[t=0.0232583s, 12936 KB] Initializing extended DTGs
+[t=0.0233373s, 12936 KB] Initializing Red-Black Fact Following heuristic...
+[t=0.0234348s, 12936 KB] Initializing novelty heuristic...
+[t=0.0234719s, 12936 KB] Done initializing novelty heuristic
+[t=0.023618s, 12936 KB] Building successor generator...done!
+[t=0.0239362s, 12936 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.0239675s, 12936 KB] time for successor generation creation: 0.000222519s
+[t=0.0240079s, 12936 KB] Variables: 69
+[t=0.0240429s, 12936 KB] FactPairs: 138
+[t=0.0240776s, 12936 KB] Bytes per state: 12
+[t=0.0242019s, 12936 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.0242739s, 12936 KB] 37 initial landmarks, 15 goal landmarks
+[t=0.0243183s, 12936 KB] Extract plan from the heuristic: yes
+[t=0.0243794s, 12936 KB] Running A* instead of Dijkstra. Using the distances ignoring outside conditions for heuristic estimates.
+[t=0.0244098s, 12936 KB] Initializing Red-Black task...
+[t=0.024444s, 12936 KB] Initializing Red-Black task core...
+[t=0.024478s, 12936 KB] Adding 366 operators to extended DTGs
+[t=0.025274s, 13020 KB] Checking invertibility...
+[t=0.0265116s, 13020 KB] Done checking invertibility
+[t=0.0265911s, 13020 KB] Number of invertible variables is 0
+[t=0.0266353s, 13020 KB] Finished initializing Red-Black task core
+[t=0.026673s, 13020 KB] Finished initializing Red-Black task
+[t=0.0267527s, 13020 KB] No black variables found -- running FF heuristic.
+[t=0.0268682s, 13020 KB] Finished initializing Red-Black Fact Following heuristic
+[t=0.0270111s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0270609s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0270989s, 13020 KB] New best heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0271363s, 13020 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0271903s, 13020 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0272285s, 13020 KB] Initial heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0272654s, 13020 KB] Initial heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0273972s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 22
+[t=0.0274455s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 12
+[t=0.0274839s, 13020 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0276127s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 21
+[t=0.0276533s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 11
+[t=0.027691s, 13020 KB] g=2, 3 evaluated, 2 expanded
+[t=0.0277988s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 20
+[t=0.0278315s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 10
+[t=0.0278661s, 13020 KB] g=3, 4 evaluated, 3 expanded
+[t=0.0279683s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 19
+[t=0.0279998s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 9
+[t=0.0280369s, 13020 KB] g=4, 5 evaluated, 4 expanded
+[t=0.0281374s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 18
+[t=0.0281722s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 8
+[t=0.0282076s, 13020 KB] g=5, 6 evaluated, 5 expanded
+[t=0.0283052s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 16
+[t=0.0283371s, 13020 KB] g=6, 7 evaluated, 6 expanded
+[t=0.0284323s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 13
+[t=0.0284631s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 7
+[t=0.0284987s, 13020 KB] g=7, 8 evaluated, 7 expanded
+[t=0.0285925s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 11
+[t=0.0286238s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 6
+[t=0.0286579s, 13020 KB] g=8, 9 evaluated, 8 expanded
+[t=0.0287471s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 9
+[t=0.0287779s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 3
+[t=0.0288188s, 13020 KB] g=9, 10 evaluated, 9 expanded
+[t=0.0289045s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 6
+[t=0.0289381s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 2
+[t=0.0289727s, 13020 KB] g=10, 11 evaluated, 10 expanded
+[t=0.0319753s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 5
+[t=0.0320289s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 1
+[t=0.0320681s, 13020 KB] g=11, 95 evaluated, 91 expanded
+[t=0.0321322s, 13020 KB] Solution found!
+[t=0.0321672s, 13020 KB] Actual search time: 0.00787475s
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+sync_i_0  (1)
+finish_38  (1)
+[t=0.0322026s, 13020 KB] Plan length: 12 step(s).
+[t=0.0322026s, 13020 KB] Plan cost: 12
+[t=0.0322026s, 13020 KB] Expanded 92 state(s).
+[t=0.0322026s, 13020 KB] Reopened 0 state(s).
+[t=0.0322026s, 13020 KB] Evaluated 96 state(s).
+[t=0.0322026s, 13020 KB] Evaluations: 189
+[t=0.0322026s, 13020 KB] Generated 394 state(s).
+[t=0.0322026s, 13020 KB] Dead ends: 3 state(s).
+[t=0.0322026s, 13020 KB] Number of registered states: 96
+[t=0.0322026s, 13020 KB] Int hash set load factor: 96/128 = 0.75
+[t=0.0322026s, 13020 KB] Int hash set resizes: 7
+[t=0.0322026s, 13020 KB] Search time: 0.00800137s
+[t=0.0322026s, 13020 KB] Total time: 0.0322026s
+Solution found.
+Peak memory: 13020 KB
+search exit code: 0
+
+
+
+[t=5.111e-05s, 11352 KB] reading input...
+[t=0.00450533s, 11476 KB] done reading input!
+[t=0.00628049s, 11872 KB] Building successor generator...done!
+[t=0.00677997s, 11872 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00682335s, 11872 KB] time for successor generation creation: 0.000308787s
+[t=0.00686965s, 11872 KB] Variables: 42
+[t=0.0069091s, 11872 KB] FactPairs: 84
+[t=0.00694649s, 11872 KB] Bytes per state: 8
+[t=0.00698821s, 11872 KB] Initializing symmetries for extending plans with
+[t=0.00702831s, 11872 KB] Initializing symmetries
+[t=0.00741452s, 12016 KB] Using Bliss to find group generators
+[t=0.00782279s, 12148 KB] Done initializing symmetries: 0.000833883s
+[t=0.00789811s, 12148 KB] Size of the grounded symmetry graph: 441
+[t=0.00794225s, 12148 KB] Number of search generators (affecting facts): 4
+[t=0.00798208s, 12148 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00801992s, 12148 KB] Total number of generators: 4
+[t=0.00827231s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.1
+[t=0.00835143s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.2
+[t=0.00840532s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.3
+[t=0.00845417s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.4
+[t=0.00850237s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.5
+[t=0.00854898s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.6
+[t=0.00859603s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.7
+[t=0.00864167s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.8
+[t=0.00871226s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.9
+[t=0.00876109s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.10
+[t=0.00880614s, 12148 KB] Adding plans... 
+[t=0.00887271s, 12148 KB] Finding symmetric plans... 
+[t=0.0089582s, 12148 KB] done! [t=0.00898007s]
+[t=0.00900106s, 12148 KB] Dumping 10 plans before reformulation 
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00925088s, 12148 KB] Plan length: 11 step(s).
+[t=0.00930718s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_l_153  (1)
+sync_a_300  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00950384s, 12148 KB] Plan length: 11 step(s).
+[t=0.00955512s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_c_14  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00970683s, 12148 KB] Plan length: 12 step(s).
+[t=0.0097419s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_a_262  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00987844s, 12148 KB] Plan length: 12 step(s).
+[t=0.00990629s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_l_69  (1)
+sync_h_594  (1)
+finish_38  (1)
+[t=0.0100364s, 12148 KB] Plan length: 12 step(s).
+[t=0.0100643s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_h_442  (1)
+sync_e_757  (1)
+sync_h_376  (1)
+finish_38  (1)
+[t=0.0101848s, 12148 KB] Plan length: 12 step(s).
+[t=0.0102309s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_l_107  (1)
+sync_e_709  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.0112814s, 12148 KB] Plan length: 12 step(s).
+[t=0.0113526s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+finish_36  (1)
+[t=0.0116382s, 12148 KB] Plan length: 11 step(s).
+[t=0.0132982s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+sync_h_374  (1)
+finish_38  (1)
+[t=0.0138898s, 12148 KB] Plan length: 12 step(s).
+[t=0.0140844s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+sync_i_0  (1)
+finish_38  (1)
+[t=0.0144137s, 12148 KB] Plan length: 12 step(s).
+[t=0.0146035s, 12148 KB] Plan cost: 12
+[t=0.014627s, 12148 KB] Done dumping plans before reformulation
+[t=0.0151858s, 12148 KB] Number of operators in the multiset is: 27
+[t=0.0153241s, 12148 KB] Reformulated task is created, dumping
+[t=0.0229147s, 12148 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12148 KB
+search exit code: 0
+
+
+
+[t=3.4805e-05s, 11352 KB] reading input...
+[t=0.00375651s, 11608 KB] done reading input!
+[t=0.0050987s, 12004 KB] Initializing landmark count heuristic...
+[t=0.00517974s, 12004 KB] Generating landmark graph...
+[t=0.00530162s, 12004 KB] Building a landmark graph with reasonable orders.
+[t=0.00539693s, 12136 KB] Initializing Exploration...
+[t=0.00608269s, 12808 KB] Generating landmarks using the RPG/SAS+ approach
+Removed 0 reasonable or obedient reasonable orders
+[t=0.0169517s, 12940 KB] Landmarks generation time: 0.0116755s
+[t=0.0170431s, 12940 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0170841s, 12940 KB] 170 edges
+[t=0.0171204s, 12940 KB] approx. reasonable orders
+[t=0.0171557s, 12940 KB] approx. obedient reasonable orders
+[t=0.0172089s, 12940 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.0172387s, 12940 KB] Landmarks generation time: 0.0120306s
+[t=0.017274s, 12940 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.017308s, 12940 KB] 170 edges
+[t=0.0173421s, 12940 KB] Landmark graph generation time: 0.0121821s
+[t=0.0173764s, 12940 KB] Landmark graph contains 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0174099s, 12940 KB] Landmark graph contains 170 orderings.
+[t=0.0180185s, 12940 KB] Simplifying 2371 unary operators... done! [2371 unary operators]
+[t=0.0192823s, 12940 KB] time to simplify: 0.00136045s
+[t=0.019527s, 12940 KB] Initializing additive heuristic...
+[t=0.0195693s, 12940 KB] Initializing FF heuristic...
+[t=0.0196089s, 12940 KB] Initializing extended DTGs
+[t=0.0196863s, 12940 KB] Initializing Red-Black Fact Following heuristic...
+[t=0.0197841s, 12940 KB] Initializing novelty heuristic...
+[t=0.0198222s, 12940 KB] Done initializing novelty heuristic
+[t=0.0199597s, 12940 KB] Building successor generator...done!
+[t=0.0202735s, 12940 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.0203007s, 12940 KB] time for successor generation creation: 0.000222851s
+[t=0.0203408s, 12940 KB] Variables: 70
+[t=0.0203741s, 12940 KB] FactPairs: 140
+[t=0.0204196s, 12940 KB] Bytes per state: 12
+[t=0.0205429s, 12940 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.0206149s, 12940 KB] 37 initial landmarks, 15 goal landmarks
+[t=0.0206589s, 12940 KB] Extract plan from the heuristic: yes
+[t=0.0207188s, 12940 KB] Running A* instead of Dijkstra. Using the distances ignoring outside conditions for heuristic estimates.
+[t=0.0207481s, 12940 KB] Initializing Red-Black task...
+[t=0.0207825s, 12940 KB] Initializing Red-Black task core...
+[t=0.0208159s, 12940 KB] Adding 368 operators to extended DTGs
+[t=0.0213714s, 13020 KB] Checking invertibility...
+[t=0.0222011s, 13020 KB] Done checking invertibility
+[t=0.0222399s, 13020 KB] Number of invertible variables is 0
+[t=0.0222769s, 13020 KB] Finished initializing Red-Black task core
+[t=0.0223138s, 13020 KB] Finished initializing Red-Black task
+[t=0.0223824s, 13020 KB] No black variables found -- running FF heuristic.
+[t=0.0224407s, 13020 KB] Finished initializing Red-Black Fact Following heuristic
+[t=0.022553s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0225863s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.022621s, 13020 KB] New best heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0226867s, 13020 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0227378s, 13020 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0227679s, 13020 KB] Initial heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0228023s, 13020 KB] Initial heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0229072s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 22
+[t=0.0229393s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 12
+[t=0.022974s, 13020 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0230786s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 21
+[t=0.0231095s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 11
+[t=0.0231459s, 13020 KB] g=2, 3 evaluated, 2 expanded
+[t=0.0232477s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 20
+[t=0.0232789s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 10
+[t=0.0233148s, 13020 KB] g=3, 4 evaluated, 3 expanded
+[t=0.0234162s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 19
+[t=0.0234475s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 9
+[t=0.0234817s, 13020 KB] g=4, 5 evaluated, 4 expanded
+[t=0.0235802s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 18
+[t=0.0236108s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 8
+[t=0.0236444s, 13020 KB] g=5, 6 evaluated, 5 expanded
+[t=0.0237406s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 16
+[t=0.0237719s, 13020 KB] g=6, 7 evaluated, 6 expanded
+[t=0.0238655s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 13
+[t=0.0238961s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 7
+[t=0.023931s, 13020 KB] g=7, 8 evaluated, 7 expanded
+[t=0.0240246s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 11
+[t=0.0240561s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 6
+[t=0.0240897s, 13020 KB] g=8, 9 evaluated, 8 expanded
+[t=0.0241793s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 9
+[t=0.0242108s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 3
+[t=0.0242443s, 13020 KB] g=9, 10 evaluated, 9 expanded
+[t=0.024331s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 6
+[t=0.0243629s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 2
+[t=0.0243971s, 13020 KB] g=10, 11 evaluated, 10 expanded
+[t=0.0281935s, 13020 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 5
+[t=0.028261s, 13020 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 1
+[t=0.0283084s, 13020 KB] g=11, 109 evaluated, 104 expanded
+[t=0.0283755s, 13020 KB] Solution found!
+[t=0.0284087s, 13020 KB] Actual search time: 0.00777811s
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_h_434  (1)
+sync_l_78  (1)
+sync_e_817  (1)
+sync_h_376  (1)
+finish_38  (1)
+[t=0.0284459s, 13020 KB] Plan length: 12 step(s).
+[t=0.0284459s, 13020 KB] Plan cost: 12
+[t=0.0284459s, 13020 KB] Expanded 105 state(s).
+[t=0.0284459s, 13020 KB] Reopened 0 state(s).
+[t=0.0284459s, 13020 KB] Evaluated 110 state(s).
+[t=0.0284459s, 13020 KB] Evaluations: 216
+[t=0.0284459s, 13020 KB] Generated 461 state(s).
+[t=0.0284459s, 13020 KB] Dead ends: 4 state(s).
+[t=0.0284459s, 13020 KB] Number of registered states: 110
+[t=0.0284459s, 13020 KB] Int hash set load factor: 110/128 = 0.859375
+[t=0.0284459s, 13020 KB] Int hash set resizes: 7
+[t=0.0284459s, 13020 KB] Search time: 0.00790419s
+[t=0.0284459s, 13020 KB] Total time: 0.0284459s
+Solution found.
+Peak memory: 13020 KB
+search exit code: 0
+
+
+
+[t=3.6937e-05s, 11352 KB] reading input...
+[t=0.00273835s, 11476 KB] done reading input!
+[t=0.00406969s, 11872 KB] Building successor generator...done!
+[t=0.0044346s, 11872 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00446481s, 11872 KB] time for successor generation creation: 0.000219694s
+[t=0.00450545s, 11872 KB] Variables: 42
+[t=0.00454247s, 11872 KB] FactPairs: 84
+[t=0.004577s, 11872 KB] Bytes per state: 8
+[t=0.004617s, 11872 KB] Initializing symmetries for extending plans with
+[t=0.00465474s, 11872 KB] Initializing symmetries
+[t=0.00493423s, 12016 KB] Using Bliss to find group generators
+[t=0.00523914s, 12148 KB] Done initializing symmetries: 0.000604608s
+[t=0.00527844s, 12148 KB] Size of the grounded symmetry graph: 441
+[t=0.00531505s, 12148 KB] Number of search generators (affecting facts): 4
+[t=0.00534984s, 12148 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00538373s, 12148 KB] Total number of generators: 4
+[t=0.00558321s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.1
+[t=0.00563351s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.2
+[t=0.00567859s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.3
+[t=0.00572029s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.4
+[t=0.0057622s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.5
+[t=0.00580431s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.6
+[t=0.00584619s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.7
+[t=0.00588754s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.8
+[t=0.00592952s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.9
+[t=0.00597085s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.10
+[t=0.00601374s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.11
+[t=0.00606776s, 12148 KB] Adding plans... 
+[t=0.00612389s, 12148 KB] Finding symmetric plans... 
+[t=0.00620236s, 12148 KB] done! [t=0.00621629s]
+[t=0.00623137s, 12148 KB] Dumping 11 plans before reformulation 
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00645702s, 12148 KB] Plan length: 11 step(s).
+[t=0.00650136s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_l_153  (1)
+sync_a_300  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00659402s, 12148 KB] Plan length: 11 step(s).
+[t=0.00661208s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_c_14  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.0066994s, 12148 KB] Plan length: 12 step(s).
+[t=0.00777335s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_a_262  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00787545s, 12148 KB] Plan length: 12 step(s).
+[t=0.0079143s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_l_69  (1)
+sync_h_594  (1)
+finish_38  (1)
+[t=0.00800972s, 12148 KB] Plan length: 12 step(s).
+[t=0.00803256s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_h_442  (1)
+sync_e_757  (1)
+sync_h_376  (1)
+finish_38  (1)
+[t=0.00816315s, 12148 KB] Plan length: 12 step(s).
+[t=0.00820698s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_l_107  (1)
+sync_e_709  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.008324s, 12148 KB] Plan length: 12 step(s).
+[t=0.00836422s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+finish_36  (1)
+[t=0.00850963s, 12148 KB] Plan length: 11 step(s).
+[t=0.00855514s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+sync_h_374  (1)
+finish_38  (1)
+[t=0.00868784s, 12148 KB] Plan length: 12 step(s).
+[t=0.00872735s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+sync_i_0  (1)
+finish_38  (1)
+[t=0.00884052s, 12148 KB] Plan length: 12 step(s).
+[t=0.0088792s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_h_434  (1)
+sync_l_78  (1)
+sync_e_817  (1)
+sync_h_376  (1)
+finish_38  (1)
+[t=0.00900554s, 12148 KB] Plan length: 12 step(s).
+[t=0.00904475s, 12148 KB] Plan cost: 12
+[t=0.00908456s, 12148 KB] Done dumping plans before reformulation
+[t=0.00916033s, 12148 KB] Number of operators in the multiset is: 29
+[t=0.00919167s, 12148 KB] Reformulated task is created, dumping
+[t=0.0168546s, 12148 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12148 KB
+search exit code: 0
+
+
+
+[t=3.487e-05s, 11352 KB] reading input...
+[t=0.00574792s, 11608 KB] done reading input!
+[t=0.00895514s, 12004 KB] Initializing landmark count heuristic...
+[t=0.00905889s, 12004 KB] Generating landmark graph...
+[t=0.00915726s, 12004 KB] Building a landmark graph with reasonable orders.
+[t=0.00934907s, 12136 KB] Initializing Exploration...
+[t=0.010445s, 12808 KB] Generating landmarks using the RPG/SAS+ approach
+Removed 0 reasonable or obedient reasonable orders
+[t=0.021397s, 12940 KB] Landmarks generation time: 0.0121756s
+[t=0.0214864s, 12940 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0215271s, 12940 KB] 170 edges
+[t=0.0215627s, 12940 KB] approx. reasonable orders
+[t=0.0215984s, 12940 KB] approx. obedient reasonable orders
+[t=0.0216522s, 12940 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.0216842s, 12940 KB] Landmarks generation time: 0.0126114s
+[t=0.0217209s, 12940 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0217556s, 12940 KB] 170 edges
+[t=0.0217897s, 12940 KB] Landmark graph generation time: 0.0127494s
+[t=0.0218243s, 12940 KB] Landmark graph contains 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0218589s, 12940 KB] Landmark graph contains 170 orderings.
+[t=0.0224765s, 12940 KB] Simplifying 2401 unary operators... done! [2401 unary operators]
+[t=0.0236813s, 12940 KB] time to simplify: 0.00129558s
+[t=0.0239222s, 12940 KB] Initializing additive heuristic...
+[t=0.0239635s, 12940 KB] Initializing FF heuristic...
+[t=0.0240035s, 12940 KB] Initializing extended DTGs
+[t=0.0240802s, 12940 KB] Initializing Red-Black Fact Following heuristic...
+[t=0.0241745s, 12940 KB] Initializing novelty heuristic...
+[t=0.0242113s, 12940 KB] Done initializing novelty heuristic
+[t=0.024331s, 12940 KB] Building successor generator...done!
+[t=0.024644s, 12940 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.024675s, 12940 KB] time for successor generation creation: 0.000221257s
+[t=0.0247163s, 12940 KB] Variables: 72
+[t=0.0247505s, 12940 KB] FactPairs: 144
+[t=0.0247849s, 12940 KB] Bytes per state: 12
+[t=0.0249087s, 12940 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.0249823s, 12940 KB] 37 initial landmarks, 15 goal landmarks
+[t=0.0250263s, 12940 KB] Extract plan from the heuristic: yes
+[t=0.0251023s, 12940 KB] Running A* instead of Dijkstra. Using the distances ignoring outside conditions for heuristic estimates.
+[t=0.0251325s, 12940 KB] Initializing Red-Black task...
+[t=0.025168s, 12940 KB] Initializing Red-Black task core...
+[t=0.0252355s, 12940 KB] Adding 372 operators to extended DTGs
+[t=0.0258014s, 13032 KB] Checking invertibility...
+[t=0.0266708s, 13032 KB] Done checking invertibility
+[t=0.0267176s, 13032 KB] Number of invertible variables is 0
+[t=0.0267567s, 13032 KB] Finished initializing Red-Black task core
+[t=0.0267919s, 13032 KB] Finished initializing Red-Black task
+[t=0.0268637s, 13032 KB] No black variables found -- running FF heuristic.
+[t=0.0269119s, 13032 KB] Finished initializing Red-Black Fact Following heuristic
+[t=0.0270269s, 13032 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0270603s, 13032 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0271071s, 13032 KB] New best heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0271431s, 13032 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0271934s, 13032 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0272266s, 13032 KB] Initial heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0272454s, 13032 KB] Initial heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0273994s, 13032 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 22
+[t=0.0274325s, 13032 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 12
+[t=0.0274686s, 13032 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0275762s, 13032 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 21
+[t=0.027609s, 13032 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 11
+[t=0.0276458s, 13032 KB] g=2, 3 evaluated, 2 expanded
+[t=0.02775s, 13032 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 20
+[t=0.0277824s, 13032 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 10
+[t=0.0278175s, 13032 KB] g=3, 4 evaluated, 3 expanded
+[t=0.02792s, 13032 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 19
+[t=0.0279512s, 13032 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 9
+[t=0.0279863s, 13032 KB] g=4, 5 evaluated, 4 expanded
+[t=0.0280862s, 13032 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 18
+[t=0.0281179s, 13032 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 8
+[t=0.0281532s, 13032 KB] g=5, 6 evaluated, 5 expanded
+[t=0.0282555s, 13032 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 16
+[t=0.028288s, 13032 KB] g=6, 7 evaluated, 6 expanded
+[t=0.0283852s, 13032 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 13
+[t=0.0284168s, 13032 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 7
+[t=0.0284517s, 13032 KB] g=7, 8 evaluated, 7 expanded
+[t=0.0285484s, 13032 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 11
+[t=0.0285801s, 13032 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 6
+[t=0.0286156s, 13032 KB] g=8, 9 evaluated, 8 expanded
+[t=0.0287073s, 13032 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 9
+[t=0.028739s, 13032 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 3
+[t=0.0287741s, 13032 KB] g=9, 10 evaluated, 9 expanded
+[t=0.0288608s, 13032 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 6
+[t=0.028892s, 13032 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 2
+[t=0.0289264s, 13032 KB] g=10, 11 evaluated, 10 expanded
+[t=0.0358599s, 13032 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 5
+[t=0.0362161s, 13032 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 1
+[t=0.0362696s, 13032 KB] g=11, 131 evaluated, 125 expanded
+[t=0.0363284s, 13032 KB] Solution found!
+[t=0.0363503s, 13032 KB] Actual search time: 0.0113468s
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_h_434  (1)
+sync_e_757  (1)
+sync_l_78  (1)
+sync_h_413  (1)
+finish_38  (1)
+[t=0.0363681s, 13032 KB] Plan length: 12 step(s).
+[t=0.0363681s, 13032 KB] Plan cost: 12
+[t=0.0363681s, 13032 KB] Expanded 126 state(s).
+[t=0.0363681s, 13032 KB] Reopened 0 state(s).
+[t=0.0363681s, 13032 KB] Evaluated 132 state(s).
+[t=0.0363681s, 13032 KB] Evaluations: 259
+[t=0.0363681s, 13032 KB] Generated 542 state(s).
+[t=0.0363681s, 13032 KB] Dead ends: 5 state(s).
+[t=0.0363681s, 13032 KB] Number of registered states: 132
+[t=0.0363681s, 13032 KB] Int hash set load factor: 132/256 = 0.515625
+[t=0.0363681s, 13032 KB] Int hash set resizes: 8
+[t=0.0363681s, 13032 KB] Search time: 0.0114601s
+[t=0.0363681s, 13032 KB] Total time: 0.0363681s
+Solution found.
+Peak memory: 13032 KB
+search exit code: 0
+
+
+
+[t=3.6121e-05s, 11352 KB] reading input...
+[t=0.00268523s, 11476 KB] done reading input!
+[t=0.00398071s, 11872 KB] Building successor generator...done!
+[t=0.00434747s, 11872 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00437898s, 11872 KB] time for successor generation creation: 0.00022521s
+[t=0.00442079s, 11872 KB] Variables: 42
+[t=0.00445822s, 11872 KB] FactPairs: 84
+[t=0.00449325s, 11872 KB] Bytes per state: 8
+[t=0.00453385s, 11872 KB] Initializing symmetries for extending plans with
+[t=0.00457068s, 11872 KB] Initializing symmetries
+[t=0.00485869s, 12016 KB] Using Bliss to find group generators
+[t=0.00515714s, 12148 KB] Done initializing symmetries: 0.00060738s
+[t=0.00519696s, 12148 KB] Size of the grounded symmetry graph: 441
+[t=0.00523522s, 12148 KB] Number of search generators (affecting facts): 4
+[t=0.00527012s, 12148 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00530499s, 12148 KB] Total number of generators: 4
+[t=0.00550847s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.1
+[t=0.00556669s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.2
+[t=0.00561341s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.3
+[t=0.00565668s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.4
+[t=0.0056998s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.5
+[t=0.00574238s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.6
+[t=0.00584018s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.7
+[t=0.00588411s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.8
+[t=0.00590913s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.9
+[t=0.00593213s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.10
+[t=0.00597207s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.11
+[t=0.00599779s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.12
+[t=0.00603488s, 12148 KB] Adding plans... 
+[t=0.00610079s, 12148 KB] Finding symmetric plans... 
+[t=0.00617577s, 12148 KB] done! [t=0.00619229s]
+[t=0.00619437s, 12148 KB] Dumping 12 plans before reformulation 
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00640124s, 12148 KB] Plan length: 11 step(s).
+[t=0.00645477s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_l_153  (1)
+sync_a_300  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00658058s, 12148 KB] Plan length: 11 step(s).
+[t=0.00662185s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_c_14  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00671664s, 12148 KB] Plan length: 12 step(s).
+[t=0.00676991s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_a_262  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00851953s, 12148 KB] Plan length: 12 step(s).
+[t=0.00858561s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_l_69  (1)
+sync_h_594  (1)
+finish_38  (1)
+[t=0.00873662s, 12148 KB] Plan length: 12 step(s).
+[t=0.00877867s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_h_442  (1)
+sync_e_757  (1)
+sync_h_376  (1)
+finish_38  (1)
+[t=0.00889564s, 12148 KB] Plan length: 12 step(s).
+[t=0.00893639s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_l_107  (1)
+sync_e_709  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.0090714s, 12148 KB] Plan length: 12 step(s).
+[t=0.00911109s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+finish_36  (1)
+[t=0.00923922s, 12148 KB] Plan length: 11 step(s).
+[t=0.00927725s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+sync_h_374  (1)
+finish_38  (1)
+[t=0.00939198s, 12148 KB] Plan length: 12 step(s).
+[t=0.00949934s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+sync_i_0  (1)
+finish_38  (1)
+[t=0.00963925s, 12148 KB] Plan length: 12 step(s).
+[t=0.0096808s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_h_434  (1)
+sync_l_78  (1)
+sync_e_817  (1)
+sync_h_376  (1)
+finish_38  (1)
+[t=0.00981311s, 12148 KB] Plan length: 12 step(s).
+[t=0.00985211s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_h_434  (1)
+sync_e_757  (1)
+sync_l_78  (1)
+sync_h_413  (1)
+finish_38  (1)
+[t=0.00996271s, 12148 KB] Plan length: 12 step(s).
+[t=0.0100014s, 12148 KB] Plan cost: 12
+[t=0.0100233s, 12148 KB] Done dumping plans before reformulation
+[t=0.0101182s, 12148 KB] Number of operators in the multiset is: 30
+[t=0.0101523s, 12148 KB] Reformulated task is created, dumping
+[t=0.016029s, 12148 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12148 KB
+search exit code: 0
+
+
+
+[t=3.719e-05s, 11352 KB] reading input...
+[t=0.00392037s, 11608 KB] done reading input!
+[t=0.00530549s, 12004 KB] Initializing landmark count heuristic...
+[t=0.00538264s, 12004 KB] Generating landmark graph...
+[t=0.00547406s, 12004 KB] Building a landmark graph with reasonable orders.
+[t=0.00557385s, 12136 KB] Initializing Exploration...
+[t=0.00634256s, 12812 KB] Generating landmarks using the RPG/SAS+ approach
+Removed 0 reasonable or obedient reasonable orders
+[t=0.0183407s, 12944 KB] Landmarks generation time: 0.0128926s
+[t=0.0184294s, 12944 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0184698s, 12944 KB] 170 edges
+[t=0.0185083s, 12944 KB] approx. reasonable orders
+[t=0.0185454s, 12944 KB] approx. obedient reasonable orders
+[t=0.0186018s, 12944 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.0186339s, 12944 KB] Landmarks generation time: 0.0132443s
+[t=0.0186706s, 12944 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0187063s, 12944 KB] 170 edges
+[t=0.0187421s, 12944 KB] Landmark graph generation time: 0.0133783s
+[t=0.018778s, 12944 KB] Landmark graph contains 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0188297s, 12944 KB] Landmark graph contains 170 orderings.
+[t=0.0195329s, 12944 KB] Simplifying 2410 unary operators... done! [2410 unary operators]
+[t=0.0207489s, 12944 KB] time to simplify: 0.00130775s
+[t=0.0209933s, 12944 KB] Initializing additive heuristic...
+[t=0.0210334s, 12944 KB] Initializing FF heuristic...
+[t=0.0210758s, 12944 KB] Initializing extended DTGs
+[t=0.0211586s, 12944 KB] Initializing Red-Black Fact Following heuristic...
+[t=0.0212567s, 12944 KB] Initializing novelty heuristic...
+[t=0.0212953s, 12944 KB] Done initializing novelty heuristic
+[t=0.0214516s, 12944 KB] Building successor generator...done!
+[t=0.021832s, 12944 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.0218608s, 12944 KB] time for successor generation creation: 0.00028328s
+[t=0.0219023s, 12944 KB] Variables: 73
+[t=0.0219369s, 12944 KB] FactPairs: 146
+[t=0.0219731s, 12944 KB] Bytes per state: 12
+[t=0.0220995s, 12944 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.022169s, 12944 KB] 37 initial landmarks, 15 goal landmarks
+[t=0.0222138s, 12944 KB] Extract plan from the heuristic: yes
+[t=0.0222785s, 12944 KB] Running A* instead of Dijkstra. Using the distances ignoring outside conditions for heuristic estimates.
+[t=0.0223085s, 12944 KB] Initializing Red-Black task...
+[t=0.0223549s, 12944 KB] Initializing Red-Black task core...
+[t=0.0223899s, 12944 KB] Adding 374 operators to extended DTGs
+[t=0.0229649s, 13036 KB] Checking invertibility...
+[t=0.0240644s, 13036 KB] Done checking invertibility
+[t=0.0241491s, 13036 KB] Number of invertible variables is 0
+[t=0.0241759s, 13036 KB] Finished initializing Red-Black task core
+[t=0.024192s, 13036 KB] Finished initializing Red-Black task
+[t=0.0242551s, 13036 KB] No black variables found -- running FF heuristic.
+[t=0.0242908s, 13036 KB] Finished initializing Red-Black Fact Following heuristic
+[t=0.0244238s, 13036 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0244487s, 13036 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0244645s, 13036 KB] New best heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0244797s, 13036 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0245098s, 13036 KB] Initial heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0245248s, 13036 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0245395s, 13036 KB] Initial heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0246373s, 13036 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 12
+[t=0.0246544s, 13036 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 22
+[t=0.0246694s, 13036 KB] g=1, 2 evaluated, 1 expanded
+[t=0.024765s, 13036 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 11
+[t=0.024782s, 13036 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 21
+[t=0.0247969s, 13036 KB] g=2, 3 evaluated, 2 expanded
+[t=0.0248963s, 13036 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 10
+[t=0.0249142s, 13036 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 20
+[t=0.024929s, 13036 KB] g=3, 4 evaluated, 3 expanded
+[t=0.0250203s, 13036 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 9
+[t=0.0250375s, 13036 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 19
+[t=0.0250527s, 13036 KB] g=4, 5 evaluated, 4 expanded
+[t=0.0252129s, 13036 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 8
+[t=0.0252436s, 13036 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 18
+[t=0.0252598s, 13036 KB] g=5, 6 evaluated, 5 expanded
+[t=0.0253749s, 13036 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 16
+[t=0.0254s, 13036 KB] g=6, 7 evaluated, 6 expanded
+[t=0.0254861s, 13036 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 7
+[t=0.0255057s, 13036 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 13
+[t=0.0255199s, 13036 KB] g=7, 8 evaluated, 7 expanded
+[t=0.025602s, 13036 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 6
+[t=0.0256213s, 13036 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 11
+[t=0.0256366s, 13036 KB] g=8, 9 evaluated, 8 expanded
+[t=0.02864s, 13036 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 3
+[t=0.0287521s, 13036 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 9
+[t=0.0288108s, 13036 KB] g=9, 10 evaluated, 9 expanded
+[t=0.0289465s, 13036 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 2
+[t=0.0290133s, 13036 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 6
+[t=0.0290601s, 13036 KB] g=10, 11 evaluated, 10 expanded
+[t=0.0364998s, 13036 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 1
+[t=0.0365749s, 13036 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 5
+[t=0.036602s, 13036 KB] g=11, 210 evaluated, 201 expanded
+[t=0.0366676s, 13036 KB] Solution found!
+[t=0.0367009s, 13036 KB] Actual search time: 0.0145149s
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_l_153  (1)
+sync_a_300  (1)
+sync_h_385  (1)
+sync_e_757  (1)
+sync_h_376  (1)
+finish_38  (1)
+[t=0.0367372s, 13036 KB] Plan length: 12 step(s).
+[t=0.0367372s, 13036 KB] Plan cost: 12
+[t=0.0367372s, 13036 KB] Expanded 202 state(s).
+[t=0.0367372s, 13036 KB] Reopened 0 state(s).
+[t=0.0367372s, 13036 KB] Evaluated 211 state(s).
+[t=0.0367372s, 13036 KB] Evaluations: 414
+[t=0.0367372s, 13036 KB] Generated 892 state(s).
+[t=0.0367372s, 13036 KB] Dead ends: 8 state(s).
+[t=0.0367372s, 13036 KB] Number of registered states: 211
+[t=0.0367372s, 13036 KB] Int hash set load factor: 211/256 = 0.824219
+[t=0.0367372s, 13036 KB] Int hash set resizes: 8
+[t=0.0367372s, 13036 KB] Search time: 0.0146384s
+[t=0.0367372s, 13036 KB] Total time: 0.0367372s
+Solution found.
+Peak memory: 13036 KB
+search exit code: 0
+
+
+
+[t=3.5642e-05s, 11352 KB] reading input...
+[t=0.00382957s, 11476 KB] done reading input!
+[t=0.00514875s, 11872 KB] Building successor generator...done!
+[t=0.00559592s, 11872 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00563476s, 11872 KB] time for successor generation creation: 0.000280364s
+[t=0.00567622s, 11872 KB] Variables: 42
+[t=0.00571224s, 11872 KB] FactPairs: 84
+[t=0.00574615s, 11872 KB] Bytes per state: 8
+[t=0.00578596s, 11872 KB] Initializing symmetries for extending plans with
+[t=0.00582089s, 11872 KB] Initializing symmetries
+[t=0.00609662s, 12016 KB] Using Bliss to find group generators
+[t=0.00639888s, 12148 KB] Done initializing symmetries: 0.000597457s
+[t=0.00643774s, 12148 KB] Size of the grounded symmetry graph: 441
+[t=0.0064762s, 12148 KB] Number of search generators (affecting facts): 4
+[t=0.0065102s, 12148 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00654372s, 12148 KB] Total number of generators: 4
+[t=0.00674242s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.1
+[t=0.00679322s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.2
+[t=0.00682002s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.3
+[t=0.00686251s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.4
+[t=0.00690541s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.5
+[t=0.0069462s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.6
+[t=0.00698829s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.7
+[t=0.00702965s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.8
+[t=0.00707062s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.9
+[t=0.00711095s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.10
+[t=0.00715127s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.11
+[t=0.00719123s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.12
+[t=0.00726667s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.13
+[t=0.00732838s, 12148 KB] Adding plans... 
+[t=0.00738348s, 12148 KB] Finding symmetric plans... 
+[t=0.00746188s, 12148 KB] done! [t=0.00747588s]
+[t=0.00749158s, 12148 KB] Dumping 13 plans before reformulation 
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00771539s, 12148 KB] Plan length: 11 step(s).
+[t=0.00775831s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_l_153  (1)
+sync_a_300  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00786199s, 12148 KB] Plan length: 11 step(s).
+[t=0.00790511s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_c_14  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00805956s, 12148 KB] Plan length: 12 step(s).
+[t=0.00808611s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_a_262  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00821576s, 12148 KB] Plan length: 12 step(s).
+[t=0.0082563s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_l_69  (1)
+sync_h_594  (1)
+finish_38  (1)
+[t=0.0083971s, 12148 KB] Plan length: 12 step(s).
+[t=0.00843013s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_h_442  (1)
+sync_e_757  (1)
+sync_h_376  (1)
+finish_38  (1)
+[t=0.00856079s, 12148 KB] Plan length: 12 step(s).
+[t=0.00858522s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_l_107  (1)
+sync_e_709  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00869886s, 12148 KB] Plan length: 12 step(s).
+[t=0.00873936s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+finish_36  (1)
+[t=0.00887159s, 12148 KB] Plan length: 11 step(s).
+[t=0.00891216s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+sync_h_374  (1)
+finish_38  (1)
+[t=0.00906212s, 12148 KB] Plan length: 12 step(s).
+[t=0.00910095s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+sync_i_0  (1)
+finish_38  (1)
+[t=0.00926098s, 12148 KB] Plan length: 12 step(s).
+[t=0.00930068s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_h_434  (1)
+sync_l_78  (1)
+sync_e_817  (1)
+sync_h_376  (1)
+finish_38  (1)
+[t=0.00945947s, 12148 KB] Plan length: 12 step(s).
+[t=0.00949968s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_h_434  (1)
+sync_e_757  (1)
+sync_l_78  (1)
+sync_h_413  (1)
+finish_38  (1)
+[t=0.00962735s, 12148 KB] Plan length: 12 step(s).
+[t=0.009728s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_l_153  (1)
+sync_a_300  (1)
+sync_h_385  (1)
+sync_e_757  (1)
+sync_h_376  (1)
+finish_38  (1)
+[t=0.00989582s, 12148 KB] Plan length: 12 step(s).
+[t=0.0099342s, 12148 KB] Plan cost: 12
+[t=0.00996976s, 12148 KB] Done dumping plans before reformulation
+[t=0.0100628s, 12148 KB] Number of operators in the multiset is: 31
+[t=0.010102s, 12148 KB] Reformulated task is created, dumping
+[t=0.0160801s, 12148 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12148 KB
+search exit code: 0
+
+
+
+[t=3.9213e-05s, 11352 KB] reading input...
+[t=0.00384856s, 11608 KB] done reading input!
+[t=0.00542339s, 12004 KB] Initializing landmark count heuristic...
+[t=0.00552545s, 12004 KB] Generating landmark graph...
+[t=0.00563329s, 12004 KB] Building a landmark graph with reasonable orders.
+[t=0.00574278s, 12136 KB] Initializing Exploration...
+[t=0.00646662s, 12812 KB] Generating landmarks using the RPG/SAS+ approach
+Removed 0 reasonable or obedient reasonable orders
+[t=0.0171222s, 12944 KB] Landmarks generation time: 0.0115087s
+[t=0.017217s, 12944 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0172582s, 12944 KB] 170 edges
+[t=0.0172947s, 12944 KB] approx. reasonable orders
+[t=0.0173298s, 12944 KB] approx. obedient reasonable orders
+[t=0.0173849s, 12944 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.0174153s, 12944 KB] Landmarks generation time: 0.0118764s
+[t=0.0174509s, 12944 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0174853s, 12944 KB] 170 edges
+[t=0.0175194s, 12944 KB] Landmark graph generation time: 0.0120144s
+[t=0.0175544s, 12944 KB] Landmark graph contains 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0175885s, 12944 KB] Landmark graph contains 170 orderings.
+[t=0.018219s, 12944 KB] Simplifying 2419 unary operators... done! [2419 unary operators]
+[t=0.0194552s, 12944 KB] time to simplify: 0.0013273s
+[t=0.0197003s, 12944 KB] Initializing additive heuristic...
+[t=0.0197396s, 12944 KB] Initializing FF heuristic...
+[t=0.019781s, 12944 KB] Initializing extended DTGs
+[t=0.0198605s, 12944 KB] Initializing Red-Black Fact Following heuristic...
+[t=0.0199659s, 12944 KB] Initializing novelty heuristic...
+[t=0.0200043s, 12944 KB] Done initializing novelty heuristic
+[t=0.0201532s, 12944 KB] Building successor generator...done!
+[t=0.0204696s, 12944 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.0204976s, 12944 KB] time for successor generation creation: 0.000226576s
+[t=0.0205376s, 12944 KB] Variables: 74
+[t=0.0205722s, 12944 KB] FactPairs: 148
+[t=0.0206072s, 12944 KB] Bytes per state: 12
+[t=0.0207311s, 12944 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.0208024s, 12944 KB] 37 initial landmarks, 15 goal landmarks
+[t=0.0208471s, 12944 KB] Extract plan from the heuristic: yes
+[t=0.0209656s, 12944 KB] Running A* instead of Dijkstra. Using the distances ignoring outside conditions for heuristic estimates.
+[t=0.0210805s, 12944 KB] Initializing Red-Black task...
+[t=0.0211127s, 12944 KB] Initializing Red-Black task core...
+[t=0.0211416s, 12944 KB] Adding 376 operators to extended DTGs
+[t=0.0227083s, 13040 KB] Checking invertibility...
+[t=0.0238731s, 13040 KB] Done checking invertibility
+[t=0.0239278s, 13040 KB] Number of invertible variables is 0
+[t=0.0239473s, 13040 KB] Finished initializing Red-Black task core
+[t=0.0239622s, 13040 KB] Finished initializing Red-Black task
+[t=0.0240161s, 13040 KB] No black variables found -- running FF heuristic.
+[t=0.0240491s, 13040 KB] Finished initializing Red-Black Fact Following heuristic
+[t=0.024165s, 13040 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0241823s, 13040 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0241961s, 13040 KB] New best heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0242101s, 13040 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0242374s, 13040 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0242522s, 13040 KB] Initial heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.024266s, 13040 KB] Initial heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0243614s, 13040 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 22
+[t=0.0243769s, 13040 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 12
+[t=0.0243909s, 13040 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0244855s, 13040 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 21
+[t=0.0245007s, 13040 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 11
+[t=0.0245147s, 13040 KB] g=2, 3 evaluated, 2 expanded
+[t=0.0246039s, 13040 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 20
+[t=0.0246194s, 13040 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 10
+[t=0.024633s, 13040 KB] g=3, 4 evaluated, 3 expanded
+[t=0.0247191s, 13040 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 19
+[t=0.0247614s, 13040 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 9
+[t=0.0247809s, 13040 KB] g=4, 5 evaluated, 4 expanded
+[t=0.0248783s, 13040 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 18
+[t=0.0249292s, 13040 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 8
+[t=0.02495s, 13040 KB] g=5, 6 evaluated, 5 expanded
+[t=0.0250805s, 13040 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 16
+[t=0.0251291s, 13040 KB] g=6, 7 evaluated, 6 expanded
+[t=0.0252367s, 13040 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 13
+[t=0.0252718s, 13040 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 7
+[t=0.0253088s, 13040 KB] g=7, 8 evaluated, 7 expanded
+[t=0.0254094s, 13040 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 11
+[t=0.0254427s, 13040 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 6
+[t=0.0254789s, 13040 KB] g=8, 9 evaluated, 8 expanded
+[t=0.0255739s, 13040 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 9
+[t=0.0256065s, 13040 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 3
+[t=0.0256424s, 13040 KB] g=9, 10 evaluated, 9 expanded
+[t=0.0257322s, 13040 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 6
+[t=0.025764s, 13040 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 2
+[t=0.0257996s, 13040 KB] g=10, 11 evaluated, 10 expanded
+[t=0.0338952s, 13040 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 5
+[t=0.0339661s, 13040 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 1
+[t=0.0340096s, 13040 KB] g=10, 235 evaluated, 225 expanded
+[t=0.0340791s, 13040 KB] Solution found!
+[t=0.034113s, 13040 KB] Actual search time: 0.0132937s
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_l_153  (1)
+sync_e_836  (1)
+sync_a_270  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.0341487s, 13040 KB] Plan length: 11 step(s).
+[t=0.0341487s, 13040 KB] Plan cost: 11
+[t=0.0341487s, 13040 KB] Expanded 226 state(s).
+[t=0.0341487s, 13040 KB] Reopened 0 state(s).
+[t=0.0341487s, 13040 KB] Evaluated 236 state(s).
+[t=0.0341487s, 13040 KB] Evaluations: 463
+[t=0.0341487s, 13040 KB] Generated 980 state(s).
+[t=0.0341487s, 13040 KB] Dead ends: 9 state(s).
+[t=0.0341487s, 13040 KB] Number of registered states: 236
+[t=0.0341487s, 13040 KB] Int hash set load factor: 236/256 = 0.921875
+[t=0.0341487s, 13040 KB] Int hash set resizes: 8
+[t=0.0341487s, 13040 KB] Search time: 0.0134181s
+[t=0.0341487s, 13040 KB] Total time: 0.0341487s
+Solution found.
+Peak memory: 13040 KB
+search exit code: 0
+
+
+
+[t=3.7234e-05s, 11352 KB] reading input...
+[t=0.00267128s, 11476 KB] done reading input!
+[t=0.00397337s, 11872 KB] Building successor generator...done!
+[t=0.00433992s, 11872 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00437297s, 11872 KB] time for successor generation creation: 0.000224681s
+[t=0.00441384s, 11872 KB] Variables: 42
+[t=0.00445112s, 11872 KB] FactPairs: 84
+[t=0.00448641s, 11872 KB] Bytes per state: 8
+[t=0.00452612s, 11872 KB] Initializing symmetries for extending plans with
+[t=0.00456388s, 11872 KB] Initializing symmetries
+[t=0.00485446s, 12016 KB] Using Bliss to find group generators
+[t=0.00516281s, 12148 KB] Done initializing symmetries: 0.000619102s
+[t=0.00520254s, 12148 KB] Size of the grounded symmetry graph: 441
+[t=0.00523981s, 12148 KB] Number of search generators (affecting facts): 4
+[t=0.00527528s, 12148 KB] Number of identity generators (on facts, not on operators): 0
+[t=0.00530966s, 12148 KB] Total number of generators: 4
+[t=0.00551003s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.1
+[t=0.00555983s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.2
+[t=0.00560388s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.3
+[t=0.00564532s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.4
+[t=0.005687s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.5
+[t=0.00572988s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.6
+[t=0.00577184s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.7
+[t=0.00581291s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.8
+[t=0.00586602s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.9
+[t=0.00590843s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.10
+[t=0.00595071s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.11
+[t=0.00600609s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.12
+[t=0.00604487s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.13
+[t=0.00608632s, 12148 KB] Reading plan from file /tmp/planner_runs/61aa17b9-eac7-466e-ba70-0d035012100d/sas_plan.14
+[t=0.00614141s, 12148 KB] Adding plans... 
+[t=0.0062034s, 12148 KB] Finding symmetric plans... 
+[t=0.00628992s, 12148 KB] done! [t=0.00630452s]
+[t=0.00632003s, 12148 KB] Dumping 14 plans before reformulation 
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00653473s, 12148 KB] Plan length: 11 step(s).
+[t=0.00785736s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_l_153  (1)
+sync_a_300  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00807275s, 12148 KB] Plan length: 11 step(s).
+[t=0.00811758s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_c_14  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00824367s, 12148 KB] Plan length: 12 step(s).
+[t=0.00829592s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_a_262  (1)
+sync_e_778  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00844489s, 12148 KB] Plan length: 12 step(s).
+[t=0.00848369s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_e_836  (1)
+sync_l_69  (1)
+sync_h_594  (1)
+finish_38  (1)
+[t=0.0086455s, 12148 KB] Plan length: 12 step(s).
+[t=0.00868435s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_l_107  (1)
+sync_h_442  (1)
+sync_e_757  (1)
+sync_h_376  (1)
+finish_38  (1)
+[t=0.00879492s, 12148 KB] Plan length: 12 step(s).
+[t=0.00883558s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_l_107  (1)
+sync_e_709  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.00899501s, 12148 KB] Plan length: 12 step(s).
+[t=0.00903572s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+finish_36  (1)
+[t=0.00917501s, 12148 KB] Plan length: 11 step(s).
+[t=0.00921381s, 12148 KB] Plan cost: 11
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+sync_h_374  (1)
+finish_38  (1)
+[t=0.0093406s, 12148 KB] Plan length: 12 step(s).
+[t=0.00938062s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_78  (1)
+sync_i_0  (1)
+finish_38  (1)
+[t=0.00951663s, 12148 KB] Plan length: 12 step(s).
+[t=0.00956027s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_h_434  (1)
+sync_l_78  (1)
+sync_e_817  (1)
+sync_h_376  (1)
+finish_38  (1)
+[t=0.00969134s, 12148 KB] Plan length: 12 step(s).
+[t=0.00972954s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_a_307  (1)
+sync_h_434  (1)
+sync_e_757  (1)
+sync_l_78  (1)
+sync_h_413  (1)
+finish_38  (1)
+[t=0.00987871s, 12148 KB] Plan length: 12 step(s).
+[t=0.00992022s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_l_153  (1)
+sync_a_300  (1)
+sync_h_385  (1)
+sync_e_757  (1)
+sync_h_376  (1)
+finish_38  (1)
+[t=0.0100634s, 12148 KB] Plan length: 12 step(s).
+[t=0.010096s, 12148 KB] Plan cost: 12
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_l_153  (1)
+sync_e_836  (1)
+sync_a_270  (1)
+sync_h_480  (1)
+finish_38  (1)
+[t=0.0102377s, 12148 KB] Plan length: 11 step(s).
+[t=0.0102631s, 12148 KB] Plan cost: 11
+[t=0.0102796s, 12148 KB] Done dumping plans before reformulation
+[t=0.0103753s, 12148 KB] Number of operators in the multiset is: 32
+[t=0.0104074s, 12148 KB] Reformulated task is created, dumping
+[t=0.0167882s, 12148 KB] Done dumping the reformulated task
+Solution found.
+Peak memory: 12148 KB
+search exit code: 0
+
+
+
+[t=3.8211e-05s, 11352 KB] reading input...
+[t=0.00428325s, 11608 KB] done reading input!
+[t=0.00567992s, 12004 KB] Initializing landmark count heuristic...
+[t=0.00579326s, 12004 KB] Generating landmark graph...
+[t=0.00592179s, 12004 KB] Building a landmark graph with reasonable orders.
+[t=0.00602794s, 12136 KB] Initializing Exploration...
+[t=0.00674256s, 12816 KB] Generating landmarks using the RPG/SAS+ approach
+Removed 0 reasonable or obedient reasonable orders
+[t=0.0175006s, 12948 KB] Landmarks generation time: 0.0115975s
+[t=0.0175907s, 12948 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0176313s, 12948 KB] 170 edges
+[t=0.0176671s, 12948 KB] approx. reasonable orders
+[t=0.0177025s, 12948 KB] approx. obedient reasonable orders
+[t=0.0183765s, 12948 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.0184421s, 12948 KB] Landmarks generation time: 0.0126214s
+[t=0.018483s, 12948 KB] Discovered 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0185189s, 12948 KB] 170 edges
+[t=0.0185534s, 12948 KB] Landmark graph generation time: 0.0127923s
+[t=0.0186007s, 12948 KB] Landmark graph contains 60 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.0186353s, 12948 KB] Landmark graph contains 170 orderings.
+[t=0.0192391s, 12948 KB] Simplifying 2428 unary operators... done! [2428 unary operators]
+[t=0.0204736s, 12948 KB] time to simplify: 0.00132677s
+[t=0.0207287s, 12948 KB] Initializing additive heuristic...
+[t=0.0207707s, 12948 KB] Initializing FF heuristic...
+[t=0.0208176s, 12948 KB] Initializing extended DTGs
+[t=0.0208949s, 12948 KB] Initializing Red-Black Fact Following heuristic...
+[t=0.0209895s, 12948 KB] Initializing novelty heuristic...
+[t=0.0210262s, 12948 KB] Done initializing novelty heuristic
+[t=0.0211666s, 12948 KB] Building successor generator...done!
+[t=0.0214904s, 12948 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.0215206s, 12948 KB] time for successor generation creation: 0.000230809s
+[t=0.0215601s, 12948 KB] Variables: 75
+[t=0.0215949s, 12948 KB] FactPairs: 150
+[t=0.0216296s, 12948 KB] Bytes per state: 12
+[t=0.0217795s, 12948 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.021869s, 12948 KB] 37 initial landmarks, 15 goal landmarks
+[t=0.021915s, 12948 KB] Extract plan from the heuristic: yes
+[t=0.0219778s, 12948 KB] Running A* instead of Dijkstra. Using the distances ignoring outside conditions for heuristic estimates.
+[t=0.0220076s, 12948 KB] Initializing Red-Black task...
+[t=0.0220419s, 12948 KB] Initializing Red-Black task core...
+[t=0.0220762s, 12948 KB] Adding 378 operators to extended DTGs
+[t=0.0226985s, 13084 KB] Checking invertibility...
+[t=0.0235429s, 13084 KB] Done checking invertibility
+[t=0.0235826s, 13084 KB] Number of invertible variables is 0
+[t=0.0236201s, 13084 KB] Finished initializing Red-Black task core
+[t=0.023654s, 13084 KB] Finished initializing Red-Black task
+[t=0.0237271s, 13084 KB] No black variables found -- running FF heuristic.
+[t=0.0237748s, 13084 KB] Finished initializing Red-Black Fact Following heuristic
+[t=0.0238882s, 13084 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0239218s, 13084 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0239567s, 13084 KB] New best heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0239906s, 13084 KB] g=0, 1 evaluated, 0 expanded
+[t=0.024042s, 13084 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 23
+[t=0.0240727s, 13084 KB] Initial heuristic value for rb(dag = from_coloring, extract_plan = true): 13
+[t=0.0241066s, 13084 KB] Initial heuristic value for novelty(eval = hrb, type = separate_both): 0
+[t=0.0242113s, 13084 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 22
+[t=0.0242444s, 13084 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 12
+[t=0.0242792s, 13084 KB] g=1, 2 evaluated, 1 expanded
+[t=0.0243893s, 13084 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 21
+[t=0.0244216s, 13084 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 11
+[t=0.0244562s, 13084 KB] g=2, 3 evaluated, 2 expanded
+[t=0.0245609s, 13084 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 20
+[t=0.0246007s, 13084 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 10
+[t=0.0246352s, 13084 KB] g=3, 4 evaluated, 3 expanded
+[t=0.0247387s, 13084 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 19
+[t=0.0247705s, 13084 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 9
+[t=0.0248117s, 13084 KB] g=4, 5 evaluated, 4 expanded
+[t=0.0249122s, 13084 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 18
+[t=0.0249456s, 13084 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 8
+[t=0.0249801s, 13084 KB] g=5, 6 evaluated, 5 expanded
+[t=0.0250787s, 13084 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 16
+[t=0.0251102s, 13084 KB] g=6, 7 evaluated, 6 expanded
+[t=0.025207s, 13084 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 13
+[t=0.0252384s, 13084 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 7
+[t=0.0252728s, 13084 KB] g=7, 8 evaluated, 7 expanded
+[t=0.0253698s, 13084 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 11
+[t=0.0254024s, 13084 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 6
+[t=0.0254372s, 13084 KB] g=8, 9 evaluated, 8 expanded
+[t=0.0255293s, 13084 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 9
+[t=0.0255603s, 13084 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 3
+[t=0.0255952s, 13084 KB] g=9, 10 evaluated, 9 expanded
+[t=0.0256812s, 13084 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 6
+[t=0.0257125s, 13084 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 2
+[t=0.0257469s, 13084 KB] g=10, 11 evaluated, 10 expanded
+[t=0.0364642s, 13084 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), pref = true): 5
+[t=0.036533s, 13084 KB] New best heuristic value for rb(dag = from_coloring, extract_plan = true): 1
+[t=0.0365756s, 13084 KB] g=10, 306 evaluated, 293 expanded
+[t=0.0366434s, 13084 KB] Solution found!
+[t=0.0366762s, 13084 KB] Actual search time: 0.014788s
+sync_f_242  (1)
+sync_c_16  (1)
+sync_c_17  (1)
+sync_c_18  (1)
+sync_c_19  (1)
+sync_g_893  (1)
+sync_e_778  (1)
+sync_h_581  (1)
+sync_l_121  (1)
+sync_a_300  (1)
+finish_38  (1)
+[t=0.0367129s, 13084 KB] Plan length: 11 step(s).
+[t=0.0367129s, 13084 KB] Plan cost: 11
+[t=0.0367129s, 13084 KB] Expanded 294 state(s).
+[t=0.0367129s, 13084 KB] Reopened 0 state(s).
+[t=0.0367129s, 13084 KB] Evaluated 307 state(s).
+[t=0.0367129s, 13084 KB] Evaluations: 602
+[t=0.0367129s, 13084 KB] Generated 1223 state(s).
+[t=0.0367129s, 13084 KB] Dead ends: 12 state(s).
+[t=0.0367129s, 13084 KB] Number of registered states: 307
+[t=0.0367129s, 13084 KB] Int hash set load factor: 307/512 = 0.599609
+[t=0.0367129s, 13084 KB] Int hash set resizes: 9
+[t=0.0367129s, 13084 KB] Search time: 0.0149598s
+[t=0.0367129s, 13084 KB] Total time: 0.0367129s
+Solution found.
+Peak memory: 13084 KB
+search exit code: 0
+
+
+---BEGIN_PLANS---
+(sync_f_242 )
+(sync_c_16 )
+(sync_c_17 )
+(sync_c_18 )
+(sync_c_19 )
+(sync_g_893 )
+(sync_a_307 )
+(sync_l_107 )
+(sync_e_836 )
+(sync_h_480 )
+(finish_38 )
+; cost = 11 (unit cost)
+(sync_f_242 )
+(sync_c_16 )
+(sync_c_17 )
+(sync_c_18 )
+(sync_c_19 )
+(sync_g_893 )
+(sync_a_307 )
+(sync_e_778 )
+(sync_h_581 )
+(sync_l_78 )
+(sync_i_0 )
+(finish_38 )
+; cost = 12 (unit cost)
+(sync_f_242 )
+(sync_c_16 )
+(sync_c_17 )
+(sync_c_18 )
+(sync_c_19 )
+(sync_g_893 )
+(sync_a_307 )
+(sync_h_434 )
+(sync_l_78 )
+(sync_e_817 )
+(sync_h_376 )
+(finish_38 )
+; cost = 12 (unit cost)
+(sync_f_242 )
+(sync_c_16 )
+(sync_c_17 )
+(sync_c_18 )
+(sync_c_19 )
+(sync_g_893 )
+(sync_a_307 )
+(sync_h_434 )
+(sync_e_757 )
+(sync_l_78 )
+(sync_h_413 )
+(finish_38 )
+; cost = 12 (unit cost)
+(sync_f_242 )
+(sync_c_16 )
+(sync_c_17 )
+(sync_c_18 )
+(sync_c_19 )
+(sync_g_893 )
+(sync_l_153 )
+(sync_a_300 )
+(sync_h_385 )
+(sync_e_757 )
+(sync_h_376 )
+(finish_38 )
+; cost = 12 (unit cost)
+(sync_f_242 )
+(sync_c_16 )
+(sync_c_17 )
+(sync_c_18 )
+(sync_c_19 )
+(sync_g_893 )
+(sync_l_153 )
+(sync_e_836 )
+(sync_a_270 )
+(sync_h_480 )
+(finish_38 )
+; cost = 11 (unit cost)
+(sync_f_242 )
+(sync_c_16 )
+(sync_c_17 )
+(sync_c_18 )
+(sync_c_19 )
+(sync_g_893 )
+(sync_e_778 )
+(sync_h_581 )
+(sync_l_121 )
+(sync_a_300 )
+(finish_38 )
+; cost = 11 (unit cost)
+(sync_f_242 )
+(sync_c_16 )
+(sync_c_17 )
+(sync_c_18 )
+(sync_c_19 )
+(sync_g_893 )
+(sync_l_153 )
+(sync_a_300 )
+(sync_e_778 )
+(sync_h_480 )
+(finish_38 )
+; cost = 11 (unit cost)
+(sync_f_242 )
+(sync_c_16 )
+(sync_c_17 )
+(sync_c_18 )
+(sync_c_19 )
+(sync_g_893 )
+(sync_a_307 )
+(sync_l_107 )
+(sync_c_14 )
+(sync_e_778 )
+(sync_h_480 )
+(finish_38 )
+; cost = 12 (unit cost)
+(sync_f_242 )
+(sync_c_16 )
+(sync_c_17 )
+(sync_c_18 )
+(sync_c_19 )
+(sync_g_893 )
+(sync_a_307 )
+(sync_l_107 )
+(sync_a_262 )
+(sync_e_778 )
+(sync_h_480 )
+(finish_38 )
+; cost = 12 (unit cost)
+(sync_f_242 )
+(sync_c_16 )
+(sync_c_17 )
+(sync_c_18 )
+(sync_c_19 )
+(sync_g_893 )
+(sync_a_307 )
+(sync_l_107 )
+(sync_e_836 )
+(sync_l_69 )
+(sync_h_594 )
+(finish_38 )
+; cost = 12 (unit cost)
+(sync_f_242 )
+(sync_c_16 )
+(sync_c_17 )
+(sync_c_18 )
+(sync_c_19 )
+(sync_g_893 )
+(sync_a_307 )
+(sync_l_107 )
+(sync_h_442 )
+(sync_e_757 )
+(sync_h_376 )
+(finish_38 )
+; cost = 12 (unit cost)
+(sync_f_242 )
+(sync_c_16 )
+(sync_c_17 )
+(sync_c_18 )
+(sync_c_19 )
+(sync_g_893 )
+(sync_a_307 )
+(sync_e_778 )
+(sync_l_107 )
+(sync_e_709 )
+(sync_h_480 )
+(finish_38 )
+; cost = 12 (unit cost)
+(sync_f_242 )
+(sync_c_16 )
+(sync_c_17 )
+(sync_c_18 )
+(sync_c_19 )
+(sync_g_893 )
+(sync_a_307 )
+(sync_e_778 )
+(sync_h_581 )
+(sync_l_78 )
+(finish_36 )
+; cost = 11 (unit cost)
+(sync_f_242 )
+(sync_c_16 )
+(sync_c_17 )
+(sync_c_18 )
+(sync_c_19 )
+(sync_g_893 )
+(sync_a_307 )
+(sync_e_778 )
+(sync_h_581 )
+(sync_l_78 )
+(sync_h_374 )
+(finish_38 )
+; cost = 12 (unit cost)
+
+
+=== STDERR ===
