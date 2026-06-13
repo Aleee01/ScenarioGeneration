@@ -47,8 +47,8 @@ The project is fully containerized using **Docker**, which handles all dependenc
 ### 1. Clone the Repository
 
 ```bash
-git clone <repo-url>
-cd <repository-folder>
+git clone https://github.com/AlessandraGiovannetti/ScenarioGeneration
+cd ScenarioGeneration
 ```
 
 ### 2. Build the Docker Image
