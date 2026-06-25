@@ -1,5 +1,8 @@
 # Scenario Generation for Declarative Process Models
 
+[![DOI](https://zenodo.org/badge/1187847964.svg)](https://doi.org/10.5281/zenodo.20842315)
+[![Sapienza](https://img.shields.io/badge/Sapienza_University_of_Rome-blue?style=flatlabelColor=781A2D&color=781A2D&logoColor=white)](https://www.diag.uniroma1.it/gruppi-di-ricerca/25462)
+
 This repository provides an **integrated tool** for:
 
 - Generating **PDDL domains and problems** from Declare models  
